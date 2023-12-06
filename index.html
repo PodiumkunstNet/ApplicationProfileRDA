@@ -11,6 +11,12 @@
             font-family: 'Courier New', Courier, monospace;
             white-space: pre-wrap;
         }
+
+        .example {
+            color: #00f;
+        }
+
+
     </style>
 
 </head>
@@ -32,6 +38,7 @@
         fetch('rdf/templates/music_basic.ttl')
             .then(response => response.text())
             .then(data => {
+                data = data.replace(/\{([^}]+)\}/g, '<span class="example">$1</span>');
                 document.getElementById('file-content').innerHTML = data;
             })
             .catch(error => console.error('Error fetching file:', error));
