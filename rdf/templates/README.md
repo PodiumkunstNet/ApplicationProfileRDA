@@ -1,4 +1,4 @@
-# Sjablonen voor RDA-beschrijvingen
+# Basissjablonen voor RDA-beschrijvingen
 
 ## Muziek
 In de klassieke muziek staan op werk-niveau de compositie en daarmee ook de componist centraal. Op het niveau van de expressie kan het werk zich op verschillende wijzen uiten, bijvoorbeeld als genoteerde muziek of als uitgevoerde muziek. Bladmuziek beschouwen we als behorende tot één expressie als ze muziekinhoudelijk identiek zijn. Ieder uitvoering beschouwen we als een unieke expressie.
@@ -12,7 +12,9 @@ Bij online muziek zoals een audiostream wordt doorgaans niet over een item in de
 Uitgegeven muziek, bijvoorbeeld in de vorm van een cd, manifesteert vaak (expressies van) meerdere muzikale werken. De uitgave is daarmee niet slechts een manifestatie maar kan ook als een (aggregerend) werk en expressie gezien worden.
 
 ### Het sjabloon muziek
-Het [voorbeeld-sjabloon voor het beschrijven van muziek](music_basic.ttl) in RDA gaat uit van de situatie waarin een muziekwerk als twee expressies beschreven is, als bladmuziek en als uitgevoerde muziek. De uitgevoerde muziek is opgenomen en heeft zich als een uitgebrachte cd gemanifesteerd. Van deze cd wordt ook één exemplaar beschreven.
+Het [voorbeeld-sjabloon voor het beschrijven van muziek](music_basic.ttl) in RDA gaat uit van de situatie waarin een muziekwerk als twee expressies beschreven is, als bladmuziek en als uitgevoerde muziek. De uitgevoerde muziek is opgenomen en heeft zich als een uitgebrachte cd gemanifesteerd. Van deze cd wordt ook één exemplaar beschreven.§
+
+Zoals gesteld zal een cd vaak meerdere werken bevatten. Bij de [voorbeelden](../examples/) is hier een uitwerking van te vinden, in de vorm van een beschrijving in RDA van de cd "[What of Words and What of Song](../examples/what_of_words.ttl)" van de sopraan Juliet Fraser.
 
 ## Toneel
 Bij toneel zal het vaak zinvol zijn om een toneeluitvoering te zien als een expressie waarbij meerdere werken samenkomen. Zo is er natuurlijk de toneeltekst of het script als de expressie van het toneelwerk. De productie van een uitvoering komt doorgaans met zo’n mate van artistieke invulling dat ook deze als een werk beschouwd kan worden. Dit productiewerk zou verder uitgesplitst kunnen worden naar deelwerken, zoals bijvoorbeeld het decorontwerp, of de poster.
