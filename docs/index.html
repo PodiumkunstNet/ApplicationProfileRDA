@@ -13,7 +13,7 @@
 
     <script>
         // Fetch and display the content of a specific file
-        fetch('filename.txt')
+        fetch('../rdf/templates/music_basic.ttl')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('file-content').textContent = data;
