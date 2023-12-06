@@ -1,0 +1,79 @@
+# basic template for "music"
+
+# a musical work:
+ex:work_1
+    a rdac:C10001 ;                         # a work
+    rdaw:P10004 rdaterm:1118;               # category of work => a musical work
+
+    # "must":
+    rdaw:P10006 {"Work 1"} ;                # title of work
+    rdaw:P10053 {ex:agent_1} ;              # composer agent of work
+
+    # "should":
+    rdaw:P10219 {"1957"}^^xsd:gYear ;       # date of work
+    rdaw:P10221 {"c-mineur"} ;              # key of representative expression
+    rdaw:P10079 {"67"} .                    # numeric designation of work (or use a subproperty)
+
+
+# an expression as notated music:
+ex:expr_1
+    a rdac:C10006 ;                         # an expression
+    rdae:P20001 rdaco:1010 ;                # has content type => notated music
+    
+    # "must":
+    rdae:P20231 {ex:work_1} ;               # has work expressed
+    rdae:P20311 {"Expression of 1"} ;       # appellation of expression (or use a subproperty)
+    rdae:P20214 {"1960"}^^xsd:gYear ;       # date of expression
+    rdae:P20326 {"c-mineur"} ;              # key of expression
+ 
+    # "should":
+    rdae:P20209 {rdafnm:1007} .             # has format of notated music => score
+
+
+# an expression as performed music:
+ex:expr_2
+    a rdac:C10006 ;                         # an expression
+    rdae:P20001 rdaco:1011 ;                # has content type => performed music
+
+    # "must":
+    rdae:P20231 {ex:work_1} ;               # has work expressed
+    rdae:P20311 {"Expression of 1"} ;       # appellation of expression (or use a subproperty)
+    rdae:P20039 {ex:agent_2} ;              # has performer agent (or use subproperty)
+    rdae:P20215 {medium} ;                  # has medium of performance, gebruik terminologielijst
+    rdae:P20214 {"1960-03-20"}^^xsd:date .  # date of expression
+
+    # "should":
+    #
+
+# a manifestation (CD) of an expression:
+ex:man_1
+    a rdac:C10007 ;                         # a manifestation
+    rdam:P30001 rdact:1004 ;                # has carrier type => audio disc
+    rdam:P30002 rdamt:1001 ;                # has media type => audio
+
+    # "must":
+    rdam:P30139 {ex:expr_2};                # has expression manifested
+    rdam:P30156 {"title as on product"} ;   # title proper
+    rdam:P3015 {"statement of resp."} ;     # statement of responsibility
+    rdam:P3008 {ex:agent_3} ;               # has publisher agent
+    rdam:P30011 {"2000"}^^xsd:gYear ;       # date of publication
+    rdam:P30182 {"1 CD"} ;                  # extent of manifestation
+    rdax:P00018 [                           # identifier for RDA entity
+        a rdac:C10012;                      # a nomen
+        rdan:P80068 {"12345-67890"} ;       # nomenstring
+        rdan:P80078 {ex:uri_1}              # category of nomen => {for example <http://vocab.getty.edu/aat/300343361>, barcode }
+    ] .
+
+# an item (CD) of a manifestation:
+ex:item_1
+    a rdac:C10003 ;                         # an item
+
+    # "must":
+    rdai:P40049 ex:man_1 ;                  # has manifestation itemized
+    rdai:P40001 {"ABC 134"} .               # item identifier
+  
+  
+
+
+
+
