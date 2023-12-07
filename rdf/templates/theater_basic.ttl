@@ -38,6 +38,8 @@ ex:work_pb2
     rdaw:P10066 {ex:agent_1} ;              # has director agent 
     rdaw:P10317 {ex:timespan_1} .           # has timespan of production
 
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # timespan for the production, here with a URI so it can be used in multiple places
 ex:timespan_1
@@ -45,4 +47,33 @@ ex:timespan_1
     rdat:P70017 {"seizoen 1957-1958"@nl} ;  # name of timespan
     rdat:P70039 {"1957-10-01"}^^xsd:date ;  # start date of timespan
     rdat:P70040 {"1958-07-01"}^^xsd:date .  # end date of timespan
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+# Work in Progress:
+
+# the script as an expression:
+ex:expr_tb1
+    a rdac:C10006 ;                         # an expression
+    rdae:P20001 rdaco:1020 ;                # has content type => text
+
+    # "must":
+    rdae:P20231 {ex:work_pb1} ;             # has work expressed
+    rdae:P20312 {"Work 1"@en};              # title of expression
+    rdae:P20006 {"en"} .                    # language of expression, use BCP47 codes, for example "de" for German
+
+
+# the production as an expression:
+ex:expr_tb2
+    a rdac:C10006 ;                         # an expression
+
+
+
+# a specific performance as an expression:
+ex:expr_tb3
+    a rdac:C10006 ;                         # an expression
+    rdae:P20001 
+
+
+
 
