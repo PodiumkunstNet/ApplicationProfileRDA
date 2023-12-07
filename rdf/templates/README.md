@@ -3,6 +3,8 @@
 Deze map biedt basissjablonen voor de beschrijving van verschillende vormen van podiumkunsten in RDA. 
 
 
+
+
 ## Muziek
 In de klassieke muziek staan op werk-niveau de compositie en daarmee ook de componist centraal. Op het niveau van de expressie kan het werk zich op verschillende wijzen uiten, bijvoorbeeld als genoteerde muziek of als uitgevoerde muziek. Bladmuziek beschouwen we als behorende tot één expressie als ze muziekinhoudelijk identiek zijn. Ieder uitvoering beschouwen we als een unieke expressie.
 

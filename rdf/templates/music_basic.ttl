@@ -1,7 +1,13 @@
 # basic template for "music"
 
+# add namespace definitions here.
+# see ../snippets/namespace.ttl
+
+# objects prestented between {} present example values
+# "could" triples are not suggested here, see the spreadsheet for more properties
+
 # a musical work:
-ex:work_1
+ex:work_mb1
     a rdac:C10001 ;                         # a work
     rdaw:P10004 rdaterm:1118;               # category of work => a musical work
 
@@ -16,12 +22,12 @@ ex:work_1
 
 
 # an expression as notated music:
-ex:expr_1
+ex:expr_mb1
     a rdac:C10006 ;                         # an expression
     rdae:P20001 rdaco:1010 ;                # has content type => notated music
     
     # "must":
-    rdae:P20231 {ex:work_1} ;               # has work expressed
+    rdae:P20231 {ex:work_mb1} ;             # has work expressed
     rdae:P20311 {"Expression of 1"} ;       # appellation of expression (or use a subproperty)
     rdae:P20214 {"1960"}^^xsd:gYear ;       # date of expression
     rdae:P20326 {"c-mineur"} ;              # key of expression
@@ -36,7 +42,7 @@ ex:expr_2
     rdae:P20001 rdaco:1011 ;                # has content type => performed music
 
     # "must":
-    rdae:P20231 {ex:work_1} ;               # has work expressed
+    rdae:P20231 {ex:work_mb1} ;             # has work expressed
     rdae:P20311 {"Expression of 1"} ;       # appellation of expression (or use a subproperty)
     rdae:P20039 {ex:agent_2} ;              # has performer agent (or use subproperty)
     rdae:P20215 {medium} ;                  # has medium of performance, gebruik terminologielijst
@@ -52,7 +58,7 @@ ex:man_1
     rdam:P30002 rdamt:1001 ;                # has media type => audio
 
     # "must":
-    rdam:P30139 {ex:expr_2};                # has expression manifested
+    rdam:P30139 {ex:expr_mb2};               # has expression manifested
     rdam:P30156 {"title as on product"} ;   # title proper
     rdam:P3015 {"statement of resp."} ;     # statement of responsibility
     rdam:P3008 {ex:agent_3} ;               # has publisher agent
@@ -69,10 +75,10 @@ ex:item_1
     a rdac:C10003 ;                         # an item
 
     # "must":
-    rdai:P40049 ex:man_1 ;                  # has manifestation itemized
+    rdai:P40049 ex:man_mb1 ;                # has manifestation itemized
     rdai:P40001 {"ABC 134"} .               # item identifier
   
-  
+
 
 
 

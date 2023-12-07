@@ -1,0 +1,39 @@
+# basic template for "text"
+
+# add namespace definitions here.
+# see ../snippets/namespace.ttl
+
+# objects prestented between {} present example values
+# "could" triples are not suggested here, see the spreadsheet for more properties
+
+# a textual work:
+ex:work_tb1
+    a rdac:C10001 ;
+    rdaw:P10004 rdaterm:1165 ;              # has category of work => textual work
+	rdaw:P10365 rdaep:1001 ;                # has extension plan => static plan ; apply this property for monographic textual works
+
+    # "must":
+    rdaw:P10006 {"Work 1"} ;                # title of work
+    rdaw:P10061 {ex:agent_1} ;              # author agent of work
+
+    # "should":
+    rdaw:P10219 {"1957"}^^xsd:gYear ;       # date of work
+    rdaw:P10349 {"nl"} ;                    # language of representative expression, use BCP47 codes, for example "nl" for Dutch
+    rdaw:P10256 {ex:subject} .              # subject of work
+
+
+# an expression of the work:
+ex:expr_tb1
+    a rdac:C10006 ;                         # an expression
+    rdae:P20001 rdaco:1020 ;                # has content type => text
+
+    # "must":
+    rdae:P20231 {ex:work_tb1} ;             # has work expressed
+    rdae:P20312 {"title of expression"} ;   # title of expression
+    rdae:P20006 {"de"} .                    # language of expression, use BCP47 codes, for example "de" for German
+
+# a manifestation of the expression:
+
+
+
+# an item:
