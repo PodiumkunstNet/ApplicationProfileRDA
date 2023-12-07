@@ -1,0 +1,25 @@
+# WORK IN PROGRESS
+
+# basic template for "theater"
+
+# add namespace definitions here.
+# see ../snippets/namespace.ttl
+
+# objects prestented between {} present example values
+# "could" triples are not suggested here, see the spreadsheet for more properties
+
+# the script as a work:
+ex:work_pb1
+    a rdac:C10001 ;                         # a work
+    rdaw:P10004 rdaterm:1209 ;              # has category of work => dramatic work
+
+
+
+# the production as a work:
+ex:work_pb2
+    a rdac:C10001 ;                         # a work
+    rdaw:P10004 "theatrical production" ;   # has category of work (is there a fitting vobabulary term?)
+
+    # "must":
+    rdaw:P10148 ex:work_pb1 ;               # derivative of work (the script) (? or an other property?)
+    rdaw:P10066 {ex:agent_1}                # has director agent
