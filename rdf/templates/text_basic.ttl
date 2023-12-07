@@ -21,6 +21,8 @@ ex:work_tb1
     rdaw:P10349 {"nl"} ;                    # language of representative expression, use BCP47 codes, for example "nl" for Dutch
     rdaw:P10256 {ex:subject} .              # subject of work
 
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # an expression of the work:
 ex:expr_tb1
@@ -32,6 +34,8 @@ ex:expr_tb1
     rdae:P20312 {"title of expression"@de}; # title of expression
     rdae:P20006 {"de"} .                    # language of expression, use BCP47 codes, for example "de" for German
 
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # a printed manifestation of the expression:
 ex:man_tb1
@@ -42,8 +46,8 @@ ex:man_tb1
     # "must":
     rdam:P30139 {ex:expr_tb1} ;             # has expression manifested
     rdam:P30156 {"title of manif."@de};     # title proper of manifestation
-    rdam:P30083 {"publisher"@en} ;          # publisher of manifestation
-    rdam:P30088 {"place"@en} ;              # place of publication
+    rdam:P30083 {"publisher"@en} ;          # publisher of manifestation - or use a URI
+    rdam:P30088 {"place"@en} ;              # place of publication - or use a URI
     rdam:P30011 {"2000"}^^xsd:gYear ;       # date of publication
     rdam:P30182 {"40 pagina's"@nl} ;        # extent of manifestation
     rdax:P00018 [                           # identifier for RDA entity
@@ -55,6 +59,26 @@ ex:man_tb1
     # "should":
     rdam:P30003 rdami:1001 ;                # has mode of issuance => single unit
 
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+# an online manifestation of the expression:
+ex:man_tb2 
+    a rdac:C10007 ;                         # a manifestation
+	rdam:P30001 rdact:1018 ;                # has carrier type => online resource
+    rdam:P30002 rdamt:1003 ;                # has media type => computer
+
+    # "must":
+    rdam:P30139 {ex:expr_tb1} ;             # has expression manifested
+    rdam:P30156 {"title of manif."@de};     # title proper of manifestation
+    rdam:P30083 {"publisher"@en} ;          # publisher of manifestation - or use a URI
+    rdam:P30154 {<uri>} .                   # has uniform resource locator
+    
+    # note: for online resources, usually there is no item, but a manifestation is directly available online
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
 # an item:
 ex:item_tb1
     a rdac:C10003 ;                         # an item
@@ -62,3 +86,8 @@ ex:item_tb1
     # "must":
     rdai:P40049 ex:man_tb1 ;                # has manifestation itemized
     rdai:P40001 {"ABC 134"} .               # item identifier, or provide an appellation for the item
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+

@@ -20,6 +20,8 @@ ex:work_mb1
     rdaw:P10221 {"c-mineur"@nl} ;           # key of representative expression, use of vocabulary preferred 
     rdaw:P10079 {"67"} .                    # numeric designation of work (or use a subproperty)
 
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # an expression as notated music:
 ex:expr_mb1
@@ -35,6 +37,8 @@ ex:expr_mb1
     # "should":
     rdae:P20209 {rdafnm:1007} .             # has format of notated music => score
 
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # an expression as performed music:
 ex:expr_mb2
@@ -48,8 +52,8 @@ ex:expr_mb2
     rdae:P20215 {medium} ;                  # has medium of performance, use a vocabulary
     rdae:P20214 {"1960-03-20"}^^xsd:date .  # date of expression
 
-    # "should":
-    #
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # a manifestation (CD) of an expression:
 ex:man_mb1
@@ -62,14 +66,17 @@ ex:man_mb1
     rdam:P30156 {"title as on product"@en}; # title proper
     rdam:P30182 {"1 CD"} ;                  # extent of manifestation
     rdam:P30117 {"statement of resp."@en} ; # statement of responsibility, EXAMPLE ???
-    rdam:P30083 {ex:agent_3} ;              # has publisher agent
-    rdam:P30088 {"place"@en} ;              # place of publication
+    rdam:P30083 {ex:agent_3} ;              # has publisher agent - or use a literal value
+    rdam:P30088 {"place"@en} ;              # place of publication- or use a uri / vocab.
     rdam:P30011 {"2000"}^^xsd:gYear ;       # date of publication
     rdax:P00018 [                           # identifier for RDA entity
         a rdac:C10012;                      # a nomen
         rdan:P80068 {"12345-67890"} ;       # nomenstring
         rdan:P80078 {<http://vocab.getty.edu/aat/300417437>}  # category of nomen => "ISMN"
     ] .
+
+    # use more properties when needed / desired, see the spreadsheet.
+
 
 # an item (CD) of a manifestation:
 ex:item_mb1
@@ -78,9 +85,6 @@ ex:item_mb1
     # "must":
     rdai:P40049 ex:man_mb1 ;                # has manifestation itemized
     rdai:P40001 {"ABC 134"} .               # item identifier, or provide an appellation for the item
-  
-
-
-
-
+    
+    # use more properties when needed / desired, see the spreadsheet.
 
