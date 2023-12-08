@@ -1,6 +1,9 @@
 # code snippets for denoting equality or identity / identifiers
 # status: draft 
 
+# add namespace definitions here.
+# see ../snippets/namespaces.ttl
+
 
 # just "any" entity:
 ex:thing_1 

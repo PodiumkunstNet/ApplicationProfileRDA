@@ -35,7 +35,7 @@ ex:work_pb2
     rdaw:P10192 ex:work_pb1 ;               # augmentation of work (the script) (? or an other property?)
     rdaw:P10006 {"Work 1"@nl} ;             # title of work, using a language tag
     rdaw:P10066 {ex:agent_1} ;              # has director agent 
-    rdaw:P10317 {ex:timespan_1} .           # has timespan of production
+    rdaw:P10317 {ex:timespan_1} .           # has timespan of work  TODO : is this the right property? OR note at Expression level?
 
     # use more properties when needed / desired, see the spreadsheet.
 
