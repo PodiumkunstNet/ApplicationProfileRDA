@@ -2,7 +2,7 @@
 # status: early sketch
 
 # add namespace definitions here.
-# see ../snippets/namespace.ttl
+# see ../snippets/namespaces.ttl
 
 # objects prestented between {} present example values
 # "could" triples are not suggested here, see the spreadsheet for more properties
@@ -65,13 +65,14 @@ ex:expr_tb1
 # the production as an expression:
 ex:expr_tb2
     a rdac:C10006 ;                         # an expression
+    rdae:P20001 "theatrical staging" ;      # has content type => theatrical staging (???) (no vocab term yet?)
 
 
 
 # a specific performance as an expression:
 ex:expr_tb3
     a rdac:C10006 ;                         # an expression
-    rdae:P20001 
+    rdae:P20001 "theatrical performance" ;  # has content type => theatrical performance (no vocab term yet?)
 
 
 

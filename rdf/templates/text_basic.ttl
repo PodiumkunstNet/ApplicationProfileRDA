@@ -2,7 +2,7 @@
 # status: draft
 
 # add namespace definitions here.
-# see ../snippets/namespace.ttl
+# see ../snippets/namespaces.ttl
 
 # objects prestented between {} present example values
 # "could" triples are not suggested here, see the spreadsheet for more properties
