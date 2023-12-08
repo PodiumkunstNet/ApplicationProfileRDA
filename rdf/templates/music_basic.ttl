@@ -1,4 +1,5 @@
 # basic template for "music"
+# status: draft
 
 # add namespace definitions here.
 # see ../snippets/namespace.ttl
@@ -72,7 +73,7 @@ ex:man_mb1
     rdax:P00018 [                           # identifier for RDA entity
         a rdac:C10012;                      # a nomen
         rdan:P80068 {"12345-67890"} ;       # nomenstring
-        rdan:P80078 {<http://vocab.getty.edu/aat/300417437>}  # category of nomen => "ISMN"
+        rdan:P80069 {<http://vocab.getty.edu/aat/300417437>}  # scheme of nomen => "ISMN"
     ] .
 
     # use more properties when needed / desired, see the spreadsheet.

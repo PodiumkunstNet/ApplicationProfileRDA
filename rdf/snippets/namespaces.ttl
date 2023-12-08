@@ -1,3 +1,5 @@
+# a fairly complete set of prefixes for RDA
+# using the preferred RDA namespace prefixes
 @prefix rdac: <http://rdaregistry.info/Elements/c/> .
 @prefix rdaw: <http://rdaregistry.info/Elements/w/> .
 @prefix rdae: <http://rdaregistry.info/Elements/e/> .
@@ -24,5 +26,5 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# this is just  to give the example URIs a common base
 @prefix ex: <http://example.com/pknet/> .
-

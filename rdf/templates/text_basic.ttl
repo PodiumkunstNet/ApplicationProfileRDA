@@ -1,4 +1,5 @@
 # basic template for "text"
+# status: draft
 
 # add namespace definitions here.
 # see ../snippets/namespace.ttl

@@ -1,6 +1,5 @@
-# WORK IN PROGRESS
-
 # basic template for "theater"
+# status: early sketch
 
 # add namespace definitions here.
 # see ../snippets/namespace.ttl
