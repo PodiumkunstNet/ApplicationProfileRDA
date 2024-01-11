@@ -1,5 +1,7 @@
-# a fairly complete set of prefixes for RDA
+# a correct (!) and fairly complete set of prefixes for RDA
 # using the preferred RDA namespace prefixes
+# see http://www.rdaregistry.info/Elements/ for more
+
 @prefix rdac: <http://rdaregistry.info/Elements/c/> .
 @prefix rdaw: <http://rdaregistry.info/Elements/w/> .
 @prefix rdae: <http://rdaregistry.info/Elements/e/> .
@@ -28,3 +30,4 @@
 
 # this is just  to give the example URIs a common base
 @prefix ex: <http://example.com/pknet/> .
+

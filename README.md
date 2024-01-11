@@ -1,29 +1,26 @@
 # RDA Toepassingsprofiel Podiumkunst
 
 ## Inleiding
-Lorem dolor etc.
+Hier komt een kort inleiding op het toepassingsprofiel. Waarom een toepassingsprofiel RDA? Wat betekent de toepassing van RDA op de Podiumkunst?
+Leeswijze. Stand van zaken? 
+Credits.
 
+## Gehanteerde principes
+Korte inleiding. [Lees meer](Principles.md)
 
 ## Toepassingsprofiel als spreadsheet
-
+Korte inleiding 
 [spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
 
-
-### Voorbeeldbeschrijvingen in RDA
+## Voorbeeldbeschrijvingen in RDA
 Voorbeeld van ..
 [rdf/examples](rdf/examples).
 
-
 ## Code-fragmenten
-
-### Voorbeeldbeschrijvingen in RDA
 Voorbeeld van ..
 [rdf/snippets](rdf/snippets).
 
+## Sjablonen
+Basissjablonen in RDA voor het beschrijven van verschillende vormen en verschijningsvormen van de podiumkunsten, om zelf nader in te vullen. 
+Zie: [rdf/templates](rdf/templates).
 
-### Basissjablonen
-Basissjablonen in RDA voor het beschrijven van verschillende vormen en verschijningsvormen van de podiumkunsten, om zelf nader in te vullen. Zie: [rdf/templates](rdf/templates).
-
-
-
-#
