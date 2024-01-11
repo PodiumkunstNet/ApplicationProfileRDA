@@ -1,6 +1,6 @@
 # Codefragmenten
 
-Stukjes RDA code om toe te passen in eigen RDA of om te gebruiken als voorbeeld.
+Stukjes RDA-code in het turtle-formaat om over te nemen binnen eigen RDA of ter illustratie van fragmenten RDA conform dit profiel.
 
 ## Overzicht
 
