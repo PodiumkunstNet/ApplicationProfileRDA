@@ -1,0 +1,108 @@
+@prefix ex: <http://example.com/pknet/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdami: <http://rdvocab.info/termList/ModeIssue/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaut: <http://rdaregistry.info/termList/RDAUnitOfTime/> .
+@prefix rdafnm: <http://rdaregistry.info/termList/MusNotation/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Booklet "Harmonizing 'Bach' chorales", 1987
+# Eigen exemplaar; de British Library heeft twee exemplaren van de eerste uitgave uit 1967 door Barrie en Rockliff
+# Later verder uit te werken: verwijzing vanuit w14 naar de betreffende verzameling koraalzettingen
+
+
+# ITEMS
+
+ex:i4 # Item no. 4
+	a rdac:C10003 ;
+    rdfs:label "Harmonizing Bach chorales: Lians exemplaar" ;
+	rdai:P40081 "Lians exemplaar" @nl ; # has appellation of item
+	rdai:P40018 ex:a17 ; # has current owner: Lian Wintermans
+	rdai:P40050 "Aangeschaft in juli 2023" @nl ; # has immediate source of acquisition of item
+	rdai:P40049 ex:m2 . # has manifestation exemplified
+
+
+# MANIFESTATIONS
+
+ex:m2 # Manifestatie no. 2
+	a rdac:C10007 ;
+    rdfs:label "Harmonizing Bach chorales: zadelsteekbanduitgave uit 1987" ;
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30002 rdamt:1007 ; # has media type: unmediated
+    rdam:P30001 rdact:1049 ; # has carrier type: volume
+    rdam:P30187 rdapm:1010 ; # has production method: printing
+    rdam:P30004 ex:n2.1 ; # has identifier for manifestation: ISBN
+    rdam:P30160 "£3.95 net, in UK only" @en ; # has term of availability (includes a price of a manifestation)
+    rdam:P30156 "Harmonizing 'Bach' chorales" @en ; # has title proper for manifestation
+    rdam:P30117 "Malcolm Boyd" @nl ; # has statement of responsibility
+    rdam:P30088 ex:p5 ; # has place of publication: London (Great Britain)
+    rdam:P30088 ex:p6 ; # has place of publication: Melbourne (Australie)
+    rdam:P30088 ex:p7 ; # has place of publication: Auckland (Nieuw Zeeland)
+    rdam:P30088 ex:p8 ; # has place of publication: Johannesburg (Zuid Afrika)
+    rdam:P30011 "1987" ^^xsd:gYear ; # has date of publication
+    rdam:P30007 "1967" ^^xsd:gYear ; # has copyright date
+    rdam:P30083 ex:a18 ; # has publisher agent: Barrie & Jenkins
+    rdam:P30082 ex:a19 ; # has manufacturer agent: Anchor Brendon
+    rdam:P30087 ex:p9 ; # has place of manufacture: Tiptree, Essex (Great Britain)
+    rdam:P30182 "40 pagina's" @nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
+    rdam:P30169 "24 cm" ; # has dimensions
+    rdam:P30309 rdatb:1007 ; # has type of binding: saddle stitch binding = geniet (A type of binding that folds sheets and staples them along the fold to form a spine)
+    rdam:P30137 "Includes music" @en ; # has note on manifestation
+    rdam:P30137 "Contents: Introduction -- Melodic characteristics of the chorale -- Cadences -- Harmonic resource -- Unessential notes -- Consecutives -- Texture -- Modal chorales -- Exercises -- Appendix: Index of chorales" @en ; # has note on manifestation
+    rdam:P30139 ex:e14 . # has expression manifested: expression no. 14
+
+
+# EXPRESSIONS
+
+ex:e14 # Expressie no. 14
+	a rdac:C10006 ;
+    rdfs:label "Harmonizing Bach chorales: Engelse tekst" ;
+    rdae:P20312 "Harmonizing 'Bach' chorales" @en ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of expression: English
+    rdae:P20231 ex:w14 . # has work expressed
+
+
+# WORKS
+
+ex:w14 # Werk no. 14
+	a rdac:C10001 ;
+    rdfs:label "Harmonizing Bach chorales, by Malcolm Boyd" ;
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10088	"Harmonizing 'Bach' chorales" @en ; # has title of work
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026191> ; # has category of work: text book (form)
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of representative expression: English
+    rdaw:P10061	ex:a20 ; # has author agent: Malcolm Boyd
+    rdaw:P10256	<http://id.loc.gov/authorities/subjects/sh85058963> ; # has subject: harmony
+    rdaw:P10256	<http://id.loc.gov/authorities/subjects/sh85024707> ; # has subject: chorales
+    rdaw:P10256	ex:a21 ; # has subject: J.S. Bach
+    rdaw:P10330 "Bach's 371 harmonized chorales (collected and published after his death by his son, C.P.E. Bach) are unique in achieving such a wide expressive range through such limited means. It has long been a tradition that students of harmony should, at some stage in their studies, immitate Bach's chorale harmonizations. Certainly, many diploma examinations and B.Mus. degrees have at least one question on the lines of 'Harmonize the following chorale tune in the style of Bach', or 'Here is a harmonized chorale by Bach. Add orchestral parts and turn the whole into a cantata movement'. The value and success of the study of Bach's chorale harmonizations largely depends on the extent to which the student assimilates this aspect of Bach's style. This booklet illuminates the procedures adopted by Bach and, going beyond the conventional harmony textbook approach, discourses on how various harmonies occur, in what contexts and, where possible, why they occur. The student is led to a more satisfying appreciation of Bach's treatment of the chorale and, at the same time, gains a practical insight into an important period of musical history through wise analysis and emulation. The exercises offered are musically rewarding and allow the student to write 'live' music rather than merely to jump through academic hoops." @en . # has note on work
+
+
+# NOMENS
+
+ex:n2.1 # Nomen no. 1 = ISBN of manifestation no. 2
+    a rdac:C10012 ;
+    rdfs:label "ISBN 0214659569" ;
+    rdan:P80068 "0214659569" ; # has nomen string
+    rdan:P80069 <http://vocab.getty.edu/aat/300417443> . # has scheme of nomen: ISBN

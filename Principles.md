@@ -46,8 +46,14 @@ Relatie-elementen in RDA kennen vaak ook een element dat de inversie relatie aan
 
 Bemerk dat sommige relaties zichzelf als inverse hebben.
 
-## Gebruik van datums en tijdspannes
 
+## 5. Principes voor identifiers
+
+TODO
+
+## 6. Principes voor gebruik van datums en tijdspannes
+
+TODO
 
 
 ## Representatieve expressies

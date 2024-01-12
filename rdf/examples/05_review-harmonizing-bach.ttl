@@ -1,0 +1,79 @@
+@prefix ex: <http://example.com/pknet/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdami: <http://rdvocab.info/termList/ModeIssue/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaut: <http://rdaregistry.info/termList/RDAUnitOfTime/> .
+@prefix rdafnm: <http://rdaregistry.info/termList/MusNotation/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Review van "Harmonizing 'Bach' chorales" (02_harmonizing-bach.ttl)
+# Online resource (geen item)
+# Artikel gepubliceerd op https://www.authentic-chorales.com/
+
+
+
+# ITEMS
+# Not applicable
+
+
+# MANIFESTATIONS
+
+ex:m5 # Manifestatie no. 5
+	a rdac:C10007 ;
+    rdfs:label "Review of Malcolm Boyd on Bach chorales: online publicatie uit 2018" ;
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30002 rdamt:1003 ; # has media type: computer
+    rdam:P30001 rdact:1018 ; # has carrier type: online resource
+    rdam:P30156 "Malcolm Boyd: Harmonizing ‘BACH’ Chorales – a half-century reconsideration, 1967–2017" @en ; # has title proper for manifestation
+    rdam:P30117 "Christopher Mabley" ; # has statement of responsibility
+    rdam:P30128 "Review of Malcolm Boyd on Bach Chorales" @en ; # has variant title of manifestation
+    rdam:P30007 "2018" ^^xsd:gYear ; # has copyright date
+    rdam:P30083 ex:a29 ; # has publisher agent: auteur
+    rdam:P30182 "10 pagina's" @nl ; # has extent of manifestation - optie https://access.rdatoolkit.org/en-US_ala-8754c7a9-c38c-3735-9cf9-865df717f81b/div_rnf_qs2_ydb toegepast
+    rdam:P30154 "https://www.authentic-chorales.com/filemanager/Review-of-Malcolm-Boyd-on-Bach-Chorales_1.pdf" ; # has uniform resource locator
+    rdam:P30137 "Published online at \"authentic-chorales.com, publications by Christopher Mabley\"." @en ; # has note on manifestation
+    rdam:P30139 ex:e18 . # has expression manifested: expression no. 18
+
+
+# EXPRESSIONS
+
+ex:e18 # Expressie no. 18
+	a rdac:C10006 ;
+    rdfs:label "Review of Malcolm Boyd on Bach chorales: Engelse tekst" ;
+    rdae:P20312 "Review of Malcolm Boyd on Bach Chorales" @en ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of expression: English
+    rdae:P20231 ex:w19 . # has work expressed
+
+
+# WORKS
+
+ex:w19 # Werk no. 19
+	a rdac:C10001 ;
+    rdfs:label "Review of Malcolm Boyd on Bach chorales, by Christopher Mabley" ;
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work (a work that is realized as tactile text or text) - beter zou zijn: language work, waaronder dan ook spoken word kan vallen?
+    rdaw:P10088	"Review of Malcolm Boyd on Bach Chorales" @en ; # has title of work
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026168> ; # has category of work: review (form)
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of representative expression: English
+    rdaw:P10061	ex:a29 ; # has author agent: Christopher Mabley
+    rdaw:P10153	ex:w14 . # is evaluation of work: Harmonizing ‘BACH’ Chorales

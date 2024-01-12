@@ -1,5 +1,7 @@
 # RDA Toepassingsprofiel Podiumkunst
 
+Werk in uitvoering | [Podiumkunst.net](https://podiumkunst.net/) | 2024-01-12
+
 ## Inleiding
 Hier komt een kort inleiding op het toepassingsprofiel. Waarom een toepassingsprofiel RDA? Wat betekent de toepassing van RDA op de Podiumkunst?
 Leeswijze. Stand van zaken? 
