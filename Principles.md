@@ -25,7 +25,7 @@ Relatie-elementen in RDA kennen vaak ook een element dat de inversie relatie aan
 * Primaire WEMI-relaties leggen we “van onder naar boven”, dus van concreter niveau naar abstracter niveau. D.w.z. een item linken we aan manifestatie, manifestatie aan expressie en expressie aan werk.
 *  Werk-naar-werk-relaties leggen we “van onder naar boven” wanneer er sprake is van een hiërarchie. Van “later werk” naar “eerder werk” .
 
-Bemerke dat sommige relaties zichzelf als inverse hebben.
+Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 ## Representatieve expressies
 
