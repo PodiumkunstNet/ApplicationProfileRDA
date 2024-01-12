@@ -10,8 +10,8 @@ Korte inleiding.
  [Lees meer](Principles.md)
 
 ## Toepassingsprofiel als spreadsheet
-Het volgende spreadsheet vormt de ruggengraat van diy toepassingsprofiel. Het geeft voor de verschillende RDA-entiteiten per element aan of ze binnen dit toepassingsprofiel verplicht, aanbevolen, optioneel of juist niet te gebruikt moeten moeten worden (MoSCoW). Dit op basis van de geformuleerde [principes](Principles.md).
-Er is bij de opbouw van het spreadsheet ook onderscheid gemaakt tussen de minimale beschrijving, de coherente beschrijving en de effectieve beschrijving.
+Het volgende spreadsheet vormt de ruggengraat van dit toepassingsprofiel. Het geeft voor de verschillende RDA-entiteiten per element aan of ze binnen dit toepassingsprofiel verplicht, aanbevolen, optioneel of juist niet gebruikt moeten moeten worden (MoSCoW). Dit op basis van de geformuleerde [principes](Principles.md).
+Er is bij de opbouw van het spreadsheet onderscheid gemaakt tussen de minimale beschrijving, de coherente beschrijving en de effectieve beschrijving.
 
 * [Download spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
 
