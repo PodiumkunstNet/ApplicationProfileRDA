@@ -1,5 +1,10 @@
 # De principes achter toepassingsprofiel RDA Podiumkunst
 
+## 0. Gebruik linked data
+De standaard RDA kan in een traditionele recordsgebaseerde werkwijze ingezet worden. Dit toepassingsprofiel gaat uit van het werken met linked data en linked data-principes.
+
+Werken volgens linked data principes betekent onder andere dat relaties gelegd worden door middel van IRIs en niet met behulp van ingangen ("access points").
+
 ## 1. Volg de officiële RDA standaard
 Dit toepassingsprofiel is gebaseerd op de officiële RDA standaard en de beschrijvingen van de klassen en elementen zoals te vinden op de [RDA Registry](http://www.rdaregistry.info/). De zogenaamde "deprecated" en "soft deprecated" elementen maken geen onderdeel uit van dit toepassingsprofiel. 
 
@@ -21,7 +26,7 @@ Het is niet strijdig met de principes van dit toepassingsprofiel om via `owl:sam
 
 Om eventuele onduidelijkheden te voorkomen worden alle entiteiten van een expliciete typering voorzien worden, bijvoorbeeld:
 
-	ex:ding a rdac:C10001 .   # ding is een Work
+	ex:ding a rdac:C10001 .   # ex:ding is een RDA-Work
 
 ## 3. Beperk de actor-relaties
 
@@ -41,6 +46,10 @@ Relatie-elementen in RDA kennen vaak ook een element dat de inversie relatie aan
 
 Bemerk dat sommige relaties zichzelf als inverse hebben.
 
+## Gebruik van datums en tijdspannes
+
+
+
 ## Representatieve expressies
 
 ... TODO
@@ -48,6 +57,14 @@ Bemerk dat sommige relaties zichzelf als inverse hebben.
 ## Access points
 
 ... TODO
+
+## Tot slot: openstaande vragen
+
+### Entity-boundaries
+
+### Wijze van vastlegging
+
+
 
 
 
