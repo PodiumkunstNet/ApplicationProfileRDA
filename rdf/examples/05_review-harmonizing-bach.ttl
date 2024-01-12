@@ -38,7 +38,7 @@
 # MANIFESTATIONS
 
 ex:m5 # Manifestatie no. 5
-	a rdac:C10007 ;
+    a rdac:C10007 ;
     rdfs:label "Review of Malcolm Boyd on Bach chorales: online publicatie uit 2018" ;
     rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
     rdam:P30002 rdamt:1003 ; # has media type: computer
@@ -57,7 +57,7 @@ ex:m5 # Manifestatie no. 5
 # EXPRESSIONS
 
 ex:e18 # Expressie no. 18
-	a rdac:C10006 ;
+    a rdac:C10006 ;
     rdfs:label "Review of Malcolm Boyd on Bach chorales: Engelse tekst" ;
     rdae:P20312 "Review of Malcolm Boyd on Bach Chorales" @en ; # has title of expression
     rdae:P20001	rdaco:1020 ; # has content type: tekst
@@ -68,7 +68,7 @@ ex:e18 # Expressie no. 18
 # WORKS
 
 ex:w19 # Werk no. 19
-	a rdac:C10001 ;
+    a rdac:C10001 ;
     rdfs:label "Review of Malcolm Boyd on Bach chorales, by Christopher Mabley" ;
     rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
     rdaw:P10004 rdaterm:1165 ; # has category of work: textual work (a work that is realized as tactile text or text) - beter zou zijn: language work, waaronder dan ook spoken word kan vallen?

@@ -34,18 +34,18 @@
 # ITEMS
 
 ex:i6 # Item no. 6
-	a rdac:C10003 ;
+    a rdac:C10003 ;
     rdfs:label "Ware leven J.S. Bach: KB-exemplaar" ;
-	rdai:P40001 ex:n3.1 ; # has identifier for item: barcode/aanvraagnummer
-	rdai:P40018 ex:a22 ; # has current owner: KB
-	rdai:P40028 "ter inzage in de KB" @nl ; # has note on item
-	rdai:P40049 ex:m3 . # has manifestation exemplified
+    rdai:P40001 ex:n3.1 ; # has identifier for item: barcode/aanvraagnummer
+    rdai:P40018 ex:a22 ; # has current owner: KB
+    rdai:P40028 "ter inzage in de KB" @nl ; # has note on item
+    rdai:P40049 ex:m3 . # has manifestation exemplified
 
 
 # MANIFESTATIONS
 
 ex:m3 # Manifestatie no. 3
-	a rdac:C10007 ;
+    a rdac:C10007 ;
     rdfs:label "Ware leven J.S. Bach: gebonden uitgave uit 2000" ;
     rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
     rdam:P30002 rdamt:1007 ; # has media type: unmediated
@@ -73,7 +73,7 @@ ex:m3 # Manifestatie no. 3
 # EXPRESSIONS
 
 ex:e15 # Expressie no. 15
-	a rdac:C10006 ;
+    a rdac:C10006 ;
     rdfs:label "Ware leven J.S. Bach: Nederlandse vertaling" ;
     rdae:P20312 "Het ware leven van Johann Sebastian Bach" @nl ; # has title of expression
     rdae:P20001	rdaco:1020 ; # has content type: tekst
@@ -83,7 +83,7 @@ ex:e15 # Expressie no. 15
     rdae:P20231 ex:w15 . # has work expressed
 
 ex:e16 # Expressie no. 16
-	a rdac:C10006 ;
+    a rdac:C10006 ;
     rdfs:label "Ware leven J.S. Bach: Duitse tekst" ;
     rdae:P20312 "Das wahre Leben des Johann Sebastian Bach" @de ; # has title of expression
     rdae:P20001	rdaco:1020 ; # has content type: tekst
@@ -94,7 +94,7 @@ ex:e16 # Expressie no. 16
 # WORKS
 
 ex:w15 # Werk no. 15
-	a rdac:C10001 ;
+    a rdac:C10001 ;
     rdfs:label "Wahre Leben des J.S. Bach, von Klaus Eidam" ;
     skos:exactMatch <http://viaf.org/viaf/2545153954868605680004> ; # is hetzelfde als: VIAF werk 2545153954868605680004
     rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
@@ -109,7 +109,7 @@ ex:w15 # Werk no. 15
     rdaw:P10012 "nr. 38" @nl . # has numbering of part: 38
 
 ex:w16 # Werk no. 16
-	a rdac:C10001 ;
+    a rdac:C10001 ;
     rdfs:label "Open domein (reeks)" ;
     skos:exactMatch <http://viaf.org/viaf/178645273> ; # is hetzelfde als: VIAF werk 178645273
     rdaw:P10365	rdaep:1005 ; # has has extension plan: successive indeterminate plan

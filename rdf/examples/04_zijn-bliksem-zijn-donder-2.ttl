@@ -33,18 +33,18 @@
 # ITEMS
 
 ex:i7 # Item no. 7
-	a rdac:C10003 ;
+    a rdac:C10003 ;
     rdfs:label "Zijn bliksem, zijn donder: KB-exemplaar" ;
-	rdai:P40001 ex:n4.1 ; # has identifier for item: barcode/aanvraagnummer
-	rdai:P40018 ex:a22 ; # has current owner: KB
-	rdai:P40028 "ter inzage in de KB" @nl ; # has note on item
-	rdai:P40049 ex:m4 . # has manifestation exemplified
+    rdai:P40001 ex:n4.1 ; # has identifier for item: barcode/aanvraagnummer
+    rdai:P40018 ex:a22 ; # has current owner: KB
+    rdai:P40028 "ter inzage in de KB" @nl ; # has note on item
+    rdai:P40049 ex:m4 . # has manifestation exemplified
 
 
 # MANIFESTATIONS
 
 ex:m4 # Manifestatie no. 4
-	a rdac:C10007 ;
+    a rdac:C10007 ;
     rdfs:label "Zijn bliksem, zijn donder: 4e druk, ISBN 9026314183" ;
     rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
     rdam:P30002 rdamt:1007 ; # has media type: unmediated
@@ -71,7 +71,7 @@ ex:m4 # Manifestatie no. 4
 # EXPRESSIONS
 
 ex:e17 # Expressie no. 17
-	a rdac:C10006 ;
+    a rdac:C10006 ;
     rdfs:label "Zijn bliksem, zijn donder: Nederlandse tekst" ;
     rdae:P20312 "Zijn bliksem, zijn donder" @nl ; # has title of expression
     rdae:P20001	rdaco:1020 ; # has content type: tekst
@@ -82,7 +82,7 @@ ex:e17 # Expressie no. 17
 # WORKS
 
 ex:w17 # Werk no. 17
-	a rdac:C10001 ;
+    a rdac:C10001 ;
     rdfs:label "Zijn bliksem, zijn donder, van Martin van Amerongen" ;
     rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
     rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
@@ -97,18 +97,18 @@ ex:w17 # Werk no. 17
     rdaw:P10256	ex:t6 . # has subject: 20e eeuw
 
 ex:w18 # Werk no. 18 (zie https://www.muziekweb.nl/Link/U00000605665/CLASSICAL/Matth%C3%A4uspassion-BWV-244 voor meer data)
-	a rdac:C10001 ;
+    a rdac:C10001 ;
     rdfs:label "Matthäuspassion, BVW 244" ;
     skos:exactMatch <http://viaf.org/viaf/1371147270361735700006> ; # is hetzelfde als: VIAF werk
     rdaw:P10004 rdaterm:1118 ; # has category of work: musical work
-	rdaw:P10004 <https://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
+    rdaw:P10004 <https://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
     rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
     rdaw:P10335	"BWV 244" ; # has thematic index number
-	rdaw:P10223 "Matthäuspassion" @de ; # has preferred title of work
-	rdaw:P10086 "Matthäus-Passion" @de ; # has variant title of work
+    rdaw:P10223 "Matthäuspassion" @de ; # has preferred title of work
+    rdaw:P10086 "Matthäus-Passion" @de ; # has variant title of work
     rdaw:P10086	"Mattheuspassie" @nl ; # has variant title of work
-	rdaw:P10086 "St Matthew Passion" @en ; # has variant title of work
-	rdaw:P10086 "Passion selon saint Matthieu" @fr ; # has variant title of work
+    rdaw:P10086 "St Matthew Passion" @en ; # has variant title of work
+    rdaw:P10086 "Passion selon saint Matthieu" @fr ; # has variant title of work
     rdaw:P20220 <https://data.muziekschatten.nl/som/um1569> ; # has medium of performance of musical content of representative expression
     rdaw:P10053	ex:a21 . # has composer agent: J.S.Bach
 

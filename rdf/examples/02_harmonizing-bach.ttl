@@ -33,18 +33,18 @@
 # ITEMS
 
 ex:i4 # Item no. 4
-	a rdac:C10003 ;
+    a rdac:C10003 ;
     rdfs:label "Harmonizing Bach chorales: Lians exemplaar" ;
-	rdai:P40081 "Lians exemplaar" @nl ; # has appellation of item
-	rdai:P40018 ex:a17 ; # has current owner: Lian Wintermans
-	rdai:P40050 "Aangeschaft in juli 2023" @nl ; # has immediate source of acquisition of item
-	rdai:P40049 ex:m2 . # has manifestation exemplified
+    rdai:P40081 "Lians exemplaar" @nl ; # has appellation of item
+    rdai:P40018 ex:a17 ; # has current owner: Lian Wintermans
+    rdai:P40050 "Aangeschaft in juli 2023" @nl ; # has immediate source of acquisition of item
+    rdai:P40049 ex:m2 . # has manifestation exemplified
 
 
 # MANIFESTATIONS
 
 ex:m2 # Manifestatie no. 2
-	a rdac:C10007 ;
+    a rdac:C10007 ;
     rdfs:label "Harmonizing Bach chorales: zadelsteekbanduitgave uit 1987" ;
     rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
     rdam:P30002 rdamt:1007 ; # has media type: unmediated
@@ -74,7 +74,7 @@ ex:m2 # Manifestatie no. 2
 # EXPRESSIONS
 
 ex:e14 # Expressie no. 14
-	a rdac:C10006 ;
+    a rdac:C10006 ;
     rdfs:label "Harmonizing Bach chorales: Engelse tekst" ;
     rdae:P20312 "Harmonizing 'Bach' chorales" @en ; # has title of expression
     rdae:P20001	rdaco:1020 ; # has content type: tekst
@@ -85,7 +85,7 @@ ex:e14 # Expressie no. 14
 # WORKS
 
 ex:w14 # Werk no. 14
-	a rdac:C10001 ;
+    a rdac:C10001 ;
     rdfs:label "Harmonizing Bach chorales, by Malcolm Boyd" ;
     rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
     rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
