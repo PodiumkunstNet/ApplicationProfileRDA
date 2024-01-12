@@ -22,8 +22,8 @@ ex:thing_1
     ## we do use timespan entities is there is an explicit need for it, with a begin and end date
 
 ex:thing_2
-    rdaw:P10317 [                                           # timespan of work, a blanknode will usually do
-        a rdac:C10010 ;                                     # a timespan - we always specify the type 
+    rdaw:P10317 [                                         # timespan of work, a blanknode will usually do
+        a rdac:C10010 ;                                   # a timespan - we always specify the type 
         rdat:P70017 "seizoen 1957-1958"@nl ;              # name of timespan
         rdat:P70039 "1957-10-01"^^xsd:date ;              # start date of timespan
         rdat:P70040 "1958-07-01"^^xsd:date                # end date of timespan
