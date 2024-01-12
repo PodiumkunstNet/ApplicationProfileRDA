@@ -1,0 +1,60 @@
+# Bladmuziek uit de collectie van Muziekschatten.
+
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdami: <http://rdaregistry.info//termList/ModeIssue/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaut: <http://rdaregistry.info/termList/RDAUnitOfTime/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://podiumkunst.triply.cc/som/Muziekschatten-acceptance/id/manifestation/msp24793>
+  a <http://rdaregistry.info/Elements/c/C10007> ;
+  rdfs:label "Quartetto in stile antico. Amsterdam: Donemus" ;
+  rdam:P30001 <http://rdaregistry.info/termList/RDACarrierType/1049> ;
+  rdam:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+  rdam:P30007 "1957"^^xsd:date ;
+  rdam:P30083 "Donemus" ;
+  rdam:P30088 <https://podiumkunst.triply.cc/som/Muziekschatten-acceptance/id/place/7d0198b05f065f411836e4f27def5449> ;
+  rdam:P30117 "Hendrik Andriessen" ;
+  rdam:P30134 "Quartetto in stile antico" ;
+  rdam:P30137 "Voor strijkkwartet. - Tijdsduur: ca. 11'"@nl ;
+  rdam:P30139 <https://podiumkunst.triply.cc/som/Muziekschatten-acceptance/id/expression/b71f5e6f251c5ee42bea09406ff483d5> ;
+  rdam:P30156 "Quartetto in stile antico" ;
+  rdam:P30187 "print" .
+
+<https://podiumkunst.triply.cc/som/Muziekschatten-acceptance/id/expression/b71f5e6f251c5ee42bea09406ff483d5>
+  a <http://rdaregistry.info/Elements/c/C10006> ;
+  rdfs:label "Andriessen, Hendrik. Quartetto in stile antico. Muzieknotatie"@nl ;
+  rdae:P20001 <http://rdaregistry.info/termList/RDAContentType/1010> ;
+  rdae:P20209 "Partituur en partijen", "[Partitura tascabile]", "[Score]", <http://rdaregistry.info/termList/formatNoteMus/1007>, <http://rdaregistry.info/termList/formatNoteMus/1008> ;
+  rdae:P20219 "ca. 11'" ;
+  rdae:P20231 <https://podiumkunst.triply.cc/som/Muziekschatten-acceptance/id/work/76051d1e4fa87857b28341838fd911e3> ;
+  rdae:P20315 "Quartetto in stile antico" .
+ 
+
+<https://podiumkunst.triply.cc/som/Muziekschatten-acceptance/id/work/76051d1e4fa87857b28341838fd911e3>
+  a <http://rdaregistry.info/Elements/c/C10001> ;
+  rdfs:label "Andriessen, Hendrik.  Quartetto in stile antico" ;
+  rdaw:P10004 <http://www.rdaregistry.info/termList/RDATerms/1118> , <https://data.muziekschatten%20.nl/som/d78168> ;
+  rdaw:P10053 <https://data.muziekschatten.nl/som/74d73a822efbc6b764db0169a7f656a4> ;
+  rdaw:P10219 "1957"^^xsd:date ;
+  rdaw:P10223 "Quartetto in stile antico" .
