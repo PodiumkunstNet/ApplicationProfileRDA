@@ -27,6 +27,16 @@ Relatie-elementen in RDA kennen vaak ook een element dat de inversie relatie aan
 
 Bemerke dat sommige relaties zichzelf als inverse hebben.
 
+## Representatieve expressies
+
+... TODO
+
+## Access points
+
+... TODO
+
+
+
 
 
 
