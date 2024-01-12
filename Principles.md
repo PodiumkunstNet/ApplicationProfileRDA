@@ -60,7 +60,7 @@ TODO
 
 ... TODO
 
-## Access points
+## Terminologie-bronnen
 
 ... TODO
 
