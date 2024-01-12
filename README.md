@@ -6,11 +6,13 @@ Leeswijze. Stand van zaken?
 Credits.
 
 ## Gehanteerde principes
-Korte inleiding. [Lees meer](Principles.md)
+Korte inleiding.
+ [Lees meer](Principles.md)
 
 ## Toepassingsprofiel als spreadsheet
-Korte inleiding 
-[spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
+Het volgende spreadsheet vormt de praktische basis voor de invulling van het toepassingsprofiel. Het geeft voor de verschillende RDA-entiteiten per element aan of het binnen dit toepassingsprofiel verplicht, aanbevolen, optioneel of juist niet te gebruiken is (MoSCoW).
+
+* [Download spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
 
 ## Voorbeeldbeschrijvingen in RDA
 Voorbeeld van ..
