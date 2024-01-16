@@ -3,8 +3,6 @@
 Deze map biedt basissjablonen voor de beschrijving van verschillende vormen van podiumkunsten in RDA. 
 
 
-
-
 ## Muziek
 In de **klassieke muziek** staan op werk-niveau de compositie en daarmee ook de componist centraal. Op het niveau van de expressie kan het werk zich op verschillende wijzen uiten, bijvoorbeeld als **genoteerde muziek** of als **uitgevoerde muziek**. Bladmuziek beschouwen we als behorende tot één expressie als het muziekinhoudelijk identiek is. Iedere uitvoering beschouwen we als een unieke expressie (DOEN WE DAT?).
 
@@ -14,22 +12,36 @@ Bij **popmuziek of geïmproviseerde muziek** ligt de nadruk vaak minder op de co
 
 Bij **online muziek** zoals een audiostream wordt doorgaans niet over een item in de zin van RDA gesproken. Een exemplaar van een cd of gepubliceerde bladmuziek zien we wel als een item.
 
-Uitgegeven muziek, bijvoorbeeld in de vorm van een cd, manifesteert vaak (expressies van) meerdere muzikale werken. De uitgave is daarmee niet slechts een manifestatie maar kan ook als een (aggregerend) werk en expressie gezien worden.        
+**Uitgegeven muziek**, bijvoorbeeld in de vorm van een cd, manifesteert vaak (expressies van) meerdere muzikale werken. De uitgave is daarmee niet slechts een (aggregerende) manifestatie maar kan ook als een (aggregerend) werk en expressie gezien worden (KLOPPEN DEZE TERMEN?).        
 
-### Het sjabloon muziek
-Het [voorbeeld-sjabloon voor het beschrijven van muziek](music_basic.ttl) in RDA gaat uit van de situatie waarin een muziekwerk als twee expressies beschreven is, als bladmuziek en als uitgevoerde muziek. De uitgevoerde muziek is opgenomen en heeft zich als een uitgebrachte cd gemanifesteerd. Van deze cd wordt ook één exemplaar beschreven.§
+### Sjabloon muziek
+Het [voorbeeld-sjabloon voor het beschrijven van muziek](music_basic.ttl) .
 
-Zoals gesteld zal een cd vaak meerdere werken bevatten. Bij de [voorbeelden](../examples/) is hier een uitwerking van te vinden, in de vorm van een beschrijving in RDA van de cd "[What of Words and What of Song](../examples/what_of_words.ttl)" van de sopraan Juliet Fraser.
+Zie ook voorbeelden:
+
+* [CD Mahler "Symfonie no. 1."](../examples/08_mahler-1.ttl)
+* [Bladmuziek "Quartetto in stile antico" van Hendrik Andriessen](../examples/06_quartetto-in-stile-antico.ttl)
+
 
 ## Toneel
-Bij toneel zal het vaak zinvol zijn om een toneeluitvoering te zien als een expressie waarbij meerdere werken samenkomen. Zo is er natuurlijk de toneeltekst of het script als de expressie van het toneelwerk. De productie van een uitvoering komt doorgaans met zo’n mate van artistieke invulling dat ook deze als een werk beschouwd kan worden. Dit productiewerk zou verder uitgesplitst kunnen worden naar deelwerken, zoals bijvoorbeeld het decorontwerp, of de poster.
+Bij toneel zal het vaak zinvol zijn om een **toneeluitvoering **te zien als een expressie waarbij meerdere werken samenkomen. Zo is er natuurlijk de toneeltekst of het script als de expressie van het toneelwerk. De **toneelproductie** van een uitvoering komt doorgaans met zo’n mate van artistieke invulling dat ook deze als een werk beschouwd kan worden. Dit productiewerk zou verder uitgesplitst kunnen worden naar deelwerken, zoals bijvoorbeeld het decorontwerp, of de poster.
 
-Net als bij muziek, zal er pas van een manifestatie gesproken kunnen worden als het een fysieke uitvoeringsvorm betreft. Dat kan een DVD of een videostream van een opname zijn, maar ook het decor kan op het niveau van manifestatie én item beschouwd worden.
+Net als bij muziek, zal er pas van een manifestatie gesproken kunnen worden als het een **materiële uitvoeringsvorm** betreft. Dat kan een DVD of een videostream van een opname zijn, maar ook het decor kan op het niveau van manifestatie én item beschouwd worden.
+
+### Sjabloon toneel
+
+{TODO}
 
 ## Dans
 Zoals bij toneel zal het bij de beschrijving van een dansuitvoering zinvol zijn om het te beschouwen als een uitdrukking van verschillende werken. Denk niet alleen aan de choreografie, maar ook aan de muziek, het decor- en lichtontwerp of de kostuums. 
 
+
+### Sjabloon Dans
 Voor dit toepassingsprofiel is nog geen voorbeeld uit de dans uitgewerkt. 
 
 ## Opera en musicals
-Opera en musicals combineren toneel met uitgevoerde muziek en soms ook dans. Zowel de muziek, de toneeltekst en de libretto’s kunnen ieder hun eigen primair verantwoordelijke schepper kennen, wat een reden kan zijn om naast een overkoepelend werk ook deelwerken te beschouwen. Ook de productie kan al een eigen afgeleid werd gezien worden.
+Opera en musicals combineren toneel met uitgevoerde muziek en soms dans. Zowel de muziek, de toneeltekst en de libretto’s kunnen ieder hun eigen primair verantwoordelijke schepper kennen, wat een reden kan zijn om naast een overkoepelend werk ook deelwerken te beschouwen. Ook de productie zou als een (afgeleid) werk gezien kunnen worden.
+
+### Sjabloon opera en musical
+
+{TODO}
