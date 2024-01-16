@@ -30,11 +30,12 @@ Naast het spreadsheet biedt dit profiel voorbeelbeschrijvingen. Deze voorbeelden
 Zie [voorbeeldbestanden](rdf/examples).
 
 ## Code-fragmenten
-In aanvulling op de voorbeeldbeschrijvingen biedt dit profiel ook enige code-fragmenten. Deze zijn bedoeld als handige korte stukjes RDF bedoeld om te helpen bij het zelf opbouwen van een beschrijving in RDA, volgens dit profiel. Ze zijn nadrukkelijk niet bedoeld voor bijvoorbeeld catalogiseerders, wel bijvoorbeeld voor degene die een catalogiseervoorziening inricht.
+In aanvulling op de voorbeeldbeschrijvingen biedt dit profiel hier ook enige code-fragmenten. Deze zijn bedoeld als handige korte stukjes RDF om te helpen bij het zelf opbouwen van een beschrijving in RDA, in lijn met dit profiel. Ze zijn nadrukkelijk *niet* bedoeld voor bijvoorbeeld catalogiseerders, wel voor degene die een catalogiseervoorziening inricht.
 
 Zie [code-fragmenten](rdf/snippets).
 
 ## Sjablonen
-Basissjablonen in RDA voor het beschrijven van verschillende vormen en verschijningsvormen van de podiumkunsten, om zelf nader in te vullen. 
-Zie: [rdf/templates](rdf/templates).
+Een streven is om binnen het werk aan  dit toepassingsprofiel te komen tot een beperkt aantal basisjablonen die gebruikt kunnen worden als kader bij het beschrijven van dit verschillende soorten entiteiten die relevant zijn in de wereld van de podiumkunst.
+
+Een [aanzet voor de nog uit te werken sjablonen](rdf/templates).
 
