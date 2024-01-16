@@ -6,15 +6,15 @@ Deze map biedt basissjablonen voor de beschrijving van verschillende vormen van 
 
 
 ## Muziek
-In de klassieke muziek staan op werk-niveau de compositie en daarmee ook de componist centraal. Op het niveau van de expressie kan het werk zich op verschillende wijzen uiten, bijvoorbeeld als genoteerde muziek of als uitgevoerde muziek. Bladmuziek beschouwen we als behorende tot één expressie als ze muziekinhoudelijk identiek zijn. Ieder uitvoering beschouwen we als een unieke expressie.
+In de **klassieke muziek** staan op werk-niveau de compositie en daarmee ook de componist centraal. Op het niveau van de expressie kan het werk zich op verschillende wijzen uiten, bijvoorbeeld als **genoteerde muziek** of als **uitgevoerde muziek**. Bladmuziek beschouwen we als behorende tot één expressie als het muziekinhoudelijk identiek is. Iedere uitvoering beschouwen we als een unieke expressie (DOEN WE DAT?).
 
-Bij popmuziek of geïmproviseerde muziek ligt de nadruk vaak minder op de componist maar meer op de centrale uitvoerende artiest en de opname. In het kader van dit toepassingsprofiel is er nog geen voorbeeld uit de popmuziek uitgewerkt.
+Bij **popmuziek of geïmproviseerde muziek** ligt de nadruk vaak minder op de componist maar meer op de **centrale uitvoerende artiest** en de **opname**. In het kader van dit toepassingsprofiel is er nog geen voorbeeld uit de popmuziek uitgewerkt.
 
-Genoteerde muziek verschijnt als manifestatie bij publicatie. Uitgevoerde muziek leidt op op zichzelf niet vanzelf tot een manifestatie. Er verschijnt pas een manifestatie van de uitgevoerde muziek wanneer deze opgenomen is en wordt uitgegeven. Denk hierbij bijvoorbeeld aan een traditionele cd of een audiostream.
+**Genoteerde muziek** verschijnt als een manifestatie bij het moment van publicatie. **Uitgevoerde muziek** leidt op op zichzelf niet vanzelf tot een manifestatie. Er verschijnt pas een manifestatie van de uitgevoerde muziek wanneer deze opgenomen is én wordt uitgegeven. Denk hierbij bijvoorbeeld aan een traditionele cd of een audiostream.
 
-Bij online muziek zoals een audiostream wordt doorgaans niet over een item in de zin van RDA gesproken. Een exemplaar van een cd of gepubliceerde bladmuziek zien we wel als een item.
+Bij **online muziek** zoals een audiostream wordt doorgaans niet over een item in de zin van RDA gesproken. Een exemplaar van een cd of gepubliceerde bladmuziek zien we wel als een item.
 
-Uitgegeven muziek, bijvoorbeeld in de vorm van een cd, manifesteert vaak (expressies van) meerdere muzikale werken. De uitgave is daarmee niet slechts een manifestatie maar kan ook als een (aggregerend) werk en expressie gezien worden.
+Uitgegeven muziek, bijvoorbeeld in de vorm van een cd, manifesteert vaak (expressies van) meerdere muzikale werken. De uitgave is daarmee niet slechts een manifestatie maar kan ook als een (aggregerend) werk en expressie gezien worden.        
 
 ### Het sjabloon muziek
 Het [voorbeeld-sjabloon voor het beschrijven van muziek](music_basic.ttl) in RDA gaat uit van de situatie waarin een muziekwerk als twee expressies beschreven is, als bladmuziek en als uitgevoerde muziek. De uitgevoerde muziek is opgenomen en heeft zich als een uitgebrachte cd gemanifesteerd. Van deze cd wordt ook één exemplaar beschreven.§
