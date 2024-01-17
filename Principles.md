@@ -49,17 +49,39 @@ Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 ## 5. Principes voor identifiers
 
-### Relaties voor gelijkwaardigheid of identiteit
+### Interne en externe identifiers
 
-Identifiers geven aan dat een beschreven entiteit, gegeven een zeker perspectief, *identiek* is aan een andere entiteit. Er kan dan van '*identiteit*' gesproken worden. De gangbare manier om aan te geven dat twee verschillende IRIs naar identieke entiteiten verwijzen is door middel van de `owl:sameAs`-relatie. Dit vereist dus dat beide entiteiten een IRI hebben. 
+Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifieke entiteit te identificeren en te onderscheiden van andere entiteiten. Binnen linked data is het gangbaar en wenselijk dat vooral IRIs als identifier gebruikt worden.
 
-De semantiek van `owl:sameAs` is zeer streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Overweeg bij de keuze voor deze relatie of die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
+In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een enititeit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
 
-Als de concepten equivalent zijn in termen van betekenis en gebruik, maar misschien niet identiek in een strikte logische zin dan is `skos:exactMatch` een goede keuze. Als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar dan is `skos:closeMatch` een goede keuze.
+### Relaties voor gelijkheid of gelijkwaardigheid
 
-### Identifiers als benaming
+Er zijn verschillende manieren om aan te geven dat de beschreven enititeit gelijk of gelijkwaardig is aan een enititeit die aangeduid wordt met een externe identifier.  
 
-Niet alle entiteiten of concepten hebben een IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen niet naar een `rdfs:Literal` waarde verwijzen. In deze gevallen biedt RDA een oplossing.
+
+De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
+
+	@prefix owl: <http://www.w3.org/2002/07/owl#> .
+	
+	intern:ex1 owl:sameAs extern:ex_a . 
+
+De semantiek van `owl:sameAs` is streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Gebruik `owl:sameAs` alleen als die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
+
+Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogelijk niet identiek in een strikte logische zin, dan is `skos:exactMatch` een goede keuze. Als er behoefte is aan een nog zwakkere relatie kan er gekozen worden voor `skos:closeMatch`, te gebruiken als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar.
+
+	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+	
+	intern:ex2 skos:exactMatch extern:ex_b . 
+	intern:ex3 skos:closeMatch extern:ex_c . 
+
+
+### Identifiers als label of literal
+
+Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:Literal` label en geen IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen dan niet gebruikt worden. RDA hier hier een oplossing in de vorm van de 
+
+
+
 
 ### Werken met RDA-identifiers
 
