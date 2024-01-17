@@ -28,7 +28,7 @@ Om eventuele onduidelijkheden te voorkomen worden alle entiteiten van een explic
 
 	ex:ding a rdac:C10001 .   # ex:ding is een RDA-Work
 
-## 3. Gebruik beperkte set mett actor-relaties
+## 3. Gebruik beperkte set met actor-relaties
 
 RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit toepassingsprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`.
 
@@ -49,10 +49,25 @@ Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 ## 5. Principes voor identifiers
 
-Identifiers kunnen aangeven dat een beschreven entiteit
+### Relaties voor gelijkwaardigheid of identiteit
+
+Identifiers geven aan dat een beschreven entiteit, gegeven een zeker perspectief, *identiek* is aan een andere entiteit. Er kan dan van '*identiteit*' gesproken worden. De gangbare manier om aan te geven dat twee verschillende IRIs naar identieke entiteiten verwijzen is door middel van de `owl:sameAs`-relatie. Dit vereist dus dat beide entiteiten een IRI hebben. 
+
+De semantiek van `owl:sameAs` is zeer streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Overweeg bij de keuze voor deze relatie of die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
+
+Als de concepten equivalent zijn in termen van betekenis en gebruik, maar misschien niet identiek in een strikte logische zin dan is `skos:exactMatch` een goede keuze. Als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar dan is `skos:closeMatch` een goede keuze.
+
+### Identifiers als benaming
+
+Niet alle entiteiten of concepten hebben een IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen niet naar een `rdfs:Literal` waarde verwijzen. In deze gevallen biedt RDA een oplossing.
+
+### Werken met RDA-identifiers
 
 
-## 6. Principes voor gebruik van datums en tijdspannes
+
+
+
+## 6. Uitgangspunten voor gebruik van datums en tijdspannes
 
 TODO
 
