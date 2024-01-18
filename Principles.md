@@ -84,12 +84,20 @@ Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:
 	
 	intern:ex4 rdax:P00018 "12345-78-9" . 
 
-Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit toepassingsprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet het volgende partroon worden gevolgd:
+Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit toepassingsprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet daarom het volgende partroon worden gevolgd waarbij via een Nomen-entiteit de benodigde informatie over de identifier verstrekt kan worden:
 
+	# dit voorbeeld geeft aan dat "12345-78-9" een barcode is:
 	intern:ex4 [
-		a rdac:C10012 ;		# dit is een Nomen
-		
+		a rdac:C10012 ;						# dit is een Nomen
+		rdan:P80068 "12345-78-9" ;			# "has nomen string" , de identifier
+		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
 	] .
+
+Omdat het weinig zinvolle administratieve acties vergt om een IRI toe te kennen aan de Nomen-entiteit is er hier gekozen om een zogenaamde `blank node`-entiteit te creëeren. 
+
+
+NB: Het streven is om te komen tot waardenlijsten voor de "scheme of Nomen" 
+
 
 
 ### Praktische overwegingen

@@ -1,6 +1,6 @@
 # RDA-Toepassingsprofiel Podiumkunst
 
-*Werk in uitvoering / [Podiumkunst.net](https://podiumkunst.net/) / 2024-01-16* 
+*Werk in uitvoering / [Podiumkunst.net](https://podiumkunst.net/) / 2024-01-18* 
 
 ## Inleiding
 RDA, [Resource Description and Access](http://www.rdaregistry.info), is een krachtige en rijke metadatastandaard. RDA biedt veel keuzemogelijkheden bij toepassing van de standaard. Om met RDA te kunnen werken is het nodig dat die keuzes al zo veel mogelijk gemaakt zijn. Zo'n invulling van een standaard is een **toepassingsprofiel**. 
