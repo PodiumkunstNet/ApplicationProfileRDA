@@ -1,9 +1,11 @@
 # De principes achter toepassingsprofiel RDA Podiumkunst
 
 ## 0. Gebruik linked data
-De standaard RDA kan in een traditionele recordsgebaseerde werkwijze ingezet worden. Dit toepassingsprofiel gaat uit van het werken met linked data (RDF) en linked data-principes.
+De standaard RDA kan in een traditionele recordsgebaseerde werkwijze ingezet worden. Dit toepassingsprofiel gaat uit van het werken met linked data (RDF) en linked data-principes. w
 
-Werken volgens linked data principes betekent onder andere dat relaties gelegd worden door middel van IRI's en niet met behulp van ingangen ("access points" in RDA) of andere identifiers.
+
+
+Werken volgens linked data principes betekent onder andere dat relaties tussen entiteiten gelegd worden door middel van IRI's en niet met behulp van ingangen ("access points" in RDA) of andere identifiers. 
 
 ## 1. Volg de officiële RDA standaard
 Dit toepassingsprofiel is gebaseerd op de officiële RDA standaard en de beschrijvingen van de klassen en elementen zoals te vinden op de [RDA Registry](http://www.rdaregistry.info/). De zogenaamde "deprecated" en "soft deprecated" elementen maken geen onderdeel uit van dit toepassingsprofiel. 
@@ -87,36 +89,51 @@ Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:
 Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit toepassingsprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet daarom het volgende partroon worden gevolgd waarbij via een Nomen-entiteit de benodigde informatie over de identifier verstrekt kan worden:
 
 	# dit voorbeeld geeft aan dat "12345-78-9" een barcode is:
-	intern:ex4 [
+	intern:ex4 rdax:P00018 [
 		a rdac:C10012 ;						# dit is een Nomen
 		rdan:P80068 "12345-78-9" ;			# "has nomen string" , de identifier
 		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
 	] .
 
-Omdat het weinig zinvolle administratieve acties vergt om een IRI toe te kennen aan de Nomen-entiteit is er hier gekozen om een zogenaamde `blank node`-entiteit te creëeren. 
-
+Het is niet nodig een IRI aan de nomen-entiteit toe te kennen, daarom is er hier gekozen om een zogenaamde `blank node`-entiteit te creëeren. 
 
 NB: Het streven is om te komen tot waardenlijsten voor de "scheme of Nomen" 
 
 
+#### Praktische overwegingen
 
-### Praktische overwegingen
+Bij het catalogiseren zal het door beperkingen van het gebruikte systeem niet altijd mogelijk of handig zijn om nomen-entiteiten toe te voegen. In dat geval zou er voor gekozen kunnen worden om de identifier van een voorloop te voorzien die aangeeft wat de aard van de identifier is.
 
-djjjd
+	ex:ent345 rdax:P00018 "ISBN: 978-3-16-148410-0" .
+
+Hanteer voor deze voorloopcodes een vaste waardenlijst zodat de data bij export eenvoudig naar de aanbevolen constructie vertaald kan worden.
 
 
 ## 6. Uitgangspunten voor gebruik van datums en tijdspannes
 
-TODO
+RDA biedt de mogelijkheid om een "timespan"-entiteit te definiëren (`rdac:C10010`). Binnen dit toepassingsprofiel is voorlopig het advies om daar beperkt gebruik van te maken. Voor 'gewone' datum zoals de datum van een uitvoering gebruiken we iso-geformatteerde datums, met toevoeging van de datatype-aanduiding,  zoals gangbaar in linked data. Laat het datatype weg, als de datum niet iso-geformatteerd is.
 
+	ex:ding1 rdam:P30007 "1969"^^xsd:gYear .                         # copyright date, as a year
+	ex:ding2 rdam:P30009 "1969-03-20"^^xsd:date .                    # publication date, as an iso date
+	ex:ding3 rdaw:P10219 "195X".                                     # date of work - onzeker
+
+
+Tijdspannes gebruiken we wanneer we zeer nadrukkelijk een periode willen beschrijven. Vaak is het handig om zo'n tijdspanne van een eigen IRI te voorzien omdat er doorgaans vaker naar verwezen zal moeten worden:
+
+	ex:thing_2 rdaw:P10317 ex:tijdspanne1 .                         # timespan of work
+	
+	ex:tijdspanne1 
+		a rdac:C10010 ;                                             # a timespan
+       rdat:P70017 "Theaterseizoen 1957-1958"@nl ;                # name of timespan
+       rdat:P70039 "1957-10-01"^^xsd:date ;                       # start date of timespan
+       rdat:P70040 "1958-07-01"^^xsd:date .                       # end date of timespan
+    
 
 ## Representatieve expressies
 
 ... TODO
 
-## Terminologie-bronnen
 
-... TODO
 
 ## Tot slot: openstaande vragen
 
