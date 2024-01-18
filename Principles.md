@@ -3,7 +3,7 @@
 ## 0. Gebruik linked data
 De standaard RDA kan in een traditionele recordsgebaseerde werkwijze ingezet worden. Dit toepassingsprofiel gaat uit van het werken met linked data (RDF) en linked data-principes.
 
-Werken volgens linked data principes betekent onder andere dat relaties gelegd worden door middel van IRIs en niet met behulp van ingangen ("access points" in RDA).
+Werken volgens linked data principes betekent onder andere dat relaties gelegd worden door middel van IRI's en niet met behulp van ingangen ("access points" in RDA) of andere identifiers.
 
 ## 1. Volg de officiële RDA standaard
 Dit toepassingsprofiel is gebaseerd op de officiële RDA standaard en de beschrijvingen van de klassen en elementen zoals te vinden op de [RDA Registry](http://www.rdaregistry.info/). De zogenaamde "deprecated" en "soft deprecated" elementen maken geen onderdeel uit van dit toepassingsprofiel. 
@@ -28,6 +28,7 @@ Om eventuele onduidelijkheden te voorkomen worden alle entiteiten van een explic
 
 	ex:ding a rdac:C10001 .   # ex:ding is een RDA-Work
 
+
 ## 3. Gebruik beperkte set met actor-relaties
 
 RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit toepassingsprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`.
@@ -49,9 +50,9 @@ Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 ## 5. Principes voor identifiers
 
-### Interne en externe identifiers
+### Achtergrond: interne en externe identifiers
 
-Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifieke entiteit te identificeren en te onderscheiden van andere entiteiten. Binnen linked data is het gangbaar en wenselijk dat vooral IRIs als identifier gebruikt worden.
+Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifieke entiteit te identificeren en te onderscheiden van andere entiteiten. Binnen linked data is het gangbaar en wenselijk dat vooral IRI's als identifier gebruikt worden.
 
 In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een enititeit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
 
@@ -78,15 +79,22 @@ Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogel
 
 ### Identifiers als label of literal
 
-Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:Literal` label en geen IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen dan niet gebruikt worden. RDA hier hier een oplossing in de vorm van de 
+Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:Literal`-label en geen IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen dan niet gebruikt worden. Om in deze gevallen gelijkheid van gelijkwaardigheid aan te duiden gebruiken we het RDA element `rdax:P00018` "has identifier for RDA entity". Dit kan eenvoudig op de volgende wijze gebruikt worden:
+
+	
+	intern:ex4 rdax:P00018 "12345-78-9" . 
+
+Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit toepassingsprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet het volgende partroon worden gevolgd:
+
+	intern:ex4 [
+		a rdac:C10012 ;		# dit is een Nomen
+		
+	] .
 
 
+### Praktische overwegingen
 
-
-### Werken met RDA-identifiers
-
-
-
+djjjd
 
 
 ## 6. Uitgangspunten voor gebruik van datums en tijdspannes
