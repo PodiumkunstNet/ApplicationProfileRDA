@@ -89,15 +89,16 @@ Hanteer voor deze voorloopcodes een vaste waardenlijst zodat de data bij export 
 
 RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit toepassingsprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`.
 
-Ter illustratie kent RDA het element `rdaw:P10561` ("has television director family") met als `rdfs:range` de klasse `rdac:C10008` ("family"). Aangezien `rdac:C10008` een subklasse is van `rdac:C10002` (actor / "agent") en er ook een element `rdaw:P10015` ("has television director agent") is, gebruiken we hier dat generiekere element. De lijst met te gebruiken RDA-elementen kan zo sterk beperkt worden, zonder af te doen aan de semantische zeggingskracht.
+Ter illustratie kent RDA het element `rdaw:P10561` ("*has television director family*") met als `rdfs:range` de klasse `rdac:C10008` ("*family*"). Aangezien `rdac:C10008` een subklasse is van `rdac:C10002` (actor / "*agent*") en er ook een element `rdaw:P10015` ("*has television director agent*") is, gebruiken we hier dat generiekere element. De lijst met te gebruiken RDA-elementen kan zo sterk beperkt worden, zonder af te doen aan de semantische zeggingskracht.
 
-Bemerk dat sommige actor-relaties in RDA niet op het niveau van `rdac:C10002` ("agent") gedefinieerd zijn, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. Gebruik hier de best passend relatie.
+Bemerk dat sommige actor-relaties in RDA niet op het niveau van `rdac:C10002` ("*agent*") gedefinieerd zijn, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. Gebruik hier de best passend relatie.
+
+Volgens deze logica wordt binnen dit toepassingsprofiel gekozen voor de gebruik van de generieke relaties `rdax:P00014` "*subject of*" en `rdax:P00018` "*has identifier*"
 
 
 ### Beschrijf representatieve expressies op werkniveau
 
 Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "... of representative expression" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. We willen voorkomen dat dataleveranciers elk naar eigen inzicht expressies als representatief gaan markeren of dat er “verkeerde” manifestaties of actoren aan gelinkt worden.
-
 
 
 
@@ -151,15 +152,21 @@ Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 Het gebruik van een goed gekozen `rdfs:label` per entiteit helpt de gebruiker om makkelijker de aard van het ding te begrijpen. Bemerk dat dikwijls de waarde van een RDA-ingang (een "access point"- die we dit profiel niet als zodanig gebruiken) vaak een prima keuze is voor het `rdfs:label`. Een `rdfs:label` zou ook gautomatiseerd samengesteld kunnen worden, bijvoorbeeld bij de export naar RDF uit het catalogiseersysteem. 
 
-### Vermijdt `rdfs:List`
+	ex:bladmuziek1 rdfs:label "Andriessen, Hendrik. Quartetto in stile antico. Muzieknotatie"@nl .
 
+### Vermijd `rdfs:List`
+
+In een beschrijving in RDF heeft de volgorde waarin elementen opgenomen staan geen betekenis. Een generiek toepasbare manier om volgorde aan te duiden is het gebruik van de `rdfs:List`-constructie. Gebruik leidt echter tot complexe, lastig te interpreteren structuren. De voorkeur is dus om `rdfs:List` zo veel mogelijk te vermijden. Zo biedt RDA bijvoorbeeld het element `rdaw:P10012`
+"*has numbering of part*" om voor een deelwerk aan te geven op welke positie het deel uitmaakt van een hoofdwerk.
 
 
 ## 5. Tot slot: enige openstaande vragen
 
+Dit toepassingsprofiel is werk in uitvoering. Belangrijk aandachtspunten voor de doorontwikkeling om te komen tot één verbonden linked data-graaf voor de podiumkunsten zijn:
+
 ### Een volledige en op RDA-gebaseerde ontologie voor de podiumkunsten
 
-In de huidige vorm, als een op linked data-gebaseerde standaard en toegepast binnen RDF, is de wereldwijd de ervaring met RDA nog beperkt. RDA wordt vooral gebruikt binnen de wereld van bibliotheken. Daar begint nu uit te kristalliseren hoe het bibliografische domein beschouwd kan worden vanuit IFLA-LRM (het conceptueel model achter RDA) en RDA. Binnen het domein van de podiumkunsten is nog niet uitgekristalliseerd hoe alle te te beschrijven zaken in entiteiten volgens LRM of RDA uitgedrukt kunnen worden. Bijvoorbeeld, hoe modelleren we een theaterproductie in RDA? Of hoe beschrijven we een requisiet uit een museumcollectie? Wanneer is een werk eem werk?
+In de huidige vorm, als een op linked data-gebaseerde standaard en toegepast binnen RDF, is de wereldwijd de ervaring met RDA nog beperkt. RDA wordt vooral gebruikt binnen de wereld van bibliotheken. Daar begint nu uit te kristalliseren hoe het bibliografische domein beschouwd kan worden vanuit IFLA-LRM (het conceptueel model achter RDA) en RDA. Binnen het domein van de podiumkunsten is nog niet uitgekristalliseerd hoe alle te te beschrijven zaken in entiteiten volgens LRM of RDA uitgedrukt kunnen worden. Bijvoorbeeld, hoe modelleren we een theaterproductie in RDA? Of hoe beschrijven we een requisiet uit een museumcollectie? Wanneer is een werk eem werk? Beschrijven we een deel van een symfonie ook als een werk, met een eigen IRI? Kunnen een zakpartituur en een studiepartituur tot de zelfde expressie behoren?
 
 Dit toepassingsprofiel is in deze vorm vooral een eerste aanzet te komen tot een wijze van beschrijven van het domein van de podiumkunsten. Zie ook [aanzet voor de nog uit te werken sjablonen](rdf/templates)
 

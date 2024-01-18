@@ -1,6 +1,6 @@
 # RDA-Toepassingsprofiel Podiumkunst
 
-*Werk in uitvoering / [Podiumkunst.net](https://podiumkunst.net/) / 2024-01-18* 
+*Werk in uitvoering / Concept 1 / [Podiumkunst.net](https://podiumkunst.net/) / 2024-01-18* 
 
 ## Inleiding
 RDA, [Resource Description and Access](http://www.rdaregistry.info), is een krachtige en rijke metadatastandaard. RDA biedt veel keuzemogelijkheden bij toepassing van de standaard. Om met RDA te kunnen werken is het nodig dat die keuzes al zo veel mogelijk gemaakt zijn. Zo'n invulling van een standaard is een **toepassingsprofiel**. 
@@ -16,7 +16,7 @@ Thomas op de Could ([Muziekweb](https://muziekweb.nl/)), Mirmjam Verloop ([Podiu
 
 
 ## Gehanteerde principes
-Een toepassingprofiel biedt een weloverwogen inperking of verfijning van een bestaande standaard. De principes achter dit profiel gericht op de toepassing van de RDA-standaard binnen het domein van de podiumkunsten worden [hier beschreven](Principles.md).
+Een toepassingprofiel biedt een weloverwogen inperking of verfijning van een bestaande standaard. Principes achter dit profiel gericht op de toepassing van de RDA-standaard binnen het domein van de podiumkunsten worden [hier beschreven](Principles.md).
 
 ## Toepassingsprofiel als spreadsheet
 De bouwstenen voor het gebruik van RDA zijn de **entiteiten** (zoals werk, expressie, manifestatie en item) en de **elementen** die *eigenschappen* of *relaties* vertegenwoordigen. Als basis voor dit toepassingsprofiel is daarom eerst, op basis van de [principes](Principles.md), bepaald welke elementen toe te passen en welke juist niet. Dit is uitgewerkt in een [spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
@@ -35,7 +35,7 @@ In aanvulling op de voorbeeldbeschrijvingen biedt dit profiel ook enige code-fra
 
 Zie [code-fragmenten](rdf/snippets).
 
-## Sjablonen
+## Aanzet tot sjablonen
 Een streven is om te komen tot een beperkt aantal basisjablonen die gebruikt kunnen worden als kader bij het beschrijven van de verschillende soorten entiteiten die relevant zijn in de wereld van de podiumkunst.
 
 Zie [aanzet voor de nog uit te werken sjablonen](rdf/templates).
