@@ -78,17 +78,6 @@ Het is niet nodig een IRI aan de nomen-entiteit toe te kennen, daarom is er hier
 
 NB: Het streven is om te komen tot vaste waardenlijsten voor de "*scheme of Nomen*." 
 
-
-#### Praktische overwegingen
-
-Bij het catalogiseren zal het door beperkingen van het gebruikte systeem niet altijd mogelijk of handig zijn om nomen-entiteiten toe te voegen. In dat geval zou er voor gekozen kunnen worden om de identifier van een voorloop te voorzien die aangeeft wat de aard van de identifier is.
-
-	ex:ent345 rdax:P00018 "ISBN: 978-3-16-148410-0" .
-
-Hanteer voor deze voorloopcodes een vaste waardenlijst zodat de data bij export eenvoudig naar de aanbevolen constructie vertaald kan worden.
-
-
-
 ## 3. Keuzes ten aanzien van de toepassing van RDA
 
 ### Beperk de set met relaties
