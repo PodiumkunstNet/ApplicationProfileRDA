@@ -148,7 +148,7 @@ Relatie-elementen binnen RDA kennen vaak ook een element dat de inverse relatie 
 
 Bemerk dat sommige relaties zichzelf als inverse hebben.
 
-### Biedt een `rdfs:label`
+### Bied een `rdfs:label`
 
 Het gebruik van een goed gekozen `rdfs:label` per entiteit helpt de gebruiker om makkelijker de aard van het ding te begrijpen. Bemerk dat dikwijls de waarde van een RDA-ingang (een "access point"- die we dit profiel niet als zodanig gebruiken) vaak een prima keuze is voor het `rdfs:label`. Een `rdfs:label` zou ook gautomatiseerd samengesteld kunnen worden, bijvoorbeeld bij de export naar RDF uit het catalogiseersysteem. 
 
