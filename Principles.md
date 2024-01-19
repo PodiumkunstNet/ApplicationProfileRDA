@@ -162,7 +162,7 @@ In de huidige vorm, als een op linked data-gebaseerde standaard en toegepast bin
 
 Dit toepassingsprofiel is in deze vorm vooral een eerste aanzet te komen tot een wijze van beschrijven van het domein van de podiumkunsten. Zie ook [aanzet voor de nog uit te werken sjablonen](rdf/templates)
 
-### Terminologiebrionnen en waardenlijsten
+### Terminologiebronnen en waardenlijsten
 
 Om linked data met elkaar te kunnen delen, en zo tot een gedeelde linked data-graaf te komen, is het ook belangrijk om een gedeelde terminologie en gedeelde waardenlijsten of thesauri te gebruiken. Dit is werk in uitvoering.
 
