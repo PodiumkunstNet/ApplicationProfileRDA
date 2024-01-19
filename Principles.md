@@ -16,9 +16,9 @@ Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillend
 * **Coherente beschrijving**:  biedt voldoende informatie om de bron te beschrijven binnen de context van de collectie en gebruikers in staat te stellen te beoordelen of de bron relevant is voor hun behoeften. Omvat onder andere relaties tussen de WEMI-entititeiten ('Work', 'Expression', 'Manifestation' en 'Item').
 * **Effectieve beschrijving**: stelt gebruikers in staat om een diepgaand begrip van de bron te krijgen en hoe deze zich verhoudt tot andere bronnen.
 
-### Gebruik van aanvullende vocabulaires
+### Gebruik van aanvullende linked data-standaarden
 
-Dit RDA-toepassingsprofiel sluit gebruik van andere aanvullende vocabulaires niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
+Dit RDA-toepassingsprofiel sluit gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
 
 Het is niet strijdig met de principes van dit toepassingsprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA toepassingsprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
