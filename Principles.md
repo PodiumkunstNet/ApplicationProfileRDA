@@ -94,7 +94,15 @@ Volgens deze logica wordt binnen dit toepassingsprofiel gekozen voor de gebruik 
 
 Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "... of representative expression" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. We willen voorkomen dat dataleveranciers elk naar eigen inzicht expressies als representatief gaan markeren of dat er “verkeerde” manifestaties of actoren aan gelinkt worden.
 
+### Verwijs van specifiek naar generiek
 
+Relatie-elementen binnen RDA kennen vaak ook een element dat de inverse relatie aanduidt. Hoewel het semantisch geen verschil maakt of de relatie van `A` naar `B` of de inverse relatie van `B` naar `A` toegepast wordt, kiezen we binnen dit toepassingsprofiel om prakische redenen  bijvoorkeur voor de volgende aanpak:
+
+* Relaties tussen WEMI ("work", "expression", "manifestation" en "item")-entiteiten en de actor altijd **vanuit WEMI-entiteit** leggen.
+* Primaire WEMI-relaties leggen we “van onder naar boven”, dus **van concreter niveau naar abstracter niveau**. D.w.z. een item linken we aan manifestatie, manifestatie aan expressie en expressie aan werk.
+*  Werk-naar-werk-relaties leggen we “**van onder naar boven**” wanneer er sprake is van een hiërarchie. Van “**later werk naar eerder werk”** .
+
+Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 ## 4. Vormprincipes
 
@@ -131,16 +139,6 @@ Tijdspannes gebruiken we wanneer we zeer nadrukkelijk een periode willen beschri
        rdat:P70039 "1957-10-01"^^xsd:date ;                       # start date of timespan
        rdat:P70040 "1958-07-01"^^xsd:date .                       # end date of timespan
     
-
-### Verwijs van specifiek naar generiek
-
-Relatie-elementen binnen RDA kennen vaak ook een element dat de inverse relatie aanduidt. Hoewel het semantisch geen verschil maakt of de relatie van `A` naar `B` of de inverse relatie van `B` naar `A` toegepast wordt, kiezen we binnen dit toepassingsprofiel om prakische redenen  bijvoorkeur voor de volgende aanpak:
-
-* Relaties tussen WEMI ("work", "expression", "manifestation" en "item")-entiteiten en de actor altijd **vanuit WEMI-entiteit** leggen.
-* Primaire WEMI-relaties leggen we “van onder naar boven”, dus **van concreter niveau naar abstracter niveau**. D.w.z. een item linken we aan manifestatie, manifestatie aan expressie en expressie aan werk.
-*  Werk-naar-werk-relaties leggen we “**van onder naar boven**” wanneer er sprake is van een hiërarchie. Van “**later werk naar eerder werk”** .
-
-Bemerk dat sommige relaties zichzelf als inverse hebben.
 
 ### Bied een `rdfs:label`
 
