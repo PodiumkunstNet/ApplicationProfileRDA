@@ -32,6 +32,9 @@ Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifi
 
 In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een enititeit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
 
+TODO: over registratiemethode en IRI in RDA geen identifiers
+
+
 ### Relaties voor gelijkheid of gelijkwaardigheid
 
 Er zijn verschillende manieren om aan te geven dat de beschreven enititeit gelijk of gelijkwaardig is aan een enititeit die aangeduid wordt met een externe identifier.  
