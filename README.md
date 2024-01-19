@@ -12,7 +12,7 @@ Door in een domein als dat van de podiumkunsten met een gedeeld toepassingsprofi
 Dit RDA-toepassingsprofiel voor de podiumkunsten is een initiatief van [Podiumkunst.net](https://podiumkunst.net/). Het is werk-in-uitvoering, een levend document. Het toepassingsprofiel doet in deze vorm *geen uitspraken* over de te kiezen terminologiebronnen voor waardenlijsten of thesauri. Een advies over gezamenlijk te hanteren terminologiebronnen is in voorbereiding.
 
 Aan dit profiel hebben meegewerkt: *Sylvia Alting van Geusau ([Amsterdamse Hogeschool voor de Kunsten](https://ahk.nl/)), Eric van Balkum ([Muziekschatten](https://www.muziekschatten.nl/)), Remco de Boer([ArchiXL](https://archixl.nl))
-Thomas op de Could ([Muziekweb](https://muziekweb.nl/)), Mirmjam Verloop ([Podiumkunst.net](https://podiumkunst.net/)), René Voorburg ([Podiumkunst.net](https://podiumkunst.net/)), Meta van de Waal-Gentenaar ([KB | Nationale Bibliotheek](https://kb.nl/)) en Lian Wintermans.*
+Thomas op de Could ([Muziekweb](https://muziekweb.nl/)), Mirmjam Verloop ([Podiumkunst.net](https://podiumkunst.net/)), René Voorburg ([Podiumkunst.net](https://podiumkunst.net/)), Meta van de Waal-Gentenaar ([KB | Nationale Bibliotheek](https://kb.nl/)) en Lian Wintermans (zelfstandig muziek- en informatiespecialist, voorzitter [RDA-Commissie]([url](https://rdacommissie.home.blog/)).*
 
 
 ## Gehanteerde principes
