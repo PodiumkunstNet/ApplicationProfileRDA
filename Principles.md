@@ -93,8 +93,7 @@ Ter illustratie kent RDA het element `rdaw:P10561` ("*has television director fa
 
 Bemerk dat sommige actor-relaties in RDA niet op het niveau van `rdac:C10002` ("*agent*") gedefinieerd zijn, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. Gebruik hier de best passend relatie.
 
-Volgens deze logica wordt binnen dit toepassingsprofiel gekozen voor de gebruik van de generieke relaties `rdax:P00014` "*subject of*" en `rdax:P00018` "*has identifier*"
-
+Volgens deze logica wordt binnen dit toepassingsprofiel gekozen voor de gebruik van de generieke relaties `rdax:P00014` "*subject of*" en `rdax:P00018`.
 
 ### Beschrijf representatieve expressies op werkniveau
 
