@@ -22,6 +22,7 @@ Dit RDA-toepassingsprofiel sluit gebruik van andere aanvullende linked data-stan
 
 Het is niet strijdig met de principes van dit toepassingsprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA toepassingsprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
+TODO: geldt ook voor waardenlijsten!
 
 ## 2. Uitgangspunten ten aanzien van identifiers
 
