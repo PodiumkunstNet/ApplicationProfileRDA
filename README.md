@@ -27,20 +27,20 @@ Het spreadsheet geeft voor de belangrijkste RDA-entiteiten (werk, expressie, man
 
 Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende niveaus van beschrijving: de *minimale beschrijving*, de *coherente beschrijving* en de *effectieve beschrijving* (zie ook de [principes](Principles.md)).
 
-* [Download spreadsheet](RDA-AP_Podiumkunst-net.xlsx)
+* [Download het spreadsheet](RDA-AP_Podiumkunst-net.xlsx)
 
 ## Voorbeeldbeschrijvingen in RDA
 Naast het spreadsheet biedt dit applicatieprofiel voorbeelden en toelichtingen. Deze voorbeelden dienen zowel ter illustratie van het spreadsheet, als ook ter aanvulling. De voorbeelden zijn door de muziek- en theaterexperts uit de werkgroep aangedragen. Ze laten zien hoe bepaalde materialen maximaal verbonden en beschreven kunnen worden volgens RDA. In een later stadium zullen varianten op de voorbeelden toegevoegd worden die illustreren hoe minder gedetailleerd ontsloten collecties beschreven kunnen worden. 
 
-Zie [voorbeeldbestanden](rdf/examples).
+Zie de [voorbeeldbeschrijvingen](rdf/examples).
 
 ## Code-fragmenten
 In aanvulling op de voorbeeldbeschrijvingen biedt dit applicatieprofiel ook enige code-fragmenten. Dit zijn kleine, praktische stukjes RDF, om te helpen bij het zelf opbouwen van een beschrijving in RDA in lijn met dit profiel. Ze zijn nadrukkelijk *niet* bedoeld voor bijvoorbeeld catalogiseerders, wel voor degenen die een catalogiseervoorziening of ETL-proces inrichten.
 
-Zie [code-fragmenten](rdf/snippets).
+Zie de [code-fragmenten](rdf/snippets).
 
 ## Aanzet tot sjablonen
 We streven ernaar te komen tot een aantal basis-sjablonen die gebruikt kunnen worden als kader bij het beschrijven van de verschillende soorten entiteiten die relevant zijn in de wereld van de podiumkunst.
 
-Zie [aanzet voor de nog uit te werken sjablonen](rdf/templates).
+Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates).
 
