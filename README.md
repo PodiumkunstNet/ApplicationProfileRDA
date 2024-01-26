@@ -13,7 +13,7 @@ Door in het domein van de podiumkunsten met een gedeeld applicatieprofiel te wer
 
 Dit RDA-applicatieprofiel voor de podiumkunsten is een initiatief van [Podiumkunst.net](https://podiumkunst.net/). Het is werk-in-uitvoering, een levend document. Het applicatieprofiel doet in deze vorm *(vrijwel) geen uitspraken* over de te kiezen terminologiebronnen voor waardenlijsten of thesauri. Een advies over gezamenlijk te hanteren terminologiebronnen is in voorbereiding.
 
-Linked data- en semantischweb-representaties van de entiteiten, elementen en waardelijsten in RDA zijn beschikbaar via de [RDA Registry](http://www.rdaregistry.info/), de volledige tekst met alle richtlijnen en instructies is beschikbaar via de [RDA Toolkit](https://www.rdatoolkit.org/).
+Linked data- en semantischweb-representaties van de entiteiten, elementen en waardenlijsten in RDA zijn beschikbaar via de [RDA Registry](http://www.rdaregistry.info/), de volledige tekst met alle richtlijnen en instructies is beschikbaar via de [RDA Toolkit](https://www.rdatoolkit.org/).
 
 Aan dit applicatieprofiel hebben meegewerkt: *Sylvia Alting van Geusau ([Amsterdamse Hogeschool voor de Kunsten](https://ahk.nl/)), Eric van Balkum ([Muziekschatten](https://www.muziekschatten.nl/)), Sita Bhagwandin, ([Koninklijke Bibliothee](https://kb.nl/)), Remco de Boer([ArchiXL](https://archixl.nl)), Thomas op de Coul ([Muziekweb](https://muziekweb.nl/)), Mirjam Verloop ([Podiumkunst.net](https://podiumkunst.net/)), René Voorburg ([Podiumkunst.net](https://podiumkunst.net/)), Meta van der Waal-Gentenaar ([Koninklijke Bibliothee](https://kb.nl/)) en Lian Wintermans (zelfstandig muziek- en informatiespecialist, voorzitter [RDA-Commissie](https://rdacommissie.home.blog/)).*
 
@@ -27,7 +27,7 @@ Het spreadsheet geeft voor de belangrijkste RDA-entiteiten (werk, expressie, man
 
 Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende niveaus van beschrijving: de *minimale beschrijving*, de *coherente beschrijving* en de *effectieve beschrijving* (zie ook de [principes](Principles.md)).
 
-* [Download spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
+* [Download spreadsheet](RDA-AP_Podiumkunst-net.xlsx)
 
 ## Voorbeeldbeschrijvingen in RDA
 Naast het spreadsheet biedt dit applicatieprofiel voorbeelden en toelichtingen. Deze voorbeelden dienen zowel ter illustratie van het spreadsheet, als ook ter aanvulling. De voorbeelden zijn door de muziek- en theaterexperts uit de werkgroep aangedragen. Ze laten zien hoe bepaalde materialen maximaal verbonden en beschreven kunnen worden volgens RDA. In een later stadium zullen varianten op de voorbeelden toegevoegd worden die illustreren hoe minder gedetailleerd ontsloten collecties beschreven kunnen worden. 
