@@ -3,7 +3,7 @@
 *Werk in uitvoering / Concept 1 / [Podiumkunst.net](https://podiumkunst.net/) / 2024-01-18* 
 
 ## Inleiding
-RDA, _Resource Description and Access_, is een pakket van data-elementen, richtlijnen en instructies voor het maken van metadata voor bibliotheken en erfgoedinstellingen, die voldoen aan internationale modellen voor gebruikersgerichte linked data-applicaties. RDA biedt veel keuzemogelijkheden bij de toepassing van de standaard. Om in de praktijk met RDA te kunnen werken is het van belang die keuzes te maken en vast te leggen in een zogeheten **applicatieprofiel**.
+RDA, _Resource Description and Access_, is een pakket van data-elementen, richtlijnen en instructies voor het maken van metadata voor bibliotheken en erfgoedinstellingen, die voldoen aan internationale modellen voor gebruikersgerichte linked data-applicaties. De RDA-standaard biedt veel keuzemogelijkheden bij de toepassing ervan. Om in de praktijk met RDA te kunnen werken is het van belang die keuzes te maken en vast te leggen in een zogeheten **applicatieprofiel**.
 
 Het applicatieprofiel geeft aan welke entiteiten gebruikt worden (en welke niet), welke elementen verplicht of optioneel zijn (of juist niet gebruikt worden), welke registratiemethoden toegestaan (of verplicht) zijn, welke terminologiebronnen bij welke elementen gebruikt moeten worden, etc.
 
