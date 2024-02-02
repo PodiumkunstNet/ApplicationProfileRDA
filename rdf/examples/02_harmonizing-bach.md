@@ -24,7 +24,9 @@ Verder laat dit voorbeeld zien dat actoren heel verschillende relaties met de re
 
 NB deze visualisatie geeft dus niet alle entiteiten uit de RDF-uitwerking weer. Evenmin zijn alle eigenschappen van de afgebeelde entiteiten weergegeven.
 
-Ook is het goed je te realiseren dat niet altijd alle resource entitites aanwezig hoeven zijn. Dit is in diverse voorbeelden terug te zien. Het is in dit applicatieprofiel van belang de richting van de relaties in de gaten te houden. Wie een item identificeert moet ook een relatie met een manifestatie leggen, wie een manifestatie identificeert moet ook een relatie met een expressie leggen en wie een expressie identificeert moet ook een relatie met een werk leggen. Het identificeren van een werk betekent echter niet dat er ook een relatie met een expressie moet zijn, het identificeren van een expressie betekent niet dat er ook een relatie met een manifestatie moet zijn, etc.
+Ook is het goed je te realiseren dat niet altijd alle resource entitites (werk, expressie, manifestatie, item) aanwezig hoeven zijn. Dit is in een aantal andere voorbeelden terug te zien.
+
+Het is in dit applicatieprofiel van belang om bij een _coherente beschrijving_ van de resource de richting van de relaties in de gaten te houden. Wie een item identificeert moet ook een relatie met een manifestatie leggen, wie een manifestatie identificeert moet ook een relatie met een expressie leggen en wie een expressie identificeert moet ook een relatie met een werk leggen. Het identificeren van een werk betekent echter niet dat er ook een relatie met een expressie moet zijn, het identificeren van een expressie betekent niet dat er ook een relatie met een manifestatie moet zijn, etc.
 
 
 ## Representatie in RDA-RDF
