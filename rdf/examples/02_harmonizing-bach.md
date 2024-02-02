@@ -6,7 +6,7 @@ Bestand: [02_harmonizing-bach.ttl](02_harmonizing-bach.ttl)
 
 _Harmonizing 'Bach' chorales_ is een beknopt boekje voor muziekstudenten, dat veel gebruikt is als lesboek bij het vak harmonieleer. Het stamt uit 1967 en is diverse keren heruitgegeven, soms in combinatie met _Bach's instrumental counterpoint_ van dezelfde auteur. In dit voorbeeld is uitgegaan van de zadelsteekbanduitgave uit 1987 in het bezit van één van de werkgroepleden.
 
-Het voorbeeld [_Review of Malvolm Boyd on Bach chorales_](https://github.com/renevoorburg/ApplicationProfileRDA/blob/main/rdf/examples/05_review-harmonizing-bach.md) is een recensie van dit werk.
+Het voorbeeld [_Review of Malcolm Boyd on Bach chorales_](https://github.com/renevoorburg/ApplicationProfileRDA/blob/main/rdf/examples/05_review-harmonizing-bach.md) is een recensie van dit werk.
 
 ## Entiteitenstructuur
 
