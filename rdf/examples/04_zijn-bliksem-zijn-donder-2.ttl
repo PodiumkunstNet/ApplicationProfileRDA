@@ -25,7 +25,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
-# M.v.Amerongen: Zijn bliksem, zijn donder (werk als onderwerp); er bestaat ook een herziene druk (= nieuwe expressie?), vergelijk https://webggc.oclc.org/cbs/DB=2.37/XMLPRS=Y/PPN?PPN=181028689
+# M.v.Amerongen: Zijn bliksem, zijn donder (werk als onderwerp); er bestaat ook een herziene druk (= nieuwe expressie), vergelijk https://webggc.oclc.org/cbs/DB=2.37/XMLPRS=Y/PPN?PPN=181028689
 # Exemplaar in KB-depot (https://webggc.oclc.org/cbs/DB=2.37/XMLPRS=Y/PPN?PPN=155775316), eigen exemplaar is 4e druk
 # Nog te doen: beschrijving van muziekwerk Mattheuspassie
 
