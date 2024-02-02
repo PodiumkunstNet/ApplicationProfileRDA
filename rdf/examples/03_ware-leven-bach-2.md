@@ -12,7 +12,7 @@ De primaire relaties gaan in dit voorbeeld van item **ex:i6** naar manifestatie 
 
 Uiteraard bestaat er ook tenminste één manifestatie die de oorspronkelijke Duitse tekst verwezenlijkt. Die hebben we bij de uitwerking buiten beschouwing gelaten, omdat we daar op basis van het colofon maar heel weinig over weten ("Uitgave: Piper Verlag GmbH, München").
 
-In dit voorbeeld zien we, naast de relaties tussen werk en actor die ook in [_Harmonizing 'Bach' chorales_](02_harmonizing-bach.md) voorkomen, een maker-relatie tussen een expressie en een actor. Hans Driessen (**ex:a24**) is de vertaler van de Nederlandse tekst.
+In dit voorbeeld zien we, naast de relaties tussen werk en actor die ook in [_Harmonizing 'Bach' chorales_](02_harmonizing-bach.md) voorkomen, een maker-relatie tussen een expressie en een actor. Hans Driessen (**ex:a24**) heeft de Nederlandse vertaling gemaakt.
 
 ![Visualisatie Structuur](../../assets/03_ware-leven-bach_rda-rdf_visualisaties.png)
 
