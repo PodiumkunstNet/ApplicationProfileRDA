@@ -10,7 +10,7 @@ _Het ware leven van Johann Sebastian Bach_ verscheen oorspronkelijk in het Duits
 
 De primaire relaties gaan in dit voorbeeld van item **ex:i6** naar manifestatie **ex:m3** naar expressie **ex:e15** naar werk **ex:w15**. We weten dat er tenminste één andere expressie is die hetzelfde werk realiseert: de oorspronkelijke Duitse tekst (**ex:e16**). De twee expressies hebben ook een onderlinge relatie: de ene (**ex:e15**) is een vertaling van de andere (**ex:e16**). Deze relatie (**rdae:P20141**) maken we expliciet, omdat hij niet vanzelfsprekend volgt uit het feit dat beide expressies hetzelfde werk realiseren.
 
-Uiteraard bestaat er ook tenminste één manifestatie die de oorspronkelijke Duitse tekst verwezenlijkt. Die hebben we bij de uitwerking buiten beschouwing gelaten, omdat we daar op basis van het colofon maar heel weinig over weten ("Uitgave: Piper Verlag GmbHunchen").
+Uiteraard bestaat er ook tenminste één manifestatie die de oorspronkelijke Duitse tekst verwezenlijkt. Die hebben we bij de uitwerking buiten beschouwing gelaten, omdat we daar op basis van het colofon maar heel weinig over weten ("Uitgave: Piper Verlag GmbH, München").
 
 In dit voorbeeld zien we, naast de relaties tussen werk en actor die ook in [_Harmonizing 'Bach' chorales_](02_harmonizing-bach.md) voorkomen, een maker-relatie tussen een expressie en een actor. Hans Driessen (**ex:a24**) is de vertaler van de Nederlandse tekst.
 
