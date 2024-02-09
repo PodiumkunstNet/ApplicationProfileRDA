@@ -62,6 +62,6 @@ pkw:76051d1e4fa87857b28341838fd911e3
     rdfs:label "Andriessen, Hendrik.  Quartetto in stile antico" ;
     rdaw:P10004 rdaterm:1118 ,                                                  # category of work "musical work"
         <https://data.muziekschatten.nl/som/d78168> ;                           #   "Westerse kunstmuziek"
-    rdaw:P10053 <https://data.muziekschatten.nl/som/74d73a822efbc6b764db0169a7f656a4> ;
+    rdaw:P10053 <https://data.muziekschatten.nl/som/74d73a822efbc6b764db0169a7f656a4> ; # composer agent "Hendrik Andriessen"
     rdaw:P10219 "1957"^^xsd:date ;                                              # date of work
     rdaw:P10223 "Quartetto in stile antico" .                                   # preferred title of work
