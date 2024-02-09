@@ -134,7 +134,7 @@ Tijdspannes gebruiken we wanneer we zeer nadrukkelijk een periode willen beschri
 	ex:thing_2 rdaw:P10317 ex:tijdspanne1 .                         # timespan of work
 	
 	ex:tijdspanne1 
-		a rdac:C10010 ;                                             # a timespan
+        a rdac:C10010 ;                                             # a timespan
        rdat:P70017 "Theaterseizoen 1957-1958"@nl ;                  # name of timespan
        rdat:P70039 "1957-10-01"^^xsd:date ;                         # start date of timespan
        rdat:P70040 "1958-07-01"^^xsd:date .                         # end date of timespan
