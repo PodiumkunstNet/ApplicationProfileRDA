@@ -1,0 +1,344 @@
+@prefix ex: <http://example.com/pknet/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdami: <http://rdvocab.info/termList/ModeIssue/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaut: <http://rdaregistry.info/termList/RDAUnitOfTime/> .
+@prefix rdafnm: <http://rdaregistry.info/termList/MusNotation/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Gebaseerd op https://docs.google.com/spreadsheets/d/1rWm7vf92XM1nAxl9lMCRH3WvuKTwXpAVIRJV95V6e84/
+# Zie ook visualisatie in https://docs.google.com/document/d/1OjKesUfZv8WqESjgj7gExFCoSjQLQ3W9JQRweqkxFww/edit#heading=h.norqscazavrk
+# Theaterkrant en Productie nog even buiten beschouwing gelaten in deze uitwerking
+
+
+# ITEMS
+
+ex:i50 # Item no. 50
+	a rdac:C10003 ;
+    rdfs:label "Zeemaal: exemplaar Academie voor Theater en Dans" ;
+	rdai:P40001 ex:n... ; # has identifier for item: barcode
+	rdai:P40081 "naam" @nl ; # has appellation of item [niet nodig wanneer er een identifier is]
+	rdai:P40018 ex:a... ; # has current owner: [eigenaar]
+	rdai:P40162 ex:p... ; # has location of item: call number
+	rdai:P40162 ex:p... ; # has location of item: shelf mark
+	rdai:P40050 "annotatie over de acquisitie" @nl ; # has immediate source of acquisition of item
+	rdai:P40028 "annotatie over het item" @nl ; # has note on item
+	rdai:P40049 ex:m... . # has manifestation exemplified
+
+
+# MANIFESTATIONS
+
+ex:m50 # Manifestatie no. 50
+	a rdac:C10007 ;
+    rdfs:label "Zeemaal: uitgave Nieuwe Toneelbibliotheek, 2023" ;
+    rdam:P30335 rdaterm:1125 ; # has category of manifestation: aggregate
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30003 rdami:1005 ; # has mode of issuance: multiple unit
+    rdam:P30002 rdamt:1007 ; # has media type: unmediated
+    rdam:P30002 rdamt:1003 ; # has media type: computer
+    rdam:P30001 rdact:1049 ; # has carrier type: volume
+    rdam:P30001 rdact:1018 ; # has carrier type: online resource
+    rdam:P30187 rdapm:1010 ; # has production method: printing
+    rdam:P30004 ex:n... ; # has identifier for manifestation [ISBN]
+    rdam:P30160 "voorwaarde voor verkrijgbaarheid" @nl ; # has term of availability (includes a price of a manifestation)
+    rdam:P30156 "hoofdtitel" @nl ; # has title proper for manifestation
+    rdam:P30131 "verkortetitel" @nl ; # has abbreviated title (for indexing and/or identification)
+    rdam:P30142 "ondertitel" @nl ; # has other title information
+    rdam:P30117 "verantwoordelijkheidsvermelding" @nl ; # has statement of responsibility
+    rdam:P30128 "varianttitel" @nl ; # has variant title of manifestation
+    rdam:P30011 "YYYY" ^^xsd:gYear ; # has date of publication: [date]
+    rdam:P30007 "YYYY" ^^xsd:gYear ; # has copyright date: [date]
+    rdam:P30083 ex:a... ; # has publisher agent: [uitgever]
+    rdam:P30088 ex:p... ; # has place of publication: [plaats]
+    rdam:P30082 ex:a... ; # has manufacturer agent: [drukker]
+    rdam:P30087 ex:p... ; # has place of manufacture: [plaats]
+    rdam:P30080 ex:a... ; # has distributor agent: [distributeur]
+    rdam:P30085 ex:p... ; # has place of distribution: [plaats]
+    rdam:P30182 "... pagina's" @nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
+    rdam:P30453 "Illustraties" @nl ; # has illustrative content
+    rdam:P30456 rdacc:1002 ;  # has colour content: monochrome
+    rdam:P30456 rdacc:1003 ;  # has colour content: polychrome
+    rdam:P30169 "... cm" ; # has dimensions
+    rdam:P30309 rdatb:1001 ; # has type of binding: perfect binding = gelijmde paperback
+    rdam:P30309 rdatb:1002 ; # has type of binding: case binding = hardcover/gebonden
+    rdam:P30309 rdatb:1007 ; # has type of binding: saddle stitch binding = geniet
+    rdam:P30133 "editieaanduiding" @nl ; # has designation of edition
+    rdam:P30154 "URL" ; # has uniform resource locator
+    rdam:P30137 "annotatie over de manifestatie" @nl ; # has note on manifestation
+    rdam:P30137 "Contents: ..." @en; # has note on manifestation
+    rdam:P30139 ex:e... . # has expression manifested: expression no. ...
+
+ex:m51 # Manifestatie no. 51
+	a rdac:C10007 ;
+    rdfs:label "Recensie Zeemaal: online publicatie, 18 juli 2022" ;
+    rdam:P30335 rdaterm:1125 ; # has category of manifestation: aggregate
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30003 rdami:1005 ; # has mode of issuance: multiple unit
+    rdam:P30002 rdamt:1007 ; # has media type: unmediated
+    rdam:P30002 rdamt:1003 ; # has media type: computer
+    rdam:P30001 rdact:1049 ; # has carrier type: volume
+    rdam:P30001 rdact:1018 ; # has carrier type: online resource
+    rdam:P30187 rdapm:1010 ; # has production method: printing
+    rdam:P30004 ex:n... ; # has identifier for manifestation [ISBN]
+    rdam:P30160 "voorwaarde voor verkrijgbaarheid" @nl ; # has term of availability (includes a price of a manifestation)
+    rdam:P30156 "hoofdtitel" @nl ; # has title proper for manifestation
+    rdam:P30131 "verkortetitel" @nl ; # has abbreviated title (for indexing and/or identification)
+    rdam:P30142 "ondertitel" @nl ; # has other title information
+    rdam:P30117 "verantwoordelijkheidsvermelding" @nl ; # has statement of responsibility
+    rdam:P30128 "varianttitel" @nl ; # has variant title of manifestation
+    rdam:P30011 "YYYY" ^^xsd:gYear ; # has date of publication: [date]
+    rdam:P30007 "YYYY" ^^xsd:gYear ; # has copyright date: [date]
+    rdam:P30083 ex:a... ; # has publisher agent: [uitgever]
+    rdam:P30088 ex:p... ; # has place of publication: [plaats]
+    rdam:P30082 ex:a... ; # has manufacturer agent: [drukker]
+    rdam:P30087 ex:p... ; # has place of manufacture: [plaats]
+    rdam:P30080 ex:a... ; # has distributor agent: [distributeur]
+    rdam:P30085 ex:p... ; # has place of distribution: [plaats]
+    rdam:P30182 "... pagina's" @nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
+    rdam:P30453 "Illustraties" @nl ; # has illustrative content
+    rdam:P30456 rdacc:1002 ;  # has colour content: monochrome
+    rdam:P30456 rdacc:1003 ;  # has colour content: polychrome
+    rdam:P30169 "... cm" ; # has dimensions
+    rdam:P30309 rdatb:1001 ; # has type of binding: perfect binding = gelijmde paperback
+    rdam:P30309 rdatb:1002 ; # has type of binding: case binding = hardcover/gebonden
+    rdam:P30309 rdatb:1007 ; # has type of binding: saddle stitch binding = geniet
+    rdam:P30133 "editieaanduiding" @nl ; # has designation of edition
+    rdam:P30154 "URL" ; # has uniform resource locator
+    rdam:P30137 "annotatie over de manifestatie" @nl ; # has note on manifestation
+    rdam:P30137 "Contents: ..." @en; # has note on manifestation
+    rdam:P30139 ex:e... . # has expression manifested: expression no. ...
+
+
+# EXPRESSIONS
+
+ex:e50 # Expressie no. 50
+	a rdac:C10006 ;
+    rdfs:label "Zeemaal: Nederlandse tekst" ;
+    rdae:P20331	rdaterm:1126 ; # has category of expression: aggregating expression
+    rdae:P20319 ex:e... ; # aggregates: expression that is chosen as part of the plan of this aggregating expression
+    rdae:P20312 "titel" @nl ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of expression: English
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of expression: German
+    rdae:P20037 ex:a... ; # has translator agent: [vertaler]
+    rdae:P20141 ex:e... ; # is translation of: expressie no. ... (moet andere expressie van HETZELFDE werk zijn)
+    rdae:P20324	"uitvoeringsmediumIRI" ; # has medium of performance of choreographic [or non-musical dramatic] content
+    rdae:P20231 ex:w... . # has work expressed
+
+ex:e51 # Expressie no. 51
+	a rdac:C10006 ;
+    rdfs:label "Zeemaal: première-voorstelling, Antwerpen, 29 juni 2022" ;
+    rdae:P20331	rdaterm:1126 ; # has category of expression: aggregating expression
+    rdae:P20331	rdaterm:1153 ; # has category of expression: performance
+    rdae:P20319 ex:e... ; # aggregates: expression that is chosen as part of the plan of this aggregating expression
+    rdae:P20312 "titel" @nl ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of expression: English
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of expression: German
+    rdae:P20037 ex:a... ; # has translator agent: [vertaler]
+    rdae:P20141 ex:e... ; # is translation of: expressie no. ... (moet andere expressie van HETZELFDE werk zijn)
+    rdae:P20324	"uitvoeringsmediumIRI" ; # has medium of performance of choreographic [or non-musical dramatic] content
+    rdae:P20231 ex:w... . # has work expressed
+
+ex:e52 # Expressie no. 52
+	a rdac:C10006 ;
+    rdfs:label "Reccensie Zeemaal: Nederlandse tekst" ;
+    rdae:P20331	rdaterm:1126 ; # has category of expression: aggregating expression
+    rdae:P20319 ex:e... ; # aggregates: expression that is chosen as part of the plan of this aggregating expression
+    rdae:P20312 "titel" @nl ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of expression: English
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of expression: German
+    rdae:P20037 ex:a... ; # has translator agent: [vertaler]
+    rdae:P20141 ex:e... ; # is translation of: expressie no. ... (moet andere expressie van HETZELFDE werk zijn)
+    rdae:P20324	"uitvoeringsmediumIRI" ; # has medium of performance of choreographic [or non-musical dramatic] content
+    rdae:P20231 ex:w... . # has work expressed
+
+
+# WORKS
+
+ex:w50 # Werk no. 50
+	a rdac:C10001 ;
+    rdfs:label "Zeemaal, geschreven door Sien Vanmaele" ;
+    skos:exactMatch <http://viaf.org/viaf/...> ; # is hetzelfde als: VIAF werk ...
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10365	rdaep:1005 ; # has has extension plan: successive indeterminate plan
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work (a work that is realized as tactile text or text) - beter zou zijn: language work, waaronder dan ook spoken word kan vallen?
+    rdaw:P10004 rdaterm:1118 ; # has category of work: musical work
+    rdaw:P10004 rdaterm:1209 ; # has category of work: dramatic work
+    rdaw:P10004 rdaterm:1127 ; # has category of work: aggregating work
+    rdaw:P10004 rdaterm:1081 ; # has category of work: series
+    rdaw:P10088	"titel" @nl ; # has title of work
+	rdaw:P10223 "voorkeurstitel" @en ; # has preferred title of work
+	rdaw:P10086 "varianttitel" @de ; # has variant title of work
+    rdaw:P10335	"thematischeindexnummer" ; # has thematic index number
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026191> ; # has category of work: text book (form)
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026462> ; # has category of work: eenakter
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026440> ; # has category of work: monoloog
+    rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of representative expression: English
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of representative expression: German
+    rdaw:P10603 "uitvoeringsmediumIRI" ; #  has medium of performance of choreographic [or non-musical dramatic] content of representative expression
+    rdaw:P20220 "uitvoeringsmediumIRI" ; # has medium of performance of musical content of representative expression, bv. <https://data.muziekschatten.nl/som/um1569>
+    rdaw:P10061	ex:a... ; # has author agent: [auteur]
+    rdaw:P10053	ex:a... ; # has composer agent: [componist]
+    rdaw:P10393	ex:a... ; # has aggregator agent: [aggregator]
+    rdaw:P10219 "YYYY" ^^xsd:gYear ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10219 "YYYY-MM-DD" ^^xsd:date ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10256	<http://id.loc.gov/authorities/subjects/sh85058963> ; # has subject: [trefwoord]
+    rdaw:P10256	ex:a... ; # has subject: [actor]
+    rdaw:P10256	ex:w... ; # has subject: [werk]
+    rdaw:P10256	ex:p... ; # has subject: [plaats]
+    rdaw:P10256	ex:t... ; # has subject: [tijdspanne]
+    rdaw:P10153	ex:w... ; # is evaluation of work: [werk]
+    rdaw:P10102 ex:w... ; # is issue of = in series: [reeks]
+    rdaw:P10012 "nummeraanduiding" @nl ; # has numbering of part: [nummer]
+    rdaw:P10330 "annotatie over het werk" @nl . # has note on work
+
+ex:w51 # Werk no. 51
+	a rdac:C10001 ;
+    rdfs:label "Recensie première Zeemaal, geschreven door Evelyne Coussens" ;
+    skos:exactMatch <http://viaf.org/viaf/...> ; # is hetzelfde als: VIAF werk ...
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10365	rdaep:1005 ; # has has extension plan: successive indeterminate plan
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work (a work that is realized as tactile text or text) - beter zou zijn: language work, waaronder dan ook spoken word kan vallen?
+    rdaw:P10004 rdaterm:1118 ; # has category of work: musical work
+    rdaw:P10004 rdaterm:1127 ; # has category of work: aggregating work
+    rdaw:P10004 rdaterm:1081 ; # has category of work: series
+    rdaw:P10088	"titel" @nl ; # has title of work
+	rdaw:P10223 "voorkeurstitel" @en ; # has preferred title of work
+	rdaw:P10086 "varianttitel" @de ; # has variant title of work
+    rdaw:P10335	"thematischeindexnummer" ; # has thematic index number
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026191> ; # has category of work: text book (form)
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026462> ; # has category of work: eenakter
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026440> ; # has category of work: monoloog
+    rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of representative expression: English
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of representative expression: German
+    rdaw:P10603 "uitvoeringsmediumIRI" ; #  has medium of performance of choreographic [or non-musical dramatic] content of representative expression
+    rdaw:P20220 "uitvoeringsmediumIRI" ; # has medium of performance of musical content of representative expression, bv. <https://data.muziekschatten.nl/som/um1569>
+    rdaw:P10061	ex:a... ; # has author agent: [auteur]
+    rdaw:P10053	ex:a... ; # has composer agent: [componist]
+    rdaw:P10393	ex:a... ; # has aggregator agent: [aggregator]
+    rdaw:P10219 "YYYY" ^^xsd:gYear ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10219 "YYYY-MM-DD" ^^xsd:date ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10256	<http://id.loc.gov/authorities/subjects/sh85058963> ; # has subject: [trefwoord]
+    rdaw:P10256	ex:a... ; # has subject: [actor]
+    rdaw:P10256	ex:w... ; # has subject: [werk]
+    rdaw:P10256	ex:p... ; # has subject: [plaats]
+    rdaw:P10256	ex:t... ; # has subject: [tijdspanne]
+    rdaw:P10153	ex:w... ; # is evaluation of work: [werk]
+    rdaw:P10102 ex:w... ; # is issue of = in series: [reeks]
+    rdaw:P10012 "nummeraanduiding" @nl ; # has numbering of part: [nummer]
+    rdaw:P10330 "annotatie over het werk" @nl . # has note on work
+
+ex:w52 # Werk no. 52
+	a rdac:C10001 ;
+    rdfs:label "Trilogie (Zeemaal etc.), geschreven door Sien Vanmaele" ;
+    skos:exactMatch <http://viaf.org/viaf/...> ; # is hetzelfde als: VIAF werk ...
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10365	rdaep:1005 ; # has has extension plan: successive indeterminate plan
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work (a work that is realized as tactile text or text) - beter zou zijn: language work, waaronder dan ook spoken word kan vallen?
+    rdaw:P10004 rdaterm:1118 ; # has category of work: musical work
+    rdaw:P10004 rdaterm:1127 ; # has category of work: aggregating work
+    rdaw:P10004 rdaterm:1081 ; # has category of work: series
+    rdaw:P10088	"titel" @nl ; # has title of work
+	rdaw:P10223 "voorkeurstitel" @en ; # has preferred title of work
+	rdaw:P10086 "varianttitel" @de ; # has variant title of work
+    rdaw:P10335	"thematischeindexnummer" ; # has thematic index number
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026191> ; # has category of work: text book (form)
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026462> ; # has category of work: eenakter
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026440> ; # has category of work: monoloog
+    rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/eng> ; # has language of representative expression: English
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of representative expression: German
+    rdaw:P10603 "uitvoeringsmediumIRI" ; #  has medium of performance of choreographic [or non-musical dramatic] content of representative expression
+    rdaw:P20220 "uitvoeringsmediumIRI" ; # has medium of performance of musical content of representative expression, bv. <https://data.muziekschatten.nl/som/um1569>
+    rdaw:P10061	ex:a... ; # has author agent: [auteur]
+    rdaw:P10053	ex:a... ; # has composer agent: [componist]
+    rdaw:P10393	ex:a... ; # has aggregator agent: [aggregator]
+    rdaw:P10219 "YYYY" ^^xsd:gYear ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10219 "YYYY-MM-DD" ^^xsd:date ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10256	<http://id.loc.gov/authorities/subjects/sh85058963> ; # has subject: [trefwoord]
+    rdaw:P10256	ex:a... ; # has subject: [actor]
+    rdaw:P10256	ex:w... ; # has subject: [werk]
+    rdaw:P10256	ex:p... ; # has subject: [plaats]
+    rdaw:P10256	ex:t... ; # has subject: [tijdspanne]
+    rdaw:P10153	ex:w... ; # is evaluation of work: [werk]
+    rdaw:P10102 ex:w... ; # is issue of = in series: [reeks]
+    rdaw:P10012 "nummeraanduiding" @nl ; # has numbering of part: [nummer]
+    rdaw:P10330 "annotatie over het werk" @nl . # has note on work
+
+
+# NOMENS
+
+ex:n... # Nomen no. ... = barcode of item no. ...
+    a rdac:C10012 ;
+    rdan:P80068 "barcode" ; # has nomen string
+    rdan:P80078 <http://vocab.getty.edu/aat/300343361> . # has category of nomen: bar code
+
+ex:n... # Nomen no. ... = ISBN of manifestation no. ...
+    a rdac:C10012 ;
+    rdan:P80068 "ISBN" ; # has nomen string
+    rdan:P80069 <http://vocab.getty.edu/aat/300417443> . # has scheme of nomen: ISBN <http://id.loc.gov/vocabulary/identifiers/isbn> kan ook
+
+
+# AGENTS
+
+ex:a... # Actor no. ...
+    a rdac:C10004 ; # person
+    rdaa:P50378 "naam persoon" . # has appellation of agent
+
+ex:a... # Actor no. ...
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "naam corporatie" @nl . # has appellation of agent
+
+
+# PLACES
+
+ex:p... # Plaats no. ...
+    a rdac:C10009 ;
+    rdap:P70019 "naam plaats" @nl . # has appellation of place
+
+
+# TIMESPANS
+
+ex:t... # Timespan no. ... = [jaar]
+    a rdac:C10010 ;
+    rdat:P70016 "1987" ; # appellation of timespan
+    rdat:P70059 rdaut:1004 ; # has category of timespan: year
+    rdat:P70039 "1987-01-01" ^^xsd:date ; # has beginning
+    rdat:P70040 "1987-31-12" ^^xsd:date . # has ending
+
+ex:t... # Timespan no. ... = [eeuw]
+    a rdac:C10010 ;
+    rdat:P70016 "20e eeuw" @nl ; # appellation of timespan
+    rdat:P70016 "20th century" @en ; # appellation of timespan
+    rdat:P70059 rdaut:1001 ; # has category of timespan: century
+    rdat:P70039 "1900-01-01" ^^xsd:date ; # has beginning
+    rdat:P70040 "1999-31-12" ^^xsd:date . # has ending
