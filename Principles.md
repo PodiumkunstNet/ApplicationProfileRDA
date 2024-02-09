@@ -69,8 +69,8 @@ Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit toepas
 
 	# dit voorbeeld geeft aan dat "12345-78-9" een barcode is:
 	intern:ex4 rdax:P00018 [
-		a rdac:C10012 ;						# dit is een nomen
-		rdan:P80068 "12345-78-9" ;			# "has nomen string" , de identifier
+		a rdac:C10012 ;                                     # dit is een nomen
+		rdan:P80068 "12345-78-9" ;                          # "has nomen string" , de identifier
 		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
 	] .
 
@@ -135,9 +135,9 @@ Tijdspannes gebruiken we wanneer we zeer nadrukkelijk een periode willen beschri
 	
 	ex:tijdspanne1 
 		a rdac:C10010 ;                                             # a timespan
-       rdat:P70017 "Theaterseizoen 1957-1958"@nl ;                # name of timespan
-       rdat:P70039 "1957-10-01"^^xsd:date ;                       # start date of timespan
-       rdat:P70040 "1958-07-01"^^xsd:date .                       # end date of timespan
+       rdat:P70017 "Theaterseizoen 1957-1958"@nl ;                  # name of timespan
+       rdat:P70039 "1957-10-01"^^xsd:date ;                         # start date of timespan
+       rdat:P70040 "1958-07-01"^^xsd:date .                         # end date of timespan
     
 
 ### Bied een `rdfs:label`
