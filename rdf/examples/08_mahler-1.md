@@ -18,7 +18,7 @@ Enige opmerkingen over de representatie in RDA-RDF.
 
 ### Het werk
 
-Onmisbaar is hier `rdaw:O29994` (*category of work*), hier ingevuld met een RDAterm `rdaterm:1118` (*"muziekwerk"*). Deze aanduiding volstaat wellicht maar is erg algemeen. In praktijk zal het mogelijk de voorkeur verdienen om specifieker te zijn en een andere waardenlijst toe te passen. Kenmerk `rdaw:P10220` (*medium of performance*) biedt hier een belangrijke aanvulling.
+Onmisbaar is hier `rdaw:P10004` (*category of work*), hier ingevuld met een RDAterm `rdaterm:1118` (*"muziekwerk"*). Deze aanduiding volstaat wellicht maar is erg algemeen. In praktijk zal het mogelijk de voorkeur verdienen om specifieker te zijn en een andere waardenlijst toe te passen. Kenmerk `rdaw:P10220` (*medium of performance*) biedt hier een belangrijke aanvulling.
 
 ### De identifiers
 

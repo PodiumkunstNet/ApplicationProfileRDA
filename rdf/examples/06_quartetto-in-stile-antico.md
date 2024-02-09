@@ -18,6 +18,8 @@ In deze beschrijving wordt naar componist verwezen aan de hand van de URI voor d
 
 ## Representatie in RDA-RDF
 
+In de beschrijving van het werk geeft `rdaw:P10004` aan dat het een muziekwerk betreft. Er zou hier ook, via een andere terminologiebron, voor een specifiekere categorie gekozen kunnen worden. De beschrijving van de expressie geeft met `rdae:P20001` aan dat het hier om een uitdrukking in notenschrift gaat. 
+
 Bemerk dat de in de RDF de uitgever van de bladmuziek als een `rdfs:literal` is opgenomen. Idealiter wordt hier ook voor een actor-entiteit gekozen maar in deze fase was de brondata daarvoor nog onvoldoende genormaliseerd. De plaats van uitgifte is wel genormaliseerd tot een -hier niet opgenomen - plaatsentiteit.
 
 
