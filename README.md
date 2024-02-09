@@ -27,7 +27,8 @@ Het spreadsheet geeft voor de belangrijkste RDA-entiteiten (werk, expressie, man
 
 Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende niveaus van beschrijving: de *minimale beschrijving*, de *coherente beschrijving* en de *effectieve beschrijving* (zie ook de [principes](Principles.md)).
 
-* [Download het spreadsheet](RDA-AP_Podiumkunst-net.xlsx)
+* [Gevolgde aanpak spreadsheet](Speadsheet.md)
+* [Download het spreadsheet](assets/RDA-AP_Podiumkunst-net.xlsx)
 
 ## Voorbeeldbeschrijvingen in RDA
 Naast het spreadsheet biedt dit applicatieprofiel voorbeelden en toelichtingen. Deze voorbeelden dienen zowel ter illustratie van het spreadsheet, als ook ter aanvulling. De voorbeelden zijn door de muziek- en theaterexperts uit de werkgroep aangedragen. Ze laten zien hoe bepaalde materialen maximaal verbonden en beschreven kunnen worden volgens RDA. In een later stadium zullen varianten op de voorbeelden toegevoegd worden die illustreren hoe minder gedetailleerd ontsloten collecties beschreven kunnen worden. 
