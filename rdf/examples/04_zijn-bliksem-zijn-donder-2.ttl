@@ -29,6 +29,8 @@
 # Exemplaar in KB-depot (https://webggc.oclc.org/cbs/DB=2.37/XMLPRS=Y/PPN?PPN=155775316), eigen exemplaar is 4e druk
 # Nog te doen: beschrijving van muziekwerk Mattheuspassie
 
+# Zie ook 00_actoren.ttl en 00_plaatsen.ttl voor de vermelde personen en plaatsen.
+
 
 # ITEMS
 

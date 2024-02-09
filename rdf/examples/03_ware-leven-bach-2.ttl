@@ -30,6 +30,8 @@
 # Werken in VIAF
 # Nog te doen: beschrijving van de reeks Open Domein
 
+# Zie ook 00_actoren.ttl en 00_plaatsen.ttl voor de vermelde personen en plaatsen.
+
 
 # ITEMS
 

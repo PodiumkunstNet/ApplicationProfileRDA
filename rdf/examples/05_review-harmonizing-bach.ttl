@@ -29,6 +29,7 @@
 # Online resource (geen item)
 # Artikel gepubliceerd op https://www.authentic-chorales.com/
 
+# Zie ook 00_actoren.ttl en 00_plaatsen.ttl voor de vermelde personen en plaatsen.
 
 
 # ITEMS

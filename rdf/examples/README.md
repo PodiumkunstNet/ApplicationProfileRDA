@@ -1,6 +1,6 @@
 # Voorbeelden van beschrijvingen in RDA
 
-Overzicht van uitgewerkte voorbeelden van beschrijvingen in lijn met het Podiumkunst.net RDA-toepassingsprofiel. 
+Overzicht van uitgewerkte voorbeelden van beschrijvingen in lijn met het Podiumkunst.net RDA-toepassingsprofiel. Actoren en plaatsen uit de beschrijvingen staan apart beschreven in [00_actoren.ttl](00_actoren.ttl) en [00_plaatsen.ttl](00_plaatsen.ttl).
 
 ## Teksten over muziek
 
