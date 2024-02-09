@@ -21,13 +21,13 @@ Aan dit applicatieprofiel hebben meegewerkt: *Sylvia Alting van Geusau ([Amsterd
 Een applicatieprofiel biedt een weloverwogen inperking of verfijning van een bestaande standaard. De principes achter dit profiel gericht op de toepassing van de RDA-standaard binnen het domein van de podiumkunsten worden [hier beschreven](Principles.md).
 
 ## Toepassingsprofiel als spreadsheet
-De bouwstenen voor het gebruik van RDA zijn de **entiteiten** en de **elementen** die *eigenschappen* of *relaties* vertegenwoordigen. Als basis voor dit toepassingsprofiel is daarom eerst, op basis van de [principes](Principles.md), bepaald welke elementen toe te passen en welke juist niet. Zie ook [Gevolgde aanpak spreadsheet](Speadsheet.md). Dit heeft geleid to een [spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
+De bouwstenen voor het gebruik van RDA zijn de **entiteiten** en de **elementen** die *eigenschappen* of *relaties* vertegenwoordigen. Als basis voor dit toepassingsprofiel is daarom eerst, op basis van de [principes](Principles.md), bepaald welke elementen toe te passen en welke juist niet. Zie ook [Gevolgde aanpak spreadsheet](Spreadsheet.md). Dit heeft geleid to een [spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
 
 Het spreadsheet geeft voor de belangrijkste RDA-entiteiten (werk, expressie, manifestatie en item) per element aan of het binnen dit toepassingsprofiel verplicht, aanbevolen, optioneel of juist niet gebruikt moet worden (MoSCoW) en welke registratiemethoden voor dat element verplicht, aanbevolen, optioneel of niet toegestaan zijn. In een later stadium zullen profielen voor de andere entiteiten toegevoegd worden.
 
 Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende niveaus van beschrijving: de *minimale beschrijving*, de *coherente beschrijving* en de *effectieve beschrijving* (zie ook de [principes](Principles.md)).
 
-* [Gevolgde aanpak spreadsheet](Speadsheet.md)
+* [Gevolgde aanpak spreadsheet](Spreadsheet.md)
 * [Download het spreadsheet](assets/RDA-AP_Podiumkunst-net.xlsx)
 
 ## Voorbeeldbeschrijvingen in RDA
