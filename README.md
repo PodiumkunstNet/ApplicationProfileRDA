@@ -43,5 +43,5 @@ Zie de [code-fragmenten](rdf/snippets).
 ## Aanzet tot sjablonen
 We streven ernaar te komen tot een aantal basis-sjablonen die gebruikt kunnen worden als kader bij het beschrijven van de verschillende soorten entiteiten die relevant zijn in de wereld van de podiumkunst.
 
-Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates).
+<!-- Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates). -->
 
