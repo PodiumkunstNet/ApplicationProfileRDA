@@ -4,7 +4,7 @@ Bestand: [04_zijn-bliksem-zijn-donder-2.ttl](04_zijn-bliksem-zijn-donder-2.ttl)
 
 ## De resource
 
-_Zijn bliksem, zijn donder_ is een cultuurhistorisch essay over de Mattheus-Passie van Johann Sebastian Bach en over de Nederlandse voorliefde voor dat werk. Het verscheen voor het eerst in 1997 en is meerdere keren herdrukt. De 6e druk uit 1999 is een herziene druk. Dit voorbeeld gaat uit van de vierde druk, waarvan een exemplaar aanwezig is in het depot van de Knoninklijke Bibliotheek.
+_Zijn bliksem, zijn donder_ is een cultuurhistorisch essay over de Mattheus-Passie van Johann Sebastian Bach en over de Nederlandse voorliefde voor dat werk. Het verscheen voor het eerst in 1997 en is meerdere keren herdrukt. De 6e druk uit 1999 is een herziene druk. Dit voorbeeld gaat uit van de vierde druk, waarvan een exemplaar aanwezig is in het depot van de Koninklijke Bibliotheek.
 
 ## Entiteitenstructuur
 
