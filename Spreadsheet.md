@@ -43,8 +43,8 @@ De werkbladen met het RDA-Applicatieprofiel Podiumkunst zijn op de volgende mani
   * _VES (IRI)_: de curie van het betreffende vocabulaire
   * _SES_: String Encoding Scheme waarnaar de waarde in het element moet voldoen
 * **Aantekeningen** (grijze koppen)
- * _toelichting_: een korte toelichting op de gekozen verplichting en herhaalbaarheid
- * _policy statement_: beknopt policy statement, bijvoorbeeld om een bepaalde optie uit de RDA Toolkit voor dit element te volgen
- * _aantekening_: aanvullende vragen en opmerkingen van de werkgroep
+  * _toelichting_: een korte toelichting op de gekozen verplichting en herhaalbaarheid
+  * _policy statement_: beknopt policy statement, bijvoorbeeld om een bepaalde optie uit de RDA Toolkit voor dit element te volgen
+  * _aantekening_: aanvullende vragen en opmerkingen van de werkgroep
 
 De kolommen met blanco kop die hierop volgen bevatten gegevens uit de RDA Registry.
