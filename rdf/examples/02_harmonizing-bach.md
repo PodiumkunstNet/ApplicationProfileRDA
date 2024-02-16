@@ -10,7 +10,7 @@ Het voorbeeld [_Review of Malcolm Boyd on Bach chorales_](05_review-harmonizing-
 
 ## Entiteitenstructuur
 
-Dit voorbeeld laat in de eerste plaats de primaire relaties tussen een werk, expressie, manifestatie en item zien. Deze relaties zijn verplicht om tot een _coherente beschrijving_ te komen. Samen met een benaming van de entiteit (een titel, naam of identifier; de zogeheten _minimale beschrijving_) vormt dit het absolute minimum om resources met elkaar te verbinden in de Podiumkunst-graaf.
+Dit voorbeeld laat in de eerste plaats de primaire relaties tussen een werk, expressie, manifestatie en item (WEMI) zien. Deze relaties zijn verplicht om tot een _coherente beschrijving_ te komen. Samen met een benaming van de entiteit (een titel, naam of identifier; de zogeheten _minimale beschrijving_) vormt dit het absolute minimum om resources met elkaar te verbinden in de Podiumkunst-graaf.
 
 Het voorbeeld toont hoe een concreet item (hier geïdentificeerd met de compacte IRI **ex:i4**) een manifestatie (hier geïdentificeerd als **ex:m2**) voorstelt. Deze manifestatie representeert alle items met dezelfde (oorspronkelijke) eigenschappen als het item in dit voorbeeld.
 Dit zal catalografen vertrouwd voorkomen: aan de hand van een concreet exemplaar beschrijf je een publicatie.
