@@ -12,6 +12,8 @@ Dit voorbeeld gaat niet zozeer over de primaire relaties (item **ex:i7** stelt m
 
 ![Visualisatie Structuur](../../assets/04_zijn-bliksem-zijn-donder_rda-rdf_visualisaties.png)
 
+Uiteraard is de Mattheus-Passie (**ex:w18**) op zijn beurt op vele manieren gerealiseerd. Er zijn talloze genoteerde en uitgevoerde expressies van de muziek, die op hun beurt weer verwezenlijkt zijn in heel veel verschillende manifestaties. In dit voorbeeld zijn die allemaal buiten beschouwing gelaten.
+
 ## Representatie in RDA-RDF
 
 {tekstje waarin wat toelichting op de RDA-RDF gegeven wordt} 
