@@ -31,33 +31,33 @@
 @prefix pkw: <http://example.com/pknet/id/work/> .
 @prefix pkplace: <http://example.com/pknet/id/place/> .
 
-pkm:msp24793
+pkm:24
     a rdac:C10007 ;                                                             # a Manifestation
     rdfs:label "Quartetto in stile antico. Amsterdam: Donemus" ;
     rdam:P30001 rdact:1049 ;                                                    # carrier type "volume"
     rdam:P30002 rdamt:1007 ;                                                    # media type "unmediated"
     rdam:P30007 "1957"^^xsd:date ;                                              # copyright date
     rdam:P30083 "Donemus" ;                                                     # publisher agent            
-    rdam:P30088 pkplace:7d0198b05f065f411836e4f27def5449 ;                      # place of publication
+    rdam:P30088 pkplace:7d ;                                                    # place of publication
     rdam:P30117 "Hendrik Andriessen" ;                                          # statement of responsibility
     rdam:P30134 "Quartetto in stile antico" ;                                   # title of manifestation
     rdam:P30137 "Voor strijkkwartet. - Tijdsduur: ca. 11'"@nl ;                 # note on manifestation
-    rdam:P30139 pke:b71f5e6f251c5ee42bea09406ff483d5 ;                          # has expression manifested
+    rdam:P30139 pke:b7 ;                                                        # has expression manifested
     rdam:P30156 "Quartetto in stile antico" ;                                   # title proper
     rdam:P30187 "print" .                                                       # production method
 
-pke:b71f5e6f251c5ee42bea09406ff483d5
+pke:b7
     a rdac:10006 ;                                                              # an Expression
     rdfs:label "Andriessen, Hendrik. Quartetto in stile antico. Muzieknotatie"@nl;
     rdae:P20001 rdaco:1010 ;                                                    # content type "notated music"
     rdae:P20209 <http://rdaregistry.info/termList/formatNoteMus/1007>,          # format of notated music "score"
         <http://rdaregistry.info/termList/formatNoteMus/1008> ;                 #   "study score"  
     rdae:P20219 "ca. 11'" ;                                                     # duration
-    rdae:P20231 pkw:76051d1e4fa87857b28341838fd911e3 ;                          # has work expressed
+    rdae:P20231 pkw:76 ;                                                        # has work expressed
     rdae:P20315 "Quartetto in stile antico" .                                   # preferred title of expression
  
 
-pkw:76051d1e4fa87857b28341838fd911e3
+pkw:76
     a rdac:C10001 ;                                                             # a Work   
     rdfs:label "Andriessen, Hendrik.  Quartetto in stile antico" ;
     rdaw:P10004 rdaterm:1118 ,                                                  # category of work "musical work"
