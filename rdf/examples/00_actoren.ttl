@@ -140,3 +140,28 @@ ex:a50 # Actor no. 50
 ex:a51 # Actor no. 51
     a rdac:C10004 ; # person
     rdaa:P50378 "Evelyne Coussens" . # has appellation of agent
+
+ex:a52 # Actor no. 52
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "De Nieuwe Toneelbibliotheek" @nl . # has appellation of agent
+
+ex:a53 # Actor no. 53
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Stichting ter Bevordering van de Podiumkunst in Nederland" @nl ; # has appellation of agent
+    rdaa:P50378 "Stichting BPN" @nl . # has appellation of agent
+
+ex:a54 # Actor no. 54
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Jo Roets" . # has appellation of agent
+
+ex:a55 # Actor no. 55
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Jason Dousselaere" . # has appellation of agent
+
+ex:a56 # Actor no. 56
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Manuela Lauwers" . # has appellation of agent
+
+ex:a57 # Actor no. 57
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Thomas Stevens" . # has appellation of agent
