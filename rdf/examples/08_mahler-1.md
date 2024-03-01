@@ -4,13 +4,16 @@ Bestand: [08_mahler-1.ttl](08_mahler-1.ttl)
 
 ## De bron
 
-Een beschrijving van de in RDA bescbreven bron, een cd met een opname van een symfonie van Gustav Mahler, is ook te vinden in [Discogs](https://www.discogs.com/release/8249413-Mahler-Baltimore-Symphony-Orchestra-Marin-Alsop-Symphony-No-1).
+Een beschrijving van de in RDA beschreven bron, een cd met een opname van een symfonie van Gustav Mahler, is ook te vinden in [Discogs](https://www.discogs.com/release/8249413-Mahler-Baltimore-Symphony-Orchestra-Marin-Alsop-Symphony-No-1).
 
 ## Entiteitenstructuur
 
 De ruggengraat van de beschrijving van de bron wordt gevorm door een rechttoe, rechtaan WEMI-structuur, met één werk (de symfonie), één expressie van dat werk (de uitvoering van de symfonie), één manifestatie van die expressie (de uitgegeven cd, en ook een specifiek item behorende tot die manifestatie.
 
-Naast de WEMI-entiteiten zijn er vier actor-entiteiten, voor de componist, de dirigent, het orkest en de uitgever.
+Naast de WEMI-entiteiten zijn er vier actor-entiteiten, voor de componist, de dirigent, het orkest en de uitgever (niet allemaal weergegeven in onderstaande visualisatie).
+
+![Visualisatie Structuur](../../assets/pk-net_vb-8_rda-rdf_visualisaties.png)
+
 
 ## Representatie in RDA-RDF
 
