@@ -1,13 +1,13 @@
-# De principes achter RDA-toepassingsprofiel Podiumkunst
+# De principes achter het RDA-applicatieprofiel Podiumkunst
 
 ## 0. Gebruik linked data
-De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit toepassingsprofiel gaat uit van het werken met linked data (RDF) en de bijbehordende **linked data-principes**. Dat betekent onder andere dat er **entiteiten** gedefinieerd worden voor de centrale objecten die beschreven worden. Deze entiteiten worden geïdentificeerd met een **IRI**, wat een identifier is in de vorm van een url (webadres). RDA biedt de mogelijkheid om entiteiten te identificeren met een "ingang" (of "*access point*") maar dat is niet in lijn met de linked-data principes en is daarom binnen dit toepassingsprofiel niet toegestaan.
+De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit applicatieprofiel gaat uit van een toepassing als  linked data (RDF) en de bijbehordende **linked data-principes**. Dat betekent onder andere dat er **entiteiten** gedefinieerd worden voor de centrale objecten die beschreven worden. Deze entiteiten worden geïdentificeerd met een **IRI**, een identifier in de vorm van een URL (webadres).
 
 Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
 
 
 ## 1. Volg de officiële RDA standaard
-Dit toepassingsprofiel is gebaseerd op de officiële RDA standaard en de beschrijvingen van de klasses en elementen zoals te vinden op de [RDA Registry](http://www.rdaregistry.info/). De zogenaamde "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit toepassingsprofiel. 
+Dit applicatieprofiel is gebaseerd op de officiële RDA standaard en de beschrijvingen van de klasses en elementen zoals te vinden op de [RDA Registry](http://www.rdaregistry.info/). De zogenaamde "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
 
 ### Werk vanuit beschrijvingsniveaus
 Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende niveaus van detaillering gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
@@ -18,9 +18,9 @@ Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillend
 
 ### Gebruik van aanvullende linked data-standaarden
 
-Dit RDA-toepassingsprofiel sluit gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
+Dit RDA-applicatieprofiel sluit gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
 
-Het is niet strijdig met de principes van dit toepassingsprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA toepassingsprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
+Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
 TODO: geldt ook voor waardenlijsten!
 
@@ -65,7 +65,7 @@ Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:
 	
 	intern:ex4 rdax:P00018 "12345-78-9" . 
 
-Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit toepassingsprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet daarom het volgende partroon worden gevolgd waarbij via een Nomen-entiteit de benodigde informatie over de identifier verstrekt kan worden:
+Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit applicatieprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet daarom het volgende partroon worden gevolgd waarbij via een Nomen-entiteit de benodigde informatie over de identifier verstrekt kan worden:
 
 	# dit voorbeeld geeft aan dat "12345-78-9" een barcode is:
 	intern:ex4 rdax:P00018 [
@@ -82,21 +82,25 @@ NB: Het streven is om te komen tot vaste waardenlijsten voor de "*scheme of Nome
 
 ### Beperk de set met relaties
 
-RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit toepassingsprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`.
+RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit applicatieprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`.
 
 Ter illustratie kent RDA het element `rdaw:P10561` ("*has television director family*") met als `rdfs:range` de klasse `rdac:C10008` ("*family*"). Aangezien `rdac:C10008` een subklasse is van `rdac:C10002` (actor / "*agent*") en er ook een element `rdaw:P10015` ("*has television director agent*") is, gebruiken we hier dat generiekere element. De lijst met te gebruiken RDA-elementen kan zo sterk beperkt worden, zonder af te doen aan de semantische zeggingskracht.
 
 Bemerk dat sommige actor-relaties in RDA niet op het niveau van `rdac:C10002` ("*agent*") gedefinieerd zijn, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. Gebruik hier de best passend relatie.
 
-Volgens deze logica wordt binnen dit toepassingsprofiel gekozen voor de gebruik van de generieke relaties `rdax:P00014` "*subject of*" en `rdax:P00018`.
+Volgens deze logica wordt binnen dit applicatieprofiel gekozen voor de gebruik van de generieke relaties `rdax:P00014` "*subject of*" en `rdax:P00018`.
 
 ### Beschrijf representatieve expressies op werkniveau
 
 Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "... of representative expression" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. We willen voorkomen dat dataleveranciers elk naar eigen inzicht expressies als representatief gaan markeren of dat er “verkeerde” manifestaties of actoren aan gelinkt worden.
 
+### Gebruik geen benamingen die bij andere RDA-implementatiescenario's horen
+
+RDA biedt de mogelijkheid om entiteiten te identificeren met een "ingang" (of "*authorized access point*"). Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
+
 ### Verwijs van specifiek naar generiek
 
-Relatie-elementen binnen RDA kennen vaak ook een element dat de inverse relatie aanduidt. Hoewel het semantisch geen verschil maakt of de relatie van `A` naar `B` of de inverse relatie van `B` naar `A` toegepast wordt, kiezen we binnen dit toepassingsprofiel om prakische redenen  bijvoorkeur voor de volgende aanpak:
+Relatie-elementen binnen RDA kennen vaak ook een element dat de inverse relatie aanduidt. Hoewel het semantisch geen verschil maakt of de relatie van `A` naar `B` of de inverse relatie van `B` naar `A` toegepast wordt, kiezen we binnen dit applicatieprofiel om prakische redenen  bijvoorkeur voor de volgende aanpak:
 
 * Relaties tussen WEMI ("work", "expression", "manifestation" en "item")-entiteiten en de actor altijd **vanuit WEMI-entiteit** leggen.
 * Primaire WEMI-relaties leggen we “van onder naar boven”, dus **van concreter niveau naar abstracter niveau**. D.w.z. een item linken we aan manifestatie, manifestatie aan expressie en expressie aan werk.
@@ -122,7 +126,7 @@ RDA biedt een eigen manier om de taal van bijvoorbeeld en titel aan te geven. Bi
 
 ### Werken met datums en tijdspannes
 
-RDA biedt de mogelijkheid om een "timespan"-entiteit te definiëren (`rdac:C10010`). Binnen dit toepassingsprofiel is voorlopig het advies om daar beperkt gebruik van te maken. Voor 'gewone' datum zoals de datum van een uitvoering gebruiken we iso-geformatteerde datums, met toevoeging van de datatype-aanduiding,  zoals gangbaar in linked data. Laat het datatype weg, als de datum niet iso-geformatteerd is.
+RDA biedt de mogelijkheid om een "timespan"-entiteit te definiëren (`rdac:C10010`). Binnen dit applicatieprofiel is voorlopig het advies om daar beperkt gebruik van te maken. Voor 'gewone' datum zoals de datum van een uitvoering gebruiken we iso-geformatteerde datums, met toevoeging van de datatype-aanduiding,  zoals gangbaar in linked data. Laat het datatype weg, als de datum niet iso-geformatteerd is.
 
 	ex:ding1 rdam:P30007 "1969"^^xsd:gYear .                         # copyright date, as a year
 	ex:ding2 rdam:P30009 "1969-03-20"^^xsd:date .                    # publication date, as an iso date
@@ -154,13 +158,13 @@ In een beschrijving in RDF heeft de volgorde waarin elementen opgenomen staan ge
 
 ## 5. Tot slot: enige openstaande vragen
 
-Dit toepassingsprofiel is werk in uitvoering. Belangrijk aandachtspunten voor de doorontwikkeling om te komen tot één verbonden linked data-graaf voor de podiumkunsten zijn:
+Dit applicatieprofiel is werk in uitvoering. Belangrijk aandachtspunten voor de doorontwikkeling om te komen tot één verbonden linked data-graaf voor de podiumkunsten zijn:
 
 ### Een volledige en op RDA-gebaseerde ontologie voor de podiumkunsten
 
 In de huidige vorm, als een op linked data-gebaseerde standaard en toegepast binnen RDF, is de wereldwijd de ervaring met RDA nog beperkt. RDA wordt vooral gebruikt binnen de wereld van bibliotheken. Daar begint nu uit te kristalliseren hoe het bibliografische domein beschouwd kan worden vanuit IFLA-LRM (het conceptueel model achter RDA) en RDA. Binnen het domein van de podiumkunsten is nog niet uitgekristalliseerd hoe alle te te beschrijven zaken in entiteiten volgens LRM of RDA uitgedrukt kunnen worden. Bijvoorbeeld, hoe modelleren we een theaterproductie in RDA? Of hoe beschrijven we een requisiet uit een museumcollectie? Wanneer is een werk een werk? Beschrijven we een deel van een symfonie ook als een werk, met een eigen IRI? Kunnen een zakpartituur en een studiepartituur tot de zelfde expressie behoren?
 
-Dit toepassingsprofiel is in deze vorm vooral een eerste aanzet te komen tot een wijze van beschrijven van het domein van de podiumkunsten. Zie ook [aanzet voor de nog uit te werken sjablonen](rdf/templates)
+Dit applicatieprofiel is in deze vorm vooral een eerste aanzet te komen tot een wijze van beschrijven van het domein van de podiumkunsten. Zie ook [aanzet voor de nog uit te werken sjablonen](rdf/templates)
 
 ### Terminologiebronnen en waardenlijsten
 
