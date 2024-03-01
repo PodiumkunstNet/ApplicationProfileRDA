@@ -20,7 +20,7 @@ RDA beschouwt uitvoeringen van muziek- en theaterwerken als expressies. De premi
 
 Omdat de recensie specifiek betrekking heeft op de première is (anders dan bij [_Review of Malcolm Boyd on Bach chorales_](05_review-harmonizing-bach.md)) werk **ex:w51** verbonden met expressie **ex:e51** met behulp van "is evaluation of" (**rdaw:P10279**).
 
-Wanneer andere delen van de trilogie gerealiseerd worden, zullen die, net als **ex:w50**, als deel (is part of, **rdaw:P10019**) gerelateerd worden aan **ex:w52**.
+Wanneer andere delen van de trilogie gerealiseerd worden, zullen die net als **ex:w50** als deel (is part of, **rdaw:P10019**) gerelateerd worden aan **ex:w52**.
 
 Wat deze visualisatie verder in één oogopslag duidelijk maakt, is dat Sien Vanmaele (**ex:a50**) zowel de auteur van het toneelstuk is, als speler in de première-voorstelling.
 
