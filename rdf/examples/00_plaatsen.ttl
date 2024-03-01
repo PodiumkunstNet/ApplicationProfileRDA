@@ -63,3 +63,10 @@ ex:p11 # Plaats no. 11
 ex:p12 # Plaats no. 12
     a rdac:C10009 ;
     rdap:P70019 "Nederland" @nl . # has appellation of place
+
+
+
+ex:p50 # Plaats no. 50 = shelf mark for item no. 50
+    a rdac:C10009 ;
+    rdap:P70019 "TONE 775 VANM" ; # has appellation of place
+    rdap:P70044 <http://vocab.getty.edu/aat/300404704> . # has category of place: shelf mark
