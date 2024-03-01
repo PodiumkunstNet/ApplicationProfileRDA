@@ -4,7 +4,7 @@ Bestand: [09_zeemaal.ttl](09_zeemaal.ttl)
 
 ## De resource
 
-In dit voorbeeld hebben we te maken met twee resources: een uitgave van het toneelstuk Zeemaal en een recensie van de première van datzelfde stuk. Een exemplaar van de uitgave bevindt zich in de collectie van de Academie voor Theater en Dans. De recensie is online verschenen in de Theaterkrant. De relatie met de Theaterkrant is in deze uitwerking buiten beschouwing gelaten.
+In dit voorbeeld hebben we te maken met twee resources: een uitgave van het toneelstuk Zeemaal en een recensie van de première van datzelfde stuk. Een exemplaar van de uitgave bevindt zich in de collectie van de Academie voor Theater en Dans. De recensie is online verschenen in de Theaterkrant. Zeemaal is het eerste deel in een trilogie, de tekst verscheen in de reeks De Nieuwe Toneelbibliotheek en de première vond plaats tijdens het festival Zomer van Antwerpen. De relaties met de Theaterkrant, De Nieuwe Toneelbibliotheek (reeks) en het festival Zomer van Antwerpen zijn in deze uitwerking buiten beschouwing gelaten. 
 
 ## Entiteitenstructuur
 
