@@ -6,19 +6,25 @@ De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingeze
 Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
 
 
-## 1. Volg de officiële RDA standaard
-Dit applicatieprofiel is gebaseerd op de officiële RDA standaard en de beschrijvingen van de klasses en elementen zoals te vinden op de [RDA Registry](http://www.rdaregistry.info/). De zogenaamde "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
+## 1. Volg de officiële RDA-standaard
+Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardelijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
 
 ### Werk vanuit beschrijvingsniveaus
 Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende niveaus van detaillering gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
 
-* **Minimale beschrijving**: omvat alleen de meest essentiële elementen die nodig zijn om een bron uniek te identificeren,
-* **Coherente beschrijving**:  biedt voldoende informatie om de bron te beschrijven binnen de context van de collectie en gebruikers in staat te stellen te beoordelen of de bron relevant is voor hun behoeften. Omvat onder andere relaties tussen de WEMI-entititeiten ('Work', 'Expression', 'Manifestation' en 'Item').
-* **Effectieve beschrijving**: stelt gebruikers in staat om een diepgaand begrip van de bron te krijgen en hoe deze zich verhoudt tot andere bronnen.
+* **Minimumbeschrijving**: omvat alleen de meest basale elementen die nodig zijn om een entiteit te beschrijven,
+* **Coherente beschrijving**: verbindt de primaire werk-, expressie-, manifestatie- en item-entiteiten die bij een resource horen met elkaar,
+* **Effectieve beschrijving**: stelt gebruikers in staat om een resource beter te vinden, uitgebreider te identificeren en in een context te plaatsen, ook krijgt de gebruiker informatie over de toegang tot een resource.
+
+In dit applicatieprofiel wordt de **effectieve beschrijving** onderverdeeld in verschillende met elkaar samenhangende "lagen", van generiek of algemeen geldend naar specifiek voor bepaalde typen werken (bv. muziekwerken) of dragers (zoals boeken of cd's).
+
+De **minimumbeschrijving** en de **coherente beschrijving** zijn verplicht in het RDA-Applicatieprofiel Podiumkunst (een "must") en komen overeen met "vindbaar" in de terminologie van het Netwerk Digitaal Erfgoed. De **effectieve beschrijving** is aanbevolen (een "should") ofwel verplicht indien de data voorhanden is en komt overeen met het [NDE-begrip "bruikbaar"](https://netwerkdigitaalerfgoed.nl/bruikbaar/).
+
+De verplichting van een element in het applicatieprofiel geldt binnen de context van de gegeven laag. Dus wanneer bijvoorbeeld de oorspronkelijke bezetting van een muziekwerk verplicht is, geldt dat alleen wanneer je de effectieve beschrijving van een muziekwerk toepast. Wanneer je deze laag uit het applicatieprofiel niet gebruikt, bijvoorbeeld omdat je geen muziekwerk beschrijft of omdat je je praktisch tot de minimaal verplichte lagen van de minimumbeschrijving en de coherente beschrijving moet beperken, geldt ook de verplichting van dit element niet.
 
 ### Gebruik van aanvullende linked data-standaarden
 
-Dit RDA-applicatieprofiel sluit gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
+Dit RDA-applicatieprofiel sluit het gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
 
 Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
