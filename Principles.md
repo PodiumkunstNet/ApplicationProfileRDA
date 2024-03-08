@@ -31,7 +31,7 @@ RDA onderscheidt vier verschillende registratiemethoden voor het vastleggen van 
 
 Een voorbeeld van een mogelijke invulling van de verschillende registratiemethoden voor een specifieke elementwaarde:
 
-![Voorbeeld registratiemethoden](../assets/5 - 2024-02-29_RDA-Toolkit_applicatieprofielen_v5_dia-11.png)
+![Voorbeeld registratiemethoden](./assets/5%20-%202024-02-29_RDA-Toolkit_applicatieprofielen_v5_dia-11.png)
 
 Vanuit RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals". Een RDA-IRI is gelijk aan een RDF-IRI. Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen met behulp van de Nomen-entiteit gereïficeerd worden.
 
