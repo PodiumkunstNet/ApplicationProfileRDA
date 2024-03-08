@@ -6,7 +6,7 @@ De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingeze
 Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is, heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
 
 ## 1. Volg de officiële RDA-standaard
-Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardelijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
+Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardenlijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
 
 ### Werk vanuit beschrijvingsniveaus
 Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende niveaus van detaillering gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
@@ -45,7 +45,7 @@ Dit RDA-applicatieprofiel sluit het gebruik van andere aanvullende linked data-s
 
 Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
-Dit geldt ook voor waardelijsten. RDA heeft bij diverse elementen specifieke waardelijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardelijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
+Dit geldt ook voor waardenlijsten. RDA heeft bij diverse elementen specifieke waardenlijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardenlijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
 
 
 ## 2. Uitgangspunten ten aanzien van identifiers
