@@ -37,6 +37,7 @@ pk:werk
     a rdac:C10001 ;                                         # a Work
     rdaw:P10004 rdaterm:1118 ;                              # has category of work: muziekwerk
     rdaw:P10223 "Symfonie, orkest, nr. 1, D gr.t." ;        # has preferred title of work
+    rdaw:P10334 "1" ;                                       # has serial number of musical work
     rdaw:P10086 "Titan";                                    # has variant title of work
     rdaw:P10219 "1884-1888" ;                               # has date of work - hier geen span?
     rdaw:P10442 pk:creator ;                                # has composer agent of work
@@ -53,9 +54,9 @@ pk:expressie
     a rdac:C10006 ;                                         # an Expression
     rdae:P20001 rdaco:1011;                                 # contentType performed music
     rdae:P20231 pk:werk1 ;                                  # work expressed
-    rdae:P20004 "2008"^^xsd:gYear ;                         # opnamejaar  - wat suggereert dat dit geen uitvoering is, maar een opname...
-    rdae:P20286 pk:conductor ;                              # conductor agent
-    rdae:P20039 pk:orkest .                                 # performerAgent
+    rdae:P20004 "2008"^^xsd:gYear ;                         # opnamejaar
+    rdae:P20286 pk:conductor ;                              # instrumental conductor agent
+    rdae:P20020 pk:orkest .                                 # instrumentalist agent
 
 
 pk:manifestatie
@@ -113,7 +114,7 @@ a rdac:C10004 ;                                             # a person
 
 
 pk:orkest
-    a rdac:C10011 ;                                         # a CollectiveAgent
+    a rdac:C10005 ;                                         # a coporate body
     rdaa:P50413 "Baltimore Symphony Orchestra" ;            # has preferred name of Agent
     rdax:P00018 "988083558" .                               # identifierForRDAEntity
 

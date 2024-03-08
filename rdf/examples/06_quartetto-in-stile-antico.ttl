@@ -40,11 +40,10 @@ pkm:24
     rdam:P30083 "Donemus" ;                                                     # publisher agent            
     rdam:P30088 pkplace:7d ;                                                    # place of publication
     rdam:P30117 "Hendrik Andriessen" ;                                          # statement of responsibility
-    rdam:P30134 "Quartetto in stile antico" ;                                   # title of manifestation
     rdam:P30137 "Voor strijkkwartet. - Tijdsduur: ca. 11'"@nl ;                 # note on manifestation
     rdam:P30139 pke:b7 ;                                                        # has expression manifested
     rdam:P30156 "Quartetto in stile antico" ;                                   # title proper
-    rdam:P30187 "print" .                                                       # production method
+    rdam:P30187 rdapm:1010 .                                                    # has production method: printing
 
 pke:b7
     a rdac:10006 ;                                                              # an Expression
@@ -52,7 +51,6 @@ pke:b7
     rdae:P20001 rdaco:1010 ;                                                    # content type "notated music"
     rdae:P20209 <http://rdaregistry.info/termList/formatNoteMus/1007>,          # format of notated music "score"
         <http://rdaregistry.info/termList/formatNoteMus/1008> ;                 #   "study score"  
-    rdae:P20219 "ca. 11'" ;                                                     # duration
     rdae:P20231 pkw:76 ;                                                        # has work expressed
     rdae:P20315 "Quartetto in stile antico" .                                   # preferred title of expression
  
