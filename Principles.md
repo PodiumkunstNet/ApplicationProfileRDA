@@ -112,7 +112,7 @@ Dit applicatieprofiel gebruikt dus bijvoorbeeld wel het element `rdaw:P10015` (*
 
 Sommige actor-relaties in RDA zijn niet op het niveau van `rdac:C10002` (*agent*) gedefinieerd, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. In die gevallen zijn de specifiekere elementen in dit applicatieprofiel uiteraard wel toegestaan.
 
-Volgens deze logica is binnen dit applicatieprofiel ook gekozen voor het gebruik van het generieke element `rdaw:P10256` (_has subject_) in plaats van bijvoorbeeld `rdaw:P10319` _has subject agent_.
+Volgens deze logica is binnen dit applicatieprofiel ook gekozen voor het gebruik van het generieke element `rdaw:P10256` (_has subject_) in plaats van bijvoorbeeld `rdaw:P10319` (_has subject agent_). 
 
 Dit principe zou nog breder toegepast kunnen worden (bijvoorbeeld wanneer het gaat over relatie-varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`), maar dat hebben we vooralsnog niet of maar beperkt gedaan.
 
@@ -128,7 +128,15 @@ Bij het beschrijven van een expressie leggen we de betreffende kenmerken nogmaal
 
 ### Gebruik geen benamingen die bij andere RDA-implementatiescenario's horen
 
-RDA biedt de mogelijkheid om entiteiten te identificeren met een "ingang" (of "*authorized access point*"). Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi (RDA-implementatiescenario C) en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
+RDA biedt een specifiek type benaming, namelijk _access points_ of "ingangen". Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi (RDA-implementatiescenario C) en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
+
+Omdat dit applicatieprofiel IRI's gebruikt voor het identificeren van werken, expressies, actoren en dergelijke, en omdat er afzonderlijke elementen zijn waarin de verschillende onderdelen van een ingang kunnen worden vastgelegd, worden benamingen van het type "access point" niet toegestaan in dit applicatieprofiel.
+
+### Vermijd shortcuts, modelleer zoveel mogelijk uit
+
+RDA kent diverse elementen die als "shortcut elements" bestempeld kunnen worden. Shortcuts zijn relatie-elementen die twee entiteiten, die indirect aan elkaar gerelateerd zijn via één of meer tussenliggende entiteiten, direct met elkaar verbinden. Omdat op deze manier de tussenliggende entiteit(en) niet geïdentificeerd word(t/en) terwijl het aantal mogelijke paden door de graaf alleen maar toeneemt, gebruiken we _shortcut elements_ in principe niet. Een voorbeeld van een shortcut die we niet gebruiken is `rdaw:P10205` (_has librettist agent_). In plaats daarvan relateren we een muziekwerk aan een werk van het type libretto met `rdaw:P10165` (_has libretto work_) en verbinden we het libretto met de auteur met `rdaw:P10061` (_has author agent_).
+
+Hieraan verwant is het uitgangspunt om vrijetekstelementen (zoals bijvoorbeeld de reeksvermelding) zoveel mogelijk aan te vullen met of te vervangen door een uitgemodelleerde variant die gebruikt maakt van relatie-elementen.
 
 ### Verwijs van specifiek naar generiek
 
