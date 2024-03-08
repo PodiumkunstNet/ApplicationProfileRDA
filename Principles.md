@@ -68,8 +68,6 @@ De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe en
 
 De semantiek van `owl:sameAs` is streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Gebruik `owl:sameAs` alleen als die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
 
-TODO: beter direct externe IRI gebruiken
-
 Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogelijk niet identiek in een strikte logische zin, dan is `skos:exactMatch` een goede keuze. Als er behoefte is aan een nog zwakkere relatie kan er gekozen worden voor `skos:closeMatch`, te gebruiken als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar.
 
 	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -117,8 +115,6 @@ Sommige actor-relaties in RDA zijn niet op het niveau van `rdac:C10002` ("*agent
 Volgens deze logica is binnen dit applicatieprofiel ook gekozen voor het gebruik van de generieke elementen `rdax:P00014` "*subject of*" en `rdax:P00018`.
 
 Dit principe zou nog breder toegepast kunnen worden (bijvoorbeeld wanneer het gaat over relatie-varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`), maar dat hebben we vooralsnog niet of maar beperkt gedaan.
-
-_RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit applicatieprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`._
 
 ### Beschrijf representatieve expressies op werkniveau
 
