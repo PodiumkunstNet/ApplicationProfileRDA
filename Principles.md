@@ -138,15 +138,15 @@ RDA kent diverse elementen die als "shortcut elements" bestempeld kunnen worden.
 
 Hieraan verwant is het uitgangspunt om vrijetekstelementen (zoals bijvoorbeeld de reeksvermelding) zoveel mogelijk aan te vullen met of te vervangen door een uitgemodelleerde variant die gebruikt maakt van relatie-elementen.
 
-### Verwijs van specifiek naar generiek
+### Vermijd inversies
 
-Relatie-elementen binnen RDA kennen vaak ook een element dat de inverse relatie aanduidt. Hoewel het semantisch geen verschil maakt of de relatie van `A` naar `B` of de inverse relatie van `B` naar `A` toegepast wordt, kiezen we binnen dit applicatieprofiel om prakische redenen  bijvoorkeur voor de volgende aanpak:
+Voor ieder relatie-element in RDA is een element gedefinieerd dat de inverse relatie aanduidt. Hoewel het semantisch geen verschil maakt of de relatie van `A` naar `B` of de inverse relatie van `B` naar `A` toegepast wordt, kiezen we er in dit applicatieprofiel voor om waar mogelijk slechts één van beide varianten te gebruiken. Daarbij hanteren we de volgende algemene richtlijnen:
 
-* Relaties tussen WEMI ("work", "expression", "manifestation" en "item")-entiteiten en de actor altijd **vanuit WEMI-entiteit** leggen.
-* Primaire WEMI-relaties leggen we “van onder naar boven”, dus **van concreter niveau naar abstracter niveau**. D.w.z. een item linken we aan manifestatie, manifestatie aan expressie en expressie aan werk.
-*  Werk-naar-werk-relaties leggen we “**van onder naar boven**” wanneer er sprake is van een hiërarchie. Van “**later werk naar eerder werk”** .
+* De primaire WEMI-relaties leggen we **van het meest concrete niveau naar het meest abstracte niveau**. Anders gezegd, we maken een coherente beschrijving door een item te linken aan een manifestatie, een manifestatie aan een expressie en een expressie aan een werk.
+* Relaties tussen WEMI-entiteiten  (werken, expressies, manifestaties, items) en actoren leggen we altijd **vanuit de WEMI-entiteit**.
+* Werk-naar-werk-relaties leggen we **van het (kleinere) deel naar het (grotere) geheel** en **van het latere werk naar het eerdere werk**. Realiseer je dat sommige werk-werk-relaties zichzelf als inversie hebben.
 
-Bemerk dat sommige relaties zichzelf als inverse hebben.
+Volgens deze uitgangspunten gebruikten we bijvoorbeeld wel `rdaw:P10053` (_has composer agent of work_) maar niet `rdaa:P50187` (_is composer agent of work of_), wel `rdaw:P10142` (_is adaptation of work_) en subelementen maar niet `rdaw:P10155` (_is adapted as work_) en subelementen.
 
 ## 4. Vormprincipes
 
