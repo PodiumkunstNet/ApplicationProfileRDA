@@ -108,11 +108,11 @@ De actor-entiteit in RDA kent diverse subklassen:
 
 Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Aangezien het applicatieprofiel in de toekomst uitgebreid zal worden met actoren volgens de meest specifieke subklassen, is het niet nodig de subtypering van actoren in het relatie-element tot uitdrukking te laten komen. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de semantische zeggingskracht.
 
-Dit applicatieprofiel gebruikt dus bijvoorbeeld wel het element `rdaw:P10015` ("*has television director agent*"), maar niet het element `rdaw:P10561` ("*has television director family*") of `rdaw:P10420` ("*has television director person*").
+Dit applicatieprofiel gebruikt dus bijvoorbeeld wel het element `rdaw:P10015` (*has television director agent*), maar niet het element `rdaw:P10561` (*has television director family*) of `rdaw:P10420` (*has television director person*).
 
-Sommige actor-relaties in RDA zijn niet op het niveau van `rdac:C10002` ("*agent*") gedefinieerd, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. In die gevallen zijn de specifiekere elementen in dit applicatieprofiel uiteraard wel toegestaan.
+Sommige actor-relaties in RDA zijn niet op het niveau van `rdac:C10002` (*agent*) gedefinieerd, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. In die gevallen zijn de specifiekere elementen in dit applicatieprofiel uiteraard wel toegestaan.
 
-Volgens deze logica is binnen dit applicatieprofiel ook gekozen voor het gebruik van de generieke elementen `rdax:P00014` "*subject of*" en `rdax:P00018`.
+Volgens deze logica is binnen dit applicatieprofiel ook gekozen voor het gebruik van het generieke element `rdaw:P10256` (_has subject_) in plaats van bijvoorbeeld `rdaw:P10319` _has subject agent_.
 
 Dit principe zou nog breder toegepast kunnen worden (bijvoorbeeld wanneer het gaat over relatie-varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`), maar dat hebben we vooralsnog niet of maar beperkt gedaan.
 
