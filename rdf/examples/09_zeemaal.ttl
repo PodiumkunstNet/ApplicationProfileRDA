@@ -104,7 +104,7 @@ ex:e51 # Expressie no. 51
 
 ex:e52 # Expressie no. 52
 	a rdac:C10006 ;
-	rdfs:label "Reccensie Zeemaal: Nederlandse tekst" ;
+	rdfs:label "Recensie Zeemaal: Nederlandse tekst" ;
 	rdae:P20312 "Klimaatangst verwerkt tot onschuldig kookprogramma" @nl ; # has title of expression
 	rdae:P20001 rdaco:1020 ; # has content type: tekst
 	rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
