@@ -28,8 +28,6 @@ Dit RDA-applicatieprofiel sluit het gebruik van andere aanvullende linked data-s
 
 Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
-TODO: geldt ook voor waardenlijsten!
-
 ## 2. Uitgangspunten ten aanzien van identifiers
 
 ### Achtergrond: interne en externe identifiers
@@ -47,12 +45,9 @@ RDA onderscheidt vier verschillende registratiemethoden voor het vastleggen van 
 Een voorbeeld van een mogelijke invulling van de verschillende registratiemethoden voor een specifieke elementwaarde:
 
 
-
-Vanuit RDF-perspectief 
-
 ### Relaties voor gelijkheid of gelijkwaardigheid
 
-Er zijn verschillende manieren om aan te geven dat de beschreven enititeit gelijk of gelijkwaardig is aan een enititeit die aangeduid wordt met een externe identifier.  
+Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier.  
 
 
 De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
@@ -62,8 +57,6 @@ De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe en
 	intern:ex1 owl:sameAs extern:ex_a .  # identieke entiteiten
 
 De semantiek van `owl:sameAs` is streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Gebruik `owl:sameAs` alleen als die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
-
-TODO: beter direct externe IRI gebruiken
 
 Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogelijk niet identiek in een strikte logische zin, dan is `skos:exactMatch` een goede keuze. Als er behoefte is aan een nog zwakkere relatie kan er gekozen worden voor `skos:closeMatch`, te gebruiken als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar.
 
