@@ -13,7 +13,7 @@ Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elemen
 Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende niveaus van detaillering gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
 
 * **Minimumbeschrijving**: omvat alleen de meest basale elementen die nodig zijn om een entiteit te beschrijven,
-* **Coherente beschrijving**: verbindt de primaire werk-, expressie-, manifestatie- en item-entiteiten die bij een resource horen met elkaar,
+* **Coherente beschrijving**: verbindt de primaire werk-, expressie-, manifestatie- en item-entiteiten die bij een resource (~*bron*)horen met elkaar,
 * **Effectieve beschrijving**: stelt gebruikers in staat om een resource beter te vinden, uitgebreider te identificeren en in een context te plaatsen, ook krijgt de gebruiker informatie over de toegang tot een resource.
 
 In dit applicatieprofiel wordt de **effectieve beschrijving** onderverdeeld in verschillende met elkaar samenhangende "lagen", van generiek of algemeen geldend naar specifiek voor bepaalde typen werken (bv. muziekwerken) of dragers (zoals boeken of cd's).
