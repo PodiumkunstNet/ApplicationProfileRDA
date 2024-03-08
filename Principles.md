@@ -54,11 +54,11 @@ Dit geldt ook voor waardelijsten. RDA heeft bij diverse elementen specifieke waa
 
 Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifieke entiteit te identificeren en te onderscheiden van andere entiteiten. Binnen linked data is het gangbaar en wenselijk dat vooral IRI's als identifier gebruikt worden.
 
-In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een enititeit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
+In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een entiteit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
 
 ### Relaties voor gelijkheid of gelijkwaardigheid
 
-Er zijn verschillende manieren om aan te geven dat de beschreven enititeit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier.  
+Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier.  
 
 De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
 
@@ -155,7 +155,7 @@ Om eventuele onduidelijkheden te voorkomen worden alle entiteiten van een explic
 
 ### Gebruik language-tags
 
-RDA biedt een eigen manier om de taal van bijvoorbeeld en titel aan te geven. Binnen RDA kan dat door van de titel een nomen-eniteit te maken en daar dan het passende RDA-kenmerk aan te hangen. Binnen dit profiel geven we er de voorkeur aan om zo veel mogelijk al bestaande internetstandaarden en -gebruiken te volgen. De aanduiding van de taal van een literal gebeurt dan ook met zogenaamde language tags ([BCP47](https://www.rfc-editor.org/info/bcp47)). Bijvoorbeeld:
+RDA biedt een eigen manier om de taal van bijvoorbeeld en titel aan te geven. Binnen RDA kan dat door van de titel een nomen-entiteit te maken en daar dan het passende RDA-kenmerk aan te hangen. Binnen dit profiel geven we er de voorkeur aan om zo veel mogelijk al bestaande internetstandaarden en -gebruiken te volgen. De aanduiding van de taal van een literal gebeurt dan ook met zogenaamde language tags ([BCP47](https://www.rfc-editor.org/info/bcp47)). Bijvoorbeeld:
 
 	ex:compositie rdaw:P10088 "Das wahre Leben des Johann Sebastian Bach"@de .
 
