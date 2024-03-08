@@ -3,8 +3,7 @@
 ## 0. Gebruik linked data
 De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit applicatieprofiel gaat uit van een toepassing als  linked data (RDF) en de bijbehordende **linked data-principes**. Dat betekent onder andere dat er **entiteiten** gedefinieerd worden voor de centrale objecten die beschreven worden. Deze entiteiten worden geïdentificeerd met een **IRI**, een identifier in de vorm van een URL (webadres).
 
-Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
-
+Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is, heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
 
 ## 1. Volg de officiële RDA-standaard
 Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardelijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
@@ -12,9 +11,9 @@ Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elemen
 ### Werk vanuit beschrijvingsniveaus
 Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende niveaus van detaillering gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
 
-* **Minimumbeschrijving**: omvat alleen de meest basale elementen die nodig zijn om een entiteit te beschrijven,
-* **Coherente beschrijving**: verbindt de primaire werk-, expressie-, manifestatie- en item-entiteiten die bij een resource (~*bron*)horen met elkaar,
-* **Effectieve beschrijving**: stelt gebruikers in staat om een resource beter te vinden, uitgebreider te identificeren en in een context te plaatsen, ook krijgt de gebruiker informatie over de toegang tot een resource.
+* **Minimumbeschrijving**: deze omvat alleen de meest basale elementen die nodig zijn om een entiteit te beschrijven,
+* **Coherente beschrijving**: deze verbindt de primaire werk-, expressie-, manifestatie- en item-entiteiten die bij een resource (~*bron*) horen met elkaar,
+* **Effectieve beschrijving**: deze stelt gebruikers in staat om een resource beter te vinden, uitgebreider te identificeren en in een context te plaatsen, ook krijgt de gebruiker informatie over de toegang tot een resource.
 
 In dit applicatieprofiel wordt de **effectieve beschrijving** onderverdeeld in verschillende met elkaar samenhangende "lagen", van generiek of algemeen geldend naar specifiek voor bepaalde typen werken (bv. muziekwerken) of dragers (zoals boeken of cd's).
 
@@ -22,11 +21,32 @@ De **minimumbeschrijving** en de **coherente beschrijving** zijn verplicht in he
 
 De verplichting van een element in het applicatieprofiel geldt binnen de context van de gegeven laag. Dus wanneer bijvoorbeeld de oorspronkelijke bezetting van een muziekwerk verplicht is, geldt dat alleen wanneer je de effectieve beschrijving van een muziekwerk toepast. Wanneer je deze laag uit het applicatieprofiel niet gebruikt, bijvoorbeeld omdat je geen muziekwerk beschrijft of omdat je je praktisch tot de minimaal verplichte lagen van de minimumbeschrijving en de coherente beschrijving moet beperken, geldt ook de verplichting van dit element niet.
 
-### Gebruik van aanvullende linked data-standaarden
+### Volg de RDA-registratiemethoden
+
+RDA onderscheidt vier verschillende registratiemethoden voor het vastleggen van de waarde in een element:
+* **Ongestructureerde beschrijving**: een combinatie van transcriptie (tekst overgenomen uit de resource) en vrije tekst,
+* **Gestructureerde beschrijving**: gestandaardiseerde tekst ontleend aan vocabulaires en coderingssystemen, zoals een term of naam uit een thesaurus,
+* **Identifier**: codes of nummers ter identificatie, dit kunnen locale identifiers (zoals recordnummers) zijn of gestandaardiseerde identifiers als ISBN, ISSN, nummeraanduidingen van muziekwerken etc.,
+* **IRI**: Internationalized Resource Identifier, ofwel persistente links die door machines geïnterpreteerd kunnen worden.
+
+Een voorbeeld van een mogelijke invulling van de verschillende registratiemethoden voor een specifieke elementwaarde:
+
+![Voorbeeld registratiemethoden](../assets/5 - 2024-02-29_RDA-Toolkit_applicatieprofielen_v5_dia-11.png)
+
+Vanuit RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals". Een RDA-IRI is gelijk aan een RDF-IRI. Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen met behulp van de Nomen-entiteit gereïficeerd worden.
+
+Het spreekt vanzelf dat in dit applicatieprofiel de geprefereerde registratiemethode de IRI is. Daarmee wordt het gebruik van andere registratiemethoden echter niet per definitie uitgesloten, al was het maar omdat sommige elementen in RDA niet volgens alle registratiemethoden vast te leggen zijn.
+
+Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
+
+### Gebruik waar nodig aanvullende linked data-standaarden
 
 Dit RDA-applicatieprofiel sluit het gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
 
 Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
+
+Dit geldt ook voor waardelijsten. RDA heeft bij diverse elementen specifieke waardelijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardelijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
+
 
 ## 2. Uitgangspunten ten aanzien van identifiers
 
@@ -36,19 +56,9 @@ Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifi
 
 In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een enititeit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
 
-RDA onderscheidt vier verschillende registratiemethoden voor het vastleggen van de waarde in een element:
-* Ongestructureerde beschrijving: een combinatie van transcriptie (tekst overgenomen uit de resource) en vrije tekst,
-* Gestructureerde beschrijving: gestandaardiseerde tekst ontleend aan vocabulaires en coderingssystemen, zoals een term of naam uit een thesaurus,
-* Identifier: codes of nummers ter identificatie, dit kunnen locale identifiers (zoals recordnummers) zijn of gestandaardiseerde identifiers als ISBN, ISSN, nummeraanduidingen van muziekwerken etc.,
-* IRI: Internationalized Resource Identifier, ofwel persistente links die door machines geïnterpreteerd kunnen worden.
-
-Een voorbeeld van een mogelijke invulling van de verschillende registratiemethoden voor een specifieke elementwaarde:
-
-
 ### Relaties voor gelijkheid of gelijkwaardigheid
 
-Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier.  
-
+Er zijn verschillende manieren om aan te geven dat de beschreven enititeit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier.  
 
 De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
 
@@ -58,6 +68,8 @@ De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe en
 
 De semantiek van `owl:sameAs` is streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Gebruik `owl:sameAs` alleen als die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
 
+TODO: beter direct externe IRI gebruiken
+
 Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogelijk niet identiek in een strikte logische zin, dan is `skos:exactMatch` een goede keuze. Als er behoefte is aan een nog zwakkere relatie kan er gekozen worden voor `skos:closeMatch`, te gebruiken als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar.
 
 	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -65,12 +77,10 @@ Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogel
 	intern:ex2 skos:exactMatch extern:ex_b . 
 	intern:ex3 skos:closeMatch extern:ex_c . 
 
-
 ### Identifiers als label of literal
 
 Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:Literal`-label en geen IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen dan niet gebruikt worden. Om in deze gevallen gelijkheid van gelijkwaardigheid aan te duiden gebruiken we het RDA element `rdax:P00018` "has identifier for RDA entity". Dit kan eenvoudig op de volgende wijze gebruikt worden:
 
-	
 	intern:ex4 rdax:P00018 "12345-78-9" . 
 
 Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit applicatieprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet daarom het volgende partroon worden gevolgd waarbij via een Nomen-entiteit de benodigde informatie over de identifier verstrekt kan worden:
@@ -86,25 +96,43 @@ Het is niet nodig een IRI aan de nomen-entiteit toe te kennen, daarom is er hier
 
 NB: Het streven is om te komen tot vaste waardenlijsten voor de "*scheme of Nomen*." 
 
-## 3. Keuzes ten aanzien van de toepassing van RDA
+## 3. Keuzes gemaakt bij de toepassing van RDA
 
-### Beperk de set met relaties
+Een belangrijke stap bij het vaststellen van het applicatieprofiel is bepalen welke elementen je niet nodig hebt. Onderstaande uitgangspunten zijn vanuit die gedachte opgesteld.
 
-RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit applicatieprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`.
+### Subtypering van actoren niet in relatie-elementen
 
-Ter illustratie kent RDA het element `rdaw:P10561` ("*has television director family*") met als `rdfs:range` de klasse `rdac:C10008` ("*family*"). Aangezien `rdac:C10008` een subklasse is van `rdac:C10002` (actor / "*agent*") en er ook een element `rdaw:P10015` ("*has television director agent*") is, gebruiken we hier dat generiekere element. De lijst met te gebruiken RDA-elementen kan zo sterk beperkt worden, zonder af te doen aan de semantische zeggingskracht.
+De actor-entiteit in RDA kent diverse subklassen:
+* Persoon
+* Collectieve actor
+  * Corporatie
+  * Familie
 
-Bemerk dat sommige actor-relaties in RDA niet op het niveau van `rdac:C10002` ("*agent*") gedefinieerd zijn, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. Gebruik hier de best passend relatie.
+Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Aangezien het applicatieprofiel in de toekomst uitgebreid zal worden met actoren volgens de meest specifieke subklassen, is het niet nodig de subtypering van actoren in het relatie-element tot uitdrukking te laten komen. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de semantische zeggingskracht.
 
-Volgens deze logica wordt binnen dit applicatieprofiel gekozen voor de gebruik van de generieke relaties `rdax:P00014` "*subject of*" en `rdax:P00018`.
+Dit applicatieprofiel gebruikt dus bijvoorbeeld wel het element `rdaw:P10015` ("*has television director agent*"), maar niet het element `rdaw:P10561` ("*has television director family*") of `rdaw:P10420` ("*has television director person*").
+
+Sommige actor-relaties in RDA zijn niet op het niveau van `rdac:C10002` ("*agent*") gedefinieerd, omdat ze bijvoorbeeld alleen betekenis hebben op het niveau van een persoon. In die gevallen zijn de specifiekere elementen in dit applicatieprofiel uiteraard wel toegestaan.
+
+Volgens deze logica is binnen dit applicatieprofiel ook gekozen voor het gebruik van de generieke elementen `rdax:P00014` "*subject of*" en `rdax:P00018`.
+
+Dit principe zou nog breder toegepast kunnen worden (bijvoorbeeld wanneer het gaat over relatie-varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`), maar dat hebben we vooralsnog niet of maar beperkt gedaan.
+
+_RDA biedt relaties in varianten die enkel verschillen in `rdfs:domain` en `rdfs:range`. Deze variëteiten zijn een linked data-toepassing niet nodig en creëeen onnodige complexiteit. In dit applicatieprofiel beperken we ons daarom tot gebruik van enkel die relaties met de meest breed toepasbare waarden voor `rdfs:range` en `rdfs:domain`._
 
 ### Beschrijf representatieve expressies op werkniveau
 
-Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "... of representative expression" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. We willen voorkomen dat dataleveranciers elk naar eigen inzicht expressies als representatief gaan markeren of dat er “verkeerde” manifestaties of actoren aan gelinkt worden.
+Omdat bepaalde eigenschappen van expressies als canoniek of oorspronkelijk beschouwd kunnen worden, introduceert RDA de **representatieve expressie** als een expressie die het dichtst bij de intenties van de maker van het werk ligt.
+
+Omdat dit onderscheid ook voor gebruikers relevant is, neemt dit applicatieprofiel de representatieve expressie over.
+
+Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "... of representative expression" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. Bij bepaalde typen werken is dit bovendien de enige manier om representatieve expressies vast te leggen.
+
+Bij het beschrijven van een expressie leggen we de betreffende kenmerken nogmaals vast, ook als ze gelijk zijn aan de waarde van de representatieve expressie.
 
 ### Gebruik geen benamingen die bij andere RDA-implementatiescenario's horen
 
-RDA biedt de mogelijkheid om entiteiten te identificeren met een "ingang" (of "*authorized access point*"). Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
+RDA biedt de mogelijkheid om entiteiten te identificeren met een "ingang" (of "*authorized access point*"). Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi (RDA-implementatiescenario C) en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
 
 ### Verwijs van specifiek naar generiek
 
@@ -177,11 +205,3 @@ Dit applicatieprofiel is in deze vorm vooral een eerste aanzet te komen tot een 
 ### Terminologiebronnen en waardenlijsten
 
 Om linked data met elkaar te kunnen delen, en zo tot een gedeelde linked data-graaf te komen, is het ook belangrijk om een gedeelde terminologie en gedeelde waardenlijsten of thesauri te gebruiken. Dit is werk in uitvoering.
-
-
-
-
-
-
-
-
