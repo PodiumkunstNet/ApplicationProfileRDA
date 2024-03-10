@@ -45,7 +45,7 @@ Bij de expressie om het volgende element:
 
 En bij het werk om het volgende element:
 
-    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10365	rdaep:1001 ; # has extension plan: static plan
 
 Wanneer er geen specifiek element is voor de typering die je wilt toevoegen, kun je de generieke `has category of ...` elementen gebruiken die bij iedere entiteit gedefinieerd zijn. Bijvoorbeeld:
 
