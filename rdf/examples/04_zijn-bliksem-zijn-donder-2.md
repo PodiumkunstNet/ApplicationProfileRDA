@@ -21,14 +21,14 @@ Deze resource heeft zowel een hoofdtitel als een ondertitel. Voor beide typen ti
     rdam:P30156 "Zijn bliksem, zijn donder" @nl ; # has title proper
     rdam:P30142 "Over de Mattheus Passie van Johann Sebastian Bach" @nl ; # has other title information
 
-En het impressum bevat naast gegevens over de uitgever ook gegevens over de drukker:
+Het impressum bevat naast gegevens over de uitgever ook gegevens over de drukker:
 
     rdam:P30083 ex:a26 ; # has publisher agent: Ambo
     rdam:P30088 ex:p10 ; # has place of publication: Baarn
     rdam:P30080 ex:a27 ; # has distributor agent: Uitg. Westland
     rdam:P30085 ex:p11 ; # has place of distribution: Schoten
 
-De actoren en plaatsen worden geïdentificeerd in respectievelijk [00_actoren.ttl](00_actoren.ttl) en [00_plaatsen.ttl](00_plaatsen.ttl).
+De actoren en plaatsen in dit voorbeeld worden geïdentificeerd in respectievelijk [00_actoren.ttl](00_actoren.ttl) en [00_plaatsen.ttl](00_plaatsen.ttl).
 
 Dit voorbeeld bevat ook een basale beschrijving van een muziekwerk:
 
