@@ -67,4 +67,4 @@ De voorstelling is als volgt beschreven:
 
 Nog niet alle bij de uitvoering betrokken actoren hebben een element in RDA voor het vastleggen van hun aandeel.
 
-Zie bestand: [09_zeemaal.ttl](09_zeemaal.ttl)
+Bestand: [09_zeemaal.ttl](09_zeemaal.ttl)
