@@ -16,7 +16,7 @@ Uiteraard is de Mattheus-Passie (**ex:w18**) op zijn beurt op vele manieren gere
 
 ## Representatie in RDA-RDF
 
-Deze resource heeft zowel een hoofdtitel als een ondertitel. Voor beide typen titels is een specifiek element in RDA:
+Deze resource heeft zowel een hoofdtitel als een ondertitel. Voor beide typen titels is een specifiek element in RDA beschikbaar:
 
     rdam:P30156 "Zijn bliksem, zijn donder" @nl ; # has title proper
     rdam:P30142 "Over de Mattheus Passie van Johann Sebastian Bach" @nl ; # has other title information
