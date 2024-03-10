@@ -15,19 +15,19 @@ Dit RDA-applicatieprofiel voor de podiumkunsten is een initiatief van [Podiumkun
 
 Linked data- en semantischweb-representaties van de entiteiten, elementen en waardenlijsten in RDA zijn beschikbaar via de [RDA Registry](http://www.rdaregistry.info/), de volledige tekst met alle richtlijnen en instructies is beschikbaar via de [RDA Toolkit](https://www.rdatoolkit.org/).
 
-Aan dit applicatieprofiel hebben meegewerkt: *Sylvia Alting van Geusau ([Amsterdamse Hogeschool voor de Kunsten](https://ahk.nl/)), Eric van Balkum ([Muziekschatten](https://www.muziekschatten.nl/)), Sita Bhagwandin, ([Koninklijke Bibliotheek](https://kb.nl/)), Remco de Boer([ArchiXL](https://archixl.nl)), Thomas op de Coul ([Muziekweb](https://muziekweb.nl/)), Mirjam Verloop ([Podiumkunst.net](https://podiumkunst.net/)), René Voorburg ([Podiumkunst.net](https://podiumkunst.net/)), Meta van der Waal-Gentenaar ([Koninklijke Bibliotheek](https://kb.nl/)) en Lian Wintermans (zelfstandig muziek- en informatiespecialist, voorzitter [RDA-Commissie](https://rdacommissie.home.blog/)).*
+Aan dit applicatieprofiel hebben meegewerkt: *Sylvia Alting van Geusau ([Amsterdamse Hogeschool voor de Kunsten](https://ahk.nl/)), Eric van Balkum ([Muziekschatten](https://www.muziekschatten.nl/)), Sita Bhagwandin ([Koninklijke Bibliotheek](https://kb.nl/)), Remco de Boer ([ArchiXL](https://archixl.nl)), Thomas op de Coul ([Muziekweb](https://muziekweb.nl/)), Mirjam Verloop ([Podiumkunst.net](https://podiumkunst.net/)), René Voorburg ([Podiumkunst.net](https://podiumkunst.net/)), Meta van der Waal-Gentenaar ([Koninklijke Bibliotheek](https://kb.nl/)) en Lian Wintermans (zelfstandig muziek- en informatiespecialist, voorzitter [RDA-Commissie](https://rdacommissie.home.blog/)).*
 
 ## Gehanteerde principes
 Een applicatieprofiel biedt een weloverwogen inperking of verfijning van een bestaande standaard. De principes achter dit profiel gericht op de toepassing van de RDA-standaard binnen het domein van de podiumkunsten worden [hier beschreven](Principles.md).
 
 ## Toepassingsprofiel als spreadsheet
-De bouwstenen voor het gebruik van RDA zijn de **entiteiten** en de **elementen** die *eigenschappen* of *relaties* vertegenwoordigen. Als basis voor dit toepassingsprofiel is daarom eerst, op basis van de [principes](Principles.md), bepaald welke elementen toe te passen en welke juist niet. Zie ook [Gevolgde aanpak spreadsheet](Spreadsheet.md). Dit heeft geleid to een [spreadsheet](RDA-AP_Podiumkunst-net.xlsx).
+De bouwstenen voor het gebruik van RDA zijn de **entiteiten** en de **elementen** die *eigenschappen* of *relaties* vertegenwoordigen. Als basis voor dit toepassingsprofiel is daarom eerst, op basis van de [principes](Principles.md), bepaald welke elementen toe te passen en welke juist niet. Dit is vastgelegd in een [spreadsheet](RDA-AP_Podiumkunst-net.xlsx) volgens deze [aanpak](Spreadsheet.md).
 
 Het spreadsheet geeft voor de belangrijkste RDA-entiteiten (werk, expressie, manifestatie en item) per element aan of het binnen dit toepassingsprofiel verplicht, aanbevolen, optioneel of juist niet gebruikt moet worden (MoSCoW) en welke registratiemethoden voor dat element verplicht, aanbevolen, optioneel of niet toegestaan zijn. In een later stadium zullen profielen voor de andere entiteiten toegevoegd worden.
 
 Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende niveaus van beschrijving: de *minimale beschrijving*, de *coherente beschrijving* en de *effectieve beschrijving* (zie ook de [principes](Principles.md)).
 
-* [Gevolgde aanpak spreadsheet](Spreadsheet.md)
+* [Lees meer over de gevolgde aanpak](Spreadsheet.md)
 * [Download het spreadsheet](assets/RDA-AP_Podiumkunst-net.xlsx)
 
 ## Voorbeeldbeschrijvingen in RDA
