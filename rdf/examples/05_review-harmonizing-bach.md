@@ -16,6 +16,14 @@ Om de relatie tussen de twee werken vast te leggen gebruiken we niet "has subjec
 
 ## Representatie in RDA-RDF
 
-{tekstje waarin wat toelichting op de RDA-RDF gegeven wordt} 
+Een specifieke typering is toegevoegd om aan te geven dat de resource een "recensie" is:
+
+    rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026168> ; # has category of work: review (form)
+
+Voor een toelichting op de typeringen zie [_Harmonizing 'Bach' chorales_](02_harmonizing-bach.md#representatie-in-rda-rdf).
+
+De URL naar de online resource wordt als volgt vastgelegd:
+
+    rdam:P30154 "https://www.authentic-chorales.com/filemanager/Review-of-Malcolm-Boyd-on-Bach-Chorales_1.pdf" ; # has uniform resource locator
 
 Bestand: [02_harmonizing-bach.ttl](02_harmonizing-bach.ttl)
