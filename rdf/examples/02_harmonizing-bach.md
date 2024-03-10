@@ -50,7 +50,7 @@ En bij het werk om het volgende element:
 Wanneer er geen specifiek element is voor de typering die je wilt toevoegen, kun je de generieke `has category of ...` elementen gebruiken die bij iedere entiteit gedefinieerd zijn. Bijvoorbeeld:
 
     rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
-    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026191> ; # has category of work: text book (form)
+    rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026191> ; # has category of work: text book (form)
 
 In de laatste regel (die aangeeft dat het om een lesboek gaat) wordt gebruik gemaakt van een verwijzing naar de _Genre/Form Terms_ van de Library of Congress (LCGFT). Wanneer het advies over terminologiebronnen in de podiumkunsten beschikbaar is, zal deze verwijzing wellicht vervangen moeten worden.
 
