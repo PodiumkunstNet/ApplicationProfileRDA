@@ -18,6 +18,25 @@ In dit voorbeeld zien we, naast de relaties tussen werk en actor die ook in [_Ha
 
 ## Representatie in RDA-RDF
 
-{tekstje waarin wat toelichting op de RDA-RDF gegeven wordt} 
+Deze resource is in een reeks verschenen (Open Domein). Dat wordt op de volgende manier vastgelegd:
+
+    ex:w15 # Werk no. 15
+      rdfs:label "Wahre Leben des J.S. Bach, von Klaus Eidam" ;
+      skos:exactMatch <http://viaf.org/viaf/2545153954868605680004> ; # is hetzelfde als: VIAF werk 2545153954868605680004
+      rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
+      rdaw:P10365 rdaep:1001 ; # has has extension plan: static plan
+      rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026049> ; # has category of work: biography (form)
+      rdaw:P10102 ex:w16 ; # is issue of = in series: Open domein
+
+    ex:w16 # Werk no. 16
+	  a rdac:C10001 ;
+      rdfs:label "Open domein (reeks)" ;
+      skos:exactMatch <http://viaf.org/viaf/178645273> ; # is hetzelfde als: VIAF werk 178645273
+      rdaw:P10365 rdaep:1005 ; # has extension plan: successive indeterminate plan
+      rdaw:P10004 rdaterm:1127 ; # has category of work: aggregating work
+      rdaw:P10004 rdaterm:1081 ; # has category of work: series
+      rdaw:P10088 "Open domein" @nl . # has title of work
+
+Merk op dat beide werken ook geïdentificeerd zijn in [VIAF](https://viaf.org/). Dat is hier vastgelegd met `skos:exactMatch`. Voor een toelichting op de typeringen zie [_Harmonizing 'Bach' chorales_](02_harmonizing-bach.md#representatie-in-rda-rdf).
 
 Bestand: [03_ware-leven-bach-2.ttl](03_ware-leven-bach-2.ttl)
