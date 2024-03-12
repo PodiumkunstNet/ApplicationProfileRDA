@@ -37,9 +37,9 @@
 ex:i7 # Item no. 7
     a rdac:C10003 ;
     rdfs:label "Zijn bliksem, zijn donder: KB-exemplaar" ;
-    rdai:P40001 ex:n4.1 ; # has identifier for item: barcode/aanvraagnummer
+    rdai:P40001 ex:n4_1 ; # has identifier for item: barcode/aanvraagnummer
     rdai:P40018 ex:a22 ; # has current owner: KB
-    rdai:P40028 "ter inzage in de KB" @nl ; # has note on item
+    rdai:P40028 "ter inzage in de KB"@nl ; # has note on item
     rdai:P40049 ex:m4 . # has manifestation exemplified
 
 
@@ -52,21 +52,21 @@ ex:m4 # Manifestatie no. 4
     rdam:P30002 rdamt:1007 ; # has media type: unmediated
     rdam:P30001 rdact:1049 ; # has carrier type: volume
     rdam:P30187 rdapm:1010 ; # has production method: printing
-    rdam:P30004 ex:n4.2 ; # has identifier for manifestation [ISBN]
-    rdam:P30156 "Zijn bliksem, zijn donder" @nl ; # has title proper for manifestation
-    rdam:P30142 "Over de Mattheus Passie van Johann Sebastian Bach" @nl ; # has other title information
-    rdam:P30117 "Martin van Amerongen" @nl ; # has statement of responsibility
-    rdam:P30007 "1997" ^^xsd:gYear ; # has copyright date
+    rdam:P30004 ex:n4_2 ; # has identifier for manifestation [ISBN]
+    rdam:P30156 "Zijn bliksem, zijn donder"@nl ; # has title proper for manifestation
+    rdam:P30142 "Over de Mattheus Passie van Johann Sebastian Bach"@nl ; # has other title information
+    rdam:P30117 "Martin van Amerongen"@nl ; # has statement of responsibility
+    rdam:P30007 "1997"^^xsd:gYear ; # has copyright date
     rdam:P30083 ex:a26 ; # has publisher agent: Ambo
     rdam:P30088 ex:p10 ; # has place of publication: Baarn
     rdam:P30080 ex:a27 ; # has distributor agent: Uitg. Westland
     rdam:P30085 ex:p11 ; # has place of distribution: Schoten
-    rdam:P30182 "120 pagina's" @nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
+    rdam:P30182 "120 pagina's"@nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
     rdam:P30169 "22 cm" ; # has dimensions
     rdam:P30309 rdatb:1001 ; # has type of binding: perfect binding = gelijmde paperback
-    rdam:P30133 "4e druk" @nl ; # has designation of edition
-    rdam:P30137 "Met literatuuropgave" @nl ; # has note on manifestation
-    rdam:P30137 "Op het omslag: Mathias Grünewald (ca. 1460-1528), 'Christus' kruisdraging' (Staatliche Kunsthalle, Karlsruhe)" @nl ; # has note on manifestation
+    rdam:P30133 "4e druk"@nl ; # has designation of edition
+    rdam:P30137 "Met literatuuropgave"@nl ; # has note on manifestation
+    rdam:P30137 "Op het omslag: Mathias Grünewald (ca. 1460-1528), 'Christus' kruisdraging' (Staatliche Kunsthalle, Karlsruhe)"@nl ; # has note on manifestation
     rdam:P30139 ex:e17 . # has expression manifested: expression no. 17
 
 
@@ -75,7 +75,7 @@ ex:m4 # Manifestatie no. 4
 ex:e17 # Expressie no. 17
     a rdac:C10006 ;
     rdfs:label "Zijn bliksem, zijn donder: Nederlandse tekst" ;
-    rdae:P20312 "Zijn bliksem, zijn donder" @nl ; # has title of expression
+    rdae:P20312 "Zijn bliksem, zijn donder"@nl ; # has title of expression
     rdae:P20001	rdaco:1020 ; # has content type: tekst
     rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
     rdae:P20231 ex:w17 . # has work expressed
@@ -88,7 +88,7 @@ ex:w17 # Werk no. 17
     rdfs:label "Zijn bliksem, zijn donder, van Martin van Amerongen" ;
     rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
     rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
-    rdaw:P10088	"Zijn bliksem, zijn donder" @nl ; # has title of work
+    rdaw:P10088	"Zijn bliksem, zijn donder"@nl ; # has title of work
     rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026094> ; # has category of work: essay (form)
     rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
     rdaw:P10061	ex:a28 ; # has author agent: Martin van Amerongen
@@ -106,24 +106,24 @@ ex:w18 # Werk no. 18 (zie https://www.muziekweb.nl/Link/U00000605665/CLASSICAL/M
     rdaw:P10004 <https://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
     rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
     rdaw:P10335	"BWV 244" ; # has thematic index number
-    rdaw:P10223 "Matthäuspassion" @de ; # has preferred title of work
-    rdaw:P10086 "Matthäus-Passion" @de ; # has variant title of work
-    rdaw:P10086	"Mattheuspassie" @nl ; # has variant title of work
-    rdaw:P10086 "St Matthew Passion" @en ; # has variant title of work
-    rdaw:P10086 "Passion selon saint Matthieu" @fr ; # has variant title of work
+    rdaw:P10223 "Matthäuspassion"@de ; # has preferred title of work
+    rdaw:P10086 "Matthäus-Passion"@de ; # has variant title of work
+    rdaw:P10086	"Mattheuspassie"@nl ; # has variant title of work
+    rdaw:P10086 "St Matthew Passion"@en ; # has variant title of work
+    rdaw:P10086 "Passion selon saint Matthieu"@fr ; # has variant title of work
     rdaw:P20220 <https://data.muziekschatten.nl/som/um1569> ; # has medium of performance of musical content of representative expression
     rdaw:P10053	ex:a21 . # has composer agent: J.S.Bach
 
 
 # NOMENS
 
-ex:n4.1 # Nomen no. 1 = barcode (aanvraagnummer) for item no. 7
+ex:n4_1 # Nomen no. 1 = barcode (aanvraagnummer) for item no. 7
     a rdac:C10012 ;
     rdfs:label "aanvraagnummer ADH 366" ;
     rdan:P80068 "ADH 366" ; # has nomen string
     rdan:P80078 <http://vocab.getty.edu/aat/300343361> . # has category of nomen: bar code
 
-ex:n4.2 # Nomen no. 2 = ISBN van manifestatie no. 4
+ex:n4_2 # Nomen no. 2 = ISBN van manifestatie no. 4
     a rdac:C10012 ;
     rdfs:label "ISBN 9026314183" ;
     rdan:P80068 "9026314183" ; # has nomen string

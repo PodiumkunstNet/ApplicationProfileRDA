@@ -35,7 +35,7 @@ Deze resource is in een reeks verschenen (Open Domein). Dat wordt op de volgende
       rdaw:P10365 rdaep:1005 ; # has extension plan: successive indeterminate plan
       rdaw:P10004 rdaterm:1127 ; # has category of work: aggregating work
       rdaw:P10004 rdaterm:1081 ; # has category of work: series
-      rdaw:P10088 "Open domein" @nl . # has title of work
+      rdaw:P10088 "Open domein"@nl . # has title of work
 
 Merk op dat beide werken ook geïdentificeerd zijn in [VIAF](https://viaf.org/). Dat is hier vastgelegd met `skos:exactMatch`. Voor een toelichting op de typeringen zie [_Harmonizing 'Bach' chorales_](02_harmonizing-bach.md#representatie-in-rda-rdf).
 

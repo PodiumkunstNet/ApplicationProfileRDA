@@ -40,11 +40,11 @@ Dit voorbeeld bevat ook een basale beschrijving van een muziekwerk:
       rdaw:P10004 <https://id.loc.gov/authorities/genreForms/gf2014027062> ; # has category of work: sacred music
       rdaw:P10365 rdaep:1001 ; # has has extension plan: static plan
       rdaw:P10335 "BWV 244" ; # has thematic index number
-      rdaw:P10223 "Matthäuspassion" @de ; # has preferred title of work
-      rdaw:P10086 "Matthäus-Passion" @de ; # has variant title of work
-      rdaw:P10086 "Mattheuspassie" @nl ; # has variant title of work
-      rdaw:P10086 "St Matthew Passion" @en ; # has variant title of work
-      rdaw:P10086 "Passion selon saint Matthieu" @fr ; # has variant title of work
+      rdaw:P10223 "Matthäuspassion"@de ; # has preferred title of work
+      rdaw:P10086 "Matthäus-Passion"@de ; # has variant title of work
+      rdaw:P10086 "Mattheuspassie"@nl ; # has variant title of work
+      rdaw:P10086 "St Matthew Passion"@en ; # has variant title of work
+      rdaw:P10086 "Passion selon saint Matthieu"@fr ; # has variant title of work
       rdaw:P20220 <https://data.muziekschatten.nl/som/um1569> ; # has medium of performance of musical content of representative expression
       rdaw:P10053 ex:a21 . # has composer agent: J.S.Bach
 
