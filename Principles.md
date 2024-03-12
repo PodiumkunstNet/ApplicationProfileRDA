@@ -35,7 +35,7 @@ Een voorbeeld van een mogelijke invulling van de verschillende registratiemethod
 
 Vanuit een RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals" (`rdfs:Literal`). Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen als een `rdfs:Literal`opgenomen worden, maar RDA biedt ook de mogelijkheid om van zo'n benaming *een entiteit op zich* te maken (dit wordt wel *reïficatie* genoemd). Deze naamsentiteit is dan van het het type **Nomen**. Het nut van deze aanpak is dat het de mogelijkheid biedt om meer over de naam te zeggen. 
 
-Code-voorbeelden 1 en 2 tonen hoe een identifer via reïficatie verrijkt kan worden:
+Codevoorbeelden 1 en 2 tonen hoe een identifer via reïficatie verrijkt kan worden:
 
 	intern:ex4 rdax:P00018 "12345-78-9" . 
 
@@ -53,15 +53,17 @@ Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen
 
 ## 2. Keuzes gemaakt bij de toepassing van RDA
 
-Een belangrijke stap bij het vaststellen van het applicatieprofiel is bepalen welke elementen je niet nodig hebt. Onderstaande uitgangspunten zijn vanuit die gedachte opgesteld.
+Een belangrijke stap bij het vaststellen van het applicatieprofiel is bepalen welke elementen je *niet* nodig hebt. Onderstaande uitgangspunten zijn vanuit die gedachte opgesteld.
 
-### Subtypering van actoren niet in relatie-elementen
+### Geen subtypering van actoren in relatie-elementen
 
-De actor-entiteit in RDA kent diverse subklassen:
-* Persoon
-* Collectieve actor
-  * Corporatie
-  * Familie
+De actor-entiteit in RDA kent meerdere subklassen:
+
+* Actor
+    * Persoon
+    * Collectieve actor
+        * Corporatie
+        * Familie
 
 Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Aangezien het applicatieprofiel in de toekomst uitgebreid zal worden met actoren volgens de meest specifieke subklassen, is het niet nodig de subtypering van actoren in het relatie-element tot uitdrukking te laten komen. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de semantische zeggingskracht.
 
@@ -126,7 +128,7 @@ Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogel
 	intern:ex3 skos:closeMatch extern:ex_c . 
 
 
-Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
+Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties betere leesbare aliassen als equivalenten voor de RDA-elementen te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)). Deze stap is nu echter nog niet gezet.
 
 
 ## 4. Vormprincipes
