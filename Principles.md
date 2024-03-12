@@ -5,7 +5,7 @@ De standaard **RDA** kan goed in een traditionele recordsgebaseerde werkwijze in
 
 Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor zo'n `blank node`, een entiteit zonder IRI, dan ook verstandig. 
 
-Om praktische redenen is het doorgaans nog niet doenlijk om van alle beschreven dingen een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) met volwaardige entiteiten beschreven maar van de uitgevers van de bladmuziek wordt slechts een naam genoemd, zonder de uitgevers als een entiteit te representeren. De praktische keuze die hier gemaakt is, heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
+Om praktische redenen is het doorgaans nog niet doenlijk om van alle beschreven dingen een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) met volwaardige entiteiten beschreven maar van de uitgevers van de bladmuziek wordt slechts een naam genoemd, zonder de uitgevers als een entiteit te representeren. 
 
 ## 1. Volg de officiële RDA-standaard
 Dit applicatieprofiel is, naast de linked data-principes, gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardenlijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
@@ -25,7 +25,7 @@ De verplichting van een element in het applicatieprofiel geldt binnen de context
 
 ### De RDA-registratiemethoden
 
-In RDF heeft een element een waarde (een `rdfs:Literal`) of het verwijst via een IRI naar een andere entiteit. In RDA wordt onderscheid gemaakt tussen drie verschillende soorten "literals". RDA komt daarmee tot vier verschillende registratiemethoden voor het vastleggen van de waarde in een element:
+In RDF heeft een element een concrete waarde (een `rdfs:Literal`) of verwijst het via een IRI naar een andere entiteit. In RDA wordt aanvullend onderscheid gemaakt tussen drie verschillende soorten "literals" en komt daarmee tot vier verschillende *registratiemethoden* voor het vastleggen van de waarde in een element:
 * **Ongestructureerde beschrijving**: een combinatie van transcriptie (tekst overgenomen uit de resource) en vrije tekst,
 * **Gestructureerde beschrijving**: gestandaardiseerde tekst ontleend aan vocabulaires en coderingssystemen, zoals een term of naam uit een thesaurus,
 * **Identifier**: codes of nummers ter identificatie, dit kunnen locale identifiers (zoals recordnummers) zijn of gestandaardiseerde identifiers als ISBN, ISSN, nummeraanduidingen van muziekwerken etc.,
@@ -49,7 +49,7 @@ Codevoorbeelden 1 en 2 tonen hoe een identifer via reïficatie verrijkt kan word
 		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
 	] .
 
-*Voorbeeld 2: Dezelfde identifier na reïficatie, verrijkt met "scheme of Nomen". Betekenis is duidelijk.*
+*Voorbeeld 2: Dezelfde identifier na reïficatie, verrijkt met "scheme of Nomen". Betekenis is nu expliciet.*
 
 Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
 
@@ -67,7 +67,7 @@ De actor-entiteit in RDA kent meerdere subklassen:
         * Corporatie
         * Familie
 
-Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Vanuit het uitgangspunt dat de beschrijving van een actor-entiteit aangeeft tot welke subklasse deze behoort, heeft het semantische geen meerwaarde de specifiekere relatie-elementen te gebruiken. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de zeggingskracht.
+Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Vanuit het uitgangspunt dat de beschrijving van een actor-entiteit zelf aangeeft tot welke subklasse deze behoort, heeft het semantische geen meerwaarde die specifiekere relatie-elementen te gebruiken. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de zeggingskracht.
 
 Dit applicatieprofiel gebruikt dus bijvoorbeeld wel het element `rdaw:P10015` (*has television director agent*), maar niet het element `rdaw:P10561` (*has television director family*) of `rdaw:P10420` (*has television director person*).
 
@@ -83,7 +83,7 @@ Omdat bepaalde eigenschappen van expressies als canoniek of oorspronkelijk besch
 
 Omdat dit onderscheid ook voor gebruikers relevant is, neemt dit applicatieprofiel de representatieve expressie over.
 
-Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "... of representative expression" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. Bij bepaalde typen werken is dit bovendien de enige manier om representatieve expressies vast te leggen.
+Kenmerken van representatieve expressies leggen we vast op werkniveau. Dat wil zeggen, we gebruiken de attribuut-elementen in het werkdomein met "*... of representative expression*" in de naam. We houden er rekening mee dat gegevens over de representatieve expressie niet altijd beschikbaar zullen zijn. De belangrijkste reden voor vastlegging op werkniveau is dat we het beheer ervan willen koppelen aan het beheer van de werken. Bij bepaalde typen werken is dit bovendien de enige manier om representatieve expressies vast te leggen.
 
 Bij het beschrijven van een expressie leggen we de betreffende kenmerken nogmaals vast, ook als ze gelijk zijn aan de waarde van de representatieve expressie.
 
@@ -112,7 +112,7 @@ Volgens deze uitgangspunten gebruikten we bijvoorbeeld wel `rdaw:P10053` (_has c
 
 ## 3. Gelijkheidsrelaties
 
-Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit in een externe bron. We gaan hierbij uit van het gebruik van IRIs.  
+Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit in een externe bron. We gaan hierbij uit van het gebruik van IRI's.  
 
 De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
 
