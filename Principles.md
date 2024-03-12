@@ -59,28 +59,7 @@ Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:same
 
 Dit geldt ook voor waardenlijsten. RDA heeft bij diverse elementen specifieke waardenlijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardenlijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
 
-
-## 2. Koppelen met externe beschrijvingen
-
-Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit in een externe bron. We gaan hierbij uit van het gebruik van IRIs.  
-
-De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
-
-	@prefix owl: <http://www.w3.org/2002/07/owl#> .
-	
-	intern:ex1 owl:sameAs extern:ex_a .  # identieke entiteiten
-
-De semantiek van `owl:sameAs` is streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Gebruik `owl:sameAs` alleen als die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
-
-Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogelijk niet identiek in een strikte logische zin, dan is `skos:exactMatch` een goede keuze. Als er behoefte is aan een nog zwakkere relatie kan er gekozen worden voor `skos:closeMatch`, te gebruiken als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar.
-
-	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-	
-	intern:ex2 skos:exactMatch extern:ex_b . 
-	intern:ex3 skos:closeMatch extern:ex_c . 
-
-
-## 3. Keuzes gemaakt bij de toepassing van RDA
+## 2. Keuzes gemaakt bij de toepassing van RDA
 
 Een belangrijke stap bij het vaststellen van het applicatieprofiel is bepalen welke elementen je niet nodig hebt. Onderstaande uitgangspunten zijn vanuit die gedachte opgesteld.
 
@@ -133,6 +112,30 @@ Voor ieder relatie-element in RDA is een element gedefinieerd dat de inverse rel
 * Werk-naar-werk-relaties leggen we **van het (kleinere) deel naar het (grotere) geheel** en **van het latere werk naar het eerdere werk**. Realiseer je dat sommige werk-werk-relaties zichzelf als inversie hebben.
 
 Volgens deze uitgangspunten gebruikten we bijvoorbeeld wel `rdaw:P10053` (_has composer agent of work_) maar niet `rdaa:P50187` (_is composer agent of work of_), wel `rdaw:P10142` (_is adaptation of work_) en subelementen maar niet `rdaw:P10155` (_is adapted as work_) en subelementen.
+
+
+
+
+## 3. Koppelen met externe beschrijvingen
+
+Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit in een externe bron. We gaan hierbij uit van het gebruik van IRIs.  
+
+De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
+
+	@prefix owl: <http://www.w3.org/2002/07/owl#> .
+	
+	intern:ex1 owl:sameAs extern:ex_a .  # identieke entiteiten
+
+De semantiek van `owl:sameAs` is streng. Het betekent dat alle kenmerken van de éne entiteit uitwisselbaar zijn met die van de andere entiteit, en andersom. Gebruik `owl:sameAs` alleen als die uitwisselbaarheid niet alleen nu geldt, maar ook in verleden én toekomst. Als daar niet met zekerheid bevestigend op geantwoord kan worden dat is `owl:sameAs` niet de beste keuze.
+
+Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogelijk niet identiek in een strikte logische zin, dan is `skos:exactMatch` een goede keuze. Als er behoefte is aan een nog zwakkere relatie kan er gekozen worden voor `skos:closeMatch`, te gebruiken als de concepten sterk gelijkwaardig zijn maar niet volledig uitwisselbaar.
+
+	@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+	
+	intern:ex2 skos:exactMatch extern:ex_b . 
+	intern:ex3 skos:closeMatch extern:ex_c . 
+
+
 
 ## 4. Vormprincipes
 
