@@ -1,15 +1,17 @@
 # De principes achter het RDA-applicatieprofiel Podiumkunst
 
-## 0. Gebruik linked data
-De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit applicatieprofiel gaat uit van een toepassing als  linked data (RDF) en de bijbehorende **linked data-principes**. Dat betekent onder andere dat er **entiteiten** gedefinieerd worden voor de centrale objecten die beschreven worden. Deze entiteiten worden geïdentificeerd met een **IRI** (~ **URI**), een identifier in de vorm van een URL (webadres).
+## 0. Volg de linked data-principes
+De standaard **RDA** kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit applicatieprofiel gaat uit van een toepassing van RDA als linked data (RDF, *Resource Description Framework*) en gebruik van de bijbehorende **linked data-principes**. Dat betekent dat er, naast het onvermijdelijk gebruik van concrete waarden (tekenreeksen, getallen, datums), de zogenaamde `rdfs:Literals`, zo veel mogelijk **entiteiten** gedefinieerd worden voor de te beschrijven objecten. Deze entiteiten worden dan geïdentificeerd met een **IRI** (~ **URI**), een identifier in de vorm van een URL (webadres), en met deze IRI's kunnen dan ook de  **relaties** tussen de entiteiten vastgelegd worden.
 
-Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is, heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
+Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor zo'n `blank node`, een entiteit zonder IRI, dan ook verstandig. 
+
+Om praktische redenen is het doorgaans nog niet doenlijk om van alle beschreven dingen een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) met volwaardige entiteiten beschreven maar van de uitgevers van de bladmuziek wordt slechts een naam genoemd, zonder de uitgevers als een entiteit te representeren. De praktische keuze die hier gemaakt is, heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
 
 ## 1. Volg de officiële RDA-standaard
-Dit applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardenlijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
+Behalve op de linked data-principes, is it applicatieprofiel is gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardenlijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
 
 ### Werk vanuit beschrijvingsniveaus
-Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende niveaus van detaillering gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
+Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende **niveaus van detaillering** gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
 
 * **Minimumbeschrijving**: deze omvat alleen de meest basale elementen die nodig zijn om een entiteit te beschrijven,
 * **Coherente beschrijving**: deze verbindt de primaire werk-, expressie-, manifestatie- en item-entiteiten die bij een resource (~*bron*) horen met elkaar,
@@ -21,9 +23,9 @@ De **minimumbeschrijving** en de **coherente beschrijving** zijn verplicht in he
 
 De verplichting van een element in het applicatieprofiel geldt binnen de context van de gegeven laag. Dus wanneer bijvoorbeeld de oorspronkelijke bezetting van een muziekwerk verplicht is, geldt dat alleen wanneer je de effectieve beschrijving van een muziekwerk toepast. Wanneer je deze laag uit het applicatieprofiel niet gebruikt, bijvoorbeeld omdat je geen muziekwerk beschrijft of omdat je je praktisch tot de minimaal verplichte lagen van de minimumbeschrijving en de coherente beschrijving moet beperken, geldt ook de verplichting van dit element niet.
 
-### Volg de RDA-registratiemethoden
+### De RDA-registratiemethoden
 
-RDA onderscheidt vier verschillende registratiemethoden voor het vastleggen van de waarde in een element:
+In RDF heeft een element een waarde (een `rdfs:Literal`) of het verwijst via een IRI naar een andere entiteit. In RDA wordt onderscheid gemaakt tussen drie verschillende soorten "literals". RDA komt daarmee tot vier verschillende registratiemethoden voor het vastleggen van de waarde in een element:
 * **Ongestructureerde beschrijving**: een combinatie van transcriptie (tekst overgenomen uit de resource) en vrije tekst,
 * **Gestructureerde beschrijving**: gestandaardiseerde tekst ontleend aan vocabulaires en coderingssystemen, zoals een term of naam uit een thesaurus,
 * **Identifier**: codes of nummers ter identificatie, dit kunnen locale identifiers (zoals recordnummers) zijn of gestandaardiseerde identifiers als ISBN, ISSN, nummeraanduidingen van muziekwerken etc.,
@@ -33,7 +35,7 @@ Een voorbeeld van een mogelijke invulling van de verschillende registratiemethod
 
 ![Voorbeeld registratiemethoden](./assets/5%20-%202024-02-29_RDA-Toolkit_applicatieprofielen_v5_dia-11.png)
 
-Vanuit een RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals" (`rdfs:Literal`). Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen als een `rdfs:Literal`opgenomen worden, maar RDA biedt ook de mogelijkheid om van zo'n benaming *een entiteit op zich* te maken (dit wordt wel *reïficatie* genoemd). Deze naamsentiteit is dan van het het type **Nomen**. Het nut van deze aanpak is dat het de mogelijkheid biedt om meer over de naam te zeggen. 
+ Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen als een concrete waarde, een `rdfs:Literal`, opgenomen worden, maar RDA biedt ook de mogelijkheid om van zo'n benaming *een entiteit op zich* te maken. Dit levert een naamsentiteit van het type **Nomen**. Het nut van deze aanpak is dat het de mogelijkheid biedt om meer over de specifieke naam te zeggen (deze aanpak wordt in RDF *reïficatie* genoemd).
 
 Codevoorbeelden 1 en 2 tonen hoe een identifer via reïficatie verrijkt kan worden:
 
@@ -55,7 +57,7 @@ Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen
 
 Een belangrijke stap bij het vaststellen van het applicatieprofiel is bepalen welke elementen je *niet* nodig hebt. Onderstaande uitgangspunten zijn vanuit die gedachte opgesteld.
 
-### Geen subtypering van actoren in relatie-elementen
+### Geen gebruik van subtypering van actoren in relatie-elementen
 
 De actor-entiteit in RDA kent meerdere subklassen:
 
@@ -65,7 +67,7 @@ De actor-entiteit in RDA kent meerdere subklassen:
         * Corporatie
         * Familie
 
-Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Aangezien het applicatieprofiel in de toekomst uitgebreid zal worden met actoren volgens de meest specifieke subklassen, is het niet nodig de subtypering van actoren in het relatie-element tot uitdrukking te laten komen. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de semantische zeggingskracht.
+Relaties met deze entiteiten als domein of bereik zijn (op enkele uitzonderingen na) in vijfvoud gedefinieerd. Vanuit het uitgangspunt dat de beschrijving van een actor-entiteit aangeeft tot welke subklasse deze behoort, heeft het semantische geen meerwaarde de specifiekere relatie-elementen te gebruiken. De lijst met te gebruiken RDA-elementen kan zo sterk ingeperkt worden, zonder af te doen aan de zeggingskracht.
 
 Dit applicatieprofiel gebruikt dus bijvoorbeeld wel het element `rdaw:P10015` (*has television director agent*), maar niet het element `rdaw:P10561` (*has television director family*) of `rdaw:P10420` (*has television director person*).
 
