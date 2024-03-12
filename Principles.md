@@ -51,14 +51,6 @@ Code-voorbeelden 1 en 2 tonen hoe een identifer via reïficatie verrijkt kan wor
 
 Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
 
-### Gebruik waar nodig aanvullende linked data-standaarden
-
-Dit RDA-applicatieprofiel sluit het gebruik van andere aanvullende linked data-standaarden niet uit, in die gevallen waarin dit een vereiste verrijking van de beschrijvingen oplevert die semantisch niet strijdig is met RDA. Zo is het bijvoorbeeld zeer welkom om beschrijvingen ook van een `rdfs:label` te voorzien.
-
-Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
-
-Dit geldt ook voor waardenlijsten. RDA heeft bij diverse elementen specifieke waardenlijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardenlijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
-
 ## 2. Keuzes gemaakt bij de toepassing van RDA
 
 Een belangrijke stap bij het vaststellen van het applicatieprofiel is bepalen welke elementen je niet nodig hebt. Onderstaande uitgangspunten zijn vanuit die gedachte opgesteld.
@@ -114,9 +106,7 @@ Voor ieder relatie-element in RDA is een element gedefinieerd dat de inverse rel
 Volgens deze uitgangspunten gebruikten we bijvoorbeeld wel `rdaw:P10053` (_has composer agent of work_) maar niet `rdaa:P50187` (_is composer agent of work of_), wel `rdaw:P10142` (_is adaptation of work_) en subelementen maar niet `rdaw:P10155` (_is adapted as work_) en subelementen.
 
 
-
-
-## 3. Koppelen met externe beschrijvingen
+## 3. Gelijkheidsrelaties
 
 Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit in een externe bron. We gaan hierbij uit van het gebruik van IRIs.  
 
@@ -135,6 +125,8 @@ Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogel
 	intern:ex2 skos:exactMatch extern:ex_b . 
 	intern:ex3 skos:closeMatch extern:ex_c . 
 
+
+Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:sameAs`-relaties equivalente kenmerken als alias te creëeren en toe te passen (zoals gedaan binnen [RDA applicatieprofiel Nederlandse bibliografie](https://netwerk-digitaal-erfgoed.github.io/rdanl/)), bijvoorbeeld om daarmee de leesbaarheid van de RDF voor mensen te vergroten.
 
 
 ## 4. Vormprincipes
