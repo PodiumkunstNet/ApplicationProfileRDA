@@ -33,21 +33,23 @@ Een voorbeeld van een mogelijke invulling van de verschillende registratiemethod
 
 ![Voorbeeld registratiemethoden](./assets/5%20-%202024-02-29_RDA-Toolkit_applicatieprofielen_v5_dia-11.png)
 
-Vanuit een RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals" (`rdfs:Literal`). Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen als een `rdfs:literal`opgenomen worden, maar RDA biedt ook de mogelijkheid om van zo'n benaming *een entiteit op zich* te maken (dit wordt wel *reïficatie* genoemd). Deze naamsentiteit is dan van het het type **Nomen**. Het nut van deze aanpak is dat het de mogelijkheid biedt om meer over de naam te zeggen. Het volgende voorbeeld toont hoe van een identifer via reïficatie verrijkt kan worden.
+Vanuit een RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals" (`rdfs:Literal`). Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen als een `rdfs:Literal`opgenomen worden, maar RDA biedt ook de mogelijkheid om van zo'n benaming *een entiteit op zich* te maken (dit wordt wel *reïficatie* genoemd). Deze naamsentiteit is dan van het het type **Nomen**. Het nut van deze aanpak is dat het de mogelijkheid biedt om meer over de naam te zeggen. 
+
+Code-voorbeelden 1 en 2 tonen hoe een identifer via reïficatie verrijkt kan worden:
 
 	intern:ex4 rdax:P00018 "12345-78-9" . 
 
-*Voorbeeld 1: Een identifier als een literal-waarde.*
+*Voorbeeld 1: Een identifier als een literal-waarde. Betekenis is niet duidelijk.*
 
 	intern:ex4 rdax:P00018 [
 		a rdac:C10012 ;                                     # dit is een nomen
-		rdan:P80068 "12345-78-9" ;                          # "has nomen string" , de identifier
+		rdan:P80068 "12345-78-9" ;                          # "has nomen string" , de identifier-waarde
 		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
 	] .
 
-*Voorbeeld 2: Dezelfde identifier na reïficatie, verrijkt met "scheme of Nomen".*
+*Voorbeeld 2: Dezelfde identifier na reïficatie, verrijkt met "scheme of Nomen". Betekenis is duidelijk.*
 
-Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen dan ook zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
+Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
 
 ### Gebruik waar nodig aanvullende linked data-standaarden
 
@@ -58,17 +60,9 @@ Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:same
 Dit geldt ook voor waardenlijsten. RDA heeft bij diverse elementen specifieke waardenlijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardenlijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
 
 
-## 2. Uitgangspunten ten aanzien van externe identifiers
+## 2. Koppelen met externe beschrijvingen
 
-### Achtergrond: interne en externe identifiers
-
-Een identifier is een uniek kenmerk of *label* dat gebruikt wordt om een specifieke entiteit te identificeren en te onderscheiden van andere entiteiten. Binnen linked data is het gangbaar en wenselijk dat vooral IRI's als identifier gebruikt worden.
-
-In een metadata-beschrijving worden identifiers gebruikt om de beschreven entiteit *zelf* van een uniek kenmerk te voorzien, maar identifiers worden ook gebruikt om aan te geven dat het beschrevene gelijk - of gelijkwaardig - is aan een entiteit elders. Zo zijn er dus 'eigen' of interne identifiers enerzijds en externe identifiers anderzijds.
-
-### Relaties voor gelijkheid of gelijkwaardigheid
-
-Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier in de vorm van een IRI.  
+Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit in een externe bron. We gaan hierbij uit van het gebruik van IRIs.  
 
 De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
 
@@ -85,24 +79,6 @@ Als de entiteiten equivalent zijn in de zin van betekenis en gebruik, maar mogel
 	intern:ex2 skos:exactMatch extern:ex_b . 
 	intern:ex3 skos:closeMatch extern:ex_c . 
 
-### Identifiers als label of literal
-
-Externe entiteiten of concepten hebben hebben als identifier dikwijls een `rdfs:Literal`-label en geen IRI. De relaties `owl:sameAs`, `skos:exactMatch` en `skos:closeMatch` kunnen dan niet gebruikt worden. Om in deze gevallen gelijkheid van gelijkwaardigheid aan te duiden gebruiken we het RDA element `rdax:P00018` "has identifier for RDA entity". Dit kan eenvoudig op de volgende wijze gebruikt worden:
-
-	intern:ex4 rdax:P00018 "12345-78-9" . 
-
-Probleem hierbij is dat niet duidelijk is wat "12345-78-9" is. Binnen dit applicatieprofiel is die constructie daarom alleen toegestaan voor interne identifiers (anders dan IRI's). Voor externe identifiers moet daarom het volgende partroon worden gevolgd waarbij via een Nomen-entiteit de benodigde informatie over de identifier verstrekt kan worden:
-
-	# dit voorbeeld geeft aan dat "12345-78-9" een barcode is:
-	intern:ex4 rdax:P00018 [
-		a rdac:C10012 ;                                     # dit is een nomen
-		rdan:P80068 "12345-78-9" ;                          # "has nomen string" , de identifier
-		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
-	] .
-
-Het is niet nodig een IRI aan de nomen-entiteit toe te kennen, daarom is er hier gekozen om een zogenaamde `blank node`-entiteit te creëeren. 
-
-NB: Het streven is om te komen tot vaste waardenlijsten voor de "*scheme of Nomen*." 
 
 ## 3. Keuzes gemaakt bij de toepassing van RDA
 
