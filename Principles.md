@@ -1,7 +1,7 @@
 # De principes achter het RDA-applicatieprofiel Podiumkunst
 
 ## 0. Gebruik linked data
-De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit applicatieprofiel gaat uit van een toepassing als  linked data (RDF) en de bijbehordende **linked data-principes**. Dat betekent onder andere dat er **entiteiten** gedefinieerd worden voor de centrale objecten die beschreven worden. Deze entiteiten worden geïdentificeerd met een **IRI**, een identifier in de vorm van een URL (webadres).
+De standaard RDA kan goed in een traditionele recordsgebaseerde werkwijze ingezet worden, maar dit applicatieprofiel gaat uit van een toepassing als  linked data (RDF) en de bijbehorende **linked data-principes**. Dat betekent onder andere dat er **entiteiten** gedefinieerd worden voor de centrale objecten die beschreven worden. Deze entiteiten worden geïdentificeerd met een **IRI** (~ **URI**), een identifier in de vorm van een URL (webadres).
 
 Niet alles in linked data is per sé een entiteit met een IRI. Sommige entiteiten hebben alleen maar betekenis in de context van één bovenliggende entiteit. In zo'n geval kan er voor gekozen worden die entiteit geen IRI te geven. Dit bespaart op beheer. Bedenk dat IRI's geacht worden om **duurzame identifiers** te zijn. Dat komt noodzakelijkerwijs met administratieve en technische lasten. Soms is de keuze voor een `blank node`, een entiteit zonder IRI, dus verstandig (zie het voorbeeld verderop over Identifiers). Daarnaast is het om praktische redenen niet, of nog niet, doenlijk om van alles een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) als volwaardige entiteiten beschreven maar wordt er van de uitgevers van de bladmuziek slechts de naam genoemd, zonder deze als een entiteit te representeren. De praktische keuze die hier gemaakt is, heeft onder andere te maken met een gebrek aan voldoende passende **terminologiebronnen** of **theasauri**.
 
@@ -33,11 +33,21 @@ Een voorbeeld van een mogelijke invulling van de verschillende registratiemethod
 
 ![Voorbeeld registratiemethoden](./assets/5%20-%202024-02-29_RDA-Toolkit_applicatieprofielen_v5_dia-11.png)
 
-Vanuit RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals". Een RDA-IRI is gelijk aan een RDF-IRI. Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen met behulp van de Nomen-entiteit gereïficeerd worden.
+Vanuit een RDF-perspectief zijn zowel ongestructureerde en gestructureerde beschrijvingen als identifiers "literals" (`rdfs:Literal`). Benamingen van RDA-entiteiten (zoals namen, titels en identifiers) kunnen als een `rdfs:literal`opgenomen worden, maar RDA biedt ook de mogelijkheid om van zo'n benaming *een entiteit op zich* te maken (dit wordt wel *reïficatie* genoemd). Deze naamsentiteit is dan van het het type **Nomen**. Het nut van deze aanpak is dat het de mogelijkheid biedt om meer over de naam te zeggen. Het volgende voorbeeld toont hoe van een identifer via reïficatie verrijkt kan worden.
 
-Het spreekt vanzelf dat in dit applicatieprofiel de geprefereerde registratiemethode de IRI is. Daarmee wordt het gebruik van andere registratiemethoden echter niet per definitie uitgesloten, al was het maar omdat sommige elementen in RDA niet volgens alle registratiemethoden vast te leggen zijn.
+	intern:ex4 rdax:P00018 "12345-78-9" . 
 
-Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
+*Voorbeeld 1: Een identifier als een literal-waarde.*
+
+	intern:ex4 rdax:P00018 [
+		a rdac:C10012 ;                                     # dit is een nomen
+		rdan:P80068 "12345-78-9" ;                          # "has nomen string" , de identifier
+		rdan:P80069 <http://vocab.getty.edu/aat/300417443>  # "scheme of Nomen" 
+	] .
+
+*Voorbeeld 2: Dezelfde identifier na reïficatie, verrijkt met "scheme of Nomen".*
+
+Het RDA-Applicatieprofiel Podiumkunst gebruikt de Nomen-entiteit voor benamingen dan ook zodra er meer over de benaming gezegd moet worden dan alleen de letterlijke waarde. Dat gaat bijvoorbeeld over een typering van de naam (dit is een plaatsingscode) of een aanduiding van het gebruikte schema voor de naam (dit is een ISBN).
 
 ### Gebruik waar nodig aanvullende linked data-standaarden
 
@@ -48,7 +58,7 @@ Het is niet strijdig met de principes van dit applicatieprofiel om via `owl:same
 Dit geldt ook voor waardenlijsten. RDA heeft bij diverse elementen specifieke waardenlijsten gedefinieerd. Waar mogelijk gebruikt dit applicatieprofiel deze waardenlijsten, maar indien nodig wordt daarvan afgeweken. RDA biedt geen beschrijvingen van concepten, daarvoor maakt dit applicatieprofiel zoveel mogelijk gebruik van SKOS.
 
 
-## 2. Uitgangspunten ten aanzien van identifiers
+## 2. Uitgangspunten ten aanzien van externe identifiers
 
 ### Achtergrond: interne en externe identifiers
 
@@ -58,7 +68,7 @@ In een metadata-beschrijving worden identifiers gebruikt om de beschreven entite
 
 ### Relaties voor gelijkheid of gelijkwaardigheid
 
-Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier.  
+Er zijn verschillende manieren om aan te geven dat de beschreven entiteit gelijk of gelijkwaardig is aan een entiteit die aangeduid wordt met een externe identifier in de vorm van een IRI.  
 
 De gangbare manier om aan te geven dat een entiteit gelijk is aan een externe entiteit is door gebruik te maken van de `owl:sameAs`-relatie.
 
