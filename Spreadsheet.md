@@ -1,6 +1,6 @@
 # Gevolgde aanpak spreadsheet
 
-[Download het spreadsheet](../assets/RDA-AP_Podiumkunst-net.xlsx)
+[Download het spreadsheet](./assets/RDA-AP_Podiumkunst-net.xlsx)
 
 ## Brondata
 
