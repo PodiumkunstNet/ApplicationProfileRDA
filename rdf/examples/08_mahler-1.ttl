@@ -36,7 +36,7 @@
 pk:werk
     a rdac:C10001 ;                                         # a Work
     rdaw:P10004 rdaterm:1118 ;                              # has category of work: muziekwerk
-    rdaw:P10223 "Symfonie, orkest, nr. 1, D gr.t." ;        # has preferred title of work
+    rdaw:P10223 "Symfonie nr. 1, D gr.t." ;                 # has preferred title of work
     rdaw:P10334 "1" ;                                       # has serial number of musical work
     rdaw:P10086 "Titan";                                    # has variant title of work
     rdaw:P10219 "1884-1888" ;                               # has date of work - hier geen span?

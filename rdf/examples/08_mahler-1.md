@@ -25,7 +25,7 @@ Onmisbaar is hier `rdaw:P10004` (*category of work*), hier ingevuld met een RDAt
 
 ### De identifiers
 
-Bemerk dat identifiers doorgaans als een blank node opgenomen zijn, op één na nog zonder een geschikte waarde voor de *category of identifier*. Bij de actoren zijn de identifiers als literal opgenomen, zonder de mogelijkheid ze te karakteriseren.
+Bemerk dat identifiers doorgaans als een `blank node` opgenomen zijn, op één na nog zonder een geschikte waarde voor de *category of identifier*. Bij de actoren zijn de identifiers als literal opgenomen, zonder de mogelijkheid ze te karakteriseren.
 
 
 ### De expressie
