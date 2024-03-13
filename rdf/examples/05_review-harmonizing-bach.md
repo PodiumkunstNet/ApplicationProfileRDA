@@ -1,6 +1,6 @@
 # Review van "Harmonizing 'Bach' chorales"
 
-Bestand: [02_harmonizing-bach.ttl](02_harmonizing-bach.ttl)
+Bestand: [05_review-harmonizing-bach.ttl](05_review-harmonizing-bach.ttl)
 
 ## De bron
 
@@ -26,4 +26,4 @@ De URL naar de online resource wordt als volgt vastgelegd:
 
     rdam:P30154 "https://www.authentic-chorales.com/filemanager/Review-of-Malcolm-Boyd-on-Bach-Chorales_1.pdf" ; # has uniform resource locator
 
-Bestand: [02_harmonizing-bach.ttl](02_harmonizing-bach.ttl)
+Bestand: [05_review-harmonizing-bach.ttl](05_review-harmonizing-bach.ttl)
