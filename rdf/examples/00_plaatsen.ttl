@@ -1,0 +1,72 @@
+@prefix ex: <http://example.com/pknet/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Lijst met plaatsen
+# Plaatsen vooralsnog alleen voorzien van id en appellation
+
+
+ex:p1 # Plaats no. 1 = call number for item no. 1 and no. 2
+    a rdac:C10009 ;
+    rdap:P70019 "HOLL" ; # has appellation of place
+    rdap:P70044 <http://vocab.getty.edu/aat/300311706> . # has category of place: call number
+
+ex:p2 # Plaats no. 2 = shelf mark for item no. 1
+    a rdac:C10009 ;
+    rdap:P70019 "1e" ; # has appellation of place
+    rdap:P70044 <http://vocab.getty.edu/aat/300404704> . # has category of place: shelf mark
+
+ex:p3 # Plaats no. 3 = shelf mark for item no. 3
+    a rdac:C10009 ;
+    rdap:P70019 "Hollandse" ; # has appellation of place
+    rdap:P70044 <http://vocab.getty.edu/aat/300404704> . # has category of place: shelf mark
+
+ex:p4 # Plaats no. 4 = Amsterdam
+    a rdac:C10009 ;
+    rdap:P70019 "Amsterdam" @nl . # has appellation of place
+
+ex:p5 # Plaats no. 5
+    a rdac:C10009 ;
+    rdap:P70019 "Londen" @nl . # has appellation of place
+
+ex:p6 # Plaats no. 6
+    a rdac:C10009 ;
+    rdap:P70019 "Melbourne" . # has appellation of place
+
+ex:p7 # Plaats no. 7
+    a rdac:C10009 ;
+    rdap:P70019 "Auckland" . # has appellation of place
+
+ex:p8 # Plaats no. 8
+    a rdac:C10009 ;
+    rdap:P70019 "Johannesburg" . # has appellation of place
+
+ex:p9 # Plaats no. 9
+    a rdac:C10009 ;
+    rdap:P70019 "Antwerpen" @nl . # has appellation of place
+
+ex:p10 # Plaats no. 10
+    a rdac:C10009 ;
+    rdap:P70019 "Baarn" @nl . # has appellation of place
+
+ex:p11 # Plaats no. 11
+    a rdac:C10009 ;
+    rdap:P70019 "Schoten" @nl . # has appellation of place
+
+ex:p12 # Plaats no. 12
+    a rdac:C10009 ;
+    rdap:P70019 "Nederland" @nl . # has appellation of place
+
+
+
+ex:p50 # Plaats no. 50 = shelf mark for item no. 50
+    a rdac:C10009 ;
+    rdap:P70019 "TONE 775 VANM" ; # has appellation of place
+    rdap:P70044 <http://vocab.getty.edu/aat/300404704> . # has category of place: shelf mark

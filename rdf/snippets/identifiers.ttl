@@ -1,0 +1,49 @@
+# code snippets for denoting equality or identity / identifiers
+# status: draft 
+
+# add namespace definitions here.
+# see ../snippets/namespaces.ttl
+
+
+# just "any" entity:
+ex:thing_1 
+
+    ## using URIs for denoting equality or identity is the preferred approach:
+
+    # entities that are equivalent in every aspect:
+    skos:exactMatch {<http://whatever.org/identical_thing>} ;
+
+    # entities that are, were, and will be equivalent in every aspect:
+    owl:sameAs {<http://whatever.org/identical_thing>} ;
+
+    # entities are not exactly the same but are considered to be closely related or similar:
+    skos:closeMatch {<http://whatever.org/identical_thing>} ;
+
+
+
+    ## when URIs are not available, use literal identifiers:
+
+    # a locally managed unqualified identifier
+    rdax:P00018 "a string literal" ;                            # identifier for RDA entity
+
+    # examples of qualified external identifiers:
+
+    # a qualified identifier using the "category of Nomen" pattern:
+    rdax:P00018 [                                               # identifier for RDA entity, a blank node will do  
+        a rdac:C10012 ;                                         # a Nomen
+	    rdan:P80068 "30022000426898" ;                        # has nomen string
+        rdan:P80078 <http://vocab.getty.edu/aat/300343361>    # category of Nomen => barcode (vocab as example)
+    ] ;
+
+    # a qualified identifier using the "scheme of Nomen" pattern for an ISBN: (TODO: only category of Nomen).
+    rdax:P00018 [                                               # identifier for RDA entity, a blank node will do  
+        a rdac:C10012 ;                                         # a Nomen
+        rdan:P80068 "978-3-16-148410-0" ;                       # has nomen string
+        rdan:P80069 <http://vocab.getty.edu/aat/300417443>      # scheme of Nomen => ISBN (vocab as example)
+    ] ;
+
+    # optionally: identifiers that identify themselves using prefixes
+    # this approach is not recommended, but may be useful for applications that don't support the Nomen pattern
+
+    rdax:P00018 "barcode: 30022000426898" .                    # using a custom "barcode" prefix.
+

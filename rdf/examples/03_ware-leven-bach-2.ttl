@@ -1,0 +1,135 @@
+@prefix ex: <http://example.com/pknet/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdami: <http://rdvocab.info/termList/ModeIssue/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaut: <http://rdaregistry.info/termList/RDAUnitOfTime/> .
+@prefix rdafnm: <http://rdaregistry.info/termList/MusNotation/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Eidam: Het ware leven van Johann Sebastian Bach (vertaling uit het Duits, onderdeel van een reeks)
+# Exemplaar in KB-depot (https://webggc.oclc.org/cbs/DB=2.37/XMLPRS=Y/PPN?PPN=193451336; reeks = https://webggc.oclc.org/cbs/DB=2.37/XMLPRS=Y/PPN?PPN=822642336)
+# Werken in VIAF
+# Nog te doen: beschrijving van de reeks Open Domein
+
+# Zie ook 00_actoren.ttl en 00_plaatsen.ttl voor de vermelde personen en plaatsen.
+
+
+# ITEMS
+
+ex:i6 # Item no. 6
+    a rdac:C10003 ;
+    rdfs:label "Ware leven J.S. Bach: KB-exemplaar" ;
+    rdai:P40001 ex:n3_1 ; # has identifier for item: barcode/aanvraagnummer
+    rdai:P40018 ex:a22 ; # has current owner: KB
+    rdai:P40028 "ter inzage in de KB"@nl ; # has note on item
+    rdai:P40049 ex:m3 . # has manifestation exemplified
+
+
+# MANIFESTATIONS
+
+ex:m3 # Manifestatie no. 3
+    a rdac:C10007 ;
+    rdfs:label "Ware leven J.S. Bach: gebonden uitgave uit 2000" ;
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30002 rdamt:1007 ; # has media type: unmediated
+    rdam:P30001 rdact:1049 ; # has carrier type: volume
+    rdam:P30187 rdapm:1010 ; # has production method: printing
+    rdam:P30004 ex:n3_2 ; # has identifier for manifestation [ISBN]
+    rdam:P30156 "Het ware leven van Johann Sebastian Bach"@nl ; # has title proper for manifestation
+    rdam:P30131 "ware leven van Johann Sebastian Bach"@nl ; # has abbreviated title (for indexing)
+    rdam:P30128 "Johann Sebastian Bach"@nl ; # has variant title of manifestation
+    rdam:P30117 "Klaus Eidam ; vert. [uit het Duits] door Hans Driessen"@nl ; # has statement of responsibility
+    rdam:P30088 ex:p4 ; # has place of publication: Amsterdam
+    rdam:P30088 ex:p9 ; # has place of publication: Antwerpen
+    rdam:P30007 "2000"^^xsd:gYear ; # has copyright date
+    rdam:P30083 ex:a23 ; # has publisher agent: Arbeiderspers
+    rdam:P30182 "391 pagina's, [8] pagina's met platen"@nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
+    rdam:P30453 "Illustraties"@nl ; # has illustrative content
+    rdam:P30456 rdacc:1002 ;  # has colour content: monochrome
+    rdam:P30169 "21 cm" ; # has dimensions
+    rdam:P30309 rdatb:1002 ; # has type of binding: case binding = hardcover/gebonden
+    rdam:P30137 "Rugtitel: Johann Sebastian Bach"@nl ; # has note on title
+    rdam:P30137 "Met literatuuropgave en register"@nl ; # has note on manifestation
+    rdam:P30139 ex:e15 . # has expression manifested: expression no. 15
+
+
+# EXPRESSIONS
+
+ex:e15 # Expressie no. 15
+    a rdac:C10006 ;
+    rdfs:label "Ware leven J.S. Bach: Nederlandse vertaling" ;
+    rdae:P20312 "Het ware leven van Johann Sebastian Bach"@nl ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20037 ex:a24 ; # has translator agent: Hans Driessen
+    rdae:P20141 ex:e16 ; # is translation of: expressie no. 16
+    rdae:P20231 ex:w15 . # has work expressed
+
+ex:e16 # Expressie no. 16
+    a rdac:C10006 ;
+    rdfs:label "Ware leven J.S. Bach: Duitse tekst" ;
+    rdae:P20312 "Das wahre Leben des Johann Sebastian Bach"@de ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of expression: German
+    rdae:P20231 ex:w15 . # has work expressed
+
+
+# WORKS
+
+ex:w15 # Werk no. 15
+    a rdac:C10001 ;
+    rdfs:label "Wahre Leben des J.S. Bach, von Klaus Eidam" ;
+    skos:exactMatch <http://viaf.org/viaf/2545153954868605680004> ; # is hetzelfde als: VIAF werk 2545153954868605680004
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10088	"Das wahre Leben des Johann Sebastian Bach"@de ; # has title of work
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026049> ; # has category of work: biography (form)
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/deu> ; # has language of representative expression: German
+    rdaw:P10061	ex:a25 ; # has author agent: Klaus Eidam
+    rdaw:P10219 "1999"^^xsd:gYear ; # has date of work
+    rdaw:P10256	ex:a21 ; # has subject: J.S. Bach
+    rdaw:P10102 ex:w16 ; # is issue of = in series: Open domein -- NB strikt genomen geldt deze relatie alleen voor de NL tekst (toch?)
+    rdaw:P10012 "nr. 38"@nl . # has numbering of part: 38
+
+ex:w16 # Werk no. 16
+    a rdac:C10001 ;
+    rdfs:label "Open domein (reeks)" ;
+    skos:exactMatch <http://viaf.org/viaf/178645273> ; # is hetzelfde als: VIAF werk 178645273
+    rdaw:P10365	rdaep:1005 ; # has has extension plan: successive indeterminate plan
+    rdaw:P10004 rdaterm:1127 ; # has category of work: aggregating work
+    rdaw:P10004 rdaterm:1081 ; # has category of work: series
+    rdaw:P10088	"Open domein"@nl . # has title of work
+
+
+# NOMENS
+
+ex:n3_1 # Nomen no. 1 = aanvraagcode for item no. 6
+    a rdac:C10012 ;
+    rdfs:label "aanvraagnummer 2191221" ;
+    rdan:P80068 "2191221" ; # has nomen string
+    rdan:P80078 <http://vocab.getty.edu/aat/300343361> . # has category of nomen: bar code
+
+ex:n3_2 # Nomen no. 2 = ISBN van manifestatie no. 3
+    a rdac:C10012 ;
+    rdfs:label "ISBN 9029515104" ;
+    rdan:P80068 "9029515104" ; # has nomen string
+    rdan:P80069 <http://vocab.getty.edu/aat/300417443> . # has scheme of nomen: ISBN

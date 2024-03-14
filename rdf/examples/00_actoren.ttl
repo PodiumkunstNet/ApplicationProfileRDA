@@ -1,0 +1,167 @@
+@prefix ex: <http://example.com/pknet/> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Lijst met actoren
+# Actoren vooralsnog alleen voorzien van id en appellation
+
+
+ex:a1 # Actor no. 1
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Academie voor Theater en Dans" @nl . # has appellation of agent
+
+ex:a2 # Actor no. 2
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "UvA" @nl . # has appellation of agent
+
+ex:a3 # Actor no. 3
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "International Theatre & Film Books" @en . # has appellation of agent
+
+ex:a4 # Actor no. 4
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Cosmic Illusion Productions" @en . # has appellation of agent
+
+ex:a5 # Actor no. 5
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Chitra Gajadin" . # has appellation of agent
+
+ex:a6 # Actor no. 6
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Birgitta Hacham" . # has appellation of agent
+
+ex:a7 # Actor no. 7
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Guillaume Pool" . # has appellation of agent
+
+ex:a8 # Actor no. 8
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Hugo Pos" . # has appellation of agent
+
+ex:a9 # Actor no. 9
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Celestine Raalte" . # has appellation of agent
+
+ex:a10 # Actor no. 10
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Stefan Sanders" . # has appellation of agent
+
+ex:a11 # Actor no. 11
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Mirko Schulze" . # has appellation of agent
+
+ex:a12 # Actor no. 12
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Jabik Veenbaas" . # has appellation of agent
+
+ex:a13 # Actor no. 13
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Lot Vekemans" . # has appellation of agent
+
+ex:a14 # Actor no. 14
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Fenneke Wekker" . # has appellation of agent
+
+ex:a15 # Actor no. 15
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Shakila Azizzada" . # has appellation of agent
+
+ex:a16 # Actor no. 16
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Norman de Palm" . # has appellation of agent
+
+ex:a17 # Actor no. 17
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Lian Wintermans" . # has appellation of agent
+
+ex:a18 # Actor no. 18
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Barrie & Jenkins" . # has appellation of agent
+
+ex:a19 # Actor no. 19
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Anchor Brendon" . # has appellation of agent
+
+ex:a20 # Actor no. 20
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Malcolm Boyd" . # has appellation of agent
+
+ex:a21 # Actor no. 21
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Johann Sebastian Bach" . # has appellation of agent
+
+ex:a22 # Actor no. 22
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "KB" @nl . # has appellation of agent
+
+ex:a23 # Actor no. 23
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Uitgeverij De Arbeiderspers" @nl . # has appellation of agent
+
+ex:a24 # Actor no. 24
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Hans Driessen" . # has appellation of agent
+
+ex:a25 # Actor no. 25
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Klaus Eidam" . # has appellation of agent
+
+ex:a26 # Actor no. 26
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Ambo" @nl . # has appellation of agent
+
+ex:a27 # Actor no. 27
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Uitgeverij Westland" @nl . # has appellation of agent
+
+ex:a28 # Actor no. 28
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Martin van Amerongen" . # has appellation of agent
+
+ex:a29 # Actor no. 29
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Christopher Mabley" . # has appellation of agent
+
+
+
+ex:a50 # Actor no. 50
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Sien Vanmaele" . # has appellation of agent
+
+ex:a51 # Actor no. 51
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Evelyne Coussens" . # has appellation of agent
+
+ex:a52 # Actor no. 52
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "De Nieuwe Toneelbibliotheek" @nl . # has appellation of agent
+
+ex:a53 # Actor no. 53
+    a rdac:C10005 ; # corporate body
+    rdaa:P50378 "Stichting ter Bevordering van de Podiumkunst in Nederland" @nl ; # has appellation of agent
+    rdaa:P50378 "Stichting BPN" @nl . # has appellation of agent
+
+ex:a54 # Actor no. 54
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Jo Roets" . # has appellation of agent
+
+ex:a55 # Actor no. 55
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Jason Dousselaere" . # has appellation of agent
+
+ex:a56 # Actor no. 56
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Manuela Lauwers" . # has appellation of agent
+
+ex:a57 # Actor no. 57
+    a rdac:C10004 ; # person
+    rdaa:P50378 "Thomas Stevens" . # has appellation of agent

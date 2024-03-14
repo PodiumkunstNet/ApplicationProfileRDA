@@ -1,0 +1,120 @@
+# Op basis van metadata van muziekweb.
+# Zie ook 
+#   https://www.naxos.com/CatalogueDetail/?id=8.572207
+#   https://www.discogs.com/release/8249413-Mahler-Baltimore-Symphony-Orchestra-Marin-Alsop-Symphony-No-1
+
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaa: <http://rdaregistry.info/Elements/a/> .
+@prefix rdap: <http://rdaregistry.info/Elements/p/> .
+@prefix rdat: <http://rdaregistry.info/Elements/t/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdax: <http://rdaregistry.info/Elements/x/> .
+@prefix rdaco: <http://rdaregistry.info/termList/RDAContentType/> .
+@prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
+@prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
+@prefix rdami: <http://rdaregistry.info//termList/ModeIssue/> .
+@prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
+@prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
+@prefix rdaut: <http://rdaregistry.info/termList/RDAUnitOfTime/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+@prefix pk: <http://example.com/pknet/> .
+
+
+pk:werk
+    a rdac:C10001 ;                                         # a Work
+    rdaw:P10004 rdaterm:1118 ;                              # has category of work: muziekwerk
+    rdaw:P10223 "Symfonie nr. 1, D gr.t." ;                 # has preferred title of work
+    rdaw:P10334 "1" ;                                       # has serial number of musical work
+    rdaw:P10086 "Titan";                                    # has variant title of work
+    rdaw:P10219 "1884-1888" ;                               # has date of work - hier geen span?
+    rdaw:P10442 pk:creator ;                                # has composer agent of work
+    rdaw:P10221 "D gr. t." ;                                # toonsoort repr. expression - keuze formatering?
+    rdaw:P10365 rdaep:1001 ;                                # extension plan :"static"
+    rdaw:P10220 <https://data.muziekschatten.nl/som/um2646>;# has medium of perf. of repr. expression: symfonieorkest
+    rdax:P00018 [                                           # identifierForRDAEntity
+        a rdac:C10012 ;                                     # a Nomen
+        rdan:P80068 "00000582955" ;                         # nomenString
+        rdan:P80078 "{hier aanduiding type identifier}"     # category of Identifier
+    ] .
+
+pk:expressie
+    a rdac:C10006 ;                                         # an Expression
+    rdae:P20001 rdaco:1011;                                 # contentType performed music
+    rdae:P20231 pk:werk1 ;                                  # work expressed
+    rdae:P20004 "2008"^^xsd:gYear ;                         # opnamejaar
+    rdae:P20286 pk:conductor ;                              # instrumental conductor agent
+    rdae:P20020 pk:orkest .                                 # instrumentalist agent
+
+
+pk:manifestatie
+    a rdac:C10007 ;                                         # a Manifestation
+    rdam:P30001 rdact:1004 ;                                # carrierType audio disc
+    rdam:P30002 rdamt:1001 ;                                # mediaType audio
+    rdam:P30139 pk:expressie1 ;                             # expressionManifested
+    rdam:P30105 "Gustav Mahler" ;                           # verantwoordelijkheidsvermelding
+    rdam:P30182 "1 compact disc" ;                          # extentOfManifestation
+    rdam:P30083 pk:label ;                                  # publisherAgent
+    rdam:P30011 "2012"^^xsd:gYear ;                         # date of publication
+    rdam:P30134 "Symphony no.1 / Gustav Mahler" ;           # titleOfManifestation
+    rdax:P00018 [                                           # identifierForRDAEntity
+        a rdac:C10012 ;                                     # a Nomen
+        rdan:P80068 "976203510 A 11-10-12" ;                # nomenString
+        rdan:P80078 "{hier categorie aangeven}"             # category of Identifier - ??
+    ] ;
+    rdax:P00018 [                                           # identifierForRDAEntity
+        a rdac:C10012 ;                                     # a Nomen
+        rdan:P80068 "AAX9232" ;                             # nomenString
+        rdan:P80078 "hier categorie aangeven"               # category of Identifier - ??
+    ] ;
+    rdam:P30172 "DDD" .                                     # type of recording- DDD = digital recording, mixing, and mastering
+
+
+pk:item
+    a rdac:C10008 ;                                         # an Item
+    rdai:P40049 pk:manifestatie ;                           # manifestationExemplified
+    rdax:P00018 [                                           # identifierForRDAEntity
+        a rdac:C10012 ;                                     # a Nomen
+        rdan:P80068 "100937647" ;                           # nomenString
+        rdan:P80078 <http://vocab.getty.edu/aat/300343361> # category of Identifier - barcode
+    ] .
+
+
+pk:label
+    a rdac:C10005 ;                                         # a coporate body
+    rdaa:P50413 "Naxos" ;                                   # has preferred name of Agent
+    rdax:P00017 "8.572207" .                                # identifierForRDAEntity
+
+
+pk:creator
+    a rdac:C10004 ;                                         # a person
+    rdaa:P50117 "Mahler, Gustav" ;                          # has preferred name of Person
+    rdaa:P50121 "1860"^^xsd:gYear ;                         # dateOfBirth
+    rdaa:P50120 "1911"^^xsd:gYear ;                         # dateOfDeath
+    rdax:P00018 "988029502" .                               # identifierForRDAEntity
+
+
+pk:conductor
+a rdac:C10004 ;                                             # a person
+    rdaa:P50117 "Marin Alsop" ;                             # has preferred name of Person
+    rdaa:P50121 "1956"^^xsd:gYear ;                         # dateOfBirth
+    rdax:P00018 "988207397" .                               # identifierForRDAEntity
+
+
+pk:orkest
+    a rdac:C10005 ;                                         # a coporate body
+    rdaa:P50413 "Baltimore Symphony Orchestra" ;            # has preferred name of Agent
+    rdax:P00018 "988083558" .                               # identifierForRDAEntity
+

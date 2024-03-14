@@ -1,0 +1,94 @@
+# basic template for "text"
+# status: draft
+
+# add namespace definitions here.
+# see ../snippets/namespaces.ttl
+
+# objects prestented between {} present example values
+# "could" triples are not suggested here, see the spreadsheet for more properties
+
+# a textual work:
+ex:work_tb1
+    a rdac:C10001 ;
+    rdaw:P10004 rdaterm:1165 ;              # has category of work => textual work
+    rdaw:P10365 rdaep:1001 ;                # has extension plan => static plan ; apply this property for monographic textual works
+
+    # "must":
+    rdaw:P10006 {"Work 1"@nl} ;             # title of work, using a language tag
+    rdaw:P10061 {ex:agent_1} ;              # author agent of work
+
+    # "should":
+    rdaw:P10219 {"1957"}^^xsd:gYear ;       # date of work
+    rdaw:P10349 {"nl"} ;                    # language of representative expression, use BCP47 codes, for example "nl" for Dutch
+    rdaw:P10256 {ex:subject} .              # subject of work
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+# an expression of the work:
+ex:expr_tb1
+    a rdac:C10006 ;                         # an expression
+    rdae:P20001 rdaco:1020 ;                # has content type => text
+
+    # "must":
+    rdae:P20231 {ex:work_tb1} ;             # has work expressed
+    rdae:P20312 {"title of expression"@de}; # title of expression
+    rdae:P20006 {"de"} .                    # language of expression, use BCP47 codes, for example "de" for German
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+# a printed manifestation of the expression:
+ex:man_tb1
+    a rdac:C10007 ;                         # a manifestation
+    rdam:P30001 rdamct:1049 ;               # has carrier type => volume
+    rdam:P30002 rdamt:1007 ;                # has media type => unmediated
+    
+    # "must":
+    rdam:P30139 {ex:expr_tb1} ;             # has expression manifested
+    rdam:P30156 {"title of manif."@de};     # title proper of manifestation
+    rdam:P30083 {"publisher"@en} ;          # publisher of manifestation - or use a URI
+    rdam:P30088 {"place"@en} ;              # place of publication - or use a URI
+    rdam:P30011 {"2000"}^^xsd:gYear ;       # date of publication
+    rdam:P30182 {"40 pagina's"@nl} ;        # extent of manifestation
+    rdax:P00018 [                           # identifier for RDA entity
+        a rdac:C10012;                      # a nomen
+        rdan:P80068 {"12345-67890"} ;       # nomenstring
+        rdan:P80078 {<http://vocab.getty.edu/aat/300417443>}     # category of nomen => "ISBN" 
+    ] .
+
+    # "should":
+    rdam:P30003 rdami:1001 ;                # has mode of issuance => single unit
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+# an online manifestation of the expression:
+ex:man_tb2 
+    a rdac:C10007 ;                         # a manifestation
+	rdam:P30001 rdact:1018 ;                # has carrier type => online resource
+    rdam:P30002 rdamt:1003 ;                # has media type => computer
+
+    # "must":
+    rdam:P30139 {ex:expr_tb1} ;             # has expression manifested
+    rdam:P30156 {"title of manif."@de};     # title proper of manifestation
+    rdam:P30083 {"publisher"@en} ;          # publisher of manifestation - or use a URI
+    rdam:P30154 {<uri>} .                   # has uniform resource locator
+    
+    # note: for online resources, usually there is no item, but a manifestation is directly available online
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+# an item:
+ex:item_tb1
+    a rdac:C10003 ;                         # an item
+
+    # "must":
+    rdai:P40049 ex:man_tb1 ;                # has manifestation itemized
+    rdai:P40001 {"ABC 134"} .               # item identifier, or provide an appellation for the item
+
+    # use more properties when needed / desired, see the spreadsheet.
+
+
+
