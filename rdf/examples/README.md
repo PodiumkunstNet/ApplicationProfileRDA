@@ -2,6 +2,8 @@
 
 Overzicht van uitgewerkte voorbeelden van beschrijvingen in lijn met het Podiumkunst.net RDA-toepassingsprofiel. Actoren en plaatsen uit de beschrijvingen staan apart beschreven in [00_actoren.ttl](00_actoren.ttl) en [00_plaatsen.ttl](00_plaatsen.ttl).
 
+Hoewel de voorbeelden opzichzelfstaand zijn, is het voor het beste begrip zinvol om ze (samen met de uitleg) door te nemen in de volgorde waarin ze hier gepresenteerd worden.
+
 ## Teksten over muziek
 
 * [Harmonizing 'Bach' chorales](02_harmonizing-bach.md) (als [.ttl](02_harmonizing-bach.ttl)) is een voorbeeld van een eenvoudige tekstuele resource, hier opgenomen om de primaire relaties tussen werken, expressies, manifestaties en items te illustreren.
