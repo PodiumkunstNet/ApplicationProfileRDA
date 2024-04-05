@@ -4,7 +4,7 @@ Bestand: [08_mahler-1.ttl](08_mahler-1.ttl)
 
 ## De bron
 
-Een beschrijving van de in RDA beschreven bron, een cd met een opname van een symfonie van Gustav Mahler, is ook te vinden in [Discogs](https://www.discogs.com/release/8249413-Mahler-Baltimore-Symphony-Orchestra-Marin-Alsop-Symphony-No-1).
+Een beschrijving van de in RDA beschreven bron, een cd met een opname van een symfonie van Gustav Mahler. Zie [Muziekweb](https://www.muziekweb.nl/en/Link/AAX9232/Symphony-no-1). Ook te vinden in [Discogs](https://www.discogs.com/release/8249413-Mahler-Baltimore-Symphony-Orchestra-Marin-Alsop-Symphony-No-1).
 
 ## Entiteitenstructuur
 
@@ -17,7 +17,7 @@ Naast de WEMI-entiteiten zijn er vier actor-entiteiten, voor de componist, de di
 
 ## Representatie in RDA-RDF
 
-Enige opmerkingen over de representatie in RDA-RDF.
+In dit voorbeeld worden nu nog geen `rdfs:label` elementen toegepast. Het is een goede praktijk dit wel te doen, veel linked data-toepassingen verwachten dat een `rdfs:label` beschikbaar is, om voor menselijke gebruikers kort en krachtig te communiceren wat de entiteit in kwestie behelst. Vaak zal als de waarde hiervoor de wat in traditionele systemen een *ingang* of *access point* heet hier geschikt voor zijn. Bedenk dat een `rdfs:label` functioneel niet identiek is aan een traditionele *ingang*.
 
 ### Het werk
 
