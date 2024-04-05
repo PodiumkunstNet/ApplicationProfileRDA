@@ -8,7 +8,7 @@ Sommige entiteiten hebben alleen maar betekenis in de context van één bovenlig
 Om praktische redenen is het doorgaans nog niet doenlijk om van alle beschreven dingen een entiteit te maken. Zo wordt de bladmuziek van [Muziekschatten.nl](https://www.muziekschatten.nl/) met volwaardige entiteiten beschreven maar van de uitgevers van de bladmuziek wordt slechts een naam genoemd, zonder de uitgevers als een entiteit te representeren. 
 
 ## 1. Volg de officiële RDA-standaard
-Dit applicatieprofiel is, naast de linked data-principes, gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardenlijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen maken geen onderdeel uit van dit applicatieprofiel. 
+Dit applicatieprofiel is, naast de linked data-principes, gebaseerd op de beschrijvingen van de klassen en elementen en op de instructies, richtlijnen en waardenlijsten in de [officiële RDA-standaard](http://access.rdatoolkit.org/). De zogeheten "*deprecated*" en "*soft deprecated*" elementen (dus elementen waarvan gebruik respectievelijk *ontraden* of *ontmoedigd* wordt) maken geen onderdeel uit van dit applicatieprofiel. 
 
 ### Werk vanuit beschrijvingsniveaus
 Belangrijk in de benadering die RDA biedt, is dat beschrijvingen op verschillende **niveaus van detaillering** gemaakt kunnen worden. Daarbij wordt onderscheid gemaakt tussen:
