@@ -2,6 +2,8 @@
 
 [Download het spreadsheet](./assets/RDA-AP_Podiumkunst-net.xlsx)
 
+NB: dit spreadsheet is een werkdocument dat als uitgangspunt gediend heeft voor de [voorbeelden](./rdf/examples/). De voorbeelden weerspiegelen de meest actuele stand van zaken.
+
 ## Brondata
 
 Het spreadsheet is gebaseerd op csv-data uit de [RDA Registry](http://www.rdaregistry.info/). De volgende gegevens zijn gebruikt:
