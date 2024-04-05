@@ -89,7 +89,7 @@ Bij het beschrijven van een expressie leggen we de betreffende kenmerken nogmaal
 
 ### Gebruik geen benamingen die bij andere RDA-implementatiescenario's horen
 
-RDA biedt een specifiek type benaming, namelijk _access points_ of "ingangen". Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi (RDA-implementatiescenario C) en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
+RDA biedt een specifiek type benaming, namelijk _access points_ of "ingangen". Dergelijke ingangen spelen een belangrijke rol bij RDA-toepassingen in traditionele bibliotheekcatalogi (RDA-implementatiescenario C, ofwel het gebruik van traditionele bibliografische records en *authority* records) en zijn opgebouwd volgens een vast stramien, doorgaans bestaande uit elementen die ook in afzonderlijke properties vastgelegd worden.
 
 Omdat dit applicatieprofiel IRI's gebruikt voor het identificeren van werken, expressies, actoren en dergelijke, en omdat er afzonderlijke elementen zijn waarin de verschillende onderdelen van een ingang kunnen worden vastgelegd, worden benamingen van het type "access point" niet toegestaan in dit applicatieprofiel.
 
@@ -187,7 +187,7 @@ Dit applicatieprofiel is werk in uitvoering. Belangrijk aandachtspunten voor de 
 
 ### Een volledige en op RDA-gebaseerde ontologie voor de podiumkunsten
 
-In de huidige vorm, als een op linked data-gebaseerde standaard en toegepast binnen RDF, is de wereldwijd de ervaring met RDA nog beperkt. RDA wordt vooral gebruikt binnen de wereld van bibliotheken. Daar begint nu uit te kristalliseren hoe het bibliografische domein beschouwd kan worden vanuit IFLA-LRM (het conceptueel model achter RDA) en RDA. Binnen het domein van de podiumkunsten is nog niet uitgekristalliseerd hoe alle te te beschrijven zaken in entiteiten volgens LRM of RDA uitgedrukt kunnen worden. Bijvoorbeeld, hoe modelleren we een theaterproductie in RDA? Of hoe beschrijven we een requisiet uit een museumcollectie? Wanneer is een werk een werk? Beschrijven we een deel van een symfonie ook als een werk, met een eigen IRI? Kunnen een zakpartituur en een studiepartituur tot de zelfde expressie behoren?
+In de huidige vorm, als een op linked data-gebaseerde standaard en toegepast binnen RDF, is wereldwijd de ervaring met RDA nog beperkt. RDA wordt vooral gebruikt binnen de wereld van bibliotheken. Daar begint nu uit te kristalliseren hoe het bibliografische domein beschouwd kan worden vanuit IFLA-LRM (het conceptueel model achter RDA) en RDA. Binnen het domein van de podiumkunsten is nog niet uitgekristalliseerd hoe alle te te beschrijven zaken in entiteiten volgens LRM of RDA uitgedrukt kunnen worden. Bijvoorbeeld, hoe modelleren we een theaterproductie in RDA? Of hoe beschrijven we een requisiet uit een museumcollectie? Wanneer is een werk een werk? Beschrijven we een deel van een symfonie ook als een werk, met een eigen IRI? Kunnen een zakpartituur en een studiepartituur tot de zelfde expressie behoren?
 
 Dit applicatieprofiel is in deze vorm vooral een eerste aanzet te komen tot een wijze van beschrijven van het domein van de podiumkunsten. Zie ook [aanzet voor de nog uit te werken sjablonen](rdf/templates)
 
