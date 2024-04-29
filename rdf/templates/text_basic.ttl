@@ -14,7 +14,7 @@ ex:work_tb1
     rdaw:P10365 rdaep:1001 ;                # has extension plan => static plan ; apply this property for monographic textual works
 
     # "must":
-    rdaw:P10006 {"Work 1"@nl} ;             # title of work, using a language tag
+    rdaw:P10088 {"Work 1"@nl} ;             # title of work, using a language tag
     rdaw:P10061 {ex:agent_1} ;              # author agent of work
 
     # "should":
