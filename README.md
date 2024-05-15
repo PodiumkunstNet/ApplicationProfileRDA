@@ -1,6 +1,6 @@
 # RDA-Applicatieprofiel Podiumkunst
 
-*versie 1.00 / [Podiumkunst.net](https://podiumkunst.net/) / 2024-04-05* 
+*versie 1.1 '**work in progress**' / [Podiumkunst.net](https://podiumkunst.net/) / 2024-05-15* 
 
 ## Inleiding
 RDA, _Resource Description and Access_, is een pakket van data-elementen, richtlijnen en instructies voor het maken van metadata voor bibliotheken en erfgoedinstellingen, die voldoen aan internationale modellen voor gebruikersgerichte linked data-applicaties. De RDA-standaard biedt veel keuzemogelijkheden bij de toepassing ervan. Om in de praktijk met RDA te kunnen werken is het van belang die keuzes te maken en vast te leggen in een zogeheten **applicatieprofiel** (ook wel **toepassingsprofiel**).
@@ -40,8 +40,22 @@ In aanvulling op de voorbeeldbeschrijvingen biedt dit applicatieprofiel ook enig
 
 Zie de [code-fragmenten](rdf/snippets).
 
-## Aanzet tot sjablonen
-We streven ernaar te komen tot een aantal basis-sjablonen die gebruikt kunnen worden als kader bij het beschrijven van de verschillende soorten entiteiten die relevant zijn in de wereld van de podiumkunst.
+## Werk in uitvoering
 
+Actuele aandachtpunten bij de verdere inuvlling van dit profiel zijn:
+
+### Modellering theaterproducties
+
+Een belangrijk concept bij het beschrijven van theater is de **productie**. De volgende afbeelding schets hoe we nu de productie benaderen:
+
+![Theaterproductie](../../assets/wip_productie.png)
+
+De theaterproductie wordt hier gezien als aggregerend *werk*. Het is één-op-één gerelateerd een de productie al een *expressie*. Uiteraard is er een (nader te benoemen) relatie met het oorspronkelijke theaterwerk dat met de productie uitgevoerd wordt. De productie zou ook een relatie kunnen hebben met deelwerken.
+
+
+### Verfijning rollen
+
+
+### Sjablone
 <!-- Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates). -->
 
