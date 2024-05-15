@@ -1,7 +1,0 @@
-pages:
-  - match: /
-    run: unix:rm -rf ./
-    run: unix:rm -rf ./index.html
-    run: unix:rm -rf ./index.md
-    file: README.md
-    publish: true
