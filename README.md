@@ -50,12 +50,17 @@ Een belangrijk concept bij het beschrijven van theater is de **productie**. De v
 
 ![Theaterproductie](./assets/wip_productie.png)
 
-De theaterproductie wordt hier gezien als aggregerend *werk*. Het is één-op-één gerelateerd een de productie al een *expressie*. Uiteraard is er een (nader te benoemen) relatie met het oorspronkelijke theaterwerk dat met de productie uitgevoerd wordt. De productie zou ook een relatie kunnen hebben met deelwerken.
-
+De theaterproductie wordt hier gezien als aggregerend *werk*. Het is één-op-één gerelateerd een de productie als een *expressie* (een zogenaamde *WE-lock*). Uiteraard is er een (nader te benoemen) relatie met het oorspronkelijke theaterwerk dat met deze productie uitgevoerd wordt. De productie zou ook een relatie kunnen hebben met deelwerken die als onderdeel van de productie gezien worden, zoals wellicht het kostuumontwerp.
 
 ### Verfijning rollen
 
+RDA biedt veel relaties om rollen van actoren aan te duiden. Toch zal het aantal relaties vaak niet genoeg zijn. Dit kan opgelost worden door subproperties te maken van bestaande RDA-properties. Die aanpak heeft nadelen. Het is omslachtig subproperties te maken en een veelheid aan properties maakt het minder eenvoudig om effectieve zoekvragen te formulieren. Bovendien is er dikwijls de behoefte om specifieke kenmerken te koppelen aan de aard van de bijdrage van een actor aan een bron. Dat kan niet aangegeven worden in de structuur die RDA nu biedt. Het volgende plaatje schetst een model dat meer flexibiliteit biedt in het beschrijven van de rollen van actoren. 
 
-### Sjablone
-<!-- Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates). -->
+![Modellering rollen](./assets/wip_rollen.png)
+
+Het voorbeeld laat zien dat de Sanne Wallis de Vries de rol van "Martha" vertolkte. Deze aanpak kan ook gebruik worden om bijvoorbeeld aan te geven dat een musicus een speciek instrument speelde. In plaats van het definieren van subproperties kunnen hier nieuwe rollen aangemaakt worden door een gebruikte waardelijst uit te breiden. Dit is eenvoudiger en waardenlijsten maken het voor de gebruiker makkelijker om zoekvragen met bijvoorbeeld SPARQL te formuleren.
+
+### Sjablonen
+
+Plan is om met dit toepassingsprofiel uiteindelijk sjablonen aan te bieden die gebruikt kunnen worden als een eenvoudig invulformulier voor het beschrijven van verschillende soorten bronnen. Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates).
 
