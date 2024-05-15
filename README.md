@@ -48,7 +48,7 @@ Actuele aandachtpunten bij de verdere inuvlling van dit profiel zijn:
 
 Een belangrijk concept bij het beschrijven van theater is de **productie**. De volgende afbeelding schets hoe we nu de productie benaderen:
 
-![Theaterproductie](../../assets/wip_productie.png)
+![Theaterproductie](../assets/wip_productie.png)
 
 De theaterproductie wordt hier gezien als aggregerend *werk*. Het is één-op-één gerelateerd een de productie al een *expressie*. Uiteraard is er een (nader te benoemen) relatie met het oorspronkelijke theaterwerk dat met de productie uitgevoerd wordt. De productie zou ook een relatie kunnen hebben met deelwerken.
 
