@@ -42,23 +42,23 @@ Zie de [code-fragmenten](rdf/snippets).
 
 ## Werk in uitvoering
 
-Actuele aandachtpunten bij de verdere inuvlling van dit profiel zijn:
+Actuele aandachtspunten bij de verdere invulling van dit profiel zijn:
 
 ### Modellering theaterproducties
 
-Een belangrijk concept bij het beschrijven van theater is de **productie**. De volgende afbeelding schets hoe we nu de productie benaderen:
+Een belangrijk concept bij het beschrijven van theater is de **productie**. De volgende afbeelding schets hoe Podiumkunst.net nu de productie benadert:
 
 ![Theaterproductie](./assets/wip_productie.png)
 
-De theaterproductie wordt hier gezien als aggregerend *werk*. Het is één-op-één gerelateerd een de productie als een *expressie* (een zogenaamde *WE-lock*). Uiteraard is er een (nader te benoemen) relatie met het oorspronkelijke theaterwerk dat met deze productie uitgevoerd wordt. De productie zou ook een relatie kunnen hebben met deelwerken die als onderdeel van de productie gezien worden, zoals wellicht het kostuumontwerp.
+De theaterproductie wordt hier gezien als aggregerend *werk*. Het is één-op-één gerelateerd aan de productie als een *expressie* (een zogenaamde *WE-lock*). Uiteraard is er een (nader te benoemen) relatie met het oorspronkelijke theaterwerk dat met deze productie uitgevoerd wordt. De productie zou ook een relatie kunnen hebben met deelwerken die als onderdeel van de productie gezien worden, zoals wellicht het kostuumontwerp.
 
 ### Verfijning rollen
 
-RDA biedt veel relaties om rollen van actoren aan te duiden. Toch zal het aantal relaties vaak niet genoeg zijn. Dit kan opgelost worden door subproperties te maken van bestaande RDA-properties. Die aanpak heeft nadelen. Het is omslachtig subproperties te maken en een veelheid aan properties maakt het minder eenvoudig om effectieve zoekvragen te formulieren. Bovendien is er dikwijls de behoefte om specifieke kenmerken te koppelen aan de aard van de bijdrage van een actor aan een bron. Dat kan niet aangegeven worden in de structuur die RDA nu biedt. Het volgende plaatje schetst een model dat meer flexibiliteit biedt in het beschrijven van de rollen van actoren. 
+RDA biedt veel relaties om rollen van actoren aan te duiden. Toch zal het aantal relaties vaak niet genoeg zijn. Dit kan opgelost worden door subproperties te maken van bestaande RDA-properties. Die aanpak heeft nadelen. Het is omslachtig subproperties te maken en een veelheid aan properties maakt het minder eenvoudig om effectieve zoekvragen te formuleren. Bovendien is er dikwijls de behoefte om specifieke kenmerken te koppelen aan de aard van de bijdrage van een actor aan een bron. Dat kan niet aangegeven worden in de structuur die RDA nu biedt. Het volgende plaatje schetst een model dat meer flexibiliteit biedt in het beschrijven van de rollen van actoren. 
 
 ![Modellering rollen](./assets/wip_rollen.png)
 
-Het voorbeeld laat zien dat de Sanne Wallis de Vries de rol van "Martha" vertolkte. Deze aanpak kan ook gebruik worden om bijvoorbeeld aan te geven dat een musicus een speciek instrument speelde. In plaats van het definieren van subproperties kunnen hier nieuwe rollen aangemaakt worden door een gebruikte waardelijst uit te breiden. Dit is eenvoudiger en waardenlijsten maken het voor de gebruiker makkelijker om zoekvragen met bijvoorbeeld SPARQL te formuleren.
+Het voorbeeld laat zien dat de Sanne Wallis de Vries de rol van "Martha" vertolkte. Deze aanpak kan ook gebruikt worden om bijvoorbeeld aan te geven dat een musicus een speciek instrument speelde. In plaats van het definieren van subproperties kunnen hier nieuwe rollen aangemaakt worden door een gebruikte waardelijst uit te breiden. Dit is eenvoudiger en waardenlijsten maken het voor de gebruiker makkelijker om zoekvragen met bijvoorbeeld SPARQL te formuleren.
 
 ### Sjablonen
 
