@@ -40,7 +40,7 @@ The input Excel file should have multiple sheets, each representing a different 
 * Constraints:
    * Adds `sh:minCount` if `verplichting` is must.
    * Adds `sh:maxCount` if the max value is `1`.
-   * Adds `sh:class` if a valid `bereik`` mapping exists.
+   * Adds `sh:class` if a valid `bereik` mapping exists.
    * Severity: Sets `sh:Violation` for `must` and `sh:Warning` otherwise.
-   * All node shapes are closed. We allow properties is `verplichting`  is empty or has values `must`, `should` and `could`. 
+   * All node shapes are closed. We allow properties  `verplichting` to be empty or has values `must`, `should` and `could`. 
 * Output: Returns the formatted SHACL property shape.
