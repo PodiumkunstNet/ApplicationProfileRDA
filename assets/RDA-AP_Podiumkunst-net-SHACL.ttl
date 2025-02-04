@@ -1,0 +1,4793 @@
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix rdae: <http://rdaregistry.info/Elements/e/>
+prefix rdac: <http://rdaregistry.info/Elements/c/>
+prefix rdam: <http://rdaregistry.info/Elements/m/>
+prefix rdai: <http://rdaregistry.info/Elements/i/>
+prefix rdaa: <http://rdaregistry.info/Elements/a/>
+prefix rdap: <http://rdaregistry.info/Elements/p/>
+prefix rdaw: <http://rdaregistry.info/Elements/w/>
+prefix rdat: <http://www.w3.org/2001/XMLSchema#>
+prefix shp: <https://podiumkunst.triply.cc/ApplicationProfileRDA/model/shp/>
+
+
+shp:Work
+    a sh:NodeShape;
+    sh:closed true ;
+	sh:ignoredProperties (rdf:type) ;
+    sh:property
+        shp:Work_isAbridgementOfWork,
+        shp:Work_isAbsorptionInPartOfWork,
+        shp:Work_isAbsorptionOfWork,
+        shp:Work_isAbstractOf,
+        shp:Work_isAbstractsForWork,
+        shp:Work_hasAcademicDegree,
+        shp:Work_hasAcademicSupervisor,
+        shp:Work_hasAccessPointForWork,
+        shp:Work_isAdaptationOfWork,
+        shp:Work_isAdaptedInVerseAsWork,
+        shp:Work_isAddendaToWork,
+        shp:Work_hasAddendaWork,
+        shp:Work_hasAddresseeAgent,
+        shp:Work_hasAggregatorAgent,
+        shp:Work_isAnalysisOfExpression,
+        shp:Work_isAnalysisOfItem,
+        shp:Work_isAnalysisOfManifestation,
+        shp:Work_isAnalysisOfWork,
+        shp:Work_hasAppellantCorporateBody,
+        shp:Work_hasAppellantPerson,
+        shp:Work_hasAppellationOfWork,
+        shp:Work_hasAppellationOfWorkGroup,
+        shp:Work_hasAppelleeCorporateBody,
+        shp:Work_hasAppelleePerson,
+        shp:Work_isAppendixToWork,
+        shp:Work_hasAppendixWork,
+        shp:Work_hasArchitectAgent,
+        shp:Work_hasArtistAgent,
+        shp:Work_hasAspectRatioOfRepresentativeExpression,
+        shp:Work_hasAudioProducerAgent,
+        shp:Work_isAugmentedByWork,
+        shp:Work_hasAuthorAgent,
+        shp:Work_hasAuthorizedAccessPointForWorkGroup,
+        shp:Work_isBindingOfItemOf,
+        shp:Work_isBindingOfManifestationOf,
+        shp:Work_hasBookArtistAgent,
+        shp:Work_isCadenzaComposedForWork,
+        shp:Work_hasCalligrapherAgent,
+        shp:Work_hasCarrierVersion,
+        shp:Work_hasCartographerAgentOfWork,
+        shp:Work_hasCastingDirectorAgent,
+        shp:Work_isCatalogueOf,
+        shp:Work_hasCategoryOfWork,
+        shp:Work_hasChoreographerAgent,
+        shp:Work_isChoreographicAdaptationOfWork,
+        shp:Work_isChoreographyForWork,
+        shp:Work_hasChoreographyWork,
+        shp:Work_hasCivilDefendantCorporateBody,
+        shp:Work_hasCivilDefendantPerson,
+        shp:Work_hasCollectionAccrualMethod,
+        shp:Work_hasCollectionAccrualPolicy,
+        shp:Work_hasCollectionRegistrarAgent,
+        shp:Work_hasCollectorAgent,
+        shp:Work_hasColourContentOfRepresentativeExpression,
+        shp:Work_hasCommemoration,
+        shp:Work_isCommemorationOf,
+        shp:Work_isCommentaryOnExpression,
+        shp:Work_isCommentaryOnItem,
+        shp:Work_isCommentaryOnManifestation,
+        shp:Work_isCommentaryOnWork,
+        shp:Work_hasCommissioningAgent,
+        shp:Work_hasCompilerAgent,
+        shp:Work_isComplementedByWork,
+        shp:Work_hasComposerAgentOfWork,
+        shp:Work_isConcordanceWorkFor,
+        shp:Work_hasConsultantAgent,
+        shp:Work_hasContentTypeOfRepresentativeExpression,
+        shp:Work_isContinuationOfWork,
+        shp:Work_isContinuedByWork,
+        shp:Work_hasCoordinatesOfCartographicContent,
+        shp:Work_hasCourtGoverned,
+        shp:Work_hasCoverageOfContent,
+        shp:Work_hasCreatorAgentOfWork,
+        shp:Work_hasCriminalDefendantCorporateBody,
+        shp:Work_hasCriminalDefendantPerson,
+        shp:Work_hasDateOfCaptureOfRepresentativeExpression,
+        shp:Work_hasDateOfRepresentativeExpression,
+        shp:Work_hasDateOfWork,
+        shp:Work_hasDeclination,
+        shp:Work_hasDedicateeAgentOfWork,
+        shp:Work_hasDedicatorAgent,
+        shp:Work_hasDefendantCorporateBody,
+        shp:Work_hasDefendantPerson,
+        shp:Work_hasDegreeCommitteeMember,
+        shp:Work_hasDegreeGrantingInstitution,
+        shp:Work_hasDegreeSupervisor,
+        shp:Work_hasDerivativeWork,
+        shp:Work_isDescriptionOfAgent,
+        shp:Work_isDescriptionOfExpression,
+        shp:Work_isDescriptionOfItem,
+        shp:Work_isDescriptionOfManifestation,
+        shp:Work_isDescriptionOfNomen,
+        shp:Work_isDescriptionOfPlace,
+        shp:Work_isDescriptionOfRdaEntity,
+        shp:Work_isDescriptionOfTimespan,
+        shp:Work_isDescriptionOfWork,
+        shp:Work_hasDesignerAgent,
+        shp:Work_isDigestOfWork,
+        shp:Work_isDigestedAsWork,
+        shp:Work_hasDirectorAgent,
+        shp:Work_hasDirectorAgentOfPhotography,
+        shp:Work_hasDissertationOrThesisInformation,
+        shp:Work_isDramatizationOfWork,
+        shp:Work_hasEditorialDirectorAgent,
+        shp:Work_hasEnactingJurisdiction,
+        shp:Work_hasEpoch,
+        shp:Work_hasEquinox,
+        shp:Work_isErrataToWork,
+        shp:Work_hasErrataWork,
+        shp:Work_isEvaluationOfExpression,
+        shp:Work_isEvaluationOfManifestation,
+        shp:Work_isEvaluationOfRdaEntity,
+        shp:Work_isEvaluationOfWork,
+        shp:Work_isExpandedVersionOfWork,
+        shp:Work_hasExtensionPlan,
+        shp:Work_hasExtentOfRepresentativeExpression,
+        shp:Work_hasFilmDirectorAgent,
+        shp:Work_hasFilmProducerAgent,
+        shp:Work_hasFilmmakerAgent,
+        shp:Work_isFindingAidOf,
+        shp:Work_hasFounderAgentOfWork,
+        shp:Work_isFreeTranslationOfWork,
+        shp:Work_hasFrequency,
+        shp:Work_isGraphicNovelizationOfWork,
+        shp:Work_hasGuideWork,
+        shp:Work_isHierarchicFindingAidOf,
+        shp:Work_hasHistoryOfWork,
+        shp:Work_hasHonoureeAgentOfWork,
+        shp:Work_hasHostingInstitution,
+        shp:Work_hasIdentifierForWork,
+        shp:Work_hasIdentifierForWorkGroup,
+        shp:Work_isIllustrationsForWork,
+        shp:Work_hasIllustrationsWork,
+        shp:Work_isImitationOfWork,
+        shp:Work_isIncidentalMusicForWork,
+        shp:Work_hasIncidentalMusicWork,
+        shp:Work_isIndexFor,
+        shp:Work_isInspirationFor,
+        shp:Work_isInspiredBy,
+        shp:Work_hasIntendedAudienceOfRepresentativeExpression,
+        shp:Work_hasIntervieweeAgentOfWork,
+        shp:Work_hasInterviewerAgentOfWork,
+        shp:Work_hasInventorAgent,
+        shp:Work_hasIssn,
+        shp:Work_hasIssue,
+        shp:Work_hasIssuingAgent,
+        shp:Work_hasJudge,
+        shp:Work_hasKeyOfRepresentativeExpression,
+        shp:Work_hasKeyTitle,
+        shp:Work_hasLandscapeArchitectAgent,
+        shp:Work_hasLanguageOfRepresentativeExpression,
+        shp:Work_hasLanguageVersion,
+        shp:Work_hasLatitude,
+        shp:Work_isLibrettoBasedOnWork,
+        shp:Work_isLibrettoForWork,
+        shp:Work_hasLibrettoWork,
+        shp:Work_hasLongitude,
+        shp:Work_hasLongitudeAndLatitude,
+        shp:Work_isLyricsForWork,
+        shp:Work_hasLyricsWork,
+        shp:Work_hasMedium,
+        shp:Work_hasMediumOfPerformanceOfChoreographicContentOfRepresentativeExpression,
+        shp:Work_hasMediumOfPerformanceOfMusicalContentOfRepresentativeExpression,
+        shp:Work_isMergedToFormWork,
+        shp:Work_isMergerOfWork,
+        shp:Work_isMetadataDescriptionOfAgent,
+        shp:Work_isMetadataDescriptionOfExpression,
+        shp:Work_isMetadataDescriptionOfItem,
+        shp:Work_isMetadataDescriptionOfManifestation,
+        shp:Work_isMetadataDescriptionOfNomen,
+        shp:Work_isMetadataDescriptionOfPlace,
+        shp:Work_isMetadataDescriptionOfRdaEntity,
+        shp:Work_isMetadataDescriptionOfTimespan,
+        shp:Work_isMetadataDescriptionOfWork,
+        shp:Work_isModifiedByVariationAsWork,
+        shp:Work_isMotionPictureAdaptationOfWork,
+        shp:Work_hasMotionPictureMusicWork,
+        shp:Work_isMotionPictureScreenplayBasedOnWork,
+        shp:Work_hasMotionPictureScreenplayWork,
+        shp:Work_isMusicForMotionPictureWork,
+        shp:Work_isMusicForRadioProgramWork,
+        shp:Work_isMusicForTelevisionProgramWork,
+        shp:Work_isMusicForVideoWork,
+        shp:Work_isMusicForWork,
+        shp:Work_hasMusicWork,
+        shp:Work_isMusicalSettingOfWork,
+        shp:Work_isMusicalTheatreAdaptationOfWork,
+        shp:Work_hasNoteOnMetadataWork,
+        shp:Work_hasNoteOnWork,
+        shp:Work_isNovelizationOfWork,
+        shp:Work_hasNumberingOfPart,
+        shp:Work_hasNumericDesignationOfMusicalWork,
+        shp:Work_isOperaAdaptationOfWork,
+        shp:Work_hasOpusNumber,
+        shp:Work_isOratorioAdaptationOfWork,
+        shp:Work_hasOrganizerAgent,
+        shp:Work_isParaphraseOfWork,
+        shp:Work_isParaphrasedAsWork,
+        shp:Work_isParodiedAsWork,
+        shp:Work_isParodyOfWork,
+        shp:Work_isPartOfWork,
+        shp:Work_hasPartWork,
+        shp:Work_hasParticipantInTreaty,
+        shp:Work_hasPhotographerAgentOfWork,
+        shp:Work_hasPlaceOfCaptureOfRepresentativeExpression,
+        shp:Work_hasPlaceOfOriginOfWork,
+        shp:Work_hasPlaintiffCorporateBody,
+        shp:Work_hasPlaintiffPerson,
+        shp:Work_hasPraeses,
+        shp:Work_isPrecededByWork,
+        shp:Work_hasPreferredTitleOfWork,
+        shp:Work_hasPrequelWork,
+        shp:Work_hasProducerAgent,
+        shp:Work_hasProductionCompany,
+        shp:Work_hasProgrammerAgent,
+        shp:Work_hasProjectSupervisor,
+        shp:Work_hasProjectionOfCartographicContentOfRepresentativeExpression,
+        shp:Work_isRadioAdaptationOfWork,
+        shp:Work_hasRadioDirectorAgent,
+        shp:Work_hasRadioProducerAgent,
+        shp:Work_hasRadioProgramMusicWork,
+        shp:Work_isRadioScriptBasedOnWork,
+        shp:Work_hasRadioScriptWork,
+        shp:Work_hasRapporteurAgent,
+        shp:Work_hasRecordingSource,
+        shp:Work_hasRegionalVersion,
+        shp:Work_isRegionalVersionOf,
+        shp:Work_hasRelatedAgentOfWork,
+        shp:Work_hasRelatedExpressionOfWork,
+        shp:Work_hasRelatedItemOfWork,
+        shp:Work_hasRelatedManifestationOfWork,
+        shp:Work_hasRelatedNomenOfWork,
+        shp:Work_hasRelatedPlaceOfWork,
+        shp:Work_hasRelatedRdaEntityOfWork,
+        shp:Work_hasRelatedTimespanOfWork,
+        shp:Work_hasRelatedWorkOfWork,
+        shp:Work_isRemadeAsWork,
+        shp:Work_isRemakeOfWork,
+        shp:Work_hasRemixArtistAgent,
+        shp:Work_isReplacedByWork,
+        shp:Work_isReplacedInPartByWork,
+        shp:Work_isReplacementInPartOfWork,
+        shp:Work_isReplacementOfWork,
+        shp:Work_hasResearchSupervisor,
+        shp:Work_hasResearcherAgent,
+        shp:Work_hasRespondent,
+        shp:Work_hasRightAscension,
+        shp:Work_hasRightAscensionAndDeclination,
+        shp:Work_hasScaleOfRepresentativeExpression,
+        shp:Work_hasScopeOfValidity,
+        shp:Work_isScreenplayBasedOnWork,
+        shp:Work_isScreenplayForMotionPictureWork,
+        shp:Work_isScreenplayForTelevisionProgramWork,
+        shp:Work_isScreenplayForVideoWork,
+        shp:Work_isScreenplayForWork,
+        shp:Work_hasScreenplayWork,
+        shp:Work_isScriptForRadioProgramWork,
+        shp:Work_hasScriptOfRepresentativeExpression,
+        shp:Work_hasSculptorAgent,
+        shp:Work_isSeparatedFromWork,
+        shp:Work_isSeparatedIntoWork,
+        shp:Work_hasSequelWork,
+        shp:Work_hasSequentialVersion,
+        shp:Work_isSequentialVersionOf,
+        shp:Work_hasSerialNumberOfMusicalWork,
+        shp:Work_hasSerializedVersion,
+        shp:Work_isSetToMusicAsWork,
+        shp:Work_hasSoundContentOfRepresentativeExpression,
+        shp:Work_isSoundsForWork,
+        shp:Work_hasSoundsWork,
+        shp:Work_hasSourceConsulted,
+        shp:Work_hasSourceWork,
+        shp:Work_hasSpecialIssue,
+        shp:Work_isSpecialIssueOf,
+        shp:Work_isSplitFromWork,
+        shp:Work_isSplitIntoWork,
+        shp:Work_isSpokenWordForWork,
+        shp:Work_hasSpokenWordWork,
+        shp:Work_hasSponsoringAgentOfWork,
+        shp:Work_hasStaticVersion,
+        shp:Work_isStaticVersionOf,
+        shp:Work_hasStringsOfCoordinatePairs,
+        shp:Work_hasSubject,
+        shp:Work_hasSubjectAgent,
+        shp:Work_hasSubjectExpression,
+        shp:Work_hasSubjectItem,
+        shp:Work_hasSubjectManifestation,
+        shp:Work_hasSubjectNomen,
+        shp:Work_hasSubjectPlace,
+        shp:Work_hasSubjectRdaEntity,
+        shp:Work_hasSubjectTimespan,
+        shp:Work_hasSubjectWork,
+        shp:Work_isSubjectWorkOf,
+        shp:Work_hasSubseries,
+        shp:Work_isSubseriesOf,
+        shp:Work_isSucceededByWork,
+        shp:Work_hasSummary,
+        shp:Work_isSummaryOf,
+        shp:Work_isSupplementToWork,
+        shp:Work_hasSupplementWork,
+        shp:Work_hasSystemOfOrganization,
+        shp:Work_isTelevisionAdaptationOfWork,
+        shp:Work_hasTelevisionDirectorAgent,
+        shp:Work_hasTelevisionProducerAgent,
+        shp:Work_hasTelevisionProgramMusicWork,
+        shp:Work_isTelevisionScreenplayBasedOnWork,
+        shp:Work_hasTelevisionScreenplayWork,
+        shp:Work_isTextForWork,
+        shp:Work_hasTextWork,
+        shp:Work_hasThematicIndexNumber,
+        shp:Work_hasTitleOfWork,
+        shp:Work_hasTransformation,
+        shp:Work_hasTransformationByAudience,
+        shp:Work_hasTransformationByExtensionPlan,
+        shp:Work_hasTransformationByGenre,
+        shp:Work_isTransformationByGenreOf,
+        shp:Work_hasTransformationByPolicy,
+        shp:Work_isTransformationByPolicyOf,
+        shp:Work_hasTransformationByStyle,
+        shp:Work_isTransformationByStyleOf,
+        shp:Work_isTransformationOf,
+        shp:Work_hasVariantAccessPointForWork,
+        shp:Work_hasVariantTitleOfWork,
+        shp:Work_isVariationsBasedOnWork,
+        shp:Work_isVerseAdaptationOfWork,
+        shp:Work_isVideoAdaptationOfWork,
+        shp:Work_isVideoGameAdaptationOfWork,
+        shp:Work_hasVideoMusicWork,
+        shp:Work_isVideoScreenplayBasedOnWork,
+        shp:Work_hasVideoScreenplayWork,
+        shp:Work_isWorkAnalysedIn,
+        shp:Work_isWorkCommentaryIn,
+        shp:Work_isWorkDescribedBy,
+        shp:Work_isWorkDescribedWithMetadataBy,
+        shp:Work_isWorkEvaluatedBy,
+        shp:Work_hasYearDegreeGranted;
+    sh:targetClass rdac:C10001.
+
+shp:Work_isAbridgementOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10125;
+    sh:severity sh:Warning.
+shp:Work_isAbsorptionInPartOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10225;
+    sh:severity sh:Warning.
+shp:Work_isAbsorptionOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10224;
+    sh:severity sh:Warning.
+shp:Work_isAbstractOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10126;
+    sh:severity sh:Warning.
+shp:Work_isAbstractsForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10193;
+    sh:severity sh:Warning.
+shp:Work_hasAcademicDegree
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10077;
+    sh:severity sh:Warning.
+shp:Work_hasAcademicSupervisor
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10407;
+    sh:severity sh:Warning.
+shp:Work_hasAccessPointForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10328;
+    sh:severity sh:Warning.
+shp:Work_isAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10142;
+    sh:severity sh:Warning.
+shp:Work_isAdaptedInVerseAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10023;
+    sh:severity sh:Warning.
+shp:Work_isAddendaToWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10177;
+    sh:severity sh:Warning.
+shp:Work_hasAddendaWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10112;
+    sh:severity sh:Warning.
+shp:Work_hasAddresseeAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10070;
+    sh:severity sh:Warning.
+shp:Work_hasAggregatorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10393;
+    sh:severity sh:Warning.
+shp:Work_isAnalysisOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10278;
+    sh:severity sh:Warning.
+shp:Work_isAnalysisOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10266;
+    sh:severity sh:Warning.
+shp:Work_isAnalysisOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10272;
+    sh:severity sh:Warning.
+shp:Work_isAnalysisOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10140;
+    sh:severity sh:Warning.
+shp:Work_hasAppellantCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10009;
+    sh:severity sh:Warning.
+shp:Work_hasAppellantPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10042;
+    sh:severity sh:Warning.
+shp:Work_hasAppellationOfWork
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10329;
+    sh:severity sh:Violation.
+shp:Work_hasAppellationOfWorkGroup
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10399;
+    sh:severity sh:Warning.
+shp:Work_hasAppelleeCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10005;
+    sh:severity sh:Warning.
+shp:Work_hasAppelleePerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10035;
+    sh:severity sh:Warning.
+shp:Work_isAppendixToWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10151;
+    sh:severity sh:Warning.
+shp:Work_hasAppendixWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10123;
+    sh:severity sh:Warning.
+shp:Work_hasArchitectAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10062;
+    sh:severity sh:Warning.
+shp:Work_hasArtistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10058;
+    sh:severity sh:Warning.
+shp:Work_hasAspectRatioOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10347;
+    sh:severity sh:Warning.
+shp:Work_hasAudioProducerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10304;
+    sh:severity sh:Warning.
+shp:Work_isAugmentedByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10108;
+    sh:severity sh:Warning.
+shp:Work_hasAuthorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10061;
+    sh:severity sh:Warning.
+shp:Work_hasAuthorizedAccessPointForWorkGroup
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10401;
+    sh:severity sh:Warning.
+shp:Work_isBindingOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10364;
+    sh:severity sh:Warning.
+shp:Work_isBindingOfManifestationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10363;
+    sh:severity sh:Warning.
+shp:Work_hasBookArtistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10254;
+    sh:severity sh:Warning.
+shp:Work_isCadenzaComposedForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10029;
+    sh:severity sh:Warning.
+shp:Work_hasCalligrapherAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10253;
+    sh:severity sh:Warning.
+shp:Work_hasCarrierVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10387;
+    sh:severity sh:Warning.
+shp:Work_hasCartographerAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10052;
+    sh:severity sh:Warning.
+shp:Work_hasCastingDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10305;
+    sh:severity sh:Warning.
+shp:Work_isCatalogueOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10625;
+    sh:severity sh:Warning.
+shp:Work_hasCategoryOfWork
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:path rdaw:P10004;
+    sh:severity sh:Violation.
+shp:Work_hasChoreographerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10060;
+    sh:severity sh:Warning.
+shp:Work_isChoreographicAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10183;
+    sh:severity sh:Warning.
+shp:Work_isChoreographyForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10248;
+    sh:severity sh:Warning.
+shp:Work_hasChoreographyWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10247;
+    sh:severity sh:Warning.
+shp:Work_hasCivilDefendantCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10395;
+    sh:severity sh:Warning.
+shp:Work_hasCivilDefendantPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10397;
+    sh:severity sh:Warning.
+shp:Work_hasCollectionAccrualMethod
+    a sh:PropertyShape;
+    sh:path rdaw:P10608;
+    sh:severity sh:Warning.
+shp:Work_hasCollectionAccrualPolicy
+    a sh:PropertyShape;
+    sh:path rdaw:P10609;
+    sh:severity sh:Warning.
+shp:Work_hasCollectionRegistrarAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10634;
+    sh:severity sh:Warning.
+shp:Work_hasCollectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10629;
+    sh:severity sh:Warning.
+shp:Work_hasColourContentOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10348;
+    sh:severity sh:Warning.
+shp:Work_hasCommemoration
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10294;
+    sh:severity sh:Warning.
+shp:Work_isCommemorationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10295;
+    sh:severity sh:Warning.
+shp:Work_isCommentaryOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10282;
+    sh:severity sh:Warning.
+shp:Work_isCommentaryOnItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10270;
+    sh:severity sh:Warning.
+shp:Work_isCommentaryOnManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10276;
+    sh:severity sh:Warning.
+shp:Work_isCommentaryOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10187;
+    sh:severity sh:Warning.
+shp:Work_hasCommissioningAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10287;
+    sh:severity sh:Warning.
+shp:Work_hasCompilerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10055;
+    sh:severity sh:Warning.
+shp:Work_isComplementedByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10103;
+    sh:severity sh:Warning.
+shp:Work_hasComposerAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10053;
+    sh:severity sh:Warning.
+shp:Work_isConcordanceWorkFor
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10628;
+    sh:severity sh:Warning.
+shp:Work_hasConsultantAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10071;
+    sh:severity sh:Warning.
+shp:Work_hasContentTypeOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:path rdaw:P10349;
+    sh:severity sh:Violation.
+shp:Work_isContinuationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10226;
+    sh:severity sh:Warning.
+shp:Work_isContinuedByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10191;
+    sh:severity sh:Warning.
+shp:Work_hasCoordinatesOfCartographicContent
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10024;
+    sh:severity sh:Warning.
+shp:Work_hasCourtGoverned
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10011;
+    sh:severity sh:Warning.
+shp:Work_hasCoverageOfContent
+    a sh:PropertyShape;
+    sh:path rdaw:P10216;
+    sh:severity sh:Warning.
+shp:Work_hasCreatorAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10065;
+    sh:severity sh:Warning.
+shp:Work_hasCriminalDefendantCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10394;
+    sh:severity sh:Warning.
+shp:Work_hasCriminalDefendantPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10396;
+    sh:severity sh:Warning.
+shp:Work_hasDateOfCaptureOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10350;
+    sh:severity sh:Warning.
+shp:Work_hasDateOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10398;
+    sh:severity sh:Warning.
+shp:Work_hasDateOfWork
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10219;
+    sh:severity sh:Warning.
+shp:Work_hasDeclination
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10303;
+    sh:severity sh:Warning.
+shp:Work_hasDedicateeAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10069;
+    sh:severity sh:Warning.
+shp:Work_hasDedicatorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10048;
+    sh:severity sh:Warning.
+shp:Work_hasDefendantCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10285;
+    sh:severity sh:Warning.
+shp:Work_hasDefendantPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10286;
+    sh:severity sh:Warning.
+shp:Work_hasDegreeCommitteeMember
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10284;
+    sh:severity sh:Warning.
+shp:Work_hasDegreeGrantingInstitution
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10006;
+    sh:severity sh:Warning.
+shp:Work_hasDegreeSupervisor
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10041;
+    sh:severity sh:Warning.
+shp:Work_hasDerivativeWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10148;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10338;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10277;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10265;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10271;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfNomen
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10600;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfPlace
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10601;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfRdaEntity
+    a sh:PropertyShape;
+    sh:path rdaw:P10360;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfTimespan
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10602;
+    sh:severity sh:Warning.
+shp:Work_isDescriptionOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10100;
+    sh:severity sh:Warning.
+shp:Work_hasDesignerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10051;
+    sh:severity sh:Warning.
+shp:Work_isDigestOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10139;
+    sh:severity sh:Warning.
+shp:Work_isDigestedAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10171;
+    sh:severity sh:Warning.
+shp:Work_hasDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10066;
+    sh:severity sh:Warning.
+shp:Work_hasDirectorAgentOfPhotography
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10068;
+    sh:severity sh:Warning.
+shp:Work_hasDissertationOrThesisInformation
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10209;
+    sh:severity sh:Warning.
+shp:Work_isDramatizationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10127;
+    sh:severity sh:Warning.
+shp:Work_hasEditorialDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10298;
+    sh:severity sh:Warning.
+shp:Work_hasEnactingJurisdiction
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10017;
+    sh:severity sh:Warning.
+shp:Work_hasEpoch
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10199;
+    sh:severity sh:Warning.
+shp:Work_hasEquinox
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10214;
+    sh:severity sh:Warning.
+shp:Work_isErrataToWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10149;
+    sh:severity sh:Warning.
+shp:Work_hasErrataWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10092;
+    sh:severity sh:Warning.
+shp:Work_isEvaluationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10279;
+    sh:severity sh:Warning.
+shp:Work_isEvaluationOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10273;
+    sh:severity sh:Warning.
+shp:Work_isEvaluationOfRdaEntity
+    a sh:PropertyShape;
+    sh:path rdaw:P10361;
+    sh:severity sh:Warning.
+shp:Work_isEvaluationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10153;
+    sh:severity sh:Warning.
+shp:Work_isExpandedVersionOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10184;
+    sh:severity sh:Warning.
+shp:Work_hasExtensionPlan
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:path rdaw:P10365;
+    sh:severity sh:Violation.
+shp:Work_hasExtentOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10352;
+    sh:severity sh:Warning.
+shp:Work_hasFilmDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10013;
+    sh:severity sh:Warning.
+shp:Work_hasFilmProducerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10073;
+    sh:severity sh:Warning.
+shp:Work_hasFilmmakerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10063;
+    sh:severity sh:Warning.
+shp:Work_isFindingAidOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10624;
+    sh:severity sh:Warning.
+shp:Work_hasFounderAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10299;
+    sh:severity sh:Warning.
+shp:Work_isFreeTranslationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10143;
+    sh:severity sh:Warning.
+shp:Work_hasFrequency
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10368;
+    sh:severity sh:Warning.
+shp:Work_isGraphicNovelizationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10252;
+    sh:severity sh:Warning.
+shp:Work_hasGuideWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10124;
+    sh:severity sh:Warning.
+shp:Work_isHierarchicFindingAidOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10626;
+    sh:severity sh:Warning.
+shp:Work_hasHistoryOfWork
+    a sh:PropertyShape;
+    sh:path rdaw:P10210;
+    sh:severity sh:Warning.
+shp:Work_hasHonoureeAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10049;
+    sh:severity sh:Warning.
+shp:Work_hasHostingInstitution
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10007;
+    sh:severity sh:Warning.
+shp:Work_hasIdentifierForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10002;
+    sh:severity sh:Warning.
+shp:Work_hasIdentifierForWorkGroup
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10400;
+    sh:severity sh:Warning.
+shp:Work_isIllustrationsForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10152;
+    sh:severity sh:Warning.
+shp:Work_hasIllustrationsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10093;
+    sh:severity sh:Warning.
+shp:Work_isImitationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10196;
+    sh:severity sh:Warning.
+shp:Work_isIncidentalMusicForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10106;
+    sh:severity sh:Warning.
+shp:Work_hasIncidentalMusicWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10031;
+    sh:severity sh:Warning.
+shp:Work_isIndexFor
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10627;
+    sh:severity sh:Warning.
+shp:Work_isInspirationFor
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10291;
+    sh:severity sh:Warning.
+shp:Work_isInspiredBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10290;
+    sh:severity sh:Warning.
+shp:Work_hasIntendedAudienceOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10217;
+    sh:severity sh:Warning.
+shp:Work_hasIntervieweeAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10059;
+    sh:severity sh:Warning.
+shp:Work_hasInterviewerAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10057;
+    sh:severity sh:Warning.
+shp:Work_hasInventorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10054;
+    sh:severity sh:Warning.
+shp:Work_hasIssn
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10366;
+    sh:severity sh:Warning.
+shp:Work_hasIssue
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10141;
+    sh:severity sh:Warning.
+shp:Work_hasIssuingAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10046;
+    sh:severity sh:Warning.
+shp:Work_hasJudge
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10044;
+    sh:severity sh:Warning.
+shp:Work_hasKeyOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10221;
+    sh:severity sh:Warning.
+shp:Work_hasKeyTitle
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10367;
+    sh:severity sh:Warning.
+shp:Work_hasLandscapeArchitectAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10200;
+    sh:severity sh:Warning.
+shp:Work_hasLanguageOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10353;
+    sh:severity sh:Warning.
+shp:Work_hasLanguageVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10385;
+    sh:severity sh:Warning.
+shp:Work_hasLatitude
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10300;
+    sh:severity sh:Warning.
+shp:Work_isLibrettoBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10189;
+    sh:severity sh:Warning.
+shp:Work_isLibrettoForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10030;
+    sh:severity sh:Warning.
+shp:Work_hasLibrettoWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10165;
+    sh:severity sh:Warning.
+shp:Work_hasLongitude
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10301;
+    sh:severity sh:Warning.
+shp:Work_hasLongitudeAndLatitude
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10081;
+    sh:severity sh:Warning.
+shp:Work_isLyricsForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10369;
+    sh:severity sh:Warning.
+shp:Work_hasLyricsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10370;
+    sh:severity sh:Warning.
+shp:Work_hasMedium
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10036;
+    sh:severity sh:Warning.
+shp:Work_hasMediumOfPerformanceOfChoreographicContentOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10603;
+    sh:severity sh:Warning.
+shp:Work_hasMediumOfPerformanceOfMusicalContentOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:path rdaw:P10220;
+    sh:severity sh:Violation.
+shp:Work_isMergedToFormWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10212;
+    sh:severity sh:Warning.
+shp:Work_isMergerOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10213;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10610;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10615;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10616;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10617;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfNomen
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10618;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfPlace
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10619;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfRdaEntity
+    a sh:PropertyShape;
+    sh:path rdaw:P10622;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfTimespan
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10620;
+    sh:severity sh:Warning.
+shp:Work_isMetadataDescriptionOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10621;
+    sh:severity sh:Warning.
+shp:Work_isModifiedByVariationAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10028;
+    sh:severity sh:Warning.
+shp:Work_isMotionPictureAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10129;
+    sh:severity sh:Warning.
+shp:Work_hasMotionPictureMusicWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10246;
+    sh:severity sh:Warning.
+shp:Work_isMotionPictureScreenplayBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10134;
+    sh:severity sh:Warning.
+shp:Work_hasMotionPictureScreenplayWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10160;
+    sh:severity sh:Warning.
+shp:Work_isMusicForMotionPictureWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10245;
+    sh:severity sh:Warning.
+shp:Work_isMusicForRadioProgramWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10244;
+    sh:severity sh:Warning.
+shp:Work_isMusicForTelevisionProgramWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10242;
+    sh:severity sh:Warning.
+shp:Work_isMusicForVideoWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10240;
+    sh:severity sh:Warning.
+shp:Work_isMusicForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10238;
+    sh:severity sh:Warning.
+shp:Work_hasMusicWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10237;
+    sh:severity sh:Warning.
+shp:Work_isMusicalSettingOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10161;
+    sh:severity sh:Warning.
+shp:Work_isMusicalTheatreAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10233;
+    sh:severity sh:Warning.
+shp:Work_hasNoteOnMetadataWork
+    a sh:PropertyShape;
+    sh:path rdaw:P10402;
+    sh:severity sh:Warning.
+shp:Work_hasNoteOnWork
+    a sh:PropertyShape;
+    sh:path rdaw:P10330;
+    sh:severity sh:Warning.
+shp:Work_isNovelizationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10130;
+    sh:severity sh:Warning.
+shp:Work_hasNumberingOfPart
+    a sh:PropertyShape;
+    sh:path rdaw:P10012;
+    sh:severity sh:Warning.
+shp:Work_hasNumericDesignationOfMusicalWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10079;
+    sh:severity sh:Warning.
+shp:Work_isOperaAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10234;
+    sh:severity sh:Warning.
+shp:Work_hasOpusNumber
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10333;
+    sh:severity sh:Warning.
+shp:Work_isOratorioAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10288;
+    sh:severity sh:Warning.
+shp:Work_hasOrganizerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10297;
+    sh:severity sh:Warning.
+shp:Work_isParaphraseOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10186;
+    sh:severity sh:Warning.
+shp:Work_isParaphrasedAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10166;
+    sh:severity sh:Warning.
+shp:Work_isParodiedAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10144;
+    sh:severity sh:Warning.
+shp:Work_isParodyOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10197;
+    sh:severity sh:Warning.
+shp:Work_isPartOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10019;
+    sh:severity sh:Warning.
+shp:Work_hasPartWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10147;
+    sh:severity sh:Warning.
+shp:Work_hasParticipantInTreaty
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10292;
+    sh:severity sh:Warning.
+shp:Work_hasPhotographerAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10056;
+    sh:severity sh:Warning.
+shp:Work_hasPlaceOfCaptureOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10354;
+    sh:severity sh:Warning.
+shp:Work_hasPlaceOfOriginOfWork
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10218;
+    sh:severity sh:Warning.
+shp:Work_hasPlaintiffCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10010;
+    sh:severity sh:Warning.
+shp:Work_hasPlaintiffPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10043;
+    sh:severity sh:Warning.
+shp:Work_hasPraeses
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10045;
+    sh:severity sh:Warning.
+shp:Work_isPrecededByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10156;
+    sh:severity sh:Warning.
+shp:Work_hasPreferredTitleOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10223;
+    sh:severity sh:Warning.
+shp:Work_hasPrequelWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10122;
+    sh:severity sh:Warning.
+shp:Work_hasProducerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10064;
+    sh:severity sh:Warning.
+shp:Work_hasProductionCompany
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdaw:P10008;
+    sh:severity sh:Warning.
+shp:Work_hasProgrammerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10050;
+    sh:severity sh:Warning.
+shp:Work_hasProjectSupervisor
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10408;
+    sh:severity sh:Warning.
+shp:Work_hasProjectionOfCartographicContentOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10355;
+    sh:severity sh:Warning.
+shp:Work_isRadioAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10131;
+    sh:severity sh:Warning.
+shp:Work_hasRadioDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10014;
+    sh:severity sh:Warning.
+shp:Work_hasRadioProducerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10074;
+    sh:severity sh:Warning.
+shp:Work_hasRadioProgramMusicWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10243;
+    sh:severity sh:Warning.
+shp:Work_isRadioScriptBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10137;
+    sh:severity sh:Warning.
+shp:Work_hasRadioScriptWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10162;
+    sh:severity sh:Warning.
+shp:Work_hasRapporteurAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10255;
+    sh:severity sh:Warning.
+shp:Work_hasRecordingSource
+    a sh:PropertyShape;
+    sh:path rdaw:P10404;
+    sh:severity sh:Warning.
+shp:Work_hasRegionalVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10386;
+    sh:severity sh:Warning.
+shp:Work_isRegionalVersionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10389;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10311;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedExpressionOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10308;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedItemOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10310;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedManifestationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10309;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedNomenOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10318;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedPlaceOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10316;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedRdaEntityOfWork
+    a sh:PropertyShape;
+    sh:path rdaw:P10307;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedTimespanOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10317;
+    sh:severity sh:Warning.
+shp:Work_hasRelatedWorkOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10198;
+    sh:severity sh:Warning.
+shp:Work_isRemadeAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10032;
+    sh:severity sh:Warning.
+shp:Work_isRemakeOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10185;
+    sh:severity sh:Warning.
+shp:Work_hasRemixArtistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10306;
+    sh:severity sh:Warning.
+shp:Work_isReplacedByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10022;
+    sh:severity sh:Warning.
+shp:Work_isReplacedInPartByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10021;
+    sh:severity sh:Warning.
+shp:Work_isReplacementInPartOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10206;
+    sh:severity sh:Warning.
+shp:Work_isReplacementOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10207;
+    sh:severity sh:Warning.
+shp:Work_hasResearchSupervisor
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10409;
+    sh:severity sh:Warning.
+shp:Work_hasResearcherAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10293;
+    sh:severity sh:Warning.
+shp:Work_hasRespondent
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdaw:P10001;
+    sh:severity sh:Warning.
+shp:Work_hasRightAscension
+    a sh:PropertyShape;
+    sh:path rdaw:P10302;
+    sh:severity sh:Warning.
+shp:Work_hasRightAscensionAndDeclination
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10082;
+    sh:severity sh:Warning.
+shp:Work_hasScaleOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10356;
+    sh:severity sh:Warning.
+shp:Work_hasScopeOfValidity
+    a sh:PropertyShape;
+    sh:path rdaw:P10403;
+    sh:severity sh:Warning.
+shp:Work_isScreenplayBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10133;
+    sh:severity sh:Warning.
+shp:Work_isScreenplayForMotionPictureWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10173;
+    sh:severity sh:Warning.
+shp:Work_isScreenplayForTelevisionProgramWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10174;
+    sh:severity sh:Warning.
+shp:Work_isScreenplayForVideoWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10175;
+    sh:severity sh:Warning.
+shp:Work_isScreenplayForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10105;
+    sh:severity sh:Warning.
+shp:Work_hasScreenplayWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10159;
+    sh:severity sh:Warning.
+shp:Work_isScriptForRadioProgramWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10176;
+    sh:severity sh:Warning.
+shp:Work_hasScriptOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:path rdaw:P10357;
+    sh:severity sh:Warning.
+shp:Work_hasSculptorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10202;
+    sh:severity sh:Warning.
+shp:Work_isSeparatedFromWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10169;
+    sh:severity sh:Warning.
+shp:Work_isSeparatedIntoWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10104;
+    sh:severity sh:Warning.
+shp:Work_hasSequelWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10020;
+    sh:severity sh:Warning.
+shp:Work_hasSequentialVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10379;
+    sh:severity sh:Warning.
+shp:Work_isSequentialVersionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10380;
+    sh:severity sh:Warning.
+shp:Work_hasSerialNumberOfMusicalWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10334;
+    sh:severity sh:Warning.
+shp:Work_hasSerializedVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10381;
+    sh:severity sh:Warning.
+shp:Work_isSetToMusicAsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10033;
+    sh:severity sh:Warning.
+shp:Work_hasSoundContentOfRepresentativeExpression
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:path rdaw:P10358;
+    sh:severity sh:Warning.
+shp:Work_isSoundsForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10376;
+    sh:severity sh:Warning.
+shp:Work_hasSoundsWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10374;
+    sh:severity sh:Warning.
+shp:Work_hasSourceConsulted
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10406;
+    sh:severity sh:Warning.
+shp:Work_hasSourceWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10190;
+    sh:severity sh:Warning.
+shp:Work_hasSpecialIssue
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10410;
+    sh:severity sh:Warning.
+shp:Work_isSpecialIssueOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10411;
+    sh:severity sh:Warning.
+shp:Work_isSplitFromWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10168;
+    sh:severity sh:Warning.
+shp:Work_isSplitIntoWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10211;
+    sh:severity sh:Warning.
+shp:Work_isSpokenWordForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10375;
+    sh:severity sh:Warning.
+shp:Work_hasSpokenWordWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10373;
+    sh:severity sh:Warning.
+shp:Work_hasSponsoringAgentOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10067;
+    sh:severity sh:Warning.
+shp:Work_hasStaticVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10382;
+    sh:severity sh:Warning.
+shp:Work_isStaticVersionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10392;
+    sh:severity sh:Warning.
+shp:Work_hasStringsOfCoordinatePairs
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10083;
+    sh:severity sh:Warning.
+shp:Work_hasSubject
+    a sh:PropertyShape;
+    sh:path rdaw:P10256;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10319;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdaw:P10258;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdaw:P10260;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdaw:P10259;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectNomen
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10323;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectPlace
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdaw:P10321;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectRdaEntity
+    a sh:PropertyShape;
+    sh:path rdaw:P10324;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectTimespan
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10322;
+    sh:severity sh:Warning.
+shp:Work_hasSubjectWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10257;
+    sh:severity sh:Warning.
+shp:Work_isSubjectWorkOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10264;
+    sh:severity sh:Warning.
+shp:Work_hasSubseries
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10080;
+    sh:severity sh:Warning.
+shp:Work_isSubseriesOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10101;
+    sh:severity sh:Warning.
+shp:Work_isSucceededByWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10170;
+    sh:severity sh:Warning.
+shp:Work_hasSummary
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10109;
+    sh:severity sh:Warning.
+shp:Work_isSummaryOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10179;
+    sh:severity sh:Warning.
+shp:Work_isSupplementToWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10154;
+    sh:severity sh:Warning.
+shp:Work_hasSupplementWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10172;
+    sh:severity sh:Warning.
+shp:Work_hasSystemOfOrganization
+    a sh:PropertyShape;
+    sh:path rdaw:P10084;
+    sh:severity sh:Warning.
+shp:Work_isTelevisionAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10132;
+    sh:severity sh:Warning.
+shp:Work_hasTelevisionDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10015;
+    sh:severity sh:Warning.
+shp:Work_hasTelevisionProducerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdaw:P10075;
+    sh:severity sh:Warning.
+shp:Work_hasTelevisionProgramMusicWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10241;
+    sh:severity sh:Warning.
+shp:Work_isTelevisionScreenplayBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10135;
+    sh:severity sh:Warning.
+shp:Work_hasTelevisionScreenplayWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10163;
+    sh:severity sh:Warning.
+shp:Work_isTextForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10372;
+    sh:severity sh:Warning.
+shp:Work_hasTextWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10371;
+    sh:severity sh:Warning.
+shp:Work_hasThematicIndexNumber
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10335;
+    sh:severity sh:Warning.
+shp:Work_hasTitleOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10088;
+    sh:severity sh:Warning.
+shp:Work_hasTransformation
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10336;
+    sh:severity sh:Warning.
+shp:Work_hasTransformationByAudience
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10383;
+    sh:severity sh:Warning.
+shp:Work_hasTransformationByExtensionPlan
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10377;
+    sh:severity sh:Warning.
+shp:Work_hasTransformationByGenre
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10342;
+    sh:severity sh:Warning.
+shp:Work_isTransformationByGenreOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10343;
+    sh:severity sh:Warning.
+shp:Work_hasTransformationByPolicy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10344;
+    sh:severity sh:Warning.
+shp:Work_isTransformationByPolicyOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10345;
+    sh:severity sh:Warning.
+shp:Work_hasTransformationByStyle
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10340;
+    sh:severity sh:Warning.
+shp:Work_isTransformationByStyleOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10341;
+    sh:severity sh:Warning.
+shp:Work_isTransformationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10337;
+    sh:severity sh:Warning.
+shp:Work_hasVariantAccessPointForWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10332;
+    sh:severity sh:Warning.
+shp:Work_hasVariantTitleOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdaw:P10086;
+    sh:severity sh:Warning.
+shp:Work_isVariationsBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10027;
+    sh:severity sh:Warning.
+shp:Work_isVerseAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10128;
+    sh:severity sh:Warning.
+shp:Work_isVideoAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10138;
+    sh:severity sh:Warning.
+shp:Work_isVideoGameAdaptationOfWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10250;
+    sh:severity sh:Warning.
+shp:Work_hasVideoMusicWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10239;
+    sh:severity sh:Warning.
+shp:Work_isVideoScreenplayBasedOnWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10136;
+    sh:severity sh:Warning.
+shp:Work_hasVideoScreenplayWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10164;
+    sh:severity sh:Warning.
+shp:Work_isWorkAnalysedIn
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10121;
+    sh:severity sh:Warning.
+shp:Work_isWorkCommentaryIn
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10116;
+    sh:severity sh:Warning.
+shp:Work_isWorkDescribedBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10118;
+    sh:severity sh:Warning.
+shp:Work_isWorkDescribedWithMetadataBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10623;
+    sh:severity sh:Warning.
+shp:Work_isWorkEvaluatedBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdaw:P10120;
+    sh:severity sh:Warning.
+shp:Work_hasYearDegreeGranted
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10010;
+    sh:path rdaw:P10215;
+    sh:severity sh:Warning.
+
+shp:Expression
+    a sh:NodeShape;
+    sh:closed true ;
+	sh:ignoredProperties (rdf:type) ;
+    sh:property
+        shp:Expression_hasContentType,
+        shp:Expression_hasIdentifierForExpression,
+        shp:Expression_hasDateOfCapture,
+        shp:Expression_hasAward,
+        shp:Expression_hasLanguageOfExpression,
+        shp:Expression_isAdaptedAsMotionPictureExpression,
+        shp:Expression_hasConductorAgent,
+        shp:Expression_hasActorAgent,
+        shp:Expression_hasOnscreenPresenterAgent,
+        shp:Expression_hasDancerAgent,
+        shp:Expression_hasInstructorAgent,
+        shp:Expression_hasHostAgent,
+        shp:Expression_hasModeratorAgent,
+        shp:Expression_hasPuppeteerAgent,
+        shp:Expression_hasPanelistAgent,
+        shp:Expression_hasInstrumentalistAgent,
+        shp:Expression_hasCommentatorAgent,
+        shp:Expression_hasNarratorAgent,
+        shp:Expression_hasStorytellerAgent,
+        shp:Expression_hasSpeakerAgent,
+        shp:Expression_hasSingerAgent,
+        shp:Expression_hasAnimatorAgent,
+        shp:Expression_hasArrangerAgentOfMusic,
+        shp:Expression_hasStageDirectorAgent,
+        shp:Expression_hasInterviewerAgentOfExpression,
+        shp:Expression_hasDraftsmanAgent,
+        shp:Expression_hasTranscriberAgent,
+        shp:Expression_hasMusicalDirectorAgent,
+        shp:Expression_hasCostumeDesignerAgent,
+        shp:Expression_hasTranslatorAgent,
+        shp:Expression_hasArtDirectorAgent,
+        shp:Expression_hasPerformerAgent,
+        shp:Expression_hasCourtReporterAgent,
+        shp:Expression_hasIntervieweeAgentOfExpression,
+        shp:Expression_hasAbridgerAgent,
+        shp:Expression_hasRecordingEngineerAgent,
+        shp:Expression_hasRecordistAgent,
+        shp:Expression_hasCreatorAgentOfExpression,
+        shp:Expression_hasPresenterAgent,
+        shp:Expression_hasEditorAgentOfMovingImageWork,
+        shp:Expression_hasProductionDesignerAgent,
+        shp:Expression_hasMinuteTakerAgent,
+        shp:Expression_isAdaptedAsRadioProgramExpression,
+        shp:Expression_hasFormOfTactileNotation,
+        shp:Expression_hasFormOfNotation,
+        shp:Expression_hasFormOfNotatedMovement,
+        shp:Expression_hasFormOfMusicalNotation,
+        shp:Expression_hasScript,
+        shp:Expression_isAdaptedAsTelevisionProgramExpression,
+        shp:Expression_isAdaptedAsVideoExpression,
+        shp:Expression_hasSummarizationOfContent,
+        shp:Expression_hasVoiceActorAgent,
+        shp:Expression_hasNoteOnExpression,
+        shp:Expression_isDramatizedAsExpression,
+        shp:Expression_isPartOfExpression,
+        shp:Expression_isReplacedInPartByExpression,
+        shp:Expression_isReplacedByExpression,
+        shp:Expression_isAdaptedInVerseAsExpression,
+        shp:Expression_isDubbedVersionOf,
+        shp:Expression_hasDubbedVersion,
+        shp:Expression_hasCadenzaExpression,
+        shp:Expression_isVariationsBasedOnExpression,
+        shp:Expression_isModifiedByVariationAsExpression,
+        shp:Expression_isCadenzaComposedForExpression,
+        shp:Expression_isLibrettoForExpression,
+        shp:Expression_hasIncidentalMusicExpression,
+        shp:Expression_isRemadeAsExpression,
+        shp:Expression_isSetToMusicAsExpression,
+        shp:Expression_isAdaptedAsNovelExpression,
+        shp:Expression_isAppendixToExpression,
+        shp:Expression_isAbstractedInExpression,
+        shp:Expression_isAdaptedAsChoreographyExpression,
+        shp:Expression_hasErrataExpression,
+        shp:Expression_hasIllustrationsExpression,
+        shp:Expression_isAdaptedAsMotionPictureScreenplayExpression,
+        shp:Expression_isAdaptedAsScreenplayExpression,
+        shp:Expression_isAdaptedAsTelevisionScreenplayExpression,
+        shp:Expression_isAdaptedAsVideoScreenplayExpression,
+        shp:Expression_isAdaptedAsRadioScriptExpression,
+        shp:Expression_isComplementedByExpression,
+        shp:Expression_isSeparatedIntoExpression,
+        shp:Expression_isScreenplayForExpression,
+        shp:Expression_isIncidentalMusicForExpression,
+        shp:Expression_isAugmentedByExpression,
+        shp:Expression_hasConcordanceExpression,
+        shp:Expression_hasAddendaExpression,
+        shp:Expression_isAdaptedAsLibrettoExpression,
+        shp:Expression_isImitatedAsExpression,
+        shp:Expression_isExpandedAsExpression,
+        shp:Expression_hasAppendixExpression,
+        shp:Expression_isFreelyTranslatedAsExpression,
+        shp:Expression_hasGuideExpression,
+        shp:Expression_isAbridgementOfExpression,
+        shp:Expression_isDramatizationOfExpression,
+        shp:Expression_isVerseAdaptationOfExpression,
+        shp:Expression_isMotionPictureAdaptationOfExpression,
+        shp:Expression_isNovelizationOfExpression,
+        shp:Expression_isRadioAdaptationOfExpression,
+        shp:Expression_isTelevisionAdaptationOfExpression,
+        shp:Expression_isScreenplayBasedOnExpression,
+        shp:Expression_isMotionPictureScreenplayBasedOnExpression,
+        shp:Expression_isTelevisionScreenplayBasedOnExpression,
+        shp:Expression_isVideoScreenplayBasedOnExpression,
+        shp:Expression_isRadioScriptBasedOnExpression,
+        shp:Expression_isVideoAdaptationOfExpression,
+        shp:Expression_isAbsorptionOfExpression,
+        shp:Expression_isAbsorptionInPartOfExpression,
+        shp:Expression_isArrangementOf,
+        shp:Expression_isFreeTranslationOfExpression,
+        shp:Expression_isTranslationOf,
+        shp:Expression_isParodiedAsExpression,
+        shp:Expression_isAbsorbedByExpression,
+        shp:Expression_isAbsorbedInPartByExpression,
+        shp:Expression_hasPartExpression,
+        shp:Expression_isErrataToExpression,
+        shp:Expression_isGuideToExpression,
+        shp:Expression_isIllustrationsForExpression,
+        shp:Expression_isContinuationOfExpression,
+        shp:Expression_isSupplementToExpression,
+        shp:Expression_isAdaptationOfExpression,
+        shp:Expression_isAdaptedAsExpression,
+        shp:Expression_isPrecededByExpression,
+        shp:Expression_hasScreenplayExpression,
+        shp:Expression_hasMotionPictureScreenplayExpression,
+        shp:Expression_isMusicalSettingOfExpression,
+        shp:Expression_hasRadioScriptExpression,
+        shp:Expression_hasTelevisionScreenplayExpression,
+        shp:Expression_hasVideoScreenplayExpression,
+        shp:Expression_hasLibrettoExpression,
+        shp:Expression_isParaphrasedAsExpression,
+        shp:Expression_isArrangedAs,
+        shp:Expression_isAbridgedAsExpression,
+        shp:Expression_isSplitFromExpression,
+        shp:Expression_isSeparatedFromExpression,
+        shp:Expression_isSucceededByExpression,
+        shp:Expression_isTranslatedAs,
+        shp:Expression_hasSupplementExpression,
+        shp:Expression_isScreenplayForMotionPictureExpression,
+        shp:Expression_isScreenplayForTelevisionProgramExpression,
+        shp:Expression_isScreenplayForVideoExpression,
+        shp:Expression_isScriptForRadioProgramExpression,
+        shp:Expression_isAddendaToExpression,
+        shp:Expression_isConcordanceToExpression,
+        shp:Expression_isChoreographicAdaptationOfExpression,
+        shp:Expression_isExpandedVersionOfExpression,
+        shp:Expression_isRemakeOfExpression,
+        shp:Expression_isParaphraseOfExpression,
+        shp:Expression_isRevisionOf,
+        shp:Expression_isLibrettoBasedOnExpression,
+        shp:Expression_isContinuedByExpression,
+        shp:Expression_isAugmentationOfExpression,
+        shp:Expression_isAbstractsForExpression,
+        shp:Expression_isImitationOfExpression,
+        shp:Expression_isParodyOfExpression,
+        shp:Expression_isReplacementInPartOfExpression,
+        shp:Expression_isReplacementOfExpression,
+        shp:Expression_isSplitIntoExpression,
+        shp:Expression_isMergerOfExpression,
+        shp:Expression_hasExpressionOfDerivativeWork,
+        shp:Expression_hasExpressionOfSourceWork,
+        shp:Expression_hasRelatedExpressionOfExpression,
+        shp:Expression_hasFormatOfNotatedMusic,
+        shp:Expression_isRevisedAs,
+        shp:Expression_isMergedToFormExpression,
+        shp:Expression_hasAdditionalScaleInformation,
+        shp:Expression_hasDateOfExpression,
+        shp:Expression_hasMediumOfPerformanceOfMusicalContent,
+        shp:Expression_hasProjectionOfCartographicContent,
+        shp:Expression_hasCaptureInformation,
+        shp:Expression_hasPlaceOfCapture,
+        shp:Expression_hasDuration,
+        shp:Expression_hasHorizontalScaleOfCartographicContent,
+        shp:Expression_hasScale,
+        shp:Expression_hasAspectRatio,
+        shp:Expression_hasVerticalScaleOfCartographicContent,
+        shp:Expression_hasWorkExpressed,
+        shp:Expression_isMusicalTheatreAdaptationOfExpression,
+        shp:Expression_isOperaAdaptationOfExpression,
+        shp:Expression_isAdaptedAsMusicalTheatreExpression,
+        shp:Expression_isAdaptedAsOperaExpression,
+        shp:Expression_hasMusicExpression,
+        shp:Expression_isMusicForExpression,
+        shp:Expression_hasVideoMusicExpression,
+        shp:Expression_isMusicForVideoExpression,
+        shp:Expression_hasTelevisionProgramMusicExpression,
+        shp:Expression_isMusicForTelevisionProgramExpression,
+        shp:Expression_hasRadioProgramMusicExpression,
+        shp:Expression_isMusicForRadioProgramExpression,
+        shp:Expression_hasMotionPictureMusicExpression,
+        shp:Expression_isMusicForMotionPictureExpression,
+        shp:Expression_hasChoreographyExpression,
+        shp:Expression_isChoreographyForExpression,
+        shp:Expression_isAdaptedAsGraphicNovelExpression,
+        shp:Expression_isGraphicNovelizationOfExpression,
+        shp:Expression_hasVisualEffectsProviderAgent,
+        shp:Expression_hasSpecialEffectsProviderAgent,
+        shp:Expression_hasLettererAgent,
+        shp:Expression_isSubjectExpressionOf,
+        shp:Expression_isExpressionDescribedBy,
+        shp:Expression_isExpressionAnalysedIn,
+        shp:Expression_isExpressionCommentaryIn,
+        shp:Expression_isExpressionEvaluatedBy,
+        shp:Expression_hasSoundDesignerAgent,
+        shp:Expression_hasLightingDesignerAgent,
+        shp:Expression_hasOnscreenParticipantAgent,
+        shp:Expression_hasSoftwareDeveloperAgent,
+        shp:Expression_isOratorioAdaptationOfExpression,
+        shp:Expression_isAdaptedAsOratorioExpression,
+        shp:Expression_hasColouristAgent,
+        shp:Expression_hasMakeupArtistAgent,
+        shp:Expression_hasChoralConductorAgent,
+        shp:Expression_hasInstrumentalConductorAgent,
+        shp:Expression_hasCensorAgent,
+        shp:Expression_hasRestorationistAgentOfExpression,
+        shp:Expression_hasAspectRatioDesignation,
+        shp:Expression_hasScaleDesignation,
+        shp:Expression_hasAudioEngineerAgent,
+        shp:Expression_hasMixingEngineerAgent,
+        shp:Expression_hasMusicProgrammerAgent,
+        shp:Expression_hasDubbingDirectorAgent,
+        shp:Expression_hasDjAgent,
+        shp:Expression_hasRelatedRdaEntityOfExpression,
+        shp:Expression_hasRelatedWorkOfExpression,
+        shp:Expression_hasRelatedManifestationOfExpression,
+        shp:Expression_hasRelatedItemOfExpression,
+        shp:Expression_hasRelatedAgentOfExpression,
+        shp:Expression_hasRelatedPlaceOfExpression,
+        shp:Expression_hasRelatedTimespanOfExpression,
+        shp:Expression_hasRelatedNomenOfExpression,
+        shp:Expression_hasAccessPointForExpression,
+        shp:Expression_hasAppellationOfExpression,
+        shp:Expression_hasTitleOfExpression,
+        shp:Expression_hasVariantAccessPointForExpression,
+        shp:Expression_hasPreferredTitleOfExpression,
+        shp:Expression_hasVariantTitleOfExpression,
+        shp:Expression_hasPrimeMeridian,
+        shp:Expression_hasReliefRepresentation,
+        shp:Expression_aggregates,
+        shp:Expression_isAggregatedBy,
+        shp:Expression_hasExtentOfExpression,
+        shp:Expression_hasIntendedAudienceOfExpression,
+        shp:Expression_hasInteractivityMode,
+        shp:Expression_hasMediumOfPerformanceOfChoreographicContent,
+        shp:Expression_hasKeyOfExpression,
+        shp:Expression_hasReviserAgent,
+        shp:Expression_hasContributorAgentToAmalgamation,
+        shp:Expression_hasContributorAgentToPerformance,
+        shp:Expression_hasEditorAgent,
+        shp:Expression_hasCategoryOfExpression,
+        shp:Expression_hasRelatedEntityOfExpression,
+        shp:Expression_hasPrequelExpression,
+        shp:Expression_hasSequelExpression,
+        shp:Expression_hasDesignationOfVersion,
+        shp:Expression_hasColour,
+        shp:Expression_hasSourceExpression,
+        shp:Expression_hasDerivativeExpression,
+        shp:Expression_isExpressionDescribedWithMetadataBy,
+        shp:Expression_hasConcordanceWork;
+    sh:targetClass rdac:C10006.
+
+shp:Expression_hasContentType
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:path rdae:P20001;
+    sh:severity sh:Violation.
+shp:Expression_hasIdentifierForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20002;
+    sh:severity sh:Warning.
+shp:Expression_hasDateOfCapture
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10010;
+    sh:path rdae:P20004;
+    sh:severity sh:Warning.
+shp:Expression_hasAward
+    a sh:PropertyShape;
+    sh:path rdae:P20005;
+    sh:severity sh:Warning.
+shp:Expression_hasLanguageOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20006;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsMotionPictureExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20009;
+    sh:severity sh:Warning.
+shp:Expression_hasConductorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20011;
+    sh:severity sh:Warning.
+shp:Expression_hasActorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20012;
+    sh:severity sh:Warning.
+shp:Expression_hasOnscreenPresenterAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20013;
+    sh:severity sh:Warning.
+shp:Expression_hasDancerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20014;
+    sh:severity sh:Warning.
+shp:Expression_hasInstructorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20015;
+    sh:severity sh:Warning.
+shp:Expression_hasHostAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20016;
+    sh:severity sh:Warning.
+shp:Expression_hasModeratorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20017;
+    sh:severity sh:Warning.
+shp:Expression_hasPuppeteerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20018;
+    sh:severity sh:Warning.
+shp:Expression_hasPanelistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20019;
+    sh:severity sh:Warning.
+shp:Expression_hasInstrumentalistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20020;
+    sh:severity sh:Warning.
+shp:Expression_hasCommentatorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20021;
+    sh:severity sh:Warning.
+shp:Expression_hasNarratorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20022;
+    sh:severity sh:Warning.
+shp:Expression_hasStorytellerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20023;
+    sh:severity sh:Warning.
+shp:Expression_hasSpeakerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20024;
+    sh:severity sh:Warning.
+shp:Expression_hasSingerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20025;
+    sh:severity sh:Warning.
+shp:Expression_hasAnimatorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20028;
+    sh:severity sh:Warning.
+shp:Expression_hasArrangerAgentOfMusic
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20029;
+    sh:severity sh:Warning.
+shp:Expression_hasStageDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20031;
+    sh:severity sh:Warning.
+shp:Expression_hasInterviewerAgentOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20032;
+    sh:severity sh:Warning.
+shp:Expression_hasDraftsmanAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20033;
+    sh:severity sh:Warning.
+shp:Expression_hasTranscriberAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20034;
+    sh:severity sh:Warning.
+shp:Expression_hasMusicalDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20035;
+    sh:severity sh:Warning.
+shp:Expression_hasCostumeDesignerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20036;
+    sh:severity sh:Warning.
+shp:Expression_hasTranslatorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20037;
+    sh:severity sh:Warning.
+shp:Expression_hasArtDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20038;
+    sh:severity sh:Warning.
+shp:Expression_hasPerformerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20039;
+    sh:severity sh:Warning.
+shp:Expression_hasCourtReporterAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20040;
+    sh:severity sh:Warning.
+shp:Expression_hasIntervieweeAgentOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20047;
+    sh:severity sh:Warning.
+shp:Expression_hasAbridgerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20049;
+    sh:severity sh:Warning.
+shp:Expression_hasRecordingEngineerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20050;
+    sh:severity sh:Warning.
+shp:Expression_hasRecordistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20052;
+    sh:severity sh:Warning.
+shp:Expression_hasCreatorAgentOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20053;
+    sh:severity sh:Warning.
+shp:Expression_hasPresenterAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20054;
+    sh:severity sh:Warning.
+shp:Expression_hasEditorAgentOfMovingImageWork
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20055;
+    sh:severity sh:Warning.
+shp:Expression_hasProductionDesignerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20056;
+    sh:severity sh:Warning.
+shp:Expression_hasMinuteTakerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20058;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsRadioProgramExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20060;
+    sh:severity sh:Warning.
+shp:Expression_hasFormOfTactileNotation
+    a sh:PropertyShape;
+    sh:path rdae:P20061;
+    sh:severity sh:Warning.
+shp:Expression_hasFormOfNotation
+    a sh:PropertyShape;
+    sh:path rdae:P20062;
+    sh:severity sh:Warning.
+shp:Expression_hasFormOfNotatedMovement
+    a sh:PropertyShape;
+    sh:path rdae:P20063;
+    sh:severity sh:Warning.
+shp:Expression_hasFormOfMusicalNotation
+    a sh:PropertyShape;
+    sh:path rdae:P20064;
+    sh:severity sh:Warning.
+shp:Expression_hasScript
+    a sh:PropertyShape;
+    sh:path rdae:P20065;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsTelevisionProgramExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20066;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsVideoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20067;
+    sh:severity sh:Warning.
+shp:Expression_hasSummarizationOfContent
+    a sh:PropertyShape;
+    sh:path rdae:P20069;
+    sh:severity sh:Warning.
+shp:Expression_hasVoiceActorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20070;
+    sh:severity sh:Warning.
+shp:Expression_hasNoteOnExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20071;
+    sh:severity sh:Warning.
+shp:Expression_isDramatizedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20073;
+    sh:severity sh:Warning.
+shp:Expression_isPartOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20074;
+    sh:severity sh:Warning.
+shp:Expression_isReplacedInPartByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20075;
+    sh:severity sh:Warning.
+shp:Expression_isReplacedByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20076;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedInVerseAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20077;
+    sh:severity sh:Warning.
+shp:Expression_isDubbedVersionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20078;
+    sh:severity sh:Warning.
+shp:Expression_hasDubbedVersion
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20079;
+    sh:severity sh:Warning.
+shp:Expression_hasCadenzaExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20080;
+    sh:severity sh:Warning.
+shp:Expression_isVariationsBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20081;
+    sh:severity sh:Warning.
+shp:Expression_isModifiedByVariationAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20082;
+    sh:severity sh:Warning.
+shp:Expression_isCadenzaComposedForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20083;
+    sh:severity sh:Warning.
+shp:Expression_isLibrettoForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20084;
+    sh:severity sh:Warning.
+shp:Expression_hasIncidentalMusicExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20085;
+    sh:severity sh:Warning.
+shp:Expression_isRemadeAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20086;
+    sh:severity sh:Warning.
+shp:Expression_isSetToMusicAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20087;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsNovelExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20088;
+    sh:severity sh:Warning.
+shp:Expression_isAppendixToExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20089;
+    sh:severity sh:Warning.
+shp:Expression_isAbstractedInExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20090;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsChoreographyExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20092;
+    sh:severity sh:Warning.
+shp:Expression_hasErrataExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20093;
+    sh:severity sh:Warning.
+shp:Expression_hasIllustrationsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20094;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsMotionPictureScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20095;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20096;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsTelevisionScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20097;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsVideoScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20098;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsRadioScriptExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20099;
+    sh:severity sh:Warning.
+shp:Expression_isComplementedByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20100;
+    sh:severity sh:Warning.
+shp:Expression_isSeparatedIntoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20101;
+    sh:severity sh:Warning.
+shp:Expression_isScreenplayForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20102;
+    sh:severity sh:Warning.
+shp:Expression_isIncidentalMusicForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20103;
+    sh:severity sh:Warning.
+shp:Expression_isAugmentedByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20105;
+    sh:severity sh:Warning.
+shp:Expression_hasConcordanceExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20108;
+    sh:severity sh:Warning.
+shp:Expression_hasAddendaExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20109;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsLibrettoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20110;
+    sh:severity sh:Warning.
+shp:Expression_isImitatedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20114;
+    sh:severity sh:Warning.
+shp:Expression_isExpandedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20115;
+    sh:severity sh:Warning.
+shp:Expression_hasAppendixExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20118;
+    sh:severity sh:Warning.
+shp:Expression_isFreelyTranslatedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20119;
+    sh:severity sh:Warning.
+shp:Expression_hasGuideExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20120;
+    sh:severity sh:Warning.
+shp:Expression_isAbridgementOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20121;
+    sh:severity sh:Warning.
+shp:Expression_isDramatizationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20123;
+    sh:severity sh:Warning.
+shp:Expression_isVerseAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20124;
+    sh:severity sh:Warning.
+shp:Expression_isMotionPictureAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20125;
+    sh:severity sh:Warning.
+shp:Expression_isNovelizationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20126;
+    sh:severity sh:Warning.
+shp:Expression_isRadioAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20127;
+    sh:severity sh:Warning.
+shp:Expression_isTelevisionAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20128;
+    sh:severity sh:Warning.
+shp:Expression_isScreenplayBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20129;
+    sh:severity sh:Warning.
+shp:Expression_isMotionPictureScreenplayBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20130;
+    sh:severity sh:Warning.
+shp:Expression_isTelevisionScreenplayBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20131;
+    sh:severity sh:Warning.
+shp:Expression_isVideoScreenplayBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20132;
+    sh:severity sh:Warning.
+shp:Expression_isRadioScriptBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20133;
+    sh:severity sh:Warning.
+shp:Expression_isVideoAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20134;
+    sh:severity sh:Warning.
+shp:Expression_isAbsorptionOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20137;
+    sh:severity sh:Warning.
+shp:Expression_isAbsorptionInPartOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20138;
+    sh:severity sh:Warning.
+shp:Expression_isArrangementOf
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20139;
+    sh:severity sh:Warning.
+shp:Expression_isFreeTranslationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20140;
+    sh:severity sh:Warning.
+shp:Expression_isTranslationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20141;
+    sh:severity sh:Warning.
+shp:Expression_isParodiedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20142;
+    sh:severity sh:Warning.
+shp:Expression_isAbsorbedByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20143;
+    sh:severity sh:Warning.
+shp:Expression_isAbsorbedInPartByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20144;
+    sh:severity sh:Warning.
+shp:Expression_hasPartExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20145;
+    sh:severity sh:Warning.
+shp:Expression_isErrataToExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20146;
+    sh:severity sh:Warning.
+shp:Expression_isGuideToExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20147;
+    sh:severity sh:Warning.
+shp:Expression_isIllustrationsForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20148;
+    sh:severity sh:Warning.
+shp:Expression_isContinuationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20149;
+    sh:severity sh:Warning.
+shp:Expression_isSupplementToExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20151;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20152;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20153;
+    sh:severity sh:Warning.
+shp:Expression_isPrecededByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20154;
+    sh:severity sh:Warning.
+shp:Expression_hasScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20157;
+    sh:severity sh:Warning.
+shp:Expression_hasMotionPictureScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20158;
+    sh:severity sh:Warning.
+shp:Expression_isMusicalSettingOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20159;
+    sh:severity sh:Warning.
+shp:Expression_hasRadioScriptExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20160;
+    sh:severity sh:Warning.
+shp:Expression_hasTelevisionScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20161;
+    sh:severity sh:Warning.
+shp:Expression_hasVideoScreenplayExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20162;
+    sh:severity sh:Warning.
+shp:Expression_hasLibrettoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20163;
+    sh:severity sh:Warning.
+shp:Expression_isParaphrasedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20164;
+    sh:severity sh:Warning.
+shp:Expression_isArrangedAs
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20165;
+    sh:severity sh:Warning.
+shp:Expression_isAbridgedAsExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20166;
+    sh:severity sh:Warning.
+shp:Expression_isSplitFromExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20167;
+    sh:severity sh:Warning.
+shp:Expression_isSeparatedFromExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20168;
+    sh:severity sh:Warning.
+shp:Expression_isSucceededByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20169;
+    sh:severity sh:Warning.
+shp:Expression_isTranslatedAs
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20171;
+    sh:severity sh:Warning.
+shp:Expression_hasSupplementExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20172;
+    sh:severity sh:Warning.
+shp:Expression_isScreenplayForMotionPictureExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20173;
+    sh:severity sh:Warning.
+shp:Expression_isScreenplayForTelevisionProgramExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20174;
+    sh:severity sh:Warning.
+shp:Expression_isScreenplayForVideoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20175;
+    sh:severity sh:Warning.
+shp:Expression_isScriptForRadioProgramExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20176;
+    sh:severity sh:Warning.
+shp:Expression_isAddendaToExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20177;
+    sh:severity sh:Warning.
+shp:Expression_isConcordanceToExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20181;
+    sh:severity sh:Warning.
+shp:Expression_isChoreographicAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20183;
+    sh:severity sh:Warning.
+shp:Expression_isExpandedVersionOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20184;
+    sh:severity sh:Warning.
+shp:Expression_isRemakeOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20185;
+    sh:severity sh:Warning.
+shp:Expression_isParaphraseOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20186;
+    sh:severity sh:Warning.
+shp:Expression_isRevisionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20189;
+    sh:severity sh:Warning.
+shp:Expression_isLibrettoBasedOnExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20190;
+    sh:severity sh:Warning.
+shp:Expression_isContinuedByExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20191;
+    sh:severity sh:Warning.
+shp:Expression_isAugmentationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20192;
+    sh:severity sh:Warning.
+shp:Expression_isAbstractsForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20193;
+    sh:severity sh:Warning.
+shp:Expression_isImitationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20195;
+    sh:severity sh:Warning.
+shp:Expression_isParodyOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20196;
+    sh:severity sh:Warning.
+shp:Expression_isReplacementInPartOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20198;
+    sh:severity sh:Warning.
+shp:Expression_isReplacementOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20199;
+    sh:severity sh:Warning.
+shp:Expression_isSplitIntoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20200;
+    sh:severity sh:Warning.
+shp:Expression_isMergerOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20201;
+    sh:severity sh:Warning.
+shp:Expression_hasExpressionOfDerivativeWork
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20203;
+    sh:severity sh:Warning.
+shp:Expression_hasExpressionOfSourceWork
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20204;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedExpressionOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20205;
+    sh:severity sh:Warning.
+shp:Expression_hasFormatOfNotatedMusic
+    a sh:PropertyShape;
+    sh:path rdae:P20209;
+    sh:severity sh:Warning.
+shp:Expression_isRevisedAs
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20211;
+    sh:severity sh:Warning.
+shp:Expression_isMergedToFormExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20212;
+    sh:severity sh:Warning.
+shp:Expression_hasAdditionalScaleInformation
+    a sh:PropertyShape;
+    sh:path rdae:P20213;
+    sh:severity sh:Warning.
+shp:Expression_hasDateOfExpression
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10010;
+    sh:path rdae:P20214;
+    sh:severity sh:Warning.
+shp:Expression_hasMediumOfPerformanceOfMusicalContent
+    a sh:PropertyShape;
+    sh:path rdae:P20215;
+    sh:severity sh:Warning.
+shp:Expression_hasProjectionOfCartographicContent
+    a sh:PropertyShape;
+    sh:path rdae:P20216;
+    sh:severity sh:Warning.
+shp:Expression_hasCaptureInformation
+    a sh:PropertyShape;
+    sh:path rdae:P20217;
+    sh:severity sh:Warning.
+shp:Expression_hasPlaceOfCapture
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdae:P20218;
+    sh:severity sh:Warning.
+shp:Expression_hasDuration
+    a sh:PropertyShape;
+    sh:path rdae:P20219;
+    sh:severity sh:Warning.
+shp:Expression_hasHorizontalScaleOfCartographicContent
+    a sh:PropertyShape;
+    sh:path rdae:P20226;
+    sh:severity sh:Warning.
+shp:Expression_hasScale
+    a sh:PropertyShape;
+    sh:path rdae:P20228;
+    sh:severity sh:Warning.
+shp:Expression_hasAspectRatio
+    a sh:PropertyShape;
+    sh:path rdae:P20229;
+    sh:severity sh:Warning.
+shp:Expression_hasVerticalScaleOfCartographicContent
+    a sh:PropertyShape;
+    sh:path rdae:P20230;
+    sh:severity sh:Warning.
+shp:Expression_hasWorkExpressed
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:class rdac:C10001;
+    sh:path rdae:P20231;
+    sh:severity sh:Violation.
+shp:Expression_isMusicalTheatreAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20239;
+    sh:severity sh:Warning.
+shp:Expression_isOperaAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20240;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsMusicalTheatreExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20241;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsOperaExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20242;
+    sh:severity sh:Warning.
+shp:Expression_hasMusicExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20243;
+    sh:severity sh:Warning.
+shp:Expression_isMusicForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20244;
+    sh:severity sh:Warning.
+shp:Expression_hasVideoMusicExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20245;
+    sh:severity sh:Warning.
+shp:Expression_isMusicForVideoExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20246;
+    sh:severity sh:Warning.
+shp:Expression_hasTelevisionProgramMusicExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20247;
+    sh:severity sh:Warning.
+shp:Expression_isMusicForTelevisionProgramExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20248;
+    sh:severity sh:Warning.
+shp:Expression_hasRadioProgramMusicExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20249;
+    sh:severity sh:Warning.
+shp:Expression_isMusicForRadioProgramExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20250;
+    sh:severity sh:Warning.
+shp:Expression_hasMotionPictureMusicExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20251;
+    sh:severity sh:Warning.
+shp:Expression_isMusicForMotionPictureExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20252;
+    sh:severity sh:Warning.
+shp:Expression_hasChoreographyExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20253;
+    sh:severity sh:Warning.
+shp:Expression_isChoreographyForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20254;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsGraphicNovelExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20255;
+    sh:severity sh:Warning.
+shp:Expression_isGraphicNovelizationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20256;
+    sh:severity sh:Warning.
+shp:Expression_hasVisualEffectsProviderAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20257;
+    sh:severity sh:Warning.
+shp:Expression_hasSpecialEffectsProviderAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20258;
+    sh:severity sh:Warning.
+shp:Expression_hasLettererAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20259;
+    sh:severity sh:Warning.
+shp:Expression_isSubjectExpressionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20268;
+    sh:severity sh:Warning.
+shp:Expression_isExpressionDescribedBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20269;
+    sh:severity sh:Warning.
+shp:Expression_isExpressionAnalysedIn
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20270;
+    sh:severity sh:Warning.
+shp:Expression_isExpressionCommentaryIn
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20271;
+    sh:severity sh:Warning.
+shp:Expression_isExpressionEvaluatedBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20273;
+    sh:severity sh:Warning.
+shp:Expression_hasSoundDesignerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20276;
+    sh:severity sh:Warning.
+shp:Expression_hasLightingDesignerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20277;
+    sh:severity sh:Warning.
+shp:Expression_hasOnscreenParticipantAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20279;
+    sh:severity sh:Warning.
+shp:Expression_hasSoftwareDeveloperAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20280;
+    sh:severity sh:Warning.
+shp:Expression_isOratorioAdaptationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20281;
+    sh:severity sh:Warning.
+shp:Expression_isAdaptedAsOratorioExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20282;
+    sh:severity sh:Warning.
+shp:Expression_hasColouristAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20283;
+    sh:severity sh:Warning.
+shp:Expression_hasMakeupArtistAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20284;
+    sh:severity sh:Warning.
+shp:Expression_hasChoralConductorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20285;
+    sh:severity sh:Warning.
+shp:Expression_hasInstrumentalConductorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20286;
+    sh:severity sh:Warning.
+shp:Expression_hasCensorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20287;
+    sh:severity sh:Warning.
+shp:Expression_hasRestorationistAgentOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20289;
+    sh:severity sh:Warning.
+shp:Expression_hasAspectRatioDesignation
+    a sh:PropertyShape;
+    sh:path rdae:P20290;
+    sh:severity sh:Warning.
+shp:Expression_hasScaleDesignation
+    a sh:PropertyShape;
+    sh:path rdae:P20291;
+    sh:severity sh:Warning.
+shp:Expression_hasAudioEngineerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20292;
+    sh:severity sh:Warning.
+shp:Expression_hasMixingEngineerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20293;
+    sh:severity sh:Warning.
+shp:Expression_hasMusicProgrammerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20294;
+    sh:severity sh:Warning.
+shp:Expression_hasDubbingDirectorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20295;
+    sh:severity sh:Warning.
+shp:Expression_hasDjAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20296;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedRdaEntityOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20297;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedWorkOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20298;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedManifestationOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdae:P20299;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedItemOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20300;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedAgentOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20301;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedPlaceOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdae:P20306;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedTimespanOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20307;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedNomenOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20308;
+    sh:severity sh:Warning.
+shp:Expression_hasAccessPointForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20310;
+    sh:severity sh:Warning.
+shp:Expression_hasAppellationOfExpression
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10012;
+    sh:path rdae:P20311;
+    sh:severity sh:Violation.
+shp:Expression_hasTitleOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20312;
+    sh:severity sh:Warning.
+shp:Expression_hasVariantAccessPointForExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20314;
+    sh:severity sh:Warning.
+shp:Expression_hasPreferredTitleOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20315;
+    sh:severity sh:Warning.
+shp:Expression_hasVariantTitleOfExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdae:P20316;
+    sh:severity sh:Warning.
+shp:Expression_hasPrimeMeridian
+    a sh:PropertyShape;
+    sh:path rdae:P20317;
+    sh:severity sh:Warning.
+shp:Expression_hasReliefRepresentation
+    a sh:PropertyShape;
+    sh:path rdae:P20318;
+    sh:severity sh:Warning.
+shp:Expression_aggregates
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20319;
+    sh:severity sh:Warning.
+shp:Expression_isAggregatedBy
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20320;
+    sh:severity sh:Warning.
+shp:Expression_hasExtentOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20321;
+    sh:severity sh:Warning.
+shp:Expression_hasIntendedAudienceOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20322;
+    sh:severity sh:Warning.
+shp:Expression_hasInteractivityMode
+    a sh:PropertyShape;
+    sh:path rdae:P20323;
+    sh:severity sh:Warning.
+shp:Expression_hasMediumOfPerformanceOfChoreographicContent
+    a sh:PropertyShape;
+    sh:path rdae:P20324;
+    sh:severity sh:Warning.
+shp:Expression_hasKeyOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20326;
+    sh:severity sh:Warning.
+shp:Expression_hasReviserAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20327;
+    sh:severity sh:Warning.
+shp:Expression_hasContributorAgentToAmalgamation
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20328;
+    sh:severity sh:Warning.
+shp:Expression_hasContributorAgentToPerformance
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20329;
+    sh:severity sh:Warning.
+shp:Expression_hasEditorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdae:P20330;
+    sh:severity sh:Warning.
+shp:Expression_hasCategoryOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20331;
+    sh:severity sh:Warning.
+shp:Expression_hasRelatedEntityOfExpression
+    a sh:PropertyShape;
+    sh:path rdae:P20333;
+    sh:severity sh:Warning.
+shp:Expression_hasPrequelExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20334;
+    sh:severity sh:Warning.
+shp:Expression_hasSequelExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20335;
+    sh:severity sh:Warning.
+shp:Expression_hasDesignationOfVersion
+    a sh:PropertyShape;
+    sh:path rdae:P20572;
+    sh:severity sh:Warning.
+shp:Expression_hasColour
+    a sh:PropertyShape;
+    sh:path rdae:P20573;
+    sh:severity sh:Warning.
+shp:Expression_hasSourceExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20574;
+    sh:severity sh:Warning.
+shp:Expression_hasDerivativeExpression
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdae:P20575;
+    sh:severity sh:Warning.
+shp:Expression_isExpressionDescribedWithMetadataBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20576;
+    sh:severity sh:Warning.
+shp:Expression_hasConcordanceWork
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdae:P20577;
+    sh:severity sh:Warning.
+
+shp:Manifestation
+    a sh:NodeShape;
+    sh:closed true ;
+	sh:ignoredProperties (rdf:type) ;
+    sh:property
+        shp:Manifestation_hasCarrierType,
+        shp:Manifestation_hasMediaType,
+        shp:Manifestation_hasIdentifierForManifestation,
+        shp:Manifestation_hasPreferredCitation,
+        shp:Manifestation_hasDateOfPublication,
+        shp:Manifestation_isFacsimilePartOf,
+        shp:Manifestation_hasPreservationFacsimileOfManifestation,
+        shp:Manifestation_hasFacsimileOfManifestation,
+        shp:Manifestation_hasPartManifestation,
+        shp:Manifestation_isOnCarrierUnitWith,
+        shp:Manifestation_isReprintedAsManifestation,
+        shp:Manifestation_isReproducedAsManifestation,
+        shp:Manifestation_isDigitalTransferOfManifestationOf,
+        shp:Manifestation_isReproductionOfManifestationOf,
+        shp:Manifestation_isPreservationFacsimileOfManifestationOf,
+        shp:Manifestation_hasFacsimilePart,
+        shp:Manifestation_isFacsimileOfManifestationOf,
+        shp:Manifestation_hasRelatedManifestationOfManifestation,
+        shp:Manifestation_hasFilmDistributorAgent,
+        shp:Manifestation_hasBookDesignerAgent,
+        shp:Manifestation_hasEngraverAgent,
+        shp:Manifestation_hasBrailleEmbosserAgent,
+        shp:Manifestation_hasPrintmakerAgent,
+        shp:Manifestation_hasCasterAgent,
+        shp:Manifestation_hasLithographerAgent,
+        shp:Manifestation_hasPlatemakerAgent,
+        shp:Manifestation_hasEtcherAgent,
+        shp:Manifestation_hasCollotyperAgent,
+        shp:Manifestation_hasManufacturerAgent,
+        shp:Manifestation_hasPublisherAgent,
+        shp:Manifestation_hasEncodingFormat,
+        shp:Manifestation_hasFirstAlphanumericDesignationOfAlternativeSequence,
+        shp:Manifestation_hasLastAlphanumericDesignationOfAlternativeSequence,
+        shp:Manifestation_hasFirstChronologicalDesignationOfAlternativeSequence,
+        shp:Manifestation_hasLastChronologicalDesignationOfAlternativeSequence,
+        shp:Manifestation_hasDigitalRepresentationOfCartographicContent,
+        shp:Manifestation_hasVideoFormat,
+        shp:Manifestation_hasStatementOfResponsibilityRelatingToTitleProper,
+        shp:Manifestation_hasSeriesStatement,
+        shp:Manifestation_hasEditionStatement,
+        shp:Manifestation_hasDistributionStatement,
+        shp:Manifestation_hasManufactureStatement,
+        shp:Manifestation_hasProductionStatement,
+        shp:Manifestation_hasPublicationStatement,
+        shp:Manifestation_hasStatementOfResponsibility,
+        shp:Manifestation_hasStatementOfResponsibilityRelatingToNamedRevisionOfEdition,
+        shp:Manifestation_hasStatementOfResponsibilityRelatingToSeries,
+        shp:Manifestation_hasStatementOfResponsibilityRelatingToEdition,
+        shp:Manifestation_hasBroadcastStandard,
+        shp:Manifestation_hasDigitalFileCharacteristic,
+        shp:Manifestation_hasSoundCharacteristic,
+        shp:Manifestation_hasVideoCharacteristic,
+        shp:Manifestation_hasProjectionCharacteristicOfMotionPictureFilm,
+        shp:Manifestation_hasVariantTitleOfManifestation,
+        shp:Manifestation_hasAbbreviatedTitle,
+        shp:Manifestation_hasDesignationOfNamedRevisionOfEdition,
+        shp:Manifestation_hasDesignationOfEdition,
+        shp:Manifestation_hasTitleOfManifestation,
+        shp:Manifestation_hasExpressionManifested,
+        shp:Manifestation_hasContactInformation,
+        shp:Manifestation_hasTitleProper,
+        shp:Manifestation_hasExtentOfManifestation,
+        shp:Manifestation_hasAppellationOfManifestation,
+        shp:Manifestation_hasFingerprint,
+        shp:Manifestation_hasNameOfAgentOfManifestation,
+        shp:Manifestation_isDigitalTransferOfItemOf,
+        shp:Manifestation_isElectronicReproductionOfItemOf,
+        shp:Manifestation_isFacsimileOfItemOf,
+        shp:Manifestation_isPreservationFacsimileOfItemOf,
+        shp:Manifestation_isReprintOfItemOf,
+        shp:Manifestation_isReproductionOfItemOf,
+        shp:Manifestation_hasMaterial,
+        shp:Manifestation_hasIntendedAudienceOfManifestation,
+        shp:Manifestation_hasFontPointSize,
+        shp:Manifestation_hasGroovePitch,
+        shp:Manifestation_hasGrooveWidth,
+        shp:Manifestation_hasTypeOfBinding,
+        shp:Manifestation_hasBindingOfManifestation,
+        shp:Manifestation_hasSurveyorAgent,
+        shp:Manifestation_hasAccessibilityContent,
+        shp:Manifestation_hasIllustrativeContent,
+        shp:Manifestation_hasSoundContent,
+        shp:Manifestation_hasSupplementaryContent,
+        shp:Manifestation_hasColourContent,
+        shp:Manifestation_isReferenceSourceOf,
+        shp:Manifestation_hasSubcollection,
+        shp:Manifestation_isSubcollectionOf,
+        shp:Manifestation_hasHolding,
+        shp:Manifestation_hasLocationOfCollection,
+        shp:Manifestation_isManifestationDescribedWithMetadataBy,
+        shp:Manifestation_hasFindingAid,
+        shp:Manifestation_hasCatalogue,
+        shp:Manifestation_hasHierarchicFindingAid,
+        shp:Manifestation_hasIndex;
+    sh:targetClass rdac:C10007.
+
+shp:Manifestation_hasCarrierType
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:path rdam:P30001;
+    sh:severity sh:Violation.
+shp:Manifestation_hasMediaType
+    a sh:PropertyShape;
+    sh:path rdam:P30002;
+    sh:severity sh:Warning.
+shp:Manifestation_hasIdentifierForManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30004;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPreferredCitation
+    a sh:PropertyShape;
+    sh:path rdam:P30005;
+    sh:severity sh:Warning.
+shp:Manifestation_hasDateOfPublication
+    a sh:PropertyShape;
+    sh:maxCount 1;
+    sh:class rdac:C10010;
+    sh:path rdam:P30011;
+    sh:severity sh:Warning.
+shp:Manifestation_isFacsimilePartOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30019;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPreservationFacsimileOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30021;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFacsimileOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30031;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPartManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30033;
+    sh:severity sh:Warning.
+shp:Manifestation_isOnCarrierUnitWith
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30035;
+    sh:severity sh:Warning.
+shp:Manifestation_isReprintedAsManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30038;
+    sh:severity sh:Warning.
+shp:Manifestation_isReproducedAsManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30039;
+    sh:severity sh:Warning.
+shp:Manifestation_isDigitalTransferOfManifestationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30040;
+    sh:severity sh:Warning.
+shp:Manifestation_isReproductionOfManifestationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30043;
+    sh:severity sh:Warning.
+shp:Manifestation_isPreservationFacsimileOfManifestationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30045;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFacsimilePart
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30046;
+    sh:severity sh:Warning.
+shp:Manifestation_isFacsimileOfManifestationOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30047;
+    sh:severity sh:Warning.
+shp:Manifestation_hasRelatedManifestationOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30048;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFilmDistributorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30068;
+    sh:severity sh:Warning.
+shp:Manifestation_hasBookDesignerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30069;
+    sh:severity sh:Warning.
+shp:Manifestation_hasEngraverAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30070;
+    sh:severity sh:Warning.
+shp:Manifestation_hasBrailleEmbosserAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30071;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPrintmakerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30072;
+    sh:severity sh:Warning.
+shp:Manifestation_hasCasterAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30073;
+    sh:severity sh:Warning.
+shp:Manifestation_hasLithographerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30074;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPlatemakerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30075;
+    sh:severity sh:Warning.
+shp:Manifestation_hasEtcherAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30076;
+    sh:severity sh:Warning.
+shp:Manifestation_hasCollotyperAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30077;
+    sh:severity sh:Warning.
+shp:Manifestation_hasManufacturerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30082;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPublisherAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30083;
+    sh:severity sh:Warning.
+shp:Manifestation_hasEncodingFormat
+    a sh:PropertyShape;
+    sh:path rdam:P30096;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFirstAlphanumericDesignationOfAlternativeSequence
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30097;
+    sh:severity sh:Warning.
+shp:Manifestation_hasLastAlphanumericDesignationOfAlternativeSequence
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30098;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFirstChronologicalDesignationOfAlternativeSequence
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30099;
+    sh:severity sh:Warning.
+shp:Manifestation_hasLastChronologicalDesignationOfAlternativeSequence
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30100;
+    sh:severity sh:Warning.
+shp:Manifestation_hasDigitalRepresentationOfCartographicContent
+    a sh:PropertyShape;
+    sh:path rdam:P30102;
+    sh:severity sh:Warning.
+shp:Manifestation_hasVideoFormat
+    a sh:PropertyShape;
+    sh:path rdam:P30104;
+    sh:severity sh:Warning.
+shp:Manifestation_hasStatementOfResponsibilityRelatingToTitleProper
+    a sh:PropertyShape;
+    sh:path rdam:P30105;
+    sh:severity sh:Warning.
+shp:Manifestation_hasSeriesStatement
+    a sh:PropertyShape;
+    sh:path rdam:P30106;
+    sh:severity sh:Warning.
+shp:Manifestation_hasEditionStatement
+    a sh:PropertyShape;
+    sh:path rdam:P30107;
+    sh:severity sh:Warning.
+shp:Manifestation_hasDistributionStatement
+    a sh:PropertyShape;
+    sh:path rdam:P30108;
+    sh:severity sh:Warning.
+shp:Manifestation_hasManufactureStatement
+    a sh:PropertyShape;
+    sh:path rdam:P30109;
+    sh:severity sh:Warning.
+shp:Manifestation_hasProductionStatement
+    a sh:PropertyShape;
+    sh:path rdam:P30110;
+    sh:severity sh:Warning.
+shp:Manifestation_hasPublicationStatement
+    a sh:PropertyShape;
+    sh:path rdam:P30111;
+    sh:severity sh:Warning.
+shp:Manifestation_hasStatementOfResponsibility
+    a sh:PropertyShape;
+    sh:path rdam:P30117;
+    sh:severity sh:Warning.
+shp:Manifestation_hasStatementOfResponsibilityRelatingToNamedRevisionOfEdition
+    a sh:PropertyShape;
+    sh:path rdam:P30118;
+    sh:severity sh:Warning.
+shp:Manifestation_hasStatementOfResponsibilityRelatingToSeries
+    a sh:PropertyShape;
+    sh:path rdam:P30119;
+    sh:severity sh:Warning.
+shp:Manifestation_hasStatementOfResponsibilityRelatingToEdition
+    a sh:PropertyShape;
+    sh:path rdam:P30121;
+    sh:severity sh:Warning.
+shp:Manifestation_hasBroadcastStandard
+    a sh:PropertyShape;
+    sh:path rdam:P30123;
+    sh:severity sh:Warning.
+shp:Manifestation_hasDigitalFileCharacteristic
+    a sh:PropertyShape;
+    sh:path rdam:P30124;
+    sh:severity sh:Warning.
+shp:Manifestation_hasSoundCharacteristic
+    a sh:PropertyShape;
+    sh:path rdam:P30125;
+    sh:severity sh:Warning.
+shp:Manifestation_hasVideoCharacteristic
+    a sh:PropertyShape;
+    sh:path rdam:P30126;
+    sh:severity sh:Warning.
+shp:Manifestation_hasProjectionCharacteristicOfMotionPictureFilm
+    a sh:PropertyShape;
+    sh:path rdam:P30127;
+    sh:severity sh:Warning.
+shp:Manifestation_hasVariantTitleOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30128;
+    sh:severity sh:Warning.
+shp:Manifestation_hasAbbreviatedTitle
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30131;
+    sh:severity sh:Warning.
+shp:Manifestation_hasDesignationOfNamedRevisionOfEdition
+    a sh:PropertyShape;
+    sh:path rdam:P30132;
+    sh:severity sh:Warning.
+shp:Manifestation_hasDesignationOfEdition
+    a sh:PropertyShape;
+    sh:path rdam:P30133;
+    sh:severity sh:Warning.
+shp:Manifestation_hasTitleOfManifestation
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10012;
+    sh:path rdam:P30134;
+    sh:severity sh:Violation.
+shp:Manifestation_hasExpressionManifested
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10006;
+    sh:path rdam:P30139;
+    sh:severity sh:Violation.
+shp:Manifestation_hasContactInformation
+    a sh:PropertyShape;
+    sh:path rdam:P30141;
+    sh:severity sh:Warning.
+shp:Manifestation_hasTitleProper
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30156;
+    sh:severity sh:Warning.
+shp:Manifestation_hasExtentOfManifestation
+    a sh:PropertyShape;
+    sh:path rdam:P30182;
+    sh:severity sh:Warning.
+shp:Manifestation_hasAppellationOfManifestation
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10012;
+    sh:path rdam:P30277;
+    sh:severity sh:Violation.
+shp:Manifestation_hasFingerprint
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30296;
+    sh:severity sh:Warning.
+shp:Manifestation_hasNameOfAgentOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30297;
+    sh:severity sh:Warning.
+shp:Manifestation_isDigitalTransferOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30298;
+    sh:severity sh:Warning.
+shp:Manifestation_isElectronicReproductionOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30299;
+    sh:severity sh:Warning.
+shp:Manifestation_isFacsimileOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30300;
+    sh:severity sh:Warning.
+shp:Manifestation_isPreservationFacsimileOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30301;
+    sh:severity sh:Warning.
+shp:Manifestation_isReprintOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30302;
+    sh:severity sh:Warning.
+shp:Manifestation_isReproductionOfItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30303;
+    sh:severity sh:Warning.
+shp:Manifestation_hasMaterial
+    a sh:PropertyShape;
+    sh:path rdam:P30304;
+    sh:severity sh:Warning.
+shp:Manifestation_hasIntendedAudienceOfManifestation
+    a sh:PropertyShape;
+    sh:path rdam:P30305;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFontPointSize
+    a sh:PropertyShape;
+    sh:path rdam:P30306;
+    sh:severity sh:Warning.
+shp:Manifestation_hasGroovePitch
+    a sh:PropertyShape;
+    sh:path rdam:P30307;
+    sh:severity sh:Warning.
+shp:Manifestation_hasGrooveWidth
+    a sh:PropertyShape;
+    sh:path rdam:P30308;
+    sh:severity sh:Warning.
+shp:Manifestation_hasTypeOfBinding
+    a sh:PropertyShape;
+    sh:path rdam:P30309;
+    sh:severity sh:Warning.
+shp:Manifestation_hasBindingOfManifestation
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdam:P30310;
+    sh:severity sh:Warning.
+shp:Manifestation_hasSurveyorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdam:P30312;
+    sh:severity sh:Warning.
+shp:Manifestation_hasAccessibilityContent
+    a sh:PropertyShape;
+    sh:path rdam:P30452;
+    sh:severity sh:Warning.
+shp:Manifestation_hasIllustrativeContent
+    a sh:PropertyShape;
+    sh:path rdam:P30453;
+    sh:severity sh:Warning.
+shp:Manifestation_hasSoundContent
+    a sh:PropertyShape;
+    sh:path rdam:P30454;
+    sh:severity sh:Warning.
+shp:Manifestation_hasSupplementaryContent
+    a sh:PropertyShape;
+    sh:path rdam:P30455;
+    sh:severity sh:Warning.
+shp:Manifestation_hasColourContent
+    a sh:PropertyShape;
+    sh:path rdam:P30456;
+    sh:severity sh:Warning.
+shp:Manifestation_isReferenceSourceOf
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdam:P30457;
+    sh:severity sh:Warning.
+shp:Manifestation_hasSubcollection
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30458;
+    sh:severity sh:Warning.
+shp:Manifestation_isSubcollectionOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdam:P30459;
+    sh:severity sh:Warning.
+shp:Manifestation_hasHolding
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdam:P30460;
+    sh:severity sh:Warning.
+shp:Manifestation_hasLocationOfCollection
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdam:P30461;
+    sh:severity sh:Warning.
+shp:Manifestation_isManifestationDescribedWithMetadataBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdam:P30462;
+    sh:severity sh:Warning.
+shp:Manifestation_hasFindingAid
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdam:P30463;
+    sh:severity sh:Warning.
+shp:Manifestation_hasCatalogue
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdam:P30464;
+    sh:severity sh:Warning.
+shp:Manifestation_hasHierarchicFindingAid
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdam:P30465;
+    sh:severity sh:Warning.
+shp:Manifestation_hasIndex
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdam:P30466;
+    sh:severity sh:Warning.
+
+shp:Item
+    a sh:NodeShape;
+    sh:closed true ;
+	sh:ignoredProperties (rdf:type) ;
+    sh:property
+        shp:Item_hasIdentifierForItem,
+        shp:Item_hasModificationOfItem,
+        shp:Item_hasDepositorAgent,
+        shp:Item_hasDonorAgent,
+        shp:Item_hasSellerAgent,
+        shp:Item_isContainedInItem,
+        shp:Item_hasNoteOnDimensionsOfItem,
+        shp:Item_hasNoteOnExtentOfItem,
+        shp:Item_hasIlluminatorAgent,
+        shp:Item_hasBinderAgent,
+        shp:Item_hasInscriber,
+        shp:Item_hasAnnotator,
+        shp:Item_hasAutographer,
+        shp:Item_hasCurrentOwnerAgent,
+        shp:Item_hasFormerOwnerAgent,
+        shp:Item_hasCustodianAgent,
+        shp:Item_hasOwnerAgent,
+        shp:Item_hasHonoureeAgentOfItem,
+        shp:Item_hasRestorationistAgentOfItem,
+        shp:Item_hasDedicateeAgentOfItem,
+        shp:Item_hasCustodialHistoryOfItem,
+        shp:Item_hasNoteOnItem,
+        shp:Item_isHeldWith,
+        shp:Item_hasEquivalentItem,
+        shp:Item_isBoundWith,
+        shp:Item_isContainerOfItem,
+        shp:Item_isOnDiscWithItem,
+        shp:Item_isFilmedWithItem,
+        shp:Item_hasRelatedItemOfItem,
+        shp:Item_hasRestrictionOnAccessToItem,
+        shp:Item_hasRestrictionOnUseOfItem,
+        shp:Item_hasManifestationExemplified,
+        shp:Item_hasImmediateSourceOfAcquisitionOfItem,
+        shp:Item_isSubjectItemOf,
+        shp:Item_isItemDescribedBy,
+        shp:Item_isItemAnalysedIn,
+        shp:Item_isItemCommentaryIn,
+        shp:Item_hasRelatedRdaEntityOfItem,
+        shp:Item_hasRelatedWorkOfItem,
+        shp:Item_hasRelatedExpressionOfItem,
+        shp:Item_hasRelatedManifestationOfItem,
+        shp:Item_hasRelatedAgentOfItem,
+        shp:Item_hasRelatedPersonOfItem,
+        shp:Item_hasRelatedFamilyOfItem,
+        shp:Item_hasRelatedCorporateBodyOfItem,
+        shp:Item_hasRelatedCollectiveAgentOfItem,
+        shp:Item_hasRelatedPlaceOfItem,
+        shp:Item_hasRelatedTimespanOfItem,
+        shp:Item_hasRelatedNomenOfItem,
+        shp:Item_hasAccessPointForItem,
+        shp:Item_hasAppellationOfItem,
+        shp:Item_hasTitleOfItem,
+        shp:Item_hasAuthorizedAccessPointForItem,
+        shp:Item_hasVariantAccessPointForItem,
+        shp:Item_hasPreferredTitleOfItem,
+        shp:Item_hasVariantTitleOfItem,
+        shp:Item_hasDigitalTransferOfItem,
+        shp:Item_hasElectronicReproductionOfItem,
+        shp:Item_hasFacsimileOfItem,
+        shp:Item_hasPreservationFacsimileOfItem,
+        shp:Item_isReprintedAsItem,
+        shp:Item_isReproducedAsItem,
+        shp:Item_hasModifierAgent,
+        shp:Item_hasBindingOfItem,
+        shp:Item_hasRelatedEntityOfItem,
+        shp:Item_hasCategoryOfItem,
+        shp:Item_hasDedicateePersonOfItem,
+        shp:Item_hasBinderPerson,
+        shp:Item_hasIlluminatorPerson,
+        shp:Item_hasFormerOwnerPerson,
+        shp:Item_hasCustodianPerson,
+        shp:Item_hasOwnerPerson,
+        shp:Item_hasDepositorPerson,
+        shp:Item_hasDonorPerson,
+        shp:Item_hasSellerPerson,
+        shp:Item_hasHonoureePersonOfItem,
+        shp:Item_hasRestorationistPersonOfItem,
+        shp:Item_hasModifierPerson,
+        shp:Item_hasDedicateeCollectiveAgentOfItem,
+        shp:Item_hasBinderCollectiveAgent,
+        shp:Item_hasIlluminatorCollectiveAgent,
+        shp:Item_hasFormerOwnerCollectiveAgent,
+        shp:Item_hasCustodianCollectiveAgent,
+        shp:Item_hasOwnerCollectiveAgent,
+        shp:Item_hasDepositorCollectiveAgent,
+        shp:Item_hasDonorCollectiveAgent,
+        shp:Item_hasSellerCollectiveAgent,
+        shp:Item_hasHonoureeCollectiveAgentOfItem,
+        shp:Item_hasRestorationistCollectiveAgentOfItem,
+        shp:Item_hasModifierCollectiveAgent,
+        shp:Item_hasDedicateeCorporateBodyOfItem,
+        shp:Item_hasBinderCorporateBody,
+        shp:Item_hasIlluminatorCorporateBody,
+        shp:Item_hasFormerOwnerCorporateBody,
+        shp:Item_hasCustodianCorporateBody,
+        shp:Item_hasOwnerCorporateBody,
+        shp:Item_hasDepositorCorporateBody,
+        shp:Item_hasDonorCorporateBody,
+        shp:Item_hasSellerCorporateBody,
+        shp:Item_hasHonoureeCorporateBodyOfItem,
+        shp:Item_hasRestorationistCorporateBodyOfItem,
+        shp:Item_hasModifierCorporateBody,
+        shp:Item_hasDedicateeFamilyOfItem,
+        shp:Item_hasBinderFamily,
+        shp:Item_hasIlluminatorFamily,
+        shp:Item_hasFormerOwnerFamily,
+        shp:Item_hasCustodianFamily,
+        shp:Item_hasOwnerFamily,
+        shp:Item_hasDepositorFamily,
+        shp:Item_hasDonorFamily,
+        shp:Item_hasSellerFamily,
+        shp:Item_hasHonoureeFamilyOfItem,
+        shp:Item_hasRestorationistFamilyOfItem,
+        shp:Item_hasModifierFamily,
+        shp:Item_isHoldingOf,
+        shp:Item_hasLocationOfItem,
+        shp:Item_isOnManifestationWith,
+        shp:Item_isItemDescribedWithMetadataBy;
+    sh:targetClass rdac:C10003.
+
+shp:Item_hasIdentifierForItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40001;
+    sh:severity sh:Warning.
+shp:Item_hasModificationOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40003;
+    sh:severity sh:Warning.
+shp:Item_hasDepositorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40006;
+    sh:severity sh:Warning.
+shp:Item_hasDonorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40007;
+    sh:severity sh:Warning.
+shp:Item_hasSellerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40008;
+    sh:severity sh:Warning.
+shp:Item_isContainedInItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40009;
+    sh:severity sh:Warning.
+shp:Item_hasNoteOnDimensionsOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40010;
+    sh:severity sh:Warning.
+shp:Item_hasNoteOnExtentOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40011;
+    sh:severity sh:Warning.
+shp:Item_hasIlluminatorAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40012;
+    sh:severity sh:Warning.
+shp:Item_hasBinderAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40013;
+    sh:severity sh:Warning.
+shp:Item_hasInscriber
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40014;
+    sh:severity sh:Warning.
+shp:Item_hasAnnotator
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40015;
+    sh:severity sh:Warning.
+shp:Item_hasAutographer
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40016;
+    sh:severity sh:Warning.
+shp:Item_hasCurrentOwnerAgent
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10002;
+    sh:path rdai:P40018;
+    sh:severity sh:Violation.
+shp:Item_hasFormerOwnerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40019;
+    sh:severity sh:Warning.
+shp:Item_hasCustodianAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40020;
+    sh:severity sh:Warning.
+shp:Item_hasOwnerAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40021;
+    sh:severity sh:Warning.
+shp:Item_hasHonoureeAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40022;
+    sh:severity sh:Warning.
+shp:Item_hasRestorationistAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40024;
+    sh:severity sh:Warning.
+shp:Item_hasDedicateeAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40025;
+    sh:severity sh:Warning.
+shp:Item_hasCustodialHistoryOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40026;
+    sh:severity sh:Warning.
+shp:Item_hasNoteOnItem
+    a sh:PropertyShape;
+    sh:path rdai:P40028;
+    sh:severity sh:Warning.
+shp:Item_isHeldWith
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40029;
+    sh:severity sh:Warning.
+shp:Item_hasEquivalentItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40031;
+    sh:severity sh:Warning.
+shp:Item_isBoundWith
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40032;
+    sh:severity sh:Warning.
+shp:Item_isContainerOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40034;
+    sh:severity sh:Warning.
+shp:Item_isOnDiscWithItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40035;
+    sh:severity sh:Warning.
+shp:Item_isFilmedWithItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40036;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedItemOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40046;
+    sh:severity sh:Warning.
+shp:Item_hasRestrictionOnAccessToItem
+    a sh:PropertyShape;
+    sh:path rdai:P40047;
+    sh:severity sh:Warning.
+shp:Item_hasRestrictionOnUseOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40048;
+    sh:severity sh:Warning.
+shp:Item_hasManifestationExemplified
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:class rdac:C10007;
+    sh:path rdai:P40049;
+    sh:severity sh:Violation.
+shp:Item_hasImmediateSourceOfAcquisitionOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40050;
+    sh:severity sh:Warning.
+shp:Item_isSubjectItemOf
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40061;
+    sh:severity sh:Warning.
+shp:Item_isItemDescribedBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40062;
+    sh:severity sh:Warning.
+shp:Item_isItemAnalysedIn
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40063;
+    sh:severity sh:Warning.
+shp:Item_isItemCommentaryIn
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40064;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedRdaEntityOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40068;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedWorkOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40069;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedExpressionOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10006;
+    sh:path rdai:P40070;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedManifestationOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40071;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40072;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedPersonOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40073;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedFamilyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40074;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedCorporateBodyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40075;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedCollectiveAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40076;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedPlaceOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdai:P40077;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedTimespanOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10010;
+    sh:path rdai:P40078;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedNomenOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40079;
+    sh:severity sh:Warning.
+shp:Item_hasAccessPointForItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40080;
+    sh:severity sh:Warning.
+shp:Item_hasAppellationOfItem
+    a sh:PropertyShape;
+    sh:minCount 1;
+    sh:class rdac:C10012;
+    sh:path rdai:P40081;
+    sh:severity sh:Violation.
+shp:Item_hasTitleOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40082;
+    sh:severity sh:Warning.
+shp:Item_hasAuthorizedAccessPointForItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40083;
+    sh:severity sh:Warning.
+shp:Item_hasVariantAccessPointForItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40084;
+    sh:severity sh:Warning.
+shp:Item_hasPreferredTitleOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40085;
+    sh:severity sh:Warning.
+shp:Item_hasVariantTitleOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10012;
+    sh:path rdai:P40086;
+    sh:severity sh:Warning.
+shp:Item_hasDigitalTransferOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40087;
+    sh:severity sh:Warning.
+shp:Item_hasElectronicReproductionOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40088;
+    sh:severity sh:Warning.
+shp:Item_hasFacsimileOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40089;
+    sh:severity sh:Warning.
+shp:Item_hasPreservationFacsimileOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40090;
+    sh:severity sh:Warning.
+shp:Item_isReprintedAsItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40091;
+    sh:severity sh:Warning.
+shp:Item_isReproducedAsItem
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40092;
+    sh:severity sh:Warning.
+shp:Item_hasModifierAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10002;
+    sh:path rdai:P40093;
+    sh:severity sh:Warning.
+shp:Item_hasBindingOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40094;
+    sh:severity sh:Warning.
+shp:Item_hasRelatedEntityOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40095;
+    sh:severity sh:Warning.
+shp:Item_hasCategoryOfItem
+    a sh:PropertyShape;
+    sh:path rdai:P40096;
+    sh:severity sh:Warning.
+shp:Item_hasDedicateePersonOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40097;
+    sh:severity sh:Warning.
+shp:Item_hasBinderPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40098;
+    sh:severity sh:Warning.
+shp:Item_hasIlluminatorPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40100;
+    sh:severity sh:Warning.
+shp:Item_hasFormerOwnerPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40102;
+    sh:severity sh:Warning.
+shp:Item_hasCustodianPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40103;
+    sh:severity sh:Warning.
+shp:Item_hasOwnerPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40104;
+    sh:severity sh:Warning.
+shp:Item_hasDepositorPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40107;
+    sh:severity sh:Warning.
+shp:Item_hasDonorPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40108;
+    sh:severity sh:Warning.
+shp:Item_hasSellerPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40109;
+    sh:severity sh:Warning.
+shp:Item_hasHonoureePersonOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40110;
+    sh:severity sh:Warning.
+shp:Item_hasRestorationistPersonOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40111;
+    sh:severity sh:Warning.
+shp:Item_hasModifierPerson
+    a sh:PropertyShape;
+    sh:class rdac:C10004;
+    sh:path rdai:P40112;
+    sh:severity sh:Warning.
+shp:Item_hasDedicateeCollectiveAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40113;
+    sh:severity sh:Warning.
+shp:Item_hasBinderCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40114;
+    sh:severity sh:Warning.
+shp:Item_hasIlluminatorCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40116;
+    sh:severity sh:Warning.
+shp:Item_hasFormerOwnerCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40118;
+    sh:severity sh:Warning.
+shp:Item_hasCustodianCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40119;
+    sh:severity sh:Warning.
+shp:Item_hasOwnerCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40120;
+    sh:severity sh:Warning.
+shp:Item_hasDepositorCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40123;
+    sh:severity sh:Warning.
+shp:Item_hasDonorCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40124;
+    sh:severity sh:Warning.
+shp:Item_hasSellerCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40125;
+    sh:severity sh:Warning.
+shp:Item_hasHonoureeCollectiveAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40126;
+    sh:severity sh:Warning.
+shp:Item_hasRestorationistCollectiveAgentOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40127;
+    sh:severity sh:Warning.
+shp:Item_hasModifierCollectiveAgent
+    a sh:PropertyShape;
+    sh:class rdac:C10011;
+    sh:path rdai:P40128;
+    sh:severity sh:Warning.
+shp:Item_hasDedicateeCorporateBodyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40129;
+    sh:severity sh:Warning.
+shp:Item_hasBinderCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40130;
+    sh:severity sh:Warning.
+shp:Item_hasIlluminatorCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40132;
+    sh:severity sh:Warning.
+shp:Item_hasFormerOwnerCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40134;
+    sh:severity sh:Warning.
+shp:Item_hasCustodianCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40135;
+    sh:severity sh:Warning.
+shp:Item_hasOwnerCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40136;
+    sh:severity sh:Warning.
+shp:Item_hasDepositorCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40139;
+    sh:severity sh:Warning.
+shp:Item_hasDonorCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40140;
+    sh:severity sh:Warning.
+shp:Item_hasSellerCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40141;
+    sh:severity sh:Warning.
+shp:Item_hasHonoureeCorporateBodyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40142;
+    sh:severity sh:Warning.
+shp:Item_hasRestorationistCorporateBodyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40143;
+    sh:severity sh:Warning.
+shp:Item_hasModifierCorporateBody
+    a sh:PropertyShape;
+    sh:class rdac:C10005;
+    sh:path rdai:P40144;
+    sh:severity sh:Warning.
+shp:Item_hasDedicateeFamilyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40145;
+    sh:severity sh:Warning.
+shp:Item_hasBinderFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40146;
+    sh:severity sh:Warning.
+shp:Item_hasIlluminatorFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40148;
+    sh:severity sh:Warning.
+shp:Item_hasFormerOwnerFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40150;
+    sh:severity sh:Warning.
+shp:Item_hasCustodianFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40151;
+    sh:severity sh:Warning.
+shp:Item_hasOwnerFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40152;
+    sh:severity sh:Warning.
+shp:Item_hasDepositorFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40155;
+    sh:severity sh:Warning.
+shp:Item_hasDonorFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40156;
+    sh:severity sh:Warning.
+shp:Item_hasSellerFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40157;
+    sh:severity sh:Warning.
+shp:Item_hasHonoureeFamilyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40158;
+    sh:severity sh:Warning.
+shp:Item_hasRestorationistFamilyOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40159;
+    sh:severity sh:Warning.
+shp:Item_hasModifierFamily
+    a sh:PropertyShape;
+    sh:class rdac:C10008;
+    sh:path rdai:P40160;
+    sh:severity sh:Warning.
+shp:Item_isHoldingOf
+    a sh:PropertyShape;
+    sh:class rdac:C10007;
+    sh:path rdai:P40161;
+    sh:severity sh:Warning.
+shp:Item_hasLocationOfItem
+    a sh:PropertyShape;
+    sh:class rdac:C10009;
+    sh:path rdai:P40162;
+    sh:severity sh:Warning.
+shp:Item_isOnManifestationWith
+    a sh:PropertyShape;
+    sh:class rdac:C10003;
+    sh:path rdai:P40163;
+    sh:severity sh:Warning.
+shp:Item_isItemDescribedWithMetadataBy
+    a sh:PropertyShape;
+    sh:class rdac:C10001;
+    sh:path rdai:P40164;
+    sh:severity sh:Warning.

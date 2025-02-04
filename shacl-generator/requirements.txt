@@ -1,0 +1,3 @@
+pandas==1.5.3         
+SPARQLWrapper  
+numpy==1.26.4 
