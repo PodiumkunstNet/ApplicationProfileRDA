@@ -1,6 +1,7 @@
 import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 import re
+import os
 
 # Load the Excel file
 file_path = "../assets/RDA-AP_Podiumkunst-net.xlsx"
