@@ -1,7 +1,6 @@
 import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 import re
-import os
 
 # Load the Excel file
 file_path = "../assets/RDA-AP_Podiumkunst-net.xlsx"
@@ -27,6 +26,7 @@ prefix rdaa: <http://rdaregistry.info/Elements/a/>
 prefix rdap: <http://rdaregistry.info/Elements/p/>
 prefix rdaw: <http://rdaregistry.info/Elements/w/>
 prefix rdat: <http://www.w3.org/2001/XMLSchema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 prefix shp: <https://podiumkunst.triply.cc/ApplicationProfileRDA/model/shp/>
 """
 

@@ -10,6 +10,7 @@ prefix rdaa: <http://rdaregistry.info/Elements/a/>
 prefix rdap: <http://rdaregistry.info/Elements/p/>
 prefix rdaw: <http://rdaregistry.info/Elements/w/>
 prefix rdat: <http://www.w3.org/2001/XMLSchema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 prefix shp: <https://podiumkunst.triply.cc/ApplicationProfileRDA/model/shp/>
 
 
@@ -384,7 +385,6 @@ shp:Work_isAbstractsForWork
 shp:Work_hasAcademicDegree
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10077;
     sh:severity sh:Warning.
 shp:Work_hasAcademicSupervisor
@@ -500,7 +500,6 @@ shp:Work_hasArtistAgent
     sh:severity sh:Warning.
 shp:Work_hasAspectRatioOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10347;
     sh:severity sh:Warning.
 shp:Work_hasAudioProducerAgent
@@ -572,7 +571,6 @@ shp:Work_isCatalogueOf
 shp:Work_hasCategoryOfWork
     a sh:PropertyShape;
     sh:minCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10004;
     sh:severity sh:Violation.
 shp:Work_hasChoreographerAgent
@@ -607,12 +605,10 @@ shp:Work_hasCivilDefendantPerson
     sh:severity sh:Warning.
 shp:Work_hasCollectionAccrualMethod
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10608;
     sh:severity sh:Warning.
 shp:Work_hasCollectionAccrualPolicy
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10609;
     sh:severity sh:Warning.
 shp:Work_hasCollectionRegistrarAgent
@@ -627,7 +623,6 @@ shp:Work_hasCollectorAgent
     sh:severity sh:Warning.
 shp:Work_hasColourContentOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10348;
     sh:severity sh:Warning.
 shp:Work_hasCommemoration
@@ -693,7 +688,6 @@ shp:Work_hasConsultantAgent
 shp:Work_hasContentTypeOfRepresentativeExpression
     a sh:PropertyShape;
     sh:minCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10349;
     sh:severity sh:Violation.
 shp:Work_isContinuationOfWork
@@ -718,7 +712,6 @@ shp:Work_hasCourtGoverned
     sh:severity sh:Warning.
 shp:Work_hasCoverageOfContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10216;
     sh:severity sh:Warning.
 shp:Work_hasCreatorAgentOfWork
@@ -755,7 +748,6 @@ shp:Work_hasDateOfWork
 shp:Work_hasDeclination
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10303;
     sh:severity sh:Warning.
 shp:Work_hasDedicateeAgentOfWork
@@ -830,7 +822,6 @@ shp:Work_isDescriptionOfPlace
     sh:severity sh:Warning.
 shp:Work_isDescriptionOfRdaEntity
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10360;
     sh:severity sh:Warning.
 shp:Work_isDescriptionOfTimespan
@@ -871,7 +862,6 @@ shp:Work_hasDirectorAgentOfPhotography
 shp:Work_hasDissertationOrThesisInformation
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10209;
     sh:severity sh:Warning.
 shp:Work_isDramatizationOfWork
@@ -921,7 +911,6 @@ shp:Work_isEvaluationOfManifestation
     sh:severity sh:Warning.
 shp:Work_isEvaluationOfRdaEntity
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10361;
     sh:severity sh:Warning.
 shp:Work_isEvaluationOfWork
@@ -938,12 +927,10 @@ shp:Work_hasExtensionPlan
     a sh:PropertyShape;
     sh:minCount 1;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10365;
     sh:severity sh:Violation.
 shp:Work_hasExtentOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10352;
     sh:severity sh:Warning.
 shp:Work_hasFilmDirectorAgent
@@ -979,7 +966,6 @@ shp:Work_isFreeTranslationOfWork
 shp:Work_hasFrequency
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10368;
     sh:severity sh:Warning.
 shp:Work_isGraphicNovelizationOfWork
@@ -999,7 +985,6 @@ shp:Work_isHierarchicFindingAidOf
     sh:severity sh:Warning.
 shp:Work_hasHistoryOfWork
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10210;
     sh:severity sh:Warning.
 shp:Work_hasHonoureeAgentOfWork
@@ -1064,7 +1049,6 @@ shp:Work_isInspiredBy
     sh:severity sh:Warning.
 shp:Work_hasIntendedAudienceOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10217;
     sh:severity sh:Warning.
 shp:Work_hasIntervieweeAgentOfWork
@@ -1105,7 +1089,6 @@ shp:Work_hasJudge
 shp:Work_hasKeyOfRepresentativeExpression
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10221;
     sh:severity sh:Warning.
 shp:Work_hasKeyTitle
@@ -1120,7 +1103,6 @@ shp:Work_hasLandscapeArchitectAgent
     sh:severity sh:Warning.
 shp:Work_hasLanguageOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10353;
     sh:severity sh:Warning.
 shp:Work_hasLanguageVersion
@@ -1131,7 +1113,6 @@ shp:Work_hasLanguageVersion
 shp:Work_hasLatitude
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10300;
     sh:severity sh:Warning.
 shp:Work_isLibrettoBasedOnWork
@@ -1152,7 +1133,6 @@ shp:Work_hasLibrettoWork
 shp:Work_hasLongitude
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10301;
     sh:severity sh:Warning.
 shp:Work_hasLongitudeAndLatitude
@@ -1177,13 +1157,11 @@ shp:Work_hasMedium
     sh:severity sh:Warning.
 shp:Work_hasMediumOfPerformanceOfChoreographicContentOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10603;
     sh:severity sh:Warning.
 shp:Work_hasMediumOfPerformanceOfMusicalContentOfRepresentativeExpression
     a sh:PropertyShape;
     sh:minCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10220;
     sh:severity sh:Violation.
 shp:Work_isMergedToFormWork
@@ -1228,7 +1206,6 @@ shp:Work_isMetadataDescriptionOfPlace
     sh:severity sh:Warning.
 shp:Work_isMetadataDescriptionOfRdaEntity
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10622;
     sh:severity sh:Warning.
 shp:Work_isMetadataDescriptionOfTimespan
@@ -1308,12 +1285,10 @@ shp:Work_isMusicalTheatreAdaptationOfWork
     sh:severity sh:Warning.
 shp:Work_hasNoteOnMetadataWork
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10402;
     sh:severity sh:Warning.
 shp:Work_hasNoteOnWork
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10330;
     sh:severity sh:Warning.
 shp:Work_isNovelizationOfWork
@@ -1323,7 +1298,6 @@ shp:Work_isNovelizationOfWork
     sh:severity sh:Warning.
 shp:Work_hasNumberingOfPart
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10012;
     sh:severity sh:Warning.
 shp:Work_hasNumericDesignationOfMusicalWork
@@ -1454,7 +1428,6 @@ shp:Work_hasProjectSupervisor
     sh:severity sh:Warning.
 shp:Work_hasProjectionOfCartographicContentOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10355;
     sh:severity sh:Warning.
 shp:Work_isRadioAdaptationOfWork
@@ -1494,7 +1467,6 @@ shp:Work_hasRapporteurAgent
     sh:severity sh:Warning.
 shp:Work_hasRecordingSource
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10404;
     sh:severity sh:Warning.
 shp:Work_hasRegionalVersion
@@ -1539,7 +1511,6 @@ shp:Work_hasRelatedPlaceOfWork
     sh:severity sh:Warning.
 shp:Work_hasRelatedRdaEntityOfWork
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10307;
     sh:severity sh:Warning.
 shp:Work_hasRelatedTimespanOfWork
@@ -1604,7 +1575,6 @@ shp:Work_hasRespondent
     sh:severity sh:Warning.
 shp:Work_hasRightAscension
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10302;
     sh:severity sh:Warning.
 shp:Work_hasRightAscensionAndDeclination
@@ -1614,12 +1584,10 @@ shp:Work_hasRightAscensionAndDeclination
     sh:severity sh:Warning.
 shp:Work_hasScaleOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10356;
     sh:severity sh:Warning.
 shp:Work_hasScopeOfValidity
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10403;
     sh:severity sh:Warning.
 shp:Work_isScreenplayBasedOnWork
@@ -1659,7 +1627,6 @@ shp:Work_isScriptForRadioProgramWork
     sh:severity sh:Warning.
 shp:Work_hasScriptOfRepresentativeExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10357;
     sh:severity sh:Warning.
 shp:Work_hasSculptorAgent
@@ -1710,7 +1677,6 @@ shp:Work_isSetToMusicAsWork
 shp:Work_hasSoundContentOfRepresentativeExpression
     a sh:PropertyShape;
     sh:maxCount 1;
-    sh:datatype xsd:string;
     sh:path rdaw:P10358;
     sh:severity sh:Warning.
 shp:Work_isSoundsForWork
@@ -1785,7 +1751,6 @@ shp:Work_hasStringsOfCoordinatePairs
     sh:severity sh:Warning.
 shp:Work_hasSubject
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10256;
     sh:severity sh:Warning.
 shp:Work_hasSubjectAgent
@@ -1820,7 +1785,6 @@ shp:Work_hasSubjectPlace
     sh:severity sh:Warning.
 shp:Work_hasSubjectRdaEntity
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10324;
     sh:severity sh:Warning.
 shp:Work_hasSubjectTimespan
@@ -1875,7 +1839,6 @@ shp:Work_hasSupplementWork
     sh:severity sh:Warning.
 shp:Work_hasSystemOfOrganization
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdaw:P10084;
     sh:severity sh:Warning.
 shp:Work_isTelevisionAdaptationOfWork
@@ -2323,7 +2286,6 @@ shp:Expression
 shp:Expression_hasContentType
     a sh:PropertyShape;
     sh:minCount 1;
-    sh:datatype xsd:string;
     sh:path rdae:P20001;
     sh:severity sh:Violation.
 shp:Expression_hasIdentifierForExpression
@@ -2339,12 +2301,10 @@ shp:Expression_hasDateOfCapture
     sh:severity sh:Warning.
 shp:Expression_hasAward
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20005;
     sh:severity sh:Warning.
 shp:Expression_hasLanguageOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20006;
     sh:severity sh:Warning.
 shp:Expression_isAdaptedAsMotionPictureExpression
@@ -2539,27 +2499,22 @@ shp:Expression_isAdaptedAsRadioProgramExpression
     sh:severity sh:Warning.
 shp:Expression_hasFormOfTactileNotation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20061;
     sh:severity sh:Warning.
 shp:Expression_hasFormOfNotation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20062;
     sh:severity sh:Warning.
 shp:Expression_hasFormOfNotatedMovement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20063;
     sh:severity sh:Warning.
 shp:Expression_hasFormOfMusicalNotation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20064;
     sh:severity sh:Warning.
 shp:Expression_hasScript
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20065;
     sh:severity sh:Warning.
 shp:Expression_isAdaptedAsTelevisionProgramExpression
@@ -2574,7 +2529,6 @@ shp:Expression_isAdaptedAsVideoExpression
     sh:severity sh:Warning.
 shp:Expression_hasSummarizationOfContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20069;
     sh:severity sh:Warning.
 shp:Expression_hasVoiceActorAgent
@@ -2584,7 +2538,6 @@ shp:Expression_hasVoiceActorAgent
     sh:severity sh:Warning.
 shp:Expression_hasNoteOnExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20071;
     sh:severity sh:Warning.
 shp:Expression_isDramatizedAsExpression
@@ -3129,7 +3082,6 @@ shp:Expression_hasRelatedExpressionOfExpression
     sh:severity sh:Warning.
 shp:Expression_hasFormatOfNotatedMusic
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20209;
     sh:severity sh:Warning.
 shp:Expression_isRevisedAs
@@ -3144,7 +3096,6 @@ shp:Expression_isMergedToFormExpression
     sh:severity sh:Warning.
 shp:Expression_hasAdditionalScaleInformation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20213;
     sh:severity sh:Warning.
 shp:Expression_hasDateOfExpression
@@ -3155,17 +3106,14 @@ shp:Expression_hasDateOfExpression
     sh:severity sh:Warning.
 shp:Expression_hasMediumOfPerformanceOfMusicalContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20215;
     sh:severity sh:Warning.
 shp:Expression_hasProjectionOfCartographicContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20216;
     sh:severity sh:Warning.
 shp:Expression_hasCaptureInformation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20217;
     sh:severity sh:Warning.
 shp:Expression_hasPlaceOfCapture
@@ -3175,27 +3123,22 @@ shp:Expression_hasPlaceOfCapture
     sh:severity sh:Warning.
 shp:Expression_hasDuration
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20219;
     sh:severity sh:Warning.
 shp:Expression_hasHorizontalScaleOfCartographicContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20226;
     sh:severity sh:Warning.
 shp:Expression_hasScale
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20228;
     sh:severity sh:Warning.
 shp:Expression_hasAspectRatio
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20229;
     sh:severity sh:Warning.
 shp:Expression_hasVerticalScaleOfCartographicContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20230;
     sh:severity sh:Warning.
 shp:Expression_hasWorkExpressed
@@ -3397,12 +3340,10 @@ shp:Expression_hasRestorationistAgentOfExpression
     sh:severity sh:Warning.
 shp:Expression_hasAspectRatioDesignation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20290;
     sh:severity sh:Warning.
 shp:Expression_hasScaleDesignation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20291;
     sh:severity sh:Warning.
 shp:Expression_hasAudioEngineerAgent
@@ -3432,7 +3373,6 @@ shp:Expression_hasDjAgent
     sh:severity sh:Warning.
 shp:Expression_hasRelatedRdaEntityOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20297;
     sh:severity sh:Warning.
 shp:Expression_hasRelatedWorkOfExpression
@@ -3447,7 +3387,6 @@ shp:Expression_hasRelatedManifestationOfExpression
     sh:severity sh:Warning.
 shp:Expression_hasRelatedItemOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20300;
     sh:severity sh:Warning.
 shp:Expression_hasRelatedAgentOfExpression
@@ -3462,7 +3401,6 @@ shp:Expression_hasRelatedPlaceOfExpression
     sh:severity sh:Warning.
 shp:Expression_hasRelatedTimespanOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20307;
     sh:severity sh:Warning.
 shp:Expression_hasRelatedNomenOfExpression
@@ -3503,12 +3441,10 @@ shp:Expression_hasVariantTitleOfExpression
     sh:severity sh:Warning.
 shp:Expression_hasPrimeMeridian
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20317;
     sh:severity sh:Warning.
 shp:Expression_hasReliefRepresentation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20318;
     sh:severity sh:Warning.
 shp:Expression_aggregates
@@ -3523,27 +3459,22 @@ shp:Expression_isAggregatedBy
     sh:severity sh:Warning.
 shp:Expression_hasExtentOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20321;
     sh:severity sh:Warning.
 shp:Expression_hasIntendedAudienceOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20322;
     sh:severity sh:Warning.
 shp:Expression_hasInteractivityMode
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20323;
     sh:severity sh:Warning.
 shp:Expression_hasMediumOfPerformanceOfChoreographicContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20324;
     sh:severity sh:Warning.
 shp:Expression_hasKeyOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20326;
     sh:severity sh:Warning.
 shp:Expression_hasReviserAgent
@@ -3568,12 +3499,10 @@ shp:Expression_hasEditorAgent
     sh:severity sh:Warning.
 shp:Expression_hasCategoryOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20331;
     sh:severity sh:Warning.
 shp:Expression_hasRelatedEntityOfExpression
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20333;
     sh:severity sh:Warning.
 shp:Expression_hasPrequelExpression
@@ -3588,12 +3517,10 @@ shp:Expression_hasSequelExpression
     sh:severity sh:Warning.
 shp:Expression_hasDesignationOfVersion
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20572;
     sh:severity sh:Warning.
 shp:Expression_hasColour
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdae:P20573;
     sh:severity sh:Warning.
 shp:Expression_hasSourceExpression
@@ -3721,12 +3648,10 @@ shp:Manifestation
 shp:Manifestation_hasCarrierType
     a sh:PropertyShape;
     sh:minCount 1;
-    sh:datatype xsd:string;
     sh:path rdam:P30001;
     sh:severity sh:Violation.
 shp:Manifestation_hasMediaType
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30002;
     sh:severity sh:Warning.
 shp:Manifestation_hasIdentifierForManifestation
@@ -3736,7 +3661,6 @@ shp:Manifestation_hasIdentifierForManifestation
     sh:severity sh:Warning.
 shp:Manifestation_hasPreferredCitation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30005;
     sh:severity sh:Warning.
 shp:Manifestation_hasDateOfPublication
@@ -3872,7 +3796,6 @@ shp:Manifestation_hasPublisherAgent
     sh:severity sh:Warning.
 shp:Manifestation_hasEncodingFormat
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30096;
     sh:severity sh:Warning.
 shp:Manifestation_hasFirstAlphanumericDesignationOfAlternativeSequence
@@ -3897,92 +3820,74 @@ shp:Manifestation_hasLastChronologicalDesignationOfAlternativeSequence
     sh:severity sh:Warning.
 shp:Manifestation_hasDigitalRepresentationOfCartographicContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30102;
     sh:severity sh:Warning.
 shp:Manifestation_hasVideoFormat
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30104;
     sh:severity sh:Warning.
 shp:Manifestation_hasStatementOfResponsibilityRelatingToTitleProper
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30105;
     sh:severity sh:Warning.
 shp:Manifestation_hasSeriesStatement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30106;
     sh:severity sh:Warning.
 shp:Manifestation_hasEditionStatement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30107;
     sh:severity sh:Warning.
 shp:Manifestation_hasDistributionStatement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30108;
     sh:severity sh:Warning.
 shp:Manifestation_hasManufactureStatement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30109;
     sh:severity sh:Warning.
 shp:Manifestation_hasProductionStatement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30110;
     sh:severity sh:Warning.
 shp:Manifestation_hasPublicationStatement
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30111;
     sh:severity sh:Warning.
 shp:Manifestation_hasStatementOfResponsibility
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30117;
     sh:severity sh:Warning.
 shp:Manifestation_hasStatementOfResponsibilityRelatingToNamedRevisionOfEdition
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30118;
     sh:severity sh:Warning.
 shp:Manifestation_hasStatementOfResponsibilityRelatingToSeries
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30119;
     sh:severity sh:Warning.
 shp:Manifestation_hasStatementOfResponsibilityRelatingToEdition
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30121;
     sh:severity sh:Warning.
 shp:Manifestation_hasBroadcastStandard
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30123;
     sh:severity sh:Warning.
 shp:Manifestation_hasDigitalFileCharacteristic
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30124;
     sh:severity sh:Warning.
 shp:Manifestation_hasSoundCharacteristic
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30125;
     sh:severity sh:Warning.
 shp:Manifestation_hasVideoCharacteristic
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30126;
     sh:severity sh:Warning.
 shp:Manifestation_hasProjectionCharacteristicOfMotionPictureFilm
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30127;
     sh:severity sh:Warning.
 shp:Manifestation_hasVariantTitleOfManifestation
@@ -3997,12 +3902,10 @@ shp:Manifestation_hasAbbreviatedTitle
     sh:severity sh:Warning.
 shp:Manifestation_hasDesignationOfNamedRevisionOfEdition
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30132;
     sh:severity sh:Warning.
 shp:Manifestation_hasDesignationOfEdition
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30133;
     sh:severity sh:Warning.
 shp:Manifestation_hasTitleOfManifestation
@@ -4019,7 +3922,6 @@ shp:Manifestation_hasExpressionManifested
     sh:severity sh:Violation.
 shp:Manifestation_hasContactInformation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30141;
     sh:severity sh:Warning.
 shp:Manifestation_hasTitleProper
@@ -4029,7 +3931,6 @@ shp:Manifestation_hasTitleProper
     sh:severity sh:Warning.
 shp:Manifestation_hasExtentOfManifestation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30182;
     sh:severity sh:Warning.
 shp:Manifestation_hasAppellationOfManifestation
@@ -4080,32 +3981,26 @@ shp:Manifestation_isReproductionOfItemOf
     sh:severity sh:Warning.
 shp:Manifestation_hasMaterial
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30304;
     sh:severity sh:Warning.
 shp:Manifestation_hasIntendedAudienceOfManifestation
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30305;
     sh:severity sh:Warning.
 shp:Manifestation_hasFontPointSize
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30306;
     sh:severity sh:Warning.
 shp:Manifestation_hasGroovePitch
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30307;
     sh:severity sh:Warning.
 shp:Manifestation_hasGrooveWidth
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30308;
     sh:severity sh:Warning.
 shp:Manifestation_hasTypeOfBinding
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30309;
     sh:severity sh:Warning.
 shp:Manifestation_hasBindingOfManifestation
@@ -4120,27 +4015,22 @@ shp:Manifestation_hasSurveyorAgent
     sh:severity sh:Warning.
 shp:Manifestation_hasAccessibilityContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30452;
     sh:severity sh:Warning.
 shp:Manifestation_hasIllustrativeContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30453;
     sh:severity sh:Warning.
 shp:Manifestation_hasSoundContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30454;
     sh:severity sh:Warning.
 shp:Manifestation_hasSupplementaryContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30455;
     sh:severity sh:Warning.
 shp:Manifestation_hasColourContent
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdam:P30456;
     sh:severity sh:Warning.
 shp:Manifestation_isReferenceSourceOf
@@ -4326,7 +4216,6 @@ shp:Item_hasIdentifierForItem
     sh:severity sh:Warning.
 shp:Item_hasModificationOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40003;
     sh:severity sh:Warning.
 shp:Item_hasDepositorAgent
@@ -4351,12 +4240,10 @@ shp:Item_isContainedInItem
     sh:severity sh:Warning.
 shp:Item_hasNoteOnDimensionsOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40010;
     sh:severity sh:Warning.
 shp:Item_hasNoteOnExtentOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40011;
     sh:severity sh:Warning.
 shp:Item_hasIlluminatorAgent
@@ -4422,12 +4309,10 @@ shp:Item_hasDedicateeAgentOfItem
     sh:severity sh:Warning.
 shp:Item_hasCustodialHistoryOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40026;
     sh:severity sh:Warning.
 shp:Item_hasNoteOnItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40028;
     sh:severity sh:Warning.
 shp:Item_isHeldWith
@@ -4467,12 +4352,10 @@ shp:Item_hasRelatedItemOfItem
     sh:severity sh:Warning.
 shp:Item_hasRestrictionOnAccessToItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40047;
     sh:severity sh:Warning.
 shp:Item_hasRestrictionOnUseOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40048;
     sh:severity sh:Warning.
 shp:Item_hasManifestationExemplified
@@ -4484,7 +4367,6 @@ shp:Item_hasManifestationExemplified
     sh:severity sh:Violation.
 shp:Item_hasImmediateSourceOfAcquisitionOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40050;
     sh:severity sh:Warning.
 shp:Item_isSubjectItemOf
@@ -4509,7 +4391,6 @@ shp:Item_isItemCommentaryIn
     sh:severity sh:Warning.
 shp:Item_hasRelatedRdaEntityOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40068;
     sh:severity sh:Warning.
 shp:Item_hasRelatedWorkOfItem
@@ -4645,12 +4526,10 @@ shp:Item_hasBindingOfItem
     sh:severity sh:Warning.
 shp:Item_hasRelatedEntityOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40095;
     sh:severity sh:Warning.
 shp:Item_hasCategoryOfItem
     a sh:PropertyShape;
-    sh:datatype xsd:string;
     sh:path rdai:P40096;
     sh:severity sh:Warning.
 shp:Item_hasDedicateePersonOfItem
