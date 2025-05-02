@@ -15,6 +15,7 @@
 @prefix rdaterm: <http://rdaregistry.info/termList/RDATerms/> .
 @prefix rdaep: <http://rdaregistry.info/termList/RDAExtensionPlan/> .
 @prefix rdami: <http://rdvocab.info/termList/ModeIssue/> .
+@prefix rdafr: <http://rdaregistry.info/termList/frequency/> .
 @prefix rdapm: <http://rdaregistry.info/termList/RDAproductionMethod/> .
 @prefix rdatb: <http://rdaregistry.info/termList/RDATypeOfBinding/> .
 @prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/> .
@@ -24,15 +25,25 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
+# Versie 1 (april 2024) gebaseerd op: https://docs.google.com/spreadsheets/d/1rWm7vf92XM1nAxl9lMCRH3WvuKTwXpAVIRJV95V6e84/
+# Zie ook visualisatie in https://docs.google.com/document/d/1OjKesUfZv8WqESjgj7gExFCoSjQLQ3W9JQRweqkxFww/edit#heading=h.norqscazavrk
 # Nog open: recensie verscheen in de Theaterkrant, tekst verscheen in de reeks Nieuwe Toneelbibliotheek, première vond plaats tijdens het festival Zomer van Antwerpen; niet alle medewerkers aan de voorstelling hebben een passend element in RDA; RDA Content Type nodig voor "performed drama" o.i.d.?
+
+# Versie 2 (april 2025) aangevuld met gegevens uit:
+    # https://theaterencyclopedie.nl/wiki/Zeemaal,_koken_ter_voorbereiding_op_het_einde_van_de_wereld_-_Theaterproductiehuis_Zeelandia_-_2022-08-26
+    # https://theaterproductiehuiszeeland.nl/theaterproductiehuis-zeeland/producties/zeemaal
+    # https://www.laika.be/NL/zeemaal
+# Onderscheid tussen productie en individuele voorstellingen toegevoegd op basis van uitkomsten pk.net Werkgroep Evenementen in RDA
+# Plus diverse kleine wijzigingen en aanvullingen
 
 
 # ITEMS
 
 ex:i50 # Item no. 50
 	a rdac:C10003 ;
-	rdfs:label "Zeemaal: exemplaar Academie voor Theater en Dans" ;
-	rdai:P40001 ex:n50_1 ; # has identifier for item: barcode
+    rdfs:label "Zeemaal: exemplaar Academie voor Theater en Dans" ;
+	rdai:P40001 ex:n50.1 ; # has identifier for item: barcode
 	rdai:P40018 ex:a1 ; # has current owner: Academie voor Theater en Dans
 	rdai:P40162 ex:p50 ; # has location of item: shelf mark
 	rdai:P40049 ex:m50 . # has manifestation exemplified
@@ -42,117 +53,251 @@ ex:i50 # Item no. 50
 
 ex:m50 # Manifestatie no. 50
 	a rdac:C10007 ;
-	rdfs:label "Zeemaal: uitgave Nieuwe Toneelbibliotheek, 2023" ;
-	rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
-	rdam:P30002 rdamt:1007 ; # has media type: unmediated
-	rdam:P30001 rdact:1049 ; # has carrier type: volume
-	rdam:P30187 rdapm:1010 ; # has production method: printing
-	rdam:P30004 ex:n50_2 ; # has identifier for manifestation [ISBN]
-	rdam:P30156 "Zeemaal"@nl ; # has title proper for manifestation
-	rdam:P30117 "Sien Vanmaele"@nl ; # has statement of responsibility
-	rdam:P30011 "2023"^^xsd:gYear ; # has date of publication: [date]
-	rdam:P30083 ex:a52 ; # has publisher agent: De Nieuwe Toneelbibliotheek
-	rdam:P30088 ex:p4 ; # has place of publication: Amsterdam
-	rdam:P30182 "44 pagina's"@nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
-	rdam:P30309 rdatb:1001 ; # has type of binding: perfect binding = gelijmde paperback
-	rdam:P30137 "tekst #775"@nl ; # has note on manifestation
-	rdam:P30139 ex:e50 . # has expression manifested
+    rdfs:label "Zeemaal: uitgave Nieuwe Toneelbibliotheek, 2023" ;
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30002 rdamt:1007 ; # has media type: unmediated
+    rdam:P30001 rdact:1049 ; # has carrier type: volume
+    rdam:P30187 rdapm:1010 ; # has production method: printing
+    rdam:P30004 ex:n50.2 ; # has identifier for manifestation [ISBN]
+    rdam:P30156 "Zeemaal"@nl ; # has title proper for manifestation
+    rdam:P30117 "Sien Vanmaele"@nl ; # has statement of responsibility
+    rdam:P30011 "2023"^^xsd:gYear ; # has date of publication: [date]
+    rdam:P30083 ex:a52 ; # has publisher agent: De Nieuwe Toneelbibliotheek
+    rdam:P30088 ex:p4 ; # has place of publication: Amsterdam
+    rdam:P30182 "44 pagina's"@nl ; # has extent of manifestation (gestructureerde beschrijving met gebruikmaking van waarde uit rdacarx)
+    rdam:P30309 rdatb:1001 ; # has type of binding: perfect binding = gelijmde paperback
+    rdam:P30137 "tekst #775"@nl ; # has note on manifestation
+    rdam:P30139 ex:e50 . # has expression manifested
 
 ex:m51 # Manifestatie no. 51
 	a rdac:C10007 ;
-	rdfs:label "Recensie Zeemaal: online publicatie, 18 juli 2022" ;
-	rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
-	rdam:P30002 rdamt:1003 ; # has media type: computer
-	rdam:P30001 rdact:1018 ; # has carrier type: online resource
-	rdam:P30156 "Klimaatangst verwerkt tot onschuldig kookprogramma"@nl ; # has title proper for manifestation
-	rdam:P30011 "2022-07-18"^^xsd:date ; # has date of publication: 18 juli 2022
-	rdam:P30083 ex:a53 ; # has publisher agent: Stichting ter Bevordering van de Podiumkunst in Nederland (Stichting BPN)
-	rdam:P30453 "Illustraties"@nl ; # has illustrative content
-	rdam:P30456 rdacc:1003 ;  # has colour content: polychrome
-	rdam:P30154 "https://www.theaterkrant.nl/recensie/zeemaal/sien-vanmaele-laika/" ; # has uniform resource locator
-	rdam:P30137 "Gezien op 9 juli 2022, Zomer van Antwerpen"@nl ; # has note on manifestation
-	rdam:P30139 ex:e52 . # has expression manifested
+    rdfs:label "Recensie Zeemaal: online publicatie, 18 juli 2022" ;
+    rdam:P30003 rdami:1001 ; # has mode of issuance: single unit
+    rdam:P30002 rdamt:1003 ; # has media type: computer
+    rdam:P30001 rdact:1018 ; # has carrier type: online resource
+    rdam:P30156 "Klimaatangst verwerkt tot onschuldig kookprogramma"@nl ; # has title proper for manifestation
+    rdam:P30011 "2022-07-18"^^xsd:date ; # has date of publication: 18 juli 2022
+    rdam:P30083 ex:a53 ; # has publisher agent: Stichting ter Bevordering van de Podiumkunst in Nederland (Stichting BPN)
+    rdam:P30453 "Illustraties"@nl ; # has illustrative content
+    rdam:P30456 rdacc:1003 ;  # has colour content: polychrome
+    rdam:P30154 "https://www.theaterkrant.nl/recensie/zeemaal/sien-vanmaele-laika/" ; # has uniform resource locator
+    rdam:P30137 "Gezien op 9 juli 2022, Zomer van Antwerpen"@nl ; # has note on manifestation
+    rdam:P30139 ex:e52 . # has expression manifested
 
 
 # EXPRESSIONS
 
 ex:e50 # Expressie no. 50
 	a rdac:C10006 ;
-	rdfs:label "Zeemaal: Nederlandse tekst" ;
-	rdae:P20312 "Zeemaal"@nl ; # has title of expression
-	rdae:P20001 rdaco:1020 ; # has content type: tekst
-	rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
-	rdae:P20231 ex:w50 . # has work expressed
+    rdfs:label "Zeemaal: Nederlandse tekst" ;
+    rdae:P20312 "Zeemaal"@nl ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20231 ex:w50 . # has work expressed
 
 ex:e51 # Expressie no. 51
 	a rdac:C10006 ;
-	rdfs:label "Zeemaal: première-voorstelling, Antwerpen, 29 juni 2022" ;
-	rdae:P20331 rdaterm:1153 ; # has category of expression: performance
-	rdae:P20312 "Zeemaal"@nl ; # has title of expression
-	rdae:P20214 "2022-06-29"^^xsd:date ; # has date of expression: 29 juni 2022
-	rdae:P20306 ex:p9 ; # has related place of expression: Antwerpen
-	rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
-	rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
-	rdae:P20031 ex:a54 ; # has stage director agent: [toneelregisseur] Jo Roets
-	rdae:P20035 ex:a55 ; # has musical director agent: [muzikaal director] Jason Dousselaere
-	rdae:P20036 ex:a56 ; # has costume designer agent: [kostuumontwerper] Manuela Lauwers
-	rdae:P20277 ex:a57 ; # has lighting designer agent: [lichtontwerper] Thomas Stevens
-	rdae:P20324 "uitvoeringsmediumIRI nog toevoegen" ; # has medium of performance of choreographic [or non-musical dramatic] content
-	rdae:P20005 "Vlaamse Juryselectie 22/23"@nl ; # has award
-	rdae:P20071 "Zeemaal is een productie van Laika in coproductie met Theaterproductiehuis Zeelandia/Zeeland Nazomerfestival, Vlaams Cultuurhuis de Brakke Grond, Le Channel, scène nationale de Calais en Perpodium, met steun van de Vlaamse Gemeenschap en Tax Shelter van de Belgische federale overheid via Cronos Invest."@nl ; # has note on expression
-	rdae:P20231 ex:w50 . # has work expressed
+    rdfs:label "Zeemaal: première-voorstelling, Antwerpen, 29 juni 2022" ;
+    rdae:P20331	rdaterm:1153 ; # has category of expression: performance
+    rdae:P20331	"wereldpremière" ; # has category of expression: [te vervangen door verwijzing naar eigen termnnologiebron]
+    rdae:P20331	"toneel" ; # has category of expression: discipline-aanduiding Theaterencyclopedie [te vervangen door verwijzing naar eigen termnnologiebron?]
+    rdae:P20312 "Zeemaal"@nl ; # has title of expression
+    rdae:P20214 "2022-06-29"^^xsd:date ; # has date of expression: 29 juni 2022
+    rdae:P20306 ex:p9 ; # has related place of expression: Antwerpen
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
+    rdae:P20074 ex:e53 . # is part of expression: [expressie]
 
 ex:e52 # Expressie no. 52
 	a rdac:C10006 ;
-	rdfs:label "Recensie Zeemaal: Nederlandse tekst" ;
-	rdae:P20312 "Klimaatangst verwerkt tot onschuldig kookprogramma"@nl ; # has title of expression
-	rdae:P20001 rdaco:1020 ; # has content type: tekst
-	rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
-	rdae:P20231 ex:w51 . # has work expressed
+    rdfs:label "Reccensie Zeemaal: Nederlandse tekst" ;
+    rdae:P20312 "Klimaatangst verwerkt tot onschuldig kookprogramma"@nl ; # has title of expression
+    rdae:P20001	rdaco:1020 ; # has content type: tekst
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20231 ex:w51 . # has work expressed
+
+ex:e53 # Expressie no. 53
+	a rdac:C10006 ;
+    rdfs:label "Zeemaal: productie seizoen 2022-2023 t/m 2024-2025" ;
+    rdae:P20331	rdaterm:1153 ; # has category of expression: performance
+    rdae:P20331	"theaterproductie"@nl ; # has category of expression: [te vervangen door verwijzing naar eigen termnnologiebron]
+    rdae:P20312 "Zeemaal, koken ter voorbereiding op het einde van de wereld"@nl ; # has title of expression
+    rdae:P20214 "seizoen 2022-2023" ; # has date of expression
+    rdae:P20214 ex:t50 ; # has date of expression: seizoen 2022-2023
+    rdae:P20214 "seizoen 2023-2024" ; # has date of expression
+    rdae:P20214 ex:t51 ; # has date of expression: seizoen 2023-2024
+    rdae:P20214 "seizoen 2024-2025" ; # has date of expression
+    rdae:P20214 ex:t52 ; # has date of expression: seizoen 2024-2025
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20219 "100 minuten"@nl ; # has duration
+    rdae:P20031 ex:a54 ; # has stage director agent: [toneelregisseur] Jo Roets
+    rdae:P20035 ex:a55 ; # has musical director agent: [muzikaal director] Jason Dousselaere
+    rdae:P20036 ex:a56 ; # has costume designer agent: [kostuumontwerper] Manuela Lauwers
+    rdae:P20277 ex:a57 ; # has lighting designer agent: [lichtontwerper] Thomas Stevens
+    rdae:P20324	"uitvoeringsmediumIRI nog toevoegen" ; # has medium of performance of choreographic [or non-musical dramatic] content
+    rdae:P20005 "Vlaamse Juryselectie 22/23"@nl ; # has award
+    rdae:P20071 "Zeemaal is een productie van Laika in coproductie met Theaterproductiehuis Zeelandia/Zeeland Nazomerfestival, Vlaams Cultuurhuis de Brakke Grond, Le Channel, scène nationale de Calais en Perpodium, met steun van de Vlaamse Gemeenschap en Tax Shelter van de Belgische federale overheid via Cronos Invest."@nl ; # has note on expression
+    rdae:P20071 "Uitvoerenden: Sara Sampelayo (keuken), Jean-Philippe Poncin (keuken), Sien Vanmaele. Medewerkers: samenstelling: Peter De Bie (zintuigelijk concept), Sien Vanmaele (zintuigelijk concept), auteur: Sien Vanmaele, muziek: Jason Dousselaere, regie: Jo Roets (eindregie), dramaturgie: Mieke Versyp, decor: Studio Kuurjeus (scenografie), Peter De Bie (scenografie), kostuums: Manuela Lauwers, licht: Thomas Stevens"@nl ; # has note on expression
+    rdae:P20231 ex:w50 . # has work expressed
+
+ex:e54 # Expressie no. 54
+	a rdac:C10006 ;
+    rdfs:label "Zeemaal: NL-première-voorstelling, Wilhelminadorp (Zeeland), 26 aaugustus 2022" ;
+    rdae:P20331	rdaterm:1153 ; # has category of expression: performance
+    rdae:P20331	"wereldpremière" ; # has category of expression: [te vervangen door verwijzing naar eigen termnnologiebron]
+    rdae:P20331	"toneel" ; # has category of expression: discipline-aanduiding Theaterencyclopedie [te vervangen door verwijzing naar eigen termnnologiebron?]
+    rdae:P20312 "Zeemaal"@nl ; # has title of expression
+    rdae:P20214 "2022-08-26"^^xsd:date ; # has date of expression: 26 augustus 2022
+    rdae:P20306 ex:p51 ; # has related place of expression: Wilhelminadorp
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
+    rdae:P20074 ex:e53 . # is part of expression: [expressie]
+
+ex:e55 # Expressie no. 55
+	a rdac:C10006 ;
+    rdfs:label "Zeemaal: voorstelling, Antwerpen, 9 juli 2022" ;
+    rdae:P20331	rdaterm:1153 ; # has category of expression: performance
+    rdae:P20331	"toneel" ; # has category of expression: discipline-aanduiding Theaterencyclopedie [te vervangen door verwijzing naar eigen termnnologiebron?]
+    rdae:P20312 "Zeemaal"@nl ; # has title of expression
+    rdae:P20214 "2022-07-09"^^xsd:date ; # has date of expression: 29 juni 2022
+    rdae:P20306 ex:p9 ; # has related place of expression: Antwerpen
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+    rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
+    rdae:P20074 ex:e53 . # is part of expression: [expressie]
 
 
 # WORKS
 
 ex:w50 # Werk no. 50
 	a rdac:C10001 ;
-	rdfs:label "Zeemaal, geschreven door Sien Vanmaele" ;
-	rdaw:P10365 rdaep:1001 ; # has has extension plan: static plan
-	rdaw:P10004 rdaterm:1209 ; # has category of work: dramatic work
-	rdaw:P10088 "Zeemaal"@nl ; # has title of work
-	rdaw:P10349 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
-	rdaw:P10061 ex:a50 ; # has author agent: Sien Vanmaele
-	rdaw:P10256 <http://id.loc.gov/authorities/subjects/sh85027036> ; # has subject: climate
-	rdaw:P10102 ex:w53 ; # is issue of = in series: [Nieuwe Toneelbibliotheek]
-	rdaw:P10012 "tekst 775"@nl ; # has numbering of part: [nummer]
-	rdaw:P10330 "Kan je de wereld redden vanuit de keuken? Sien Vanmaele zoekt naar oplossingen om haar planetaire bezorgdheid te bedwingen. Haar queeste start bij de zee, de plek waar ze vandaan komt, waar alle leven uit voortkomt. Ze neemt je mee op een zintuiglijke reis langs stranden en kliffen, brengt verslag uit van ontmoetingen met zeewieroogsters en zilte landbouwers en filtert de plastic soep uit haar stadsleven. Ze laat je kijken, luisteren, ruiken, voelen, proeven, maar ook snijden, stampen en mengen."@nl . # has note on work
+    rdfs:label "Zeemaal, geschreven door Sien Vanmaele" ;
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10004 rdaterm:1209 ; # has category of work: dramatic work
+    rdaw:P10088	"Zeemaal"@nl ; # has title of work
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
+    rdaw:P10061	ex:a50 ; # has author agent: Sien Vanmaele
+    rdaw:P10256	<http://id.loc.gov/authorities/subjects/sh85027036> ; # has subject: climate
+    rdaw:P10102 ex:w53 ; # is issue of = in series: [Nieuwe Toneelbibliotheek]
+    rdaw:P10012 "tekst 775"@nl ; # has numbering of part: [nummer]
+    rdaw:P10330 "Kan je de wereld redden vanuit de keuken? Sien Vanmaele zoekt naar oplossingen om haar planetaire bezorgdheid te bedwingen. Haar queeste start bij de zee, de plek waar ze vandaan komt, waar alle leven uit voortkomt. Ze neemt je mee op een zintuiglijke reis langs stranden en kliffen, brengt verslag uit van ontmoetingen met zeewieroogsters en zilte landbouwers en filtert de plastic soep uit haar stadsleven. Ze laat je kijken, luisteren, ruiken, voelen, proeven, maar ook snijden, stampen en mengen."@nl . # has note on work
 
 ex:w51 # Werk no. 51
 	a rdac:C10001 ;
-	rdfs:label "Recensie première Zeemaal, geschreven door Evelyne Coussens" ;
-	rdaw:P10365 rdaep:1001 ; # has has extension plan: static plan
-	rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
-	rdaw:P10088 "titel"@nl ; # has title of work
-	rdaw:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026168> ; # has category of work: review (form)
-	rdaw:P10349 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
-	rdaw:P10061 ex:a51 ; # has author agent: [auteur]
-	rdaw:P10219 "2022"^^xsd:gYear ; # has date of work: [a timespan that is the earliest associated with a work]
-	rdaw:P10279 ex:e51 . # is evaluation of expression: expressie no. 51
+    rdfs:label "Recensie première Zeemaal, geschreven door Evelyne Coussens" ;
+    rdaw:P10365	rdaep:1001 ; # has has extension plan: static plan
+    rdaw:P10004 rdaterm:1165 ; # has category of work: textual work
+    rdaw:P10088	"titel"@nl ; # has title of work
+    rdaw:P10004	<http://id.loc.gov/authorities/genreForms/gf2014026168> ; # has category of work: review (form)
+    rdaw:P10349	<http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of representative expression: Dutch
+    rdaw:P10061	ex:a51 ; # has author agent: [auteur]
+    rdaw:P10219 "2022"^^xsd:gYear ; # has date of work: [a timespan that is the earliest associated with a work]
+    rdaw:P10279	ex:e55 . # is evaluation of expression: expressie no. 55 ("Gezien op 9 juli 2022, Zomer van Antwerpen")
 
 ex:w52 # Werk no. 52
 	a rdac:C10001 ;
-	rdfs:label "Trilogie (Zeemaal etc.), geschreven door Sien Vanmaele" ;
-	rdaw:P10088 "Trilogie Zeemaal, Landmaal etc."@nl ; # has title of work
-	rdaw:P10061 ex:a50 . # has author agent: Sien Vanmaele
+    rdfs:label "Trilogie (Zeemaal etc.), geschreven door Sien Vanmaele" ;
+    rdaw:P10088	"Trilogie Zeemaal, Landmaal etc."@nl ; # has title of work
+    rdaw:P10061	ex:a50 . # has author agent: Sien Vanmaele
 
 
 # NOMENS
 
-ex:n50_1 # Nomen no. 50.1 = barcode of item no. 50
-	a rdac:C10012 ;
-	rdan:P80068 "30022000445153" ; # has nomen string
-	rdan:P80078 <http://vocab.getty.edu/aat/300343361> . # has category of nomen: bar code
+ex:n50.1 # Nomen no. 50.1 = barcode of item no. 50
+    a rdac:C10012 ;
+    rdan:P80068 "30022000445153" ; # has nomen string
+    rdan:P80078 <http://vocab.getty.edu/aat/300343361> . # has category of nomen: bar code
 
-ex:n50_2 # Nomen no. 50.2 = ISBN of manifestation no. 50
-	a rdac:C10012 ;
-	rdan:P80068 "9789460767753" ; # has nomen string
-	rdan:P80069 <http://vocab.getty.edu/aat/300417443> . # has scheme of nomen: ISBN <http://id.loc.gov/vocabulary/identifiers/isbn> kan ook
+ex:n50.2 # Nomen no. 50.2 = ISBN of manifestation no. 50
+    a rdac:C10012 ;
+    rdan:P80068 "9789460767753" ; # has nomen string
+    rdan:P80069 <http://vocab.getty.edu/aat/300417443> . # has scheme of nomen: ISBN <http://id.loc.gov/vocabulary/identifiers/isbn> kan ook
+
+
+# AGENTS
+
+ex:a1 # Actor no. 1
+    a rdac:C10005 ; # corporate body
+    rdfs:label "Academie voor Theater en Dans"@nl ;
+    rdaa:P50378 "Academie voor Theater en Dans"@nl . # has appellation of agent
+
+ex:a50 # Actor no. 50
+    a rdac:C10004 ; # person
+    rdfs:label "Sien Vanmaele" ;
+    rdaa:P50378 "Sien Vanmaele" . # has appellation of agent
+
+ex:a51 # Actor no. 51
+    a rdac:C10004 ; # person
+    rdfs:label "Evelyne Coussens" ;
+    rdaa:P50378 "Evelyne Coussens" . # has appellation of agent
+
+ex:a52 # Actor no. 52
+    a rdac:C10005 ; # corporate body
+    rdfs:label "De Nieuwe Toneelbibliotheek"@nl ;
+    rdaa:P50378 "De Nieuwe Toneelbibliotheek"@nl . # has appellation of agent
+
+ex:a53 # Actor no. 53
+    a rdac:C10005 ; # corporate body
+    rdfs:label "Stichting ter Bevordering van de Podiumkunst in Nederland"@nl ;
+    rdaa:P50378 "Stichting ter Bevordering van de Podiumkunst in Nederland"@nl ; # has appellation of agent
+    rdaa:P50378 "Stichting BPN"@nl . # has appellation of agent
+
+ex:a54 # Actor no. 54
+    a rdac:C10004 ; # person
+    rdfs:label "Jo Roets" ;
+    rdaa:P50378 "Jo Roets" . # has appellation of agent
+
+ex:a55 # Actor no. 55
+    a rdac:C10004 ; # person
+    rdfs:label "Jason Dousselaere" ;
+    rdaa:P50378 "Jason Dousselaere" . # has appellation of agent
+
+ex:a56 # Actor no. 56
+    a rdac:C10004 ; # person
+    rdfs:label "Manuela Lauwers" ;
+    rdaa:P50378 "Manuela Lauwers" . # has appellation of agent
+
+ex:a57 # Actor no. 57
+    a rdac:C10004 ; # person
+    rdfs:label "Thomas Stevens" ;
+    rdaa:P50378 "Thomas Stevens" . # has appellation of agent
+
+# PLACES
+
+ex:p9 # Plaats no. 9
+    a rdac:C10009 ;
+    rdfs:label "Antwerpen"@nl ;
+    rdap:P70019 "Antwerpen"@nl . # has appellation of place
+
+ex:p50 # Plaats no. 50 = shelf mark for item no. 50
+    a rdac:C10009 ;
+    rdfs:label "shelfmark: TONE 775 VANM" ;
+    rdap:P70019 "TONE 775 VANM" ; # has appellation of place
+    rdap:P70044 <http://vocab.getty.edu/aat/300404704> . # has category of place: shelf mark
+
+ex:p51 # Plaats no. 51
+    a rdac:C10009 ;
+    rdfs:label "Wilhelminadorp (Zeeland)"@nl ;
+    rdap:P70019 "Wilhelminadorp"@nl . # has appellation of place
+
+# TIMESPANS
+
+ex:t50 # Timespan no. 50
+    a rdac:C10010 ;
+    rdfs:label "seizoen 2022-2023"@nl ;
+    rdat:P70016 "seizoen 2022-2023"@nl ; # appellation of timespan
+    rdat:P70039 "2022-09-01"^^xsd:date ; # has beginning
+    rdat:P70040 "2023-08-31"^^xsd:date . # has ending
+
+ex:t51 # Timespan no. 51
+    a rdac:C10010 ;
+    rdfs:label "seizoen 2023-2024"@nl ;
+    rdat:P70016 "seizoen 2023-2024"@nl ; # appellation of timespan
+    rdat:P70039 "2023-09-01"^^xsd:date ; # has beginning
+    rdat:P70040 "2024-08-31"^^xsd:date . # has ending
+
+ex:t52 # Timespan no. 52
+    a rdac:C10010 ;
+    rdfs:label "seizoen 2024-2025"@nl ;
+    rdat:P70016 "seizoen 2024-2025"@nl ; # appellation of timespan
+    rdat:P70039 "2024-09-01"^^xsd:date ; # has beginning
+    rdat:P70040 "2025-08-31"^^xsd:date . # has ending
