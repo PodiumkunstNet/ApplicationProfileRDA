@@ -11,6 +11,7 @@
 - [Voorbeeldbeschrijvingen in RDA](#voorbeelden)
 - [Code-fragmenten](#code)
 - [Relevante documentatie](#documentatie)
+- [Suggesties of wijzigingen?](#suggesties)
 - [Colofon](#colofon)
 
 
@@ -74,6 +75,11 @@ Zie de [code-fragmenten](rdf/snippets).
 ## Relevante documentatie
 * [Evenementen in RDA](https://www.podiumkunst.net/nieuws/dans-theater-en-muziekevenementen-de-verschillen-en-overeenkomsten-in-een-metadata-model/)
 
+<a id="suggesties"></a>
+## Suggesties of wijzigingen?
+We nodigen iedereen uit om suggesties of wijzigingsverzoeken in te sturen via GitHub Issues. 
+
+Zie voor proces... 
 
 <a id="colofon"></a>
 ## Colofon
