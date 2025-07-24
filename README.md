@@ -10,7 +10,6 @@
 - [Applicatieprofiel als spreadsheet](#spreadsheet)
 - [Voorbeeldbeschrijvingen in RDA](#voorbeelden)
 - [Code-fragmenten](#code)
-- [Aanzet tot sjablonen](#sjablonen)
 - [Relevante documentatie](#documentatie)
 - [Colofon](#colofon)
 
@@ -52,7 +51,7 @@ Een applicatieprofiel is een doordachte manier om een bestaande standaard aan te
 ## Applicatieprofiel als spreadsheet
 De bouwstenen voor het gebruik van RDA zijn de **entiteiten** en de **elementen** die *eigenschappen* of *relaties* vertegenwoordigen. Als basis voor dit toepassingsprofiel is daarom eerst, op basis van de [principes](Principles.md), bepaald welke elementen toe te passen en welke juist niet. Dit is vastgelegd in een [spreadsheet](./assets/RDA-AP_Podiumkunst-net.xlsx) volgens deze [aanpak](Spreadsheet.md).
 
-Het spreadsheet geeft voor de belangrijkste RDA-entiteiten (werk, expressie, manifestatie en item) per element aan of het binnen dit toepassingsprofiel verplicht, aanbevolen, optioneel of juist niet gebruikt moet worden (MoSCoW) en welke registratiemethoden voor dat element verplicht, aanbevolen, optioneel of niet toegestaan zijn. In een later stadium zullen profielen voor de andere entiteiten toegevoegd worden.
+Het spreadsheet laat per element zien wat de belangrijkste RDA-entiteiten (werk, expressie, manifestatie en item) moeten bevatten. Daarbij staat aangegeven of iets verplicht, aanbevolen, optioneel of juist niet gebruikt mag worden (volgens de MoSCoW-methode). Ook is te zien welke manieren van vastleggen van die gegevens wel of niet zijn toegestaan. Later komen er ook profielen voor andere entiteiten bij.
 
 Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende niveaus van beschrijving: de *minimale beschrijving*, de *coherente beschrijving* en de *effectieve beschrijving* (zie ook de [principes](Principles.md)).
 
@@ -61,19 +60,15 @@ Verder wordt er, in lijn met RDA, onderscheid gemaakt tussen verschillende nivea
 
 <a id="voorbeelden"></a>
 ## Voorbeeldbeschrijvingen in RDA
-Naast het spreadsheet biedt dit applicatieprofiel voorbeelden en toelichtingen. Deze voorbeelden dienen zowel ter illustratie van het spreadsheet, als ook ter aanvulling. De voorbeelden zijn door de muziek- en theaterexperts uit de werkgroep aangedragen. Ze laten zien hoe bepaalde materialen maximaal verbonden en beschreven kunnen worden volgens RDA. In een later stadium zullen varianten op de voorbeelden toegevoegd worden die illustreren hoe minder gedetailleerd ontsloten collecties beschreven kunnen worden. 
+Naast het spreadsheet bevat dit applicatieprofiel ook voorbeelden en uitleg. De voorbeelden laten zien hoe het spreadsheet gebruikt kan worden en vullen het aan. Ze zijn aangeleverd door de werkgroep en tonen hoe materialen zo volledig mogelijk volgens RDA beschreven en gekoppeld kunnen worden. Later worden er ook voorbeelden toegevoegd die laten zien hoe je collecties met minder detail kunt beschrijven.
 
 Zie de [voorbeeldbeschrijvingen](rdf/examples).
 
 <a id="code"></a>
 ## Code-fragmenten
-In aanvulling op de voorbeeldbeschrijvingen biedt dit applicatieprofiel ook enige code-fragmenten. Dit zijn kleine, praktische stukjes RDF, om te helpen bij het zelf opbouwen van een beschrijving in RDA in lijn met dit profiel. Ze zijn nadrukkelijk *niet* bedoeld voor bijvoorbeeld catalogiseerders, wel voor degenen die een catalogiseervoorziening of ETL-proces inrichten.
+In aanvulling op de voorbeeldbeschrijvingen biedt dit applicatieprofiel ook een aantal code-fragmenten. Dit zijn korte, praktische RDF-fragmenten die kunnen helpen bij het zelf maken van een RDA-beschrijving volgens dit profiel.
 
 Zie de [code-fragmenten](rdf/snippets).
-
-<a id="sjablonen"></a>
-## Aanzet tot sjablonen
-We streven ernaar te komen tot een aantal basis-sjablonen die gebruikt kunnen worden als kader bij het beschrijven van de verschillende soorten entiteiten die relevant zijn in de wereld van de podiumkunst.
 
 <a id="documentatie"></a>
 ## Relevante documentatie
