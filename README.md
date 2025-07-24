@@ -79,7 +79,7 @@ Zie de [code-fragmenten](rdf/snippets).
 ## Suggesties of wijzigingen?
 We nodigen iedereen uit om suggesties of wijzigingsverzoeken in te sturen via GitHub Issues. 
 
-Zie voor proces... 
+Zie het [proces voor suggesties of wijzigingsverzoeken](Contribute.md)
 
 <a id="colofon"></a>
 ## Colofon
