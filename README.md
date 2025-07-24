@@ -1,4 +1,4 @@
-# RDA-Applicatieprofiel Podiumkunst
+# RDA-Applicatieprofiel Podiumkunst.net
 
 *versie 1.1 / [Podiumkunst.net](https://podiumkunst.net/) / 2025-07-24* 
 
