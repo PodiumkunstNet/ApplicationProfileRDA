@@ -4,7 +4,7 @@ Suggesties en wijzigingsverzoeken kunnen doorlopend toegevoegd worden via Github
 
 ## Suggesties en wijzigingsverzoeken via Github
 
-- Maak een nieuw issue aan]([https://github.com/PodiumkunstNet/ApplicationProfileRDA/issues])
+- Maak een [nieuw issue aan](https://github.com/PodiumkunstNet/ApplicationProfileRDA/issues)
 - Omschrijf de suggestie of de wijziging
 - Voeg wanneer mogelijk en van toepassing een oplossing, in tekst of via een pull request
 
@@ -19,5 +19,5 @@ Suggesties en wijzigingsverzoeken kunnen doorlopend toegevoegd worden via Github
  ## Documentatie 
 
 - Het profiel en andere relevante documentatie worden aangepast
-- De CHANGELOG.md wordt aangepast
+- De [CHANGELOG.md](CHANGELOG.md) wordt aangepast
 
