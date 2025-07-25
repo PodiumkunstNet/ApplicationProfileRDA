@@ -12,8 +12,6 @@
 - [Code-fragmenten](#code)
 - [Relevante documentatie](#documentatie)
 - [Suggesties of wijzigingen?](#suggesties)
-- [Colofon](#colofon)
-
 
 <a id="inleiding"></a>
 ## Inleiding
@@ -81,10 +79,4 @@ We nodigen iedereen uit om suggesties of wijzigingsverzoeken in te sturen via Gi
 
 Zie het [proces voor suggesties of wijzigingsverzoeken](Contribute.md)
 
-<a id="colofon"></a>
-## Colofon
-Aan dit applicatieprofiel hebben meegewerkt: *Sylvia Alting van Geusau ([Amsterdamse Hogeschool voor de Kunsten](https://ahk.nl/)), Eric van Balkum ([Muziekschatten](https://www.muziekschatten.nl/)), Sita Bhagwandin ([Koninklijke Bibliotheek](https://kb.nl/)), Remco de Boer ([ArchiXL](https://archixl.nl)), Thomas Op de Coul (Beeld & Geluid / [Muziekweb](https://muziekweb.nl/)), Mirjam Verloop ([Podiumkunst.net](https://podiumkunst.net/)), René Voorburg ([Podiumkunst.net](https://podiumkunst.net/)), Meta van der Waal-Gentenaar ([Koninklijke Bibliotheek](https://kb.nl/)) en Lian Wintermans (zelfstandig muziek- en informatiespecialist, voorzitter [RDA-Commissie](https://rdacommissie.home.blog/)).*
-
-
-<!-- Zie de [aanzet voor de nog uit te werken sjablonen](rdf/templates). -->
 
