@@ -1,6 +1,7 @@
 # Suggesties of wijzigingen? 
 
-Suggesties en wijzigingsverzoeken kunnen doorlopend toegevoegd worden via Github Issues. Elk kwartaal evalueert een Podiumkunst.net beheerteam de verzoeken. 
+Suggesties en wijzigingsverzoeken kunnen doorlopend toegevoegd worden via Github Issues. Podiumkunst.net voegt zelf ook toe naar aanleiding van projecten en praktijkvoorbeelden. 
+Elk kwartaal beoordeelt een Podiumkunst.net beheerteam de verzoeken. 
 
 ## Suggesties en wijzigingsverzoeken via Github
 
